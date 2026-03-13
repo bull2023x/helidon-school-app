@@ -10,6 +10,7 @@ public class DbInit {
                 "jdbc:h2:mem:test;DB_CLOSE_DELAY=-1", "sa", "");
              Statement stmt = conn.createStatement()) {
 
+            // Old table
             stmt.execute("""
                 CREATE TABLE IF NOT EXISTS exam_school (
                     id BIGINT AUTO_INCREMENT PRIMARY KEY,
@@ -176,6 +177,178 @@ public class DbInit {
                     ""
             );
 
+            // New table
+            stmt.execute("""
+                CREATE TABLE IF NOT EXISTS exam_school_v2 (
+                    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+                    school_name VARCHAR(300),
+                    category VARCHAR(300),
+                    capacity VARCHAR(100),
+                    exam_dates CLOB,
+                    subjects CLOB,
+                    alternate_subjects CLOB,
+                    interview VARCHAR(100),
+                    english_qualification_benefit CLOB,
+                    notes CLOB
+                )
+            """);
+
+            insertV2(stmt,
+                    "渋谷教育学園渋谷（渋渋）",
+                    "帰国入試",
+                    "計12名",
+                    "2026-01-27",
+                    "英語, 国語, 算数, 英語面接",
+                    "作文, 国語, 算数, 面接",
+                    "あり",
+                    "公式上、免除・得点保証の明示なし",
+                    null
+            );
+
+            insertV2(stmt,
+                    "洗足学園",
+                    "帰国入試 A方式",
+                    "20名の内訳あり",
+                    "2026-01-10",
+                    "英語, 面接（英語での質疑応答）",
+                    null,
+                    "あり",
+                    "公式上、免除・得点保証の明示なし",
+                    null
+            );
+
+insertV2(stmt,
+        "洗足学園",
+        "帰国入試 B方式",
+        "20名の内訳あり",
+        "2026-01-10",
+        "英語, 国語, 算数, 面接（英語での質疑応答）",
+        null,
+        "あり",
+        "公式上、免除・得点保証の明示なし",
+        null
+);
+
+insertV2(stmt,
+        "東京学芸大学附属国際中等教育学校",
+        "A方式",
+        "約30名",
+        "2026-02-03",
+        "外国語作文, 基礎日本語作文, 面接",
+        null,
+        "あり",
+        "免除・得点保証の明示なし",
+        "外国語作文は英語ほか選択"
+);
+
+insertV2(stmt,
+        "広尾学園",
+        "帰国生入試（インターAG）",
+        "25名",
+        "2025-12-18",
+        "Japanese, Mathematics, English, Interview",
+        null,
+        "あり",
+        "英検2級相当以上が出願条件、TOEFL iBT 90以上でEnglish免除",
+        null
+);
+
+insertV2(stmt,
+        "広尾学園",
+        "一般英語受験（国際生AG回）",
+        "別枠あり",
+        "2026-02-03",
+        "Japanese, Mathematics, English, Interview",
+        null,
+        "あり",
+        "TOEFL iBT 90以上でEnglish免除",
+        null
+);
+
+insertV2(stmt,
+        "広尾学園小石川",
+        "帰国生入試（AG）",
+        "25名",
+        "2025-11-23, 2025-12-15",
+        "Japanese, Mathematics, English, Interview",
+        null,
+        "あり",
+        "英検2級以上または同等英語力、TOEFL iBT 90以上でEnglish免除",
+        null
+);
+
+insertV2(stmt,
+        "広尾学園小石川",
+        "一般英語受験（国際生AG回）",
+        "約30名",
+        "2026-02-01, 2026-02-03, 2026-02-06",
+        "Japanese, Mathematics, English, Interview",
+        null,
+        "あり",
+        "TOEFL iBT 90以上でEnglish免除",
+        null
+);
+
+insertV2(stmt,
+        "頌栄女子学院",
+        "帰国生入試",
+        "特に定めず",
+        "2025-12-06",
+        "英語I, 英語II, 英会話, 面接",
+        "国語, 算数, 英語I, 英語II, 英会話, 面接",
+        "あり",
+        "帰国生入試では免除・得点保証の明示なし",
+        null
+);
+
+insertV2(stmt,
+        "頌栄女子学院",
+        "一般英語利用入試",
+        "一般枠内",
+        "2026-02-01, 2026-02-05",
+        "国語, 算数, 英語（英検のみなし得点）",
+        null,
+        "なし",
+        "英検3級以上が条件、英語はみなし得点方式",
+        null
+);
+
+insertV2(stmt,
+        "三田国際科学学園",
+        "帰国生入試 IC",
+        "30名",
+        "2025-11-21, 2025-12-10",
+        "英語（リスニング含む）, 面接",
+        null,
+        "あり",
+        "ICは優遇明記なし",
+        null
+);
+
+insertV2(stmt,
+        "三田国際科学学園",
+        "帰国生入試 ISC",
+        "30名",
+        "2025-11-21, 2025-12-10",
+        "英語（リスニング含む）, 国語, 算数, 面接",
+        null,
+        "あり",
+        "英検準1級以上 / TOEFL iBT 72以上 / IELTS 5.5以上で英語試験免除",
+        null
+);
+
+insertV2(stmt,
+        "三田国際科学学園",
+        "一般英語受験（2月 ISC 英語【優遇措置】）",
+        "一般枠内",
+        "2月入試各回",
+        "一般入試でISCを選択, 英語【優遇措置】を利用",
+        null,
+        "要項参照",
+        "英検準1級以上 / TOEFL iBT 72以上 / IELTS 5.5以上で優遇措置",
+        null
+);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -204,6 +377,33 @@ public class DbInit {
                 + q(applicationDeadlineDocs) + ", "
                 + q(benefits) + ", "
                 + q(remarks)
+                + ")");
+    }
+
+    private static void insertV2(Statement stmt,
+                                 String schoolName,
+                                 String category,
+                                 String capacity,
+                                 String examDates,
+                                 String subjects,
+                                 String alternateSubjects,
+                                 String interview,
+                                 String englishQualificationBenefit,
+                                 String notes) throws Exception {
+        stmt.execute("INSERT INTO exam_school_v2 ("
+                + "school_name, category, capacity, exam_dates, "
+                + "subjects, alternate_subjects, interview, "
+                + "english_qualification_benefit, notes"
+                + ") VALUES ("
+                + q(schoolName) + ", "
+                + q(category) + ", "
+                + q(capacity) + ", "
+                + q(examDates) + ", "
+                + q(subjects) + ", "
+                + q(alternateSubjects) + ", "
+                + q(interview) + ", "
+                + q(englishQualificationBenefit) + ", "
+                + q(notes)
                 + ")");
     }
 
