@@ -18,7 +18,7 @@ public class SchoolV2Repository {
         String sql = """
                 SELECT id, school_name, category, capacity, exam_dates,
                        subjects, alternate_subjects, interview,
-                       english_qualification_benefit, notes
+                       english_qualification_benefit, notes, info_link
                 FROM exam_school_v2
                 ORDER BY id
                 """;
@@ -38,7 +38,8 @@ public class SchoolV2Repository {
                         rs.getString("alternate_subjects"),
                         rs.getString("interview"),
                         rs.getString("english_qualification_benefit"),
-                        rs.getString("notes")
+                        rs.getString("notes"),
+                        rs.getString("info_link")
                 ));
             }
         } catch (Exception e) {
@@ -54,7 +55,7 @@ public class SchoolV2Repository {
         String sql = """
                 SELECT id, school_name, category, capacity, exam_dates,
                        subjects, alternate_subjects, interview,
-                       english_qualification_benefit, notes
+                       english_qualification_benefit, notes, info_link
                 FROM exam_school_v2
                 WHERE school_name = ?
                 ORDER BY id
@@ -77,7 +78,8 @@ public class SchoolV2Repository {
                             rs.getString("alternate_subjects"),
                             rs.getString("interview"),
                             rs.getString("english_qualification_benefit"),
-                            rs.getString("notes")
+                            rs.getString("notes"),
+                            rs.getString("info_link")
                     ));
                 }
             }

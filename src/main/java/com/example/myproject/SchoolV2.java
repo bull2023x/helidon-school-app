@@ -11,6 +11,7 @@ public class SchoolV2 {
     public String interview;
     public String englishQualificationBenefit;
     public String notes;
+    public String infoLink;
 
     public SchoolV2(long id,
                     String schoolName,
@@ -21,7 +22,8 @@ public class SchoolV2 {
                     String alternateSubjects,
                     String interview,
                     String englishQualificationBenefit,
-                    String notes) {
+                    String notes,
+                    String infoLink) {
         this.id = id;
         this.schoolName = schoolName;
         this.category = category;
@@ -32,5 +34,6 @@ public class SchoolV2 {
         this.interview = interview;
         this.englishQualificationBenefit = englishQualificationBenefit;
         this.notes = notes;
+        this.infoLink = infoLink;
     }
 }

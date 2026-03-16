@@ -1,0 +1,62 @@
+[
+  {
+    "schoolName": "渋谷教育学園渋谷（渋渋）",
+    "category": "帰国入試",
+    "capacity": "計12名",
+    "examDates": "2026-01-27",
+    "subjects": "英語, 国語, 算数, 英語面接",
+    "alternateSubjects": "作文, 国語, 算数, 面接",
+    "interview": "あり",
+    "englishQualificationBenefit": "公式上、免除・得点保証の明示なし",
+    "notes": null,
+    "infoLink": "https://example.com/shibushibu"
+  },
+  {
+    "schoolName": "洗足学園",
+    "category": "帰国入試 A方式",
+    "capacity": "20名の内訳あり",
+    "examDates": "2026-01-10",
+    "subjects": "英語, 面接（英語での質疑応答）",
+    "alternateSubjects": null,
+    "interview": "あり",
+    "englishQualificationBenefit": "公式上、免除・得点保証の明示なし",
+    "notes": null,
+    "infoLink": "https://example.com/senzoku-a"
+  },
+  {
+    "schoolName": "洗足学園",
+    "category": "帰国入試 B方式",
+    "capacity": "20名の内訳あり",
+    "examDates": "2026-01-10",
+    "subjects": "英語, 国語, 算数, 面接（英語での質疑応答）",
+    "alternateSubjects": null,
+    "interview": "あり",
+    "englishQualificationBenefit": "公式上、免除・得点保証の明示なし",
+    "notes": null,
+    "infoLink": "https://example.com/senzoku-b"
+  },
+  {
+    "schoolName": "東京学芸大学附属国際中等教育学校",
+    "category": "A方式",
+    "capacity": "約30名",
+    "examDates": "2026-02-03",
+    "subjects": "外国語作文, 基礎日本語作文, 面接",
+    "alternateSubjects": null,
+    "interview": "あり",
+    "englishQualificationBenefit": "免除・得点保証の明示なし",
+    "notes": "外国語作文は英語ほか選択",
+    "infoLink": "https://example.com/gakugei-kokusai"
+  },
+  {
+    "schoolName": "広尾学園",
+    "category": "帰国生入試（インターAG）",
+    "capacity": "25名",
+    "examDates": "2025-12-18",
+    "subjects": "Japanese, Mathematics, English, Interview",
+    "alternateSubjects": null,
+    "interview": "あり",
+    "englishQualificationBenefit": "英検2級相当以上が出願条件、TOEFL iBT 90以上でEnglish免除",
+    "notes": null,
+    "infoLink": "https://example.com/hiroo-ag"
+  }
+]

@@ -178,44 +178,47 @@ public class DbInit {
             );
 
             // New table
-            stmt.execute("""
-                CREATE TABLE IF NOT EXISTS exam_school_v2 (
-                    id BIGINT AUTO_INCREMENT PRIMARY KEY,
-                    school_name VARCHAR(300),
-                    category VARCHAR(300),
-                    capacity VARCHAR(100),
-                    exam_dates CLOB,
-                    subjects CLOB,
-                    alternate_subjects CLOB,
-                    interview VARCHAR(100),
-                    english_qualification_benefit CLOB,
-                    notes CLOB
-                )
-            """);
+stmt.execute("""
+    CREATE TABLE IF NOT EXISTS exam_school_v2 (
+        id BIGINT AUTO_INCREMENT PRIMARY KEY,
+        school_name VARCHAR(300),
+        category VARCHAR(300),
+        capacity VARCHAR(100),
+        exam_dates CLOB,
+        subjects CLOB,
+        alternate_subjects CLOB,
+        interview VARCHAR(100),
+        english_qualification_benefit CLOB,
+        notes CLOB,
+        info_link CLOB
+    )
+""");
 
-            insertV2(stmt,
-                    "渋谷教育学園渋谷（渋渋）",
-                    "帰国入試",
-                    "計12名",
-                    "2026-01-27",
-                    "英語, 国語, 算数, 英語面接",
-                    "作文, 国語, 算数, 面接",
-                    "あり",
-                    "公式上、免除・得点保証の明示なし",
-                    null
-            );
+insertV2(stmt,
+        "渋谷教育学園渋谷（渋渋）",
+        "帰国入試",
+        "計12名",
+        "2026-01-27",
+        "英語, 国語, 算数, 英語面接",
+        "作文, 国語, 算数, 面接",
+        "あり",
+        "公式上、免除・得点保証の明示なし",
+        null,
+        "https://www.shibushibu.jp/admission/detail/returnee_exam.html"
+);
 
-            insertV2(stmt,
-                    "洗足学園",
-                    "帰国入試 A方式",
-                    "20名の内訳あり",
-                    "2026-01-10",
-                    "英語, 面接（英語での質疑応答）",
-                    null,
-                    "あり",
-                    "公式上、免除・得点保証の明示なし",
-                    null
-            );
+insertV2(stmt,
+        "洗足学園",
+        "帰国入試 A方式",
+        "20名の内訳あり",
+        "2026-01-10",
+        "英語, 面接（英語での質疑応答）",
+        null,
+        "あり",
+        "公式上、免除・得点保証の明示なし",
+        null,
+        "https://www.senzoku-gakuen.ed.jp/admission/information_3.html"
+);
 
 insertV2(stmt,
         "洗足学園",
@@ -226,7 +229,8 @@ insertV2(stmt,
         null,
         "あり",
         "公式上、免除・得点保証の明示なし",
-        null
+        null,
+        "https://www.senzoku-gakuen.ed.jp/admission/information_3.html"
 );
 
 insertV2(stmt,
@@ -238,7 +242,8 @@ insertV2(stmt,
         null,
         "あり",
         "免除・得点保証の明示なし",
-        "外国語作文は英語ほか選択"
+        "外国語作文は英語ほか選択",
+        "https://www.iss.oizumi.u-gakugei.ac.jp/2025/14096/"
 );
 
 insertV2(stmt,
@@ -250,7 +255,8 @@ insertV2(stmt,
         null,
         "あり",
         "英検2級相当以上が出願条件、TOEFL iBT 90以上でEnglish免除",
-        null
+        null,
+        "https://www.hiroogakuen.ed.jp/sp/junior/jik_boshuyoko.html"
 );
 
 insertV2(stmt,
@@ -262,7 +268,8 @@ insertV2(stmt,
         null,
         "あり",
         "TOEFL iBT 90以上でEnglish免除",
-        null
+        null,
+        "https://www.hiroogakuen.ed.jp/sp/junior/jik_boshuyoko.html"
 );
 
 insertV2(stmt,
@@ -274,7 +281,8 @@ insertV2(stmt,
         null,
         "あり",
         "英検2級以上または同等英語力、TOEFL iBT 90以上でEnglish免除",
-        null
+        null,
+        "https://hiroo-koishikawa.ed.jp/exam/junior-nyushi"
 );
 
 insertV2(stmt,
@@ -286,7 +294,8 @@ insertV2(stmt,
         null,
         "あり",
         "TOEFL iBT 90以上でEnglish免除",
-        null
+        null,
+        "https://hiroo-koishikawa.ed.jp/exam/junior-nyushi"
 );
 
 insertV2(stmt,
@@ -298,7 +307,8 @@ insertV2(stmt,
         "国語, 算数, 英語I, 英語II, 英会話, 面接",
         "あり",
         "帰国生入試では免除・得点保証の明示なし",
-        null
+        null,
+        "https://www.shoei.ed.jp/examination/returnees.html"
 );
 
 insertV2(stmt,
@@ -310,7 +320,8 @@ insertV2(stmt,
         null,
         "なし",
         "英検3級以上が条件、英語はみなし得点方式",
-        null
+        null,
+        "https://www.shoei.ed.jp/examination/returnees.html"
 );
 
 insertV2(stmt,
@@ -322,7 +333,8 @@ insertV2(stmt,
         null,
         "あり",
         "ICは優遇明記なし",
-        null
+        null,
+        "https://www.mita-is.ed.jp/admissions/returnee/"
 );
 
 insertV2(stmt,
@@ -334,7 +346,8 @@ insertV2(stmt,
         null,
         "あり",
         "英検準1級以上 / TOEFL iBT 72以上 / IELTS 5.5以上で英語試験免除",
-        null
+        null,
+        "https://www.mita-is.ed.jp/admissions/returnee/"
 );
 
 insertV2(stmt,
@@ -346,9 +359,9 @@ insertV2(stmt,
         null,
         "要項参照",
         "英検準1級以上 / TOEFL iBT 72以上 / IELTS 5.5以上で優遇措置",
-        null
+        null,
+        "https://www.mita-is.ed.jp/admissions/regular/"
 );
-
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -380,32 +393,34 @@ insertV2(stmt,
                 + ")");
     }
 
-    private static void insertV2(Statement stmt,
-                                 String schoolName,
-                                 String category,
-                                 String capacity,
-                                 String examDates,
-                                 String subjects,
-                                 String alternateSubjects,
-                                 String interview,
-                                 String englishQualificationBenefit,
-                                 String notes) throws Exception {
-        stmt.execute("INSERT INTO exam_school_v2 ("
-                + "school_name, category, capacity, exam_dates, "
-                + "subjects, alternate_subjects, interview, "
-                + "english_qualification_benefit, notes"
-                + ") VALUES ("
-                + q(schoolName) + ", "
-                + q(category) + ", "
-                + q(capacity) + ", "
-                + q(examDates) + ", "
-                + q(subjects) + ", "
-                + q(alternateSubjects) + ", "
-                + q(interview) + ", "
-                + q(englishQualificationBenefit) + ", "
-                + q(notes)
-                + ")");
-    }
+private static void insertV2(Statement stmt,
+                             String schoolName,
+                             String category,
+                             String capacity,
+                             String examDates,
+                             String subjects,
+                             String alternateSubjects,
+                             String interview,
+                             String englishQualificationBenefit,
+                             String notes,
+                             String infoLink) throws Exception {
+    stmt.execute("INSERT INTO exam_school_v2 ("
+            + "school_name, category, capacity, exam_dates, "
+            + "subjects, alternate_subjects, interview, "
+            + "english_qualification_benefit, notes, info_link"
+            + ") VALUES ("
+            + q(schoolName) + ", "
+            + q(category) + ", "
+            + q(capacity) + ", "
+            + q(examDates) + ", "
+            + q(subjects) + ", "
+            + q(alternateSubjects) + ", "
+            + q(interview) + ", "
+            + q(englishQualificationBenefit) + ", "
+            + q(notes) + ", "
+            + q(infoLink)
+            + ")");
+}
 
     private static String q(String s) {
         if (s == null) {
