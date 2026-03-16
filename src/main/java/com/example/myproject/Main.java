@@ -173,6 +173,7 @@ public class Main {
                                   <th>Interview</th>
                                   <th>English Qualification Benefit</th>
                                   <th>Notes</th>
+<th>Info Link</th>
                                 </tr>
                             """);
 
@@ -187,8 +188,15 @@ public class Main {
                                 .append("<td>").append(escapeHtml(s.alternateSubjects)).append("</td>")
                                 .append("<td>").append(escapeHtml(s.interview)).append("</td>")
                                 .append("<td>").append(escapeHtml(s.englishQualificationBenefit)).append("</td>")
-                                .append("<td>").append(escapeHtml(s.notes)).append("</td>")
-                                .append("</tr>");
+                               // .append("<td>").append(escapeHtml(s.notes)).append("</td>")
+                               // .append("</tr>");
+.append("<td>").append(escapeHtml(s.notes)).append("</td>")
+.append("<td>")
+.append(s.infoLink == null || s.infoLink.isBlank()
+        ? ""
+        : "<a href=\"" + escapeHtml(s.infoLink) + "\" target=\"_blank\">Link</a>")
+.append("</td>")
+.append("</tr>");
                     }
 
                     html.append("""
