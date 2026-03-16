@@ -64,4 +64,15 @@
   "englishQualificationBenefit" : "なし",
   "notes" : null,
   "infoLink" : null
+}, {
+  "schoolName" : "test",
+  "category" : "test",
+  "capacity" : "11000",
+  "examDates" : "2026-01-31",
+  "subjects" : "算数国語英語",
+  "alternateSubjects" : null,
+  "interview" : "あり",
+  "englishQualificationBenefit" : "なし",
+  "notes" : null,
+  "infoLink" : null
 } ]
