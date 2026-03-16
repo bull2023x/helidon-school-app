@@ -53,4 +53,15 @@
   "englishQualificationBenefit" : "英検2級相当以上が出願条件、TOEFL iBT 90以上でEnglish免除",
   "notes" : null,
   "infoLink" : "https://example.com/hiroo-ag"
+}, {
+  "schoolName" : "test",
+  "category" : "test",
+  "capacity" : "15",
+  "examDates" : "2026-01-31",
+  "subjects" : "算数国語英語",
+  "alternateSubjects" : null,
+  "interview" : "あり",
+  "englishQualificationBenefit" : "なし",
+  "notes" : null,
+  "infoLink" : null
 } ]
