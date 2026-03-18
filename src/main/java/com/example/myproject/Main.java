@@ -1,14 +1,20 @@
 package com.example.myproject;
 
+import io.helidon.http.HeaderNames;
 import io.helidon.common.config.Config;
 import io.helidon.logging.common.LogConfig;
 import io.helidon.service.registry.Services;
 import io.helidon.webserver.WebServer;
 import io.helidon.webserver.http.HttpRouting;
 
+import java.net.URLDecoder;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 public class Main {
+
+    private static final String LOGIN_COOKIE_NAME = "school_app_auth";
 
     private Main() {
     }
@@ -30,22 +36,121 @@ public class Main {
         System.out.println("WEB server is up! http://localhost:" + server.port() + "/schools");
     }
 
-private static String escapeHtml(String s) {
-    if (s == null) {
-        return "";
+    private static String escapeHtml(String s) {
+        if (s == null) {
+            return "";
+        }
+        return s.replace("&", "&amp;")
+                .replace("<", "&lt;")
+                .replace(">", "&gt;")
+                .replace("\"", "&quot;")
+                .replace("\n", "<br>");
     }
-    return s.replace("&", "&amp;")
-            .replace("<", "&lt;")
-            .replace(">", "&gt;")
-            .replace("\"", "&quot;")
-            .replace("\n", "<br>");
-}
 
-private static String formatDateForDisplay(String s) {
-    if (s == null || s.isBlank()) {
-        return "";
+    private static String formatDateForDisplay(String s) {
+        if (s == null || s.isBlank()) {
+            return "";
+        }
+        return s.replaceAll("(\\d{4})-(\\d{2})-(\\d{2})", "$1/$2/$3");
     }
-    return s.replaceAll("(\\d{4})-(\\d{2})-(\\d{2})", "$1/$2/$3");
+
+    private static String getAppPassword() {
+        String password = System.getenv("APP_PASSWORD");
+        if (password == null || password.isBlank()) {
+            return "changeme123";
+        }
+        return password;
+    }
+
+    private static String buildAuthToken() {
+        return URLEncoder.encode(getAppPassword(), StandardCharsets.UTF_8);
+    }
+
+    private static boolean isAuthenticated(io.helidon.webserver.http.ServerRequest req) {
+        // String cookieHeader = req.headers().first("Cookie").orElse("");
+        String cookieHeader = req.headers().first(HeaderNames.COOKIE).orElse("");
+                if (cookieHeader.isBlank()) {
+            return false;
+        }
+
+        String[] cookies = cookieHeader.split(";");
+        for (String cookie : cookies) {
+            String[] pair = cookie.trim().split("=", 2);
+            if (pair.length == 2) {
+                String name = pair[0].trim();
+                String value = pair[1].trim();
+                if (LOGIN_COOKIE_NAME.equals(name) && buildAuthToken().equals(value)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+private static String loginPageHtml(String message) {
+    String safeMessage = message == null ? "" : escapeHtml(message);
+
+    return """
+            <html>
+            <head>
+              <meta charset="UTF-8">
+              <title>ログイン</title>
+              <style>
+                body {
+                  font-family: Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+                  background: #f7f7f7;
+                  margin: 0;
+                  padding: 0;
+                }
+                .login-box {
+                  width: 420px;
+                  max-width: calc(100% - 40px);
+                  margin: 80px auto;
+                  background: white;
+                  border: 1px solid #ddd;
+                  border-radius: 8px;
+                  padding: 24px;
+                  box-sizing: border-box;
+                  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+                }
+                h2 {
+                  margin-top: 0;
+                  margin-bottom: 16px;
+                }
+                .message {
+                  color: #c62828;
+                  min-height: 1.2em;
+                  margin-bottom: 12px;
+                }
+                input[type="password"] {
+                  width: 100%;
+                  padding: 10px;
+                  font-size: 14px;
+                  box-sizing: border-box;
+                  margin-bottom: 12px;
+                }
+                button {
+                  padding: 10px 16px;
+                  font-size: 14px;
+                  cursor: pointer;
+                }
+              </style>
+            </head>
+            <body>
+              <div class="login-box">
+                <h2>学校一覧サイト ログイン</h2>
+                <div class="message">"""
+            + safeMessage +
+            """
+                </div>
+                <form method="GET" action="/do-login">
+                  <input type="password" name="password" placeholder="パスワードを入力">
+                  <button type="submit">ログイン</button>
+                </form>
+              </div>
+            </body>
+            </html>
+            """;
 }
     static void routing(HttpRouting.Builder routing) {
         SchoolRepository repository = new SchoolRepository();
@@ -53,7 +158,39 @@ private static String formatDateForDisplay(String s) {
 
         routing
                 .register("/greet", new GreetService())
+
                 .get("/simple-greet", (req, res) -> res.send("Hello World!"))
+
+                .get("/login", (req, res) -> {
+                    String error = req.query().first("error").orElse("");
+                    res.header("Content-Type", "text/html; charset=UTF-8");
+                    res.send(loginPageHtml(error));
+                })
+
+                .get("/do-login", (req, res) -> {
+                    String password = req.query().first("password").orElse("");
+
+                    if (getAppPassword().equals(password)) {
+                        res.header("Set-Cookie",
+                                LOGIN_COOKIE_NAME + "=" + buildAuthToken() + "; Path=/; HttpOnly; SameSite=Lax");
+                        res.status(302);
+                        res.header("Location", "/schools-v2-table");
+                        res.send();
+                    } else {
+                        String errorMessage = URLEncoder.encode("パスワードが違います。", StandardCharsets.UTF_8);
+                        res.status(302);
+                        res.header("Location", "/login?error=" + errorMessage);
+                        res.send();
+                    }
+                })
+
+                .get("/logout", (req, res) -> {
+                    res.header("Set-Cookie",
+                            LOGIN_COOKIE_NAME + "=; Path=/; Max-Age=0; HttpOnly; SameSite=Lax");
+                    res.status(302);
+                    res.header("Location", "/login");
+                    res.send();
+                })
 
                 .get("/schools", (req, res) -> {
                     String name = req.query().first("name").orElse(null);
@@ -121,9 +258,8 @@ private static String formatDateForDisplay(String s) {
                     for (School s : schools) {
                         html.append("<tr>")
                                 .append("<td>").append(s.id).append("</td>")
-                               // .append("<td>").append(escapeHtml(s.examDate)).append("</td>")
-.append("<td>").append(escapeHtml(formatDateForDisplay(s.examDate))).append("</td>")                               
- .append("<td>").append(escapeHtml(s.schoolName)).append("</td>")
+                                .append("<td>").append(escapeHtml(formatDateForDisplay(s.examDate))).append("</td>")
+                                .append("<td>").append(escapeHtml(s.schoolName)).append("</td>")
                                 .append("<td>").append(escapeHtml(s.className)).append("</td>")
                                 .append("<td>").append(escapeHtml(s.capacity)).append("</td>")
                                 .append("<td>").append(escapeHtml(s.subjects)).append("</td>")
@@ -145,6 +281,13 @@ private static String formatDateForDisplay(String s) {
                 })
 
                 .get("/schools-v2-table", (req, res) -> {
+                    if (!isAuthenticated(req)) {
+                        res.status(302);
+                        res.header("Location", "/login");
+                        res.send();
+                        return;
+                    }
+
                     List<SchoolV2> schools = repositoryV2.findAll();
 
                     StringBuilder html = new StringBuilder();
@@ -209,7 +352,10 @@ private static String formatDateForDisplay(String s) {
                               </style>
                             </head>
                             <body>
-                              <h2>英語での中学受験校リスト_2026年3月版_v2</h2>
+                              <h2>学校一覧 V2</h2>
+                              <div style="margin-bottom: 12px;">
+                                <a href="/logout">ログアウト</a>
+                              </div>
 
                               <div class="toolbar">
                                 <input type="text" id="searchBox" placeholder="学校名・入試分類・試験日・備考などで検索">
@@ -218,7 +364,7 @@ private static String formatDateForDisplay(String s) {
                               <table id="schoolTable">
                                 <thead>
                                   <tr>
-                                    <th onclick="sortTable(0, false)">ID</th>
+                                    <th onclick="sortTable(0, true)">ID</th>
                                     <th onclick="sortTable(1, false)">学校名</th>
                                     <th onclick="sortTable(2, false)">入試分類</th>
                                     <th onclick="sortTable(3, false)">募集人数</th>
@@ -240,7 +386,7 @@ private static String formatDateForDisplay(String s) {
                                 .append("<td>").append(escapeHtml(s.schoolName)).append("</td>")
                                 .append("<td>").append(escapeHtml(s.category)).append("</td>")
                                 .append("<td>").append(escapeHtml(s.capacity)).append("</td>")
-                                .append("<td>").append(escapeHtml(s.examDates)).append("</td>")
+                                .append("<td>").append(escapeHtml(formatDateForDisplay(s.examDates))).append("</td>")
                                 .append("<td>").append(escapeHtml(s.subjects)).append("</td>")
                                 .append("<td>").append(escapeHtml(s.alternateSubjects)).append("</td>")
                                 .append("<td>").append(escapeHtml(s.interview)).append("</td>")
@@ -303,10 +449,6 @@ private static String formatDateForDisplay(String s) {
 
                                   rows.forEach(row => tbody.appendChild(row));
                                 }
-
-                                // ID列だけ数値ソートにしたいので差し替え
-                                document.querySelectorAll('#schoolTable th')[0]
-                                  .setAttribute('onclick', 'sortTable(0, true)');
                               </script>
                             </body>
                             </html>
