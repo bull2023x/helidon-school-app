@@ -30,17 +30,23 @@ public class Main {
         System.out.println("WEB server is up! http://localhost:" + server.port() + "/schools");
     }
 
-    private static String escapeHtml(String s) {
-        if (s == null) {
-            return "";
-        }
-        return s.replace("&", "&amp;")
-                .replace("<", "&lt;")
-                .replace(">", "&gt;")
-                .replace("\"", "&quot;")
-                .replace("\n", "<br>");
+private static String escapeHtml(String s) {
+    if (s == null) {
+        return "";
     }
+    return s.replace("&", "&amp;")
+            .replace("<", "&lt;")
+            .replace(">", "&gt;")
+            .replace("\"", "&quot;")
+            .replace("\n", "<br>");
+}
 
+private static String formatDateForDisplay(String s) {
+    if (s == null || s.isBlank()) {
+        return "";
+    }
+    return s.replaceAll("(\\d{4})-(\\d{2})-(\\d{2})", "$1/$2/$3");
+}
     static void routing(HttpRouting.Builder routing) {
         SchoolRepository repository = new SchoolRepository();
         SchoolV2Repository repositoryV2 = new SchoolV2Repository();
@@ -115,8 +121,9 @@ public class Main {
                     for (School s : schools) {
                         html.append("<tr>")
                                 .append("<td>").append(s.id).append("</td>")
-                                .append("<td>").append(escapeHtml(s.examDate)).append("</td>")
-                                .append("<td>").append(escapeHtml(s.schoolName)).append("</td>")
+                               // .append("<td>").append(escapeHtml(s.examDate)).append("</td>")
+.append("<td>").append(escapeHtml(formatDateForDisplay(s.examDate))).append("</td>")                               
+ .append("<td>").append(escapeHtml(s.schoolName)).append("</td>")
                                 .append("<td>").append(escapeHtml(s.className)).append("</td>")
                                 .append("<td>").append(escapeHtml(s.capacity)).append("</td>")
                                 .append("<td>").append(escapeHtml(s.subjects)).append("</td>")
