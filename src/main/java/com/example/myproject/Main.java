@@ -1,5 +1,9 @@
 package com.example.myproject;
 
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import io.helidon.http.HeaderNames;
 import io.helidon.common.config.Config;
 import io.helidon.logging.common.LogConfig;
@@ -53,6 +57,158 @@ public class Main {
         }
         return s.replaceAll("(\\d{4})-(\\d{2})-(\\d{2})", "$1/$2/$3");
     }
+
+private static String extractGeminiText(String json) {
+    if (json == null || json.isBlank()) {
+        return "Gemini response was empty.";
+    }
+
+    String marker = "\"text\": \"";
+    int start = json.indexOf(marker);
+    if (start < 0) {
+        return "Could not extract text from Gemini response: " + json;
+    }
+
+    start += marker.length();
+    StringBuilder sb = new StringBuilder();
+    boolean escaped = false;
+
+    for (int i = start; i < json.length(); i++) {
+        char c = json.charAt(i);
+
+        if (escaped) {
+            switch (c) {
+                case 'n' -> sb.append('\n');
+                case 't' -> sb.append('\t');
+                case 'r' -> sb.append('\r');
+                case '"' -> sb.append('"');
+                case '\\' -> sb.append('\\');
+                default -> sb.append(c);
+            }
+            escaped = false;
+            continue;
+        }
+
+        if (c == '\\') {
+            escaped = true;
+            continue;
+        }
+
+        if (c == '"') {
+            break;
+        }
+
+        sb.append(c);
+    }
+
+    return sb.toString();
+}
+
+private static String callGemini(String prompt) throws Exception {
+    String apiKey = System.getenv("GEMINI_API_KEY");
+    if (apiKey == null || apiKey.isBlank()) {
+        throw new IllegalStateException("GEMINI_API_KEY is not set.");
+    }
+
+    String endpoint = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
+    URL url = new URL(endpoint);
+    HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+
+    conn.setRequestMethod("POST");
+    conn.setRequestProperty("x-goog-api-key", apiKey);
+    conn.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+    conn.setDoOutput(true);
+
+    String safePrompt = prompt
+            .replace("\\", "\\\\")
+            .replace("\"", "\\\"")
+            .replace("\n", "\\n");
+
+    String requestBody = """
+            {
+              "contents": [
+                {
+                  "parts": [
+                    {
+                      "text": "%s"
+                    }
+                  ]
+                }
+              ]
+            }
+            """.formatted(safePrompt);
+
+    try (OutputStream os = conn.getOutputStream()) {
+        os.write(requestBody.getBytes(StandardCharsets.UTF_8));
+    }
+
+    int status = conn.getResponseCode();
+    InputStream is = (status >= 200 && status < 300)
+            ? conn.getInputStream()
+            : conn.getErrorStream();
+
+    byte[] bytes = is.readAllBytes();
+    String responseBody = new String(bytes, StandardCharsets.UTF_8);
+
+    if (status < 200 || status >= 300) {
+        throw new RuntimeException("Gemini API error: HTTP " + status + " / " + responseBody);
+    }
+
+    return extractGeminiText(responseBody);
+}
+
+private static String jsonEscape(String s) {
+    if (s == null) {
+        return "";
+    }
+    return s.replace("\\", "\\\\")
+            .replace("\"", "\\\"")
+            .replace("\n", "\\n")
+            .replace("\r", "\\r");
+}
+
+private static String buildSchoolDataPrompt(List<SchoolV2> schools, String question) {
+    StringBuilder sb = new StringBuilder();
+
+    sb.append("""
+            You are an assistant helping recommend Japanese junior high schools based only on the provided school data.
+            Do not invent schools or facts not contained in the data.
+            Be cautious and say "候補" rather than guaranteeing admission.
+            Return the answer in Japanese.
+            For each recommended school, explain the reason based on the provided fields.
+            
+            User question:
+            """).append(question).append("\n\n");
+
+    sb.append("School data:\n");
+
+    for (SchoolV2 s : schools) {
+        sb.append("- 学校名: ").append(nullToEmpty(s.schoolName)).append("\n");
+        sb.append("  入試分類: ").append(nullToEmpty(s.category)).append("\n");
+        sb.append("  募集人数: ").append(nullToEmpty(s.capacity)).append("\n");
+        sb.append("  試験日: ").append(nullToEmpty(s.examDates)).append("\n");
+        sb.append("  試験科目: ").append(nullToEmpty(s.subjects)).append("\n");
+        sb.append("  試験科目特記: ").append(nullToEmpty(s.alternateSubjects)).append("\n");
+        sb.append("  面接有無: ").append(nullToEmpty(s.interview)).append("\n");
+        sb.append("  英語資格優遇: ").append(nullToEmpty(s.englishQualificationBenefit)).append("\n");
+        sb.append("  備考: ").append(nullToEmpty(s.notes)).append("\n");
+        sb.append("  学校リンク: ").append(nullToEmpty(s.infoLink)).append("\n\n");
+    }
+
+    sb.append("""
+            Please answer in this style:
+            1. 最初に全体コメントを2〜4文で書く
+            2. その後、「候補校:」として学校名を箇条書き
+            3. 各学校ごとに理由を書く
+            4. 最後に「注意点」を短く書く
+            """);
+
+    return sb.toString();
+}
+
+private static String nullToEmpty(String s) {
+    return s == null ? "" : s;
+}
 
     private static String getAppPassword() {
         String password = System.getenv("APP_PASSWORD");
@@ -156,10 +312,27 @@ private static String loginPageHtml(String message) {
         SchoolRepository repository = new SchoolRepository();
         SchoolV2Repository repositoryV2 = new SchoolV2Repository();
 
+
         routing
                 .register("/greet", new GreetService())
 
                 .get("/simple-greet", (req, res) -> res.send("Hello World!"))
+
+.get("/ai/test", (req, res) -> {
+            try {
+                String answer = callGemini("Say hello in Japanese in a friendly way.");
+                res.header("Content-Type", "application/json; charset=UTF-8");
+                res.send("{\"answer\":\"" +
+                        escapeHtml(answer)
+                                .replace("\"", "\\\"")
+                                .replace("\n", "\\n") +
+                        "\"}");
+            } catch (Exception e) {
+                res.status(500);
+                res.send("AI test failed: " + e.getMessage());
+            }
+        })
+
 
                 .get("/login", (req, res) -> {
                     String error = req.query().first("error").orElse("");
@@ -184,7 +357,36 @@ private static String loginPageHtml(String message) {
                     }
                 })
 
-                .get("/logout", (req, res) -> {
+.post("/ai/recommend-schools", (req, res) -> {
+    try {
+        String body = req.content().as(String.class);
+
+        String question = body;
+        String marker = "\"question\":\"";
+        int start = body.indexOf(marker);
+        if (start >= 0) {
+            start += marker.length();
+            int end = body.indexOf("\"", start);
+            if (end > start) {
+                question = body.substring(start, end)
+                        .replace("\\n", "\n")
+                        .replace("\\\"", "\"")
+                        .replace("\\\\", "\\");
+            }
+        }
+
+        List<SchoolV2> schools = repositoryV2.findAll();
+        String prompt = buildSchoolDataPrompt(schools, question);
+        String answer = callGemini(prompt);
+
+        res.header("Content-Type", "application/json; charset=UTF-8");
+        res.send("{\"answer\":\"" + jsonEscape(answer) + "\"}");
+    } catch (Exception e) {
+        res.status(500);
+        res.send("AI recommend failed: " + e.getMessage());
+    }
+}) 
+               .get("/logout", (req, res) -> {
                     res.header("Set-Cookie",
                             LOGIN_COOKIE_NAME + "=; Path=/; Max-Age=0; HttpOnly; SameSite=Lax");
                     res.status(302);
@@ -349,12 +551,24 @@ private static String loginPageHtml(String message) {
                                 a:hover {
                                   text-decoration: underline;
                                 }
+
                               </style>
                             </head>
                             <body>
                               <h2>学校一覧 V2</h2>
                               <div style="margin-bottom: 12px;">
                                 <a href="/logout">ログアウト</a>
+                              </div>
+
+                              <div style="margin: 20px 0; padding: 16px; border: 1px solid #ccc; background: #fafafa;">
+                                <h3 style="margin-top: 0;">AI相談ボックス</h3>
+                                <textarea id="aiQuestion" rows="4"
+                                  style="width: 100%; box-sizing: border-box; padding: 8px;"
+                                  placeholder="例：英検準1級を持っているが、ライティングが弱く、算数と国語も苦手です。帰国入試でも英語受験でも相性が良さそうな学校候補を教えてください。"></textarea>
+                                <div style="margin-top: 10px;">
+                                  <button id="aiAskButton" type="button">AIに相談する</button>
+                                </div>
+                                <div id="aiAnswer" style="margin-top: 14px; white-space: pre-wrap; line-height: 1.6;"></div>
                               </div>
 
                               <div class="toolbar">
@@ -400,59 +614,97 @@ private static String loginPageHtml(String message) {
                                 .append("</tr>");
                     }
 
-                    html.append("""
-                                </tbody>
-                              </table>
 
-                              <script>
-                                const searchBox = document.getElementById('searchBox');
-                                const table = document.getElementById('schoolTable');
-                                const tbody = table.querySelector('tbody');
-                                let sortDirections = {};
+html.append("""
+            </tbody>
+          </table>
 
-                                searchBox.addEventListener('keyup', function() {
-                                  const keyword = this.value.toLowerCase();
-                                  const rows = tbody.querySelectorAll('tr');
+          <script>
+            const searchBox = document.getElementById('searchBox');
+            const table = document.getElementById('schoolTable');
+            const tbody = table.querySelector('tbody');
+            let sortDirections = {};
 
-                                  rows.forEach(row => {
-                                    const text = row.innerText.toLowerCase();
-                                    row.style.display = text.includes(keyword) ? '' : 'none';
-                                  });
-                                });
+            searchBox.addEventListener('keyup', function() {
+              const keyword = this.value.toLowerCase();
+              const rows = tbody.querySelectorAll('tr');
 
-                                function sortTable(colIndex, numeric) {
-                                  const rows = Array.from(tbody.querySelectorAll('tr'));
-                                  const headers = table.querySelectorAll('th');
-                                  const asc = !sortDirections[colIndex];
-                                  sortDirections = {};
-                                  sortDirections[colIndex] = asc;
+              rows.forEach(row => {
+                const text = row.innerText.toLowerCase();
+                row.style.display = text.includes(keyword) ? '' : 'none';
+              });
+            });
 
-                                  headers.forEach(th => {
-                                    th.classList.remove('sort-asc', 'sort-desc');
-                                  });
-                                  headers[colIndex].classList.add(asc ? 'sort-asc' : 'sort-desc');
+            function sortTable(colIndex, numeric) {
+              const rows = Array.from(tbody.querySelectorAll('tr'));
+              const headers = table.querySelectorAll('th');
+              const asc = !sortDirections[colIndex];
+              sortDirections = {};
+              sortDirections[colIndex] = asc;
 
-                                  rows.sort((a, b) => {
-                                    const aText = a.children[colIndex].innerText.trim();
-                                    const bText = b.children[colIndex].innerText.trim();
+              headers.forEach(th => {
+                th.classList.remove('sort-asc', 'sort-desc');
+              });
+              headers[colIndex].classList.add(asc ? 'sort-asc' : 'sort-desc');
 
-                                    if (numeric) {
-                                      const aNum = parseFloat(aText) || 0;
-                                      const bNum = parseFloat(bText) || 0;
-                                      return asc ? aNum - bNum : bNum - aNum;
-                                    }
+              rows.sort((a, b) => {
+                const aText = a.children[colIndex].innerText.trim();
+                const bText = b.children[colIndex].innerText.trim();
 
-                                    return asc
-                                      ? aText.localeCompare(bText, 'ja')
-                                      : bText.localeCompare(aText, 'ja');
-                                  });
+                if (numeric) {
+                  const aNum = parseFloat(aText) || 0;
+                  const bNum = parseFloat(bText) || 0;
+                  return asc ? aNum - bNum : bNum - aNum;
+                }
 
-                                  rows.forEach(row => tbody.appendChild(row));
-                                }
-                              </script>
-                            </body>
-                            </html>
-                            """);
+                return asc
+                  ? aText.localeCompare(bText, 'ja')
+                  : bText.localeCompare(aText, 'ja');
+              });
+
+              rows.forEach(row => tbody.appendChild(row));
+            }
+
+            const aiQuestion = document.getElementById('aiQuestion');
+            const aiAskButton = document.getElementById('aiAskButton');
+            const aiAnswer = document.getElementById('aiAnswer');
+
+            aiAskButton.addEventListener('click', async function() {
+              const question = aiQuestion.value.trim();
+
+              if (!question) {
+                aiAnswer.textContent = "質問を入力してください。";
+                return;
+              }
+
+              aiAnswer.textContent = "AIが回答を作成中です...";
+
+              try {
+                const response = await fetch('/ai/recommend-schools', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify({ question: question })
+                });
+
+                const text = await response.text();
+
+                if (!response.ok) {
+                  aiAnswer.textContent = "エラー: " + text;
+                  return;
+                }
+
+                const data = JSON.parse(text);
+                aiAnswer.textContent = data.answer || "回答が空でした。";
+              } catch (e) {
+                aiAnswer.textContent = "通信エラー: " + e;
+              }
+            });
+          </script>
+        </body>
+        </html>
+        """);
 
                     res.header("Content-Type", "text/html; charset=UTF-8");
                     res.send(html.toString());
