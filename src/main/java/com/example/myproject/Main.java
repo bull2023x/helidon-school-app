@@ -145,36 +145,86 @@ public class Main {
                             <html>
                             <head>
                               <meta charset="UTF-8">
-                              <title>Schools V2</title>
+                              <title>学校一覧 V2</title>
                               <style>
-                                body { font-family: Arial, sans-serif; margin: 20px; }
-                                table { border-collapse: collapse; width: 100%; }
+                                body {
+                                  font-family: Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+                                  margin: 20px;
+                                }
+                                h2 {
+                                  margin-bottom: 12px;
+                                }
+                                .toolbar {
+                                  margin-bottom: 16px;
+                                }
+                                #searchBox {
+                                  width: 380px;
+                                  max-width: 100%;
+                                  padding: 8px 10px;
+                                  font-size: 14px;
+                                  box-sizing: border-box;
+                                }
+                                table {
+                                  border-collapse: collapse;
+                                  width: 100%;
+                                }
                                 th, td {
                                   border: 1px solid #999;
                                   padding: 8px;
                                   text-align: left;
                                   vertical-align: top;
                                 }
-                                th { background-color: #f0f0f0; }
-                                tr:nth-child(even) { background-color: #fafafa; }
+                                th {
+                                  background-color: #f0f0f0;
+                                  cursor: pointer;
+                                  user-select: none;
+                                  position: sticky;
+                                  top: 0;
+                                }
+                                tr:nth-child(even) {
+                                  background-color: #fafafa;
+                                }
+                                th.sort-asc::after {
+                                  content: " ▲";
+                                  font-size: 12px;
+                                }
+                                th.sort-desc::after {
+                                  content: " ▼";
+                                  font-size: 12px;
+                                }
+                                a {
+                                  color: #0645ad;
+                                  text-decoration: none;
+                                }
+                                a:hover {
+                                  text-decoration: underline;
+                                }
                               </style>
                             </head>
                             <body>
-                              <h2>School List V2</h2>
-                              <table>
-                                <tr>
-                                  <th>ID</th>
-                                  <th>School Name</th>
-                                  <th>Category</th>
-                                  <th>Capacity</th>
-                                  <th>Exam Dates</th>
-                                  <th>Subjects</th>
-                                  <th>Alternate Subjects</th>
-                                  <th>Interview</th>
-                                  <th>English Qualification Benefit</th>
-                                  <th>Notes</th>
-<th>Info Link</th>
-                                </tr>
+                              <h2>英語での中学受験校リスト_2026年3月版_v2</h2>
+
+                              <div class="toolbar">
+                                <input type="text" id="searchBox" placeholder="学校名・入試分類・試験日・備考などで検索">
+                              </div>
+
+                              <table id="schoolTable">
+                                <thead>
+                                  <tr>
+                                    <th onclick="sortTable(0, false)">ID</th>
+                                    <th onclick="sortTable(1, false)">学校名</th>
+                                    <th onclick="sortTable(2, false)">入試分類</th>
+                                    <th onclick="sortTable(3, false)">募集人数</th>
+                                    <th onclick="sortTable(4, false)">試験日</th>
+                                    <th onclick="sortTable(5, false)">試験科目</th>
+                                    <th onclick="sortTable(6, false)">試験科目特記</th>
+                                    <th onclick="sortTable(7, false)">面接有無</th>
+                                    <th onclick="sortTable(8, false)">英語資格優遇</th>
+                                    <th onclick="sortTable(9, false)">備考</th>
+                                    <th onclick="sortTable(10, false)">学校リンク</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
                             """);
 
                     for (SchoolV2 s : schools) {
@@ -188,19 +238,69 @@ public class Main {
                                 .append("<td>").append(escapeHtml(s.alternateSubjects)).append("</td>")
                                 .append("<td>").append(escapeHtml(s.interview)).append("</td>")
                                 .append("<td>").append(escapeHtml(s.englishQualificationBenefit)).append("</td>")
-                               // .append("<td>").append(escapeHtml(s.notes)).append("</td>")
-                               // .append("</tr>");
-.append("<td>").append(escapeHtml(s.notes)).append("</td>")
-.append("<td>")
-.append(s.infoLink == null || s.infoLink.isBlank()
-        ? ""
-        : "<a href=\"" + escapeHtml(s.infoLink) + "\" target=\"_blank\">Link</a>")
-.append("</td>")
-.append("</tr>");
+                                .append("<td>").append(escapeHtml(s.notes)).append("</td>")
+                                .append("<td>")
+                                .append(s.infoLink == null || s.infoLink.isBlank()
+                                        ? ""
+                                        : "<a href=\"" + escapeHtml(s.infoLink) + "\" target=\"_blank\" rel=\"noopener noreferrer\">リンク</a>")
+                                .append("</td>")
+                                .append("</tr>");
                     }
 
                     html.append("""
+                                </tbody>
                               </table>
+
+                              <script>
+                                const searchBox = document.getElementById('searchBox');
+                                const table = document.getElementById('schoolTable');
+                                const tbody = table.querySelector('tbody');
+                                let sortDirections = {};
+
+                                searchBox.addEventListener('keyup', function() {
+                                  const keyword = this.value.toLowerCase();
+                                  const rows = tbody.querySelectorAll('tr');
+
+                                  rows.forEach(row => {
+                                    const text = row.innerText.toLowerCase();
+                                    row.style.display = text.includes(keyword) ? '' : 'none';
+                                  });
+                                });
+
+                                function sortTable(colIndex, numeric) {
+                                  const rows = Array.from(tbody.querySelectorAll('tr'));
+                                  const headers = table.querySelectorAll('th');
+                                  const asc = !sortDirections[colIndex];
+                                  sortDirections = {};
+                                  sortDirections[colIndex] = asc;
+
+                                  headers.forEach(th => {
+                                    th.classList.remove('sort-asc', 'sort-desc');
+                                  });
+                                  headers[colIndex].classList.add(asc ? 'sort-asc' : 'sort-desc');
+
+                                  rows.sort((a, b) => {
+                                    const aText = a.children[colIndex].innerText.trim();
+                                    const bText = b.children[colIndex].innerText.trim();
+
+                                    if (numeric) {
+                                      const aNum = parseFloat(aText) || 0;
+                                      const bNum = parseFloat(bText) || 0;
+                                      return asc ? aNum - bNum : bNum - aNum;
+                                    }
+
+                                    return asc
+                                      ? aText.localeCompare(bText, 'ja')
+                                      : bText.localeCompare(aText, 'ja');
+                                  });
+
+                                  rows.forEach(row => tbody.appendChild(row));
+                                }
+
+                                // ID列だけ数値ソートにしたいので差し替え
+                                document.querySelectorAll('#schoolTable th')[0]
+                                  .setAttribute('onclick', 'sortTable(0, true)');
+                              </script>
                             </body>
                             </html>
                             """);
