@@ -1231,18 +1231,7 @@
   "notes" : null,
   "infoLink" : null
 }, {
-  "schoolName" : "頌栄女子学院中学校test",
-  "category" : "英語受験",
-  "capacity" : "第1回100名の内数（若干名） / 第2回100名の内数（若干名）",
-  "examDates" : "2026-02-01, 2026-02-05",
-  "subjects" : "国語, 算数, 英語資格（英検）によるみなし得点",
-  "alternateSubjects" : "4科入試と併願可",
-  "interview" : "なし",
-  "englishQualificationBenefit" : "あり。英検1級150点、準1級130点、2級110点、準2級プラス90点、準2級70点、3級は基準級として出願資格",
-  "notes" : "2026年度新設の『英語利用入試』。",
-  "infoLink" : "https://www.shoei.ed.jp/examination/general.html"
-}, {
-  "schoolName" : "駒込中学校test",
+  "schoolName" : null,
   "category" : null,
   "capacity" : null,
   "examDates" : null,
@@ -1250,18 +1239,7 @@
   "alternateSubjects" : null,
   "interview" : null,
   "englishQualificationBenefit" : null,
-  "notes" : "未確認。今後、公式募集要項・入試要項で確認のうえ更新してください。",
-  "infoLink" : null
-}, {
-  "schoolName" : "麗澤中学校test",
-  "category" : null,
-  "capacity" : null,
-  "examDates" : null,
-  "subjects" : null,
-  "alternateSubjects" : null,
-  "interview" : null,
-  "englishQualificationBenefit" : null,
-  "notes" : "未確認。今後、公式募集要項・入試要項で確認のうえ更新してください。",
+  "notes" : null,
   "infoLink" : null
 }, {
   "schoolName" : null,
