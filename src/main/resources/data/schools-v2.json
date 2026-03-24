@@ -4,7 +4,7 @@
   "capacity" : "35名",
   "examDates" : "2025-11-20, 2025-12-07",
   "subjects" : "帰国生Honors/Advanced選考：英語作文, 英語筆記, 日本語作文, 英語ペアワーク / 帰国生Regular選考：国語, 算数",
-  "alternateSubjects" : "",
+  "alternateSubjects" : null,
   "interview" : "あり（帰国生Honors/Advanced選考は英語ペアワーク）",
   "englishQualificationBenefit" : "公式上、英検等による得点換算・免除の明示確認なし",
   "notes" : "11月20日に帰国生Honors/Advanced選考①と帰国生Regular選考、12月7日に帰国生Honors/Advanced選考②を実施。四谷大塚Aライン80偏差値: 55（2/1・女子・1日午後特待）",
