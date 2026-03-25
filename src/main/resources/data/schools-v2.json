@@ -32,17 +32,6 @@
   "notes" : "帰国生入試2月試験は2月1日午前・午後の両方を実施。帰国生入試12月試験では外国語試験免除制度の案内あり。詳細配点・必要資格級は要項本文追加確認推奨。四谷大塚Aライン80偏差値: 47（2/1・女子）",
   "infoLink" : "https://www.caritas.ed.jp/"
 }, {
-  "schoolName" : "サレジアン国際学園世田谷中学校",
-  "category" : "",
-  "capacity" : "",
-  "examDates" : "",
-  "subjects" : "",
-  "alternateSubjects" : "",
-  "interview" : "",
-  "englishQualificationBenefit" : "",
-  "notes" : "未確認。今後、公式募集要項・入試要項で確認のうえ更新してください。",
-  "infoLink" : ""
-}, {
   "schoolName" : "サレジアン国際学園中学校",
   "category" : "帰国入試",
   "capacity" : "各回定員制",
@@ -97,28 +86,6 @@
   "englishQualificationBenefit" : "あり。B方式は英検3級以上の合格証明書確認が必要",
   "notes" : "B方式は出願時に英検デジタル証明書共有キーまたは合格証明書原本提出が必要。四谷大塚Aライン80偏差値: 48（2/1・女子・1回午前）",
   "infoLink" : "https://www.miwada.ac.jp/"
-}, {
-  "schoolName" : "佼成学園中学校",
-  "category" : "",
-  "capacity" : "",
-  "examDates" : "",
-  "subjects" : "",
-  "alternateSubjects" : "",
-  "interview" : "",
-  "englishQualificationBenefit" : "",
-  "notes" : "未確認。今後、公式募集要項・入試要項で確認のうえ更新してください。",
-  "infoLink" : ""
-}, {
-  "schoolName" : "佼成学園女子中学校",
-  "category" : null,
-  "capacity" : null,
-  "examDates" : null,
-  "subjects" : null,
-  "alternateSubjects" : null,
-  "interview" : null,
-  "englishQualificationBenefit" : null,
-  "notes" : "未確認。今後、公式募集要項・入試要項で確認のうえ更新してください。",
-  "infoLink" : null
 }, {
   "schoolName" : "公文国際学園中等部",
   "category" : "帰国入試",
@@ -1296,6 +1263,50 @@
   "englishQualificationBenefit" : "",
   "notes" : "出願資格は2026年3月小学校卒業見込みで海外在留経験がある者（原則1年以上・帰国後1年以内）。出願前に本校国際教育担当者へ相談要。出願開始は2025-12-01 10:00、締切は2026-01-12 24:00、合格発表は2026-01-13 18:00、本校会場。四谷大塚Aライン80偏差値: 42（1/11・共通・3回進学）",
   "infoLink" : "https://www.saitamasakae-h.ed.jp/junior/j-examee/j-requirements/"
+}, {
+  "schoolName" : null,
+  "category" : null,
+  "capacity" : null,
+  "examDates" : null,
+  "subjects" : null,
+  "alternateSubjects" : null,
+  "interview" : null,
+  "englishQualificationBenefit" : null,
+  "notes" : null,
+  "infoLink" : null
+}, {
+  "schoolName" : null,
+  "category" : null,
+  "capacity" : null,
+  "examDates" : null,
+  "subjects" : null,
+  "alternateSubjects" : null,
+  "interview" : null,
+  "englishQualificationBenefit" : null,
+  "notes" : null,
+  "infoLink" : null
+}, {
+  "schoolName" : null,
+  "category" : null,
+  "capacity" : null,
+  "examDates" : null,
+  "subjects" : null,
+  "alternateSubjects" : null,
+  "interview" : null,
+  "englishQualificationBenefit" : null,
+  "notes" : null,
+  "infoLink" : null
+}, {
+  "schoolName" : null,
+  "category" : null,
+  "capacity" : null,
+  "examDates" : null,
+  "subjects" : null,
+  "alternateSubjects" : null,
+  "interview" : null,
+  "englishQualificationBenefit" : null,
+  "notes" : null,
+  "infoLink" : null
 }, {
   "schoolName" : null,
   "category" : null,
