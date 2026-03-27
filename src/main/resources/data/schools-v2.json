@@ -187,17 +187,6 @@
   "infoLink" : "https://www.kugayama-h.ed.jp/nyushi/jhs_nyushi/juken/"
 }, {
   "schoolName" : "埼玉栄中学校",
-  "category" : null,
-  "capacity" : null,
-  "examDates" : null,
-  "subjects" : null,
-  "alternateSubjects" : null,
-  "interview" : null,
-  "englishQualificationBenefit" : null,
-  "notes" : "未確認。今後、公式募集要項・入試要項で確認のうえ更新してください。",
-  "infoLink" : null
-}, {
-  "schoolName" : "埼玉栄中学校",
   "category" : "帰国入試",
   "capacity" : "進学クラス 若干名",
   "examDates" : "2026-01-13",
@@ -235,7 +224,7 @@
   "capacity" : "グローバル入試3回合計で約36名",
   "examDates" : "2026-02-01, 2026-02-03, 2026-02-04",
   "subjects" : "国語, 算数, 英語スピーキングテスト",
-  "alternateSubjects" : null,
+  "alternateSubjects" : "",
   "interview" : "あり（外部資格申請時は面接試験）",
   "englishQualificationBenefit" : "あり。英検等の英語能力試験スコア（英検準2級程度以上）申請で、当日は国・算・英の代わりに面接試験",
   "notes" : "制度名は『グローバル入試』。グローバルリーダーズコース志望者向け。",
@@ -264,15 +253,15 @@
   "infoLink" : "https://www.gakushuin.ac.jp/bjh/admission/outline/index.html"
 }, {
   "schoolName" : "宝仙学園中学校 理数インター",
-  "category" : null,
-  "capacity" : null,
-  "examDates" : null,
-  "subjects" : null,
-  "alternateSubjects" : null,
-  "interview" : null,
-  "englishQualificationBenefit" : null,
+  "category" : "",
+  "capacity" : "",
+  "examDates" : "",
+  "subjects" : "",
+  "alternateSubjects" : "",
+  "interview" : "",
+  "englishQualificationBenefit" : "",
   "notes" : "未確認。今後、公式募集要項・入試要項で確認のうえ更新してください。",
-  "infoLink" : null
+  "infoLink" : ""
 }, {
   "schoolName" : "実践女子学園中学校",
   "category" : "帰国入試",
@@ -308,15 +297,15 @@
   "infoLink" : "https://www.yamate-gakuin.ac.jp/shared/pdf/bosyuu_k.pdf"
 }, {
   "schoolName" : "山脇学園中学校",
-  "category" : null,
-  "capacity" : null,
-  "examDates" : null,
-  "subjects" : null,
-  "alternateSubjects" : null,
-  "interview" : null,
-  "englishQualificationBenefit" : null,
+  "category" : "",
+  "capacity" : "",
+  "examDates" : "",
+  "subjects" : "",
+  "alternateSubjects" : "",
+  "interview" : "",
+  "englishQualificationBenefit" : "",
   "notes" : "未確認。今後、公式募集要項・入試要項で確認のうえ更新してください。",
-  "infoLink" : null
+  "infoLink" : ""
 }, {
   "schoolName" : "工学院大学附属中学校",
   "category" : "帰国入試",
@@ -1219,6 +1208,17 @@
   "englishQualificationBenefit" : "一般入試では帰国生優遇ありとの受験ガイド記載を確認",
   "notes" : "学校公式で確認できたのは『帰国生転編入試験』。中1新入生向けの独立した帰国入試要項は今回確認できていません。",
   "infoLink" : "https://www.hs.reitaku.jp/junior/application.html"
+}, {
+  "schoolName" : null,
+  "category" : null,
+  "capacity" : null,
+  "examDates" : null,
+  "subjects" : null,
+  "alternateSubjects" : null,
+  "interview" : null,
+  "englishQualificationBenefit" : null,
+  "notes" : null,
+  "infoLink" : null
 }, {
   "schoolName" : null,
   "category" : null,
