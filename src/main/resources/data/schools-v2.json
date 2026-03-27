@@ -1,4 +1,15 @@
 [ {
+  "schoolName" : null,
+  "category" : null,
+  "capacity" : null,
+  "examDates" : null,
+  "subjects" : null,
+  "alternateSubjects" : null,
+  "interview" : null,
+  "englishQualificationBenefit" : null,
+  "notes" : null,
+  "infoLink" : null
+}, {
   "schoolName" : "かえつ有明中学校",
   "category" : "帰国入試",
   "capacity" : "35名",
@@ -253,15 +264,15 @@
   "infoLink" : "https://www.gakushuin.ac.jp/bjh/admission/outline/index.html"
 }, {
   "schoolName" : "宝仙学園中学校 理数インター",
-  "category" : "",
-  "capacity" : "",
-  "examDates" : "",
-  "subjects" : "",
-  "alternateSubjects" : "",
-  "interview" : "",
+  "category" : "帰国入試",
+  "capacity" : "国内帰国はグローバル型と併せ男女計10名、海外会場・オンラインは若干名",
+  "examDates" : "2025-11-16, 2025-11-20〜11-30, 2025-11-22, 2025-11-23",
+  "subjects" : "国内帰国：国語・算数 または 算数・英語 / 海外会場・世界各都市オンライン：書類選考, オンライン面接",
+  "alternateSubjects" : "海外（ニューヨーク）会場, 海外（シンガポール・北米）会場, 世界各都市オンライン, 国内帰国 選択2科型",
+  "interview" : "あり（オンライン面接）",
   "englishQualificationBenefit" : "",
-  "notes" : "未確認。今後、公式募集要項・入試要項で確認のうえ更新してください。",
-  "infoLink" : ""
+  "notes" : "グローバルコース希望者は英語エッセイ事前提出。学校公式の2026年度帰国生リーフレットあり。四谷大塚Aライン80偏差値: 45（2/2・共通・新4科）",
+  "infoLink" : "https://www.hosen.ed.jp/risu-inter/returnee/"
 }, {
   "schoolName" : "実践女子学園中学校",
   "category" : "帰国入試",
@@ -297,15 +308,15 @@
   "infoLink" : "https://www.yamate-gakuin.ac.jp/shared/pdf/bosyuu_k.pdf"
 }, {
   "schoolName" : "山脇学園中学校",
-  "category" : "",
-  "capacity" : "",
-  "examDates" : "",
-  "subjects" : "",
-  "alternateSubjects" : "",
-  "interview" : "",
-  "englishQualificationBenefit" : "",
-  "notes" : "未確認。今後、公式募集要項・入試要項で確認のうえ更新してください。",
-  "infoLink" : ""
+  "category" : "帰国入試",
+  "capacity" : "帰国・英語入試計55名",
+  "examDates" : "2025-11-20 or 2025-11-21, 2025-11-22, 2025-12-23, 2026-02-01, 2026-02-02",
+  "subjects" : "帰国WEB入試：1分間スピーチ動画提出, 面接 / 帰国Ⅰ期：国語 または 算数 または 国語・算数, 面接（日・英） / 帰国Ⅱ期：作文, 英語エッセイ, 面接 / 帰国英語入試A・B：国語, 算数, 面接",
+  "alternateSubjects" : "帰国WEB入試, 帰国Ⅰ期, 帰国Ⅱ期, 帰国英語入試A, 帰国英語入試B",
+  "interview" : "あり",
+  "englishQualificationBenefit" : "あり。帰国英語入試A・Bは英検3級以上の合格証のコピー提出",
+  "notes" : "学校公式で2026年度帰国生入試募集要項の掲載を確認。帰国生は1学年に約40〜50名在籍。四谷大塚Aライン80偏差値: 60（2/1・女子・国語）",
+  "infoLink" : "https://www.yamawaki.ed.jp/exam/guideline/"
 }, {
   "schoolName" : "工学院大学附属中学校",
   "category" : "帰国入試",
@@ -1208,50 +1219,6 @@
   "englishQualificationBenefit" : "一般入試では帰国生優遇ありとの受験ガイド記載を確認",
   "notes" : "学校公式で確認できたのは『帰国生転編入試験』。中1新入生向けの独立した帰国入試要項は今回確認できていません。",
   "infoLink" : "https://www.hs.reitaku.jp/junior/application.html"
-}, {
-  "schoolName" : null,
-  "category" : null,
-  "capacity" : null,
-  "examDates" : null,
-  "subjects" : null,
-  "alternateSubjects" : null,
-  "interview" : null,
-  "englishQualificationBenefit" : null,
-  "notes" : null,
-  "infoLink" : null
-}, {
-  "schoolName" : null,
-  "category" : null,
-  "capacity" : null,
-  "examDates" : null,
-  "subjects" : null,
-  "alternateSubjects" : null,
-  "interview" : null,
-  "englishQualificationBenefit" : null,
-  "notes" : null,
-  "infoLink" : null
-}, {
-  "schoolName" : "宝仙学園中学校 理数インター",
-  "category" : "帰国入試",
-  "capacity" : "国内帰国はグローバル型と併せ男女計10名、海外会場・オンラインは若干名",
-  "examDates" : "2025-11-16, 2025-11-20〜11-30, 2025-11-22, 2025-11-23",
-  "subjects" : "国内帰国：国語・算数 または 算数・英語 / 海外会場・世界各都市オンライン：書類選考, オンライン面接",
-  "alternateSubjects" : "海外（ニューヨーク）会場, 海外（シンガポール・北米）会場, 世界各都市オンライン, 国内帰国 選択2科型",
-  "interview" : "あり（オンライン面接）",
-  "englishQualificationBenefit" : "",
-  "notes" : "グローバルコース希望者は英語エッセイ事前提出。学校公式の2026年度帰国生リーフレットあり。四谷大塚Aライン80偏差値: 45（2/2・共通・新4科）",
-  "infoLink" : "https://www.hosen.ed.jp/risu-inter/returnee/"
-}, {
-  "schoolName" : "山脇学園中学校",
-  "category" : "帰国入試",
-  "capacity" : "帰国・英語入試計55名",
-  "examDates" : "2025-11-20 or 2025-11-21, 2025-11-22, 2025-12-23, 2026-02-01, 2026-02-02",
-  "subjects" : "帰国WEB入試：1分間スピーチ動画提出, 面接 / 帰国Ⅰ期：国語 または 算数 または 国語・算数, 面接（日・英） / 帰国Ⅱ期：作文, 英語エッセイ, 面接 / 帰国英語入試A・B：国語, 算数, 面接",
-  "alternateSubjects" : "帰国WEB入試, 帰国Ⅰ期, 帰国Ⅱ期, 帰国英語入試A, 帰国英語入試B",
-  "interview" : "あり",
-  "englishQualificationBenefit" : "あり。帰国英語入試A・Bは英検3級以上の合格証のコピー提出",
-  "notes" : "学校公式で2026年度帰国生入試募集要項の掲載を確認。帰国生は1学年に約40〜50名在籍。四谷大塚Aライン80偏差値: 60（2/1・女子・国語）",
-  "infoLink" : "https://www.yamawaki.ed.jp/exam/guideline/"
 }, {
   "schoolName" : null,
   "category" : null,
