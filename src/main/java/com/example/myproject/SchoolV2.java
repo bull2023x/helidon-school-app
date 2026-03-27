@@ -13,6 +13,10 @@ public class SchoolV2 {
     public String notes;
     public String infoLink;
 
+    public SchoolV2() {
+        // Jackson 用
+    }
+
     public SchoolV2(long id,
                     String schoolName,
                     String category,

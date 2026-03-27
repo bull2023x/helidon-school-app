@@ -312,7 +312,7 @@ private static String loginPageHtml(String message) {
         SchoolRepository repository = new SchoolRepository();
         SchoolV2Repository repositoryV2 = new SchoolV2Repository();
 
-
+        AdminSchoolV2Service.register(routing);
         routing
                 .register("/greet", new GreetService())
 

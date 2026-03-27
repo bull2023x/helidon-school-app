@@ -28,19 +28,7 @@ public class SchoolV2Repository {
              ResultSet rs = ps.executeQuery()) {
 
             while (rs.next()) {
-                result.add(new SchoolV2(
-                        rs.getLong("id"),
-                        rs.getString("school_name"),
-                        rs.getString("category"),
-                        rs.getString("capacity"),
-                        rs.getString("exam_dates"),
-                        rs.getString("subjects"),
-                        rs.getString("alternate_subjects"),
-                        rs.getString("interview"),
-                        rs.getString("english_qualification_benefit"),
-                        rs.getString("notes"),
-                        rs.getString("info_link")
-                ));
+                result.add(mapRow(rs));
             }
         } catch (Exception e) {
             throw new RuntimeException(e);
@@ -68,19 +56,7 @@ public class SchoolV2Repository {
 
             try (ResultSet rs = ps.executeQuery()) {
                 while (rs.next()) {
-                    result.add(new SchoolV2(
-                            rs.getLong("id"),
-                            rs.getString("school_name"),
-                            rs.getString("category"),
-                            rs.getString("capacity"),
-                            rs.getString("exam_dates"),
-                            rs.getString("subjects"),
-                            rs.getString("alternate_subjects"),
-                            rs.getString("interview"),
-                            rs.getString("english_qualification_benefit"),
-                            rs.getString("notes"),
-                            rs.getString("info_link")
-                    ));
+                    result.add(mapRow(rs));
                 }
             }
         } catch (Exception e) {
@@ -88,5 +64,50 @@ public class SchoolV2Repository {
         }
 
         return result;
+    }
+
+    public SchoolV2 findById(long id) {
+        String sql = """
+                SELECT id, school_name, category, capacity, exam_dates,
+                       subjects, alternate_subjects, interview,
+                       english_qualification_benefit, notes, info_link
+                FROM exam_school_v2
+                WHERE id = ?
+                """;
+
+        try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+
+            ps.setLong(1, id);
+
+            try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    return mapRow(rs);
+                }
+                return null;
+            }
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void reloadFromJson() {
+        DbInit.reloadFromJson();
+    }
+
+    private SchoolV2 mapRow(ResultSet rs) throws Exception {
+        return new SchoolV2(
+                rs.getLong("id"),
+                rs.getString("school_name"),
+                rs.getString("category"),
+                rs.getString("capacity"),
+                rs.getString("exam_dates"),
+                rs.getString("subjects"),
+                rs.getString("alternate_subjects"),
+                rs.getString("interview"),
+                rs.getString("english_qualification_benefit"),
+                rs.getString("notes"),
+                rs.getString("info_link")
+        );
     }
 }
