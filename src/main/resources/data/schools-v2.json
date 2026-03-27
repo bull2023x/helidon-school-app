@@ -1230,4 +1230,37 @@
   "englishQualificationBenefit" : null,
   "notes" : null,
   "infoLink" : null
+}, {
+  "schoolName" : "test0327v2",
+  "category" : null,
+  "capacity" : "22222",
+  "examDates" : null,
+  "subjects" : null,
+  "alternateSubjects" : null,
+  "interview" : null,
+  "englishQualificationBenefit" : null,
+  "notes" : null,
+  "infoLink" : null
+}, {
+  "schoolName" : "test0327v3",
+  "category" : null,
+  "capacity" : "22223333",
+  "examDates" : null,
+  "subjects" : null,
+  "alternateSubjects" : null,
+  "interview" : null,
+  "englishQualificationBenefit" : null,
+  "notes" : null,
+  "infoLink" : null
+}, {
+  "schoolName" : "test0327v3",
+  "category" : null,
+  "capacity" : "22223333",
+  "examDates" : null,
+  "subjects" : null,
+  "alternateSubjects" : null,
+  "interview" : null,
+  "englishQualificationBenefit" : null,
+  "notes" : null,
+  "infoLink" : null
 } ]
