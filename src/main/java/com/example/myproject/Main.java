@@ -1,5 +1,9 @@
 package com.example.myproject;
 
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
@@ -417,6 +421,33 @@ private static String loginPageHtml(String message) {
                         res.send(schools);
                     }
                 })
+
+.get("/api/version", (req, res) -> {
+    try {
+        Path jsonPath = DbInit.getExternalJsonPath();
+
+        String dataVersion = "unknown";
+        if (Files.exists(jsonPath)) {
+            dataVersion = Files.getLastModifiedTime(jsonPath)
+                    .toInstant()
+                    .atZone(ZoneId.systemDefault())
+                    .format(DateTimeFormatter.ISO_OFFSET_DATE_TIME);
+        }
+
+        int recordCount = repositoryV2.findAll().size();
+
+        res.header("Content-Type", "application/json; charset=UTF-8");
+        res.send("{"
+                + "\"dataVersion\":\"" + dataVersion + "\","
+                + "\"recordCount\":" + recordCount
+                + "}");
+    } catch (Exception e) {
+        e.printStackTrace();
+        res.status(500);
+        res.header("Content-Type", "application/json; charset=UTF-8");
+        res.send("{\"success\":false,\"message\":\"Failed to get version info\"}");
+    }
+})
 
                 .get("/schools-table", (req, res) -> {
                     List<School> schools = repository.findAll();
