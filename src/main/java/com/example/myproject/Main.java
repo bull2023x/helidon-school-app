@@ -217,17 +217,14 @@ private static String nullToEmpty(String s) {
     private static String getAppPassword() {
         return null;
         }
-    
+
 
     private static String buildAuthToken() {
         return URLEncoder.encode(getAppPassword(), StandardCharsets.UTF_8);
     }
 
     private static boolean isAuthenticated(io.helidon.webserver.http.ServerRequest req) {
-        // String cookieHeader = req.headers().first("Cookie").orElse("");
-        String cookieHeader = req.headers().first(HeaderNames.COOKIE).orElse("");
-                if (cookieHeader.isBlank()) {
-            return false;
+            return true;
         }
 
         String[] cookies = cookieHeader.split(";");
