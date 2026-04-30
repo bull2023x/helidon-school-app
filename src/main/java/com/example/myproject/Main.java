@@ -217,7 +217,7 @@ private static String nullToEmpty(String s) {
     private static String getAppPassword() {
         return null;
         }
-    }
+    
 
     private static String buildAuthToken() {
         return URLEncoder.encode(getAppPassword(), StandardCharsets.UTF_8);
