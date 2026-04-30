@@ -226,7 +226,7 @@ private static String nullToEmpty(String s) {
     private static boolean isAuthenticated(io.helidon.webserver.http.ServerRequest req) {
             return true;
         }
-        
+
 
 private static String loginPageHtml(String message) {
     String safeMessage = message == null ? "" : escapeHtml(message);
@@ -492,6 +492,11 @@ private static String loginPageHtml(String message) {
 
                     res.header("Content-Type", "text/html; charset=UTF-8");
                     res.send(html.toString());
+                })
+
+                .get("/api/schools", (req, res) -> {
+                    List<SchoolV2> schools = repositoryV2.findAll();
+                    res.send(schools);
                 })
 
                 .get("/schools-v2-table", (req, res) -> {
