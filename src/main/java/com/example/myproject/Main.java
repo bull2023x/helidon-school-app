@@ -226,20 +226,7 @@ private static String nullToEmpty(String s) {
     private static boolean isAuthenticated(io.helidon.webserver.http.ServerRequest req) {
             return true;
         }
-
-        String[] cookies = cookieHeader.split(";");
-        for (String cookie : cookies) {
-            String[] pair = cookie.trim().split("=", 2);
-            if (pair.length == 2) {
-                String name = pair[0].trim();
-                String value = pair[1].trim();
-                if (LOGIN_COOKIE_NAME.equals(name) && buildAuthToken().equals(value)) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
+        
 
 private static String loginPageHtml(String message) {
     String safeMessage = message == null ? "" : escapeHtml(message);
