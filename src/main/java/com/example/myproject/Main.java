@@ -215,9 +215,7 @@ private static String nullToEmpty(String s) {
 }
 
     private static String getAppPassword() {
-        String password = System.getenv("APP_PASSWORD");
-        if (password == null || password.isBlank()) {
-            return "changeme123";
+        return null;
         }
         return password;
     }
