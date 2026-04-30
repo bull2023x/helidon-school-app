@@ -217,7 +217,6 @@ private static String nullToEmpty(String s) {
     private static String getAppPassword() {
         return null;
         }
-        return password;
     }
 
     private static String buildAuthToken() {
