@@ -577,16 +577,6 @@ private static String loginPageHtml(String message) {
                                 <a href="/logout">ログアウト</a>
                               </div>
 
-                              <div style="margin: 20px 0; padding: 16px; border: 1px solid #ccc; background: #fafafa;">
-                                <h3 style="margin-top: 0;">AI相談ボックス</h3>
-                                <textarea id="aiQuestion" rows="4"
-                                  style="width: 100%; box-sizing: border-box; padding: 8px;"
-                                  placeholder="例：英検準1級を持っているが、ライティングが弱く、算数と国語も苦手です。帰国入試でも英語受験でも相性が良さそうな学校候補を教えてください。"></textarea>
-                                <div style="margin-top: 10px;">
-                                  <button id="aiAskButton" type="button">AIに相談する</button>
-                                </div>
-                                <div id="aiAnswer" style="margin-top: 14px; white-space: pre-wrap; line-height: 1.6;"></div>
-                              </div>
 
                               <div class="toolbar">
                                 <input type="text" id="searchBox" placeholder="学校名・入試分類・試験日・備考などで検索">
@@ -682,46 +672,7 @@ html.append("""
               rows.forEach(row => tbody.appendChild(row));
             }
 
-            const aiQuestion = document.getElementById('aiQuestion');
-            const aiAskButton = document.getElementById('aiAskButton');
-            const aiAnswer = document.getElementById('aiAnswer');
-
-            aiAskButton.addEventListener('click', async function() {
-              const question = aiQuestion.value.trim();
-
-              if (!question) {
-                aiAnswer.textContent = "質問を入力してください。";
-                return;
-              }
-
-              aiAnswer.textContent = "AIが回答を作成中です...";
-
-              try {
-                const response = await fetch('/ai/recommend-schools', {
-                  method: 'POST',
-                  headers: {
-                    'Content-Type': 'application/json'
-                  },
-                  body: JSON.stringify({ question: question })
-                });
-
-                const text = await response.text();
-
-                if (!response.ok) {
-                  aiAnswer.textContent = "エラー: " + text;
-                  return;
-                }
-
-                const data = JSON.parse(text);
-                aiAnswer.textContent = data.answer || "回答が空でした。";
-              } catch (e) {
-                aiAnswer.textContent = "通信エラー: " + e;
-              }
-            });
-          </script>
-        </body>
-        </html>
-        """);
+            
 
                     res.header("Content-Type", "text/html; charset=UTF-8");
                     res.send(html.toString());
