@@ -669,10 +669,13 @@ html.append("""
                   : bText.localeCompare(aText, 'ja');
               });
 
-              rows.forEach(row => tbody.appendChild(row));
+              
+                      rows.forEach(row => tbody.appendChild(row));
             }
-
-            
+          </script>
+        </body>
+        </html>
+        """);
 
                     res.header("Content-Type", "text/html; charset=UTF-8");
                     res.send(html.toString());
