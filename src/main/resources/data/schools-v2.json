@@ -7,8 +7,8 @@
   "alternateSubjects" : null,
   "interview" : "あり（帰国生Honors/Advanced選考は英語ペアワーク）",
   "englishQualificationBenefit" : "公式上、英検等による得点換算・免除の明示確認なし",
-  "notes" : "11月20日に帰国生Honors/Advanced選考①と帰国生Regular選考、12月7日に帰国生Honors/Advanced選考②を実施。四谷大塚Aライン80偏差値: 55（2/1・女子・1日午後特待）",
-  "infoLink" : "https://www.ariake.kaetsu.ac.jp/"
+  "notes" : "11月20日に帰国生Honors/Advanced選考①と帰国生Regular選考、12月7日に帰国生Honors/Advanced選考②を実施。",
+  "infoLink" : "https://www.ariake.kaetsu.ac.jp/admission/info-returnee/"
 }, {
   "schoolName" : "かえつ有明中学校",
   "category" : "英語受験",
@@ -18,8 +18,8 @@
   "alternateSubjects" : "同時期に別方式として思考力特待入試・アクティブラーニング思考力特待入試あり",
   "interview" : "あり（英語ペアワーク）",
   "englishQualificationBenefit" : "公式上、英検等による得点換算・免除の明示確認なし",
-  "notes" : "Honors/Advanced選考は、帰国資格に関わらず出願可能。四谷大塚Aライン80偏差値: 52（2/2・男子/女子・2日特待）",
-  "infoLink" : "https://www.ariake.kaetsu.ac.jp/"
+  "notes" : "Honors/Advanced選考は、帰国資格に関わらず出願可能。",
+  "infoLink" : "https://www.ariake.kaetsu.ac.jp/contents/wp-content/uploads/page/2015/08/1690541c7d5ecd054ed1ef0c349d93fa-1.pdf"
 }, {
   "schoolName" : "カリタス女子中学校",
   "category" : "帰国入試",
@@ -29,19 +29,19 @@
   "alternateSubjects" : "一般入試との併願可",
   "interview" : "未確認",
   "englishQualificationBenefit" : "あり。英語資格入試（一般入試・帰国生入試）の受験資格書類提出が必要",
-  "notes" : "帰国生入試2月試験は2月1日午前・午後の両方を実施。帰国生入試12月試験では外国語試験免除制度の案内あり。詳細配点・必要資格級は要項本文追加確認推奨。四谷大塚Aライン80偏差値: 47（2/1・女子）",
-  "infoLink" : "https://www.caritas.ed.jp/"
+  "notes" : "帰国生入試2月試験は2月1日午前・午後の両方を実施。帰国生入試12月試験では外国語試験免除制度の案内あり。詳細配点・必要資格級は要項本文追加確認推奨。",
+  "infoLink" : "https://www.caritas.ed.jp/admission/guide/"
 }, {
   "schoolName" : "サレジアン国際学園世田谷中学校",
   "category" : "帰国入試",
-  "capacity" : "若干名",
-  "examDates" : "2025-11-22, 2025-12-13",
-  "subjects" : "英語エッセイ, 英語筆記, 面接（英語・日本語）",
-  "alternateSubjects" : "インターナショナル【Advanced】対象",
-  "interview" : "あり（英語・日本語）",
-  "englishQualificationBenefit" : "あり。英検2級以上相当の資格保有者は筆記試験優遇措置あり（英語筆記免除方式あり）",
-  "notes" : "帰国生・国際生資格の事前確認が必要。第1回帰国生入試の資格確認登録は11/10 16:00まで。四谷大塚Aライン80偏差値: 44（2/1・共通・1回本科）",
-  "infoLink" : "https://salesian-setagaya.ed.jp/recruitments/"
+  "capacity" : null,
+  "examDates" : "2026-11-22, 2026-12-13",
+  "subjects" : "英語筆記, 英語エッセイ, 面接（英語・日本語）",
+  "alternateSubjects" : "第1回帰国生入試・第2回帰国生入試",
+  "interview" : "あり（受験生のみ）",
+  "englishQualificationBenefit" : "あり。英語筆記は英検2級等で加点、準1級以上等で免除",
+  "notes" : "2026年度帰国生入試要項を確認。事前登録が必要で、英語資格は加点・免除の対象。一般入試とは別枠。",
+  "infoLink" : "https://salesian-setagaya.ed.jp/wp-content/uploads/2026salesian_bosyu.pdf"
 }, {
   "schoolName" : "サレジアン国際学園中学校",
   "category" : "帰国入試",
@@ -51,8 +51,8 @@
   "alternateSubjects" : "帰国生第1回・第2回・第3回",
   "interview" : "未確認",
   "englishQualificationBenefit" : "未確認",
-  "notes" : "学校公式PDFで3回の帰国生入試日程を確認。詳細区分・科目配点は追加確認推奨。四谷大塚Aライン80偏差値: 43（2/1・共通・2回本科）",
-  "infoLink" : "https://www.salesian.international.seibi.ac.jp/"
+  "notes" : "学校公式PDFで3回の帰国生入試日程を確認。詳細区分・科目配点は追加確認推奨。",
+  "infoLink" : "https://www.salesian.international.seibi.ac.jp/news-admission/info/9641/"
 }, {
   "schoolName" : "ドルトン東京学園中等部",
   "category" : "帰国入試",
@@ -62,19 +62,19 @@
   "alternateSubjects" : "海外オンライン / 国内第1回 / 国内第2回",
   "interview" : "あり（日本語・英語）",
   "englishQualificationBenefit" : "公式上、英検等による免除・得点換算の明示なし",
-  "notes" : "帰国生入試に複数回出願は不可。帰国生入試受験後に2月一般入試へ出願可。四谷大塚Aライン80偏差値: 53（2/1・女子・特待）",
-  "infoLink" : "https://www.daltontokyo.ed.jp/"
+  "notes" : "帰国生入試に複数回出願は不可。帰国生入試受験後に2月一般入試へ出願可。",
+  "infoLink" : "https://www.daltontokyo.ed.jp/wp/wp-content/themes/dalton/assets/PDF/2026dalton_Radmission.pdf"
 }, {
   "schoolName" : "三田国際科学学園中学校",
   "category" : "帰国入試",
   "capacity" : "IC・ISCあわせて約80名",
   "examDates" : "2025-11-22, 2025-12-11",
   "subjects" : "IC：英語, 面接（英語・日本語） / ISC：英語, 国語, 算数, 面接（英語・日本語）",
-  "alternateSubjects" : "",
+  "alternateSubjects" : null,
   "interview" : "あり（本人のみ）",
   "englishQualificationBenefit" : "あり。ISCのみ英語外部テスト優遇措置あり",
-  "notes" : "帰国生入試は事前登録と出願資格認定が必要。面接は帰国生入試・2月入試を通して1回のみ。四谷大塚Aライン80偏差値: 58（2/1・男子/女子・2回IC）",
-  "infoLink" : "https://www.mita-is.ed.jp/"
+  "notes" : "帰国生入試は事前登録と出願資格認定が必要。面接は帰国生入試・2月入試を通して1回のみ。",
+  "infoLink" : "https://www.mita-is.ed.jp/admissions/returnee/"
 }, {
   "schoolName" : "三田国際科学学園中学校",
   "category" : "英語受験",
@@ -84,8 +84,8 @@
   "alternateSubjects" : "同時期に4教科入試・MST入試あり",
   "interview" : "あり（英語・日本語、本人のみ）",
   "englishQualificationBenefit" : "あり。ISCは英検準1級以上、TOEFL iBT72以上、IELTS5.5以上で英語筆記免除",
-  "notes" : "2月の英語入試は事前登録や出願資格認定不要。面接は帰国生入試・2月入試を通して1回のみ。四谷大塚Aライン80偏差値: 58（2/1・男子/女子・2回IC）",
-  "infoLink" : "https://www.mita-is.ed.jp/"
+  "notes" : "2月の英語入試は事前登録や出願資格認定不要。面接は帰国生入試・2月入試を通して1回のみ。",
+  "infoLink" : "https://www.mita-is.ed.jp/wp-content/uploads/2025/09/2026%E5%8B%9F%E9%9B%86%E8%A6%81%E9%A0%85_2%E6%9C%88%E5%85%A5%E8%A9%A6.pdf"
 }, {
   "schoolName" : "三輪田学園中学校",
   "category" : "帰国入試",
@@ -95,18 +95,18 @@
   "alternateSubjects" : "A方式・B方式",
   "interview" : "あり（保護者同伴）",
   "englishQualificationBenefit" : "あり。B方式は英検3級以上の合格証明書確認が必要",
-  "notes" : "B方式は出願時に英検デジタル証明書共有キーまたは合格証明書原本提出が必要。四谷大塚Aライン80偏差値: 48（2/1・女子・1回午前）",
-  "infoLink" : "https://www.miwada.ac.jp/"
+  "notes" : "B方式は出願時に英検デジタル証明書共有キーまたは合格証明書原本提出が必要。",
+  "infoLink" : "https://www.miwada.ac.jp/exam/summary.html"
 }, {
   "schoolName" : "佼成学園女子中学校",
   "category" : "帰国入試",
   "capacity" : "定員は特に定めず",
-  "examDates" : "2025-11-21, 2025-12-05, 2026-01-15",
-  "subjects" : "事前提出：自己PRシート, 日本語作文 / 入試当日：面接（日本語・受験生のみ）",
-  "alternateSubjects" : "グローバルコース, リベラルアーツコース",
-  "interview" : "あり（日本語・受験生のみ）",
-  "englishQualificationBenefit" : "あり。英検準1級以上でA特待、英検2級でB特待。英語外部検定資格はCEFR基準でも適用",
-  "notes" : "海外在住で対面受験が難しい場合はオンライン受験可。グローバルコース希望者はリベラルアーツコースへのスライド合格あり。四谷大塚Aライン80偏差値: 36（2/2・女子）",
+  "examDates" : "2026-11-21, 2026-12-23, 2027-01-13",
+  "subjects" : "自己PRシート, 日本語作文, 面接",
+  "alternateSubjects" : "第1回・第2回・第3回",
+  "interview" : "あり（日本語、受験生のみ）",
+  "englishQualificationBenefit" : "あり。英検準1級以上は特待生A、2級は特待生Bの対象",
+  "notes" : "2027年度中学帰国生入試を確認。海外在住1年以上・帰国後3年以内が出願資格。海外在住の場合はオンライン面接可。",
   "infoLink" : "https://www.girls.kosei.ac.jp/junireturneesoutline"
 }, {
   "schoolName" : "公文国際学園中等部",
@@ -114,54 +114,54 @@
   "capacity" : "10名（男女）",
   "examDates" : "2025-12-13",
   "subjects" : "適性検査, 英語, 面接",
-  "alternateSubjects" : "",
-  "interview" : "あり",
-  "englishQualificationBenefit" : "",
-  "notes" : "出願期間は2025-11-25 9:00〜2025-12-05 23:59。四谷大塚Aライン80偏差値: 52（2/3・共通・B）",
-  "infoLink" : "https://kumon.ac.jp/k-gakuen/kokusai/nyuuShiShuTsuGan.html"
+  "alternateSubjects" : "なし",
+  "interview" : "あり（10分程度）",
+  "englishQualificationBenefit" : "公式上、英検等による免除・得点換算の明示なし",
+  "notes" : "受験資格は2020年度4月以降に海外の教育機関に1年以上在籍した者。国内インターナショナルスクール在籍者は要問い合わせ。",
+  "infoLink" : "https://kumon.ac.jp/k-gakuen/kokusai/bouShuuYoKou.html"
 }, {
   "schoolName" : "共立女子中学校",
   "category" : "帰国入試",
   "capacity" : "25名",
-  "examDates" : "2025-11-30",
+  "examDates" : "2025-12-01",
   "subjects" : "国語, 算数",
-  "alternateSubjects" : "",
+  "alternateSubjects" : "なし",
   "interview" : "なし",
-  "englishQualificationBenefit" : "あり。英検3級以上を取得している場合、国語と英検級換算得点のうち高い方を採用",
-  "notes" : "帰国資格は原則として海外在住1年以上・帰国後3年以内。四谷大塚Aライン80偏差値: 48（2/1・女子・1日）",
+  "englishQualificationBenefit" : "あり。英語外部検定試験の資格・スコアを得点化し、国語と比較して高得点を採用",
+  "notes" : "学校公式では資格は原則『海外在住1年以上』『帰国後3年以内』と案内。",
   "infoLink" : "https://www.kyoritsu-wu.ac.jp/chukou/admission/application/returnee/"
 }, {
   "schoolName" : "千代田中学校",
   "category" : "帰国入試",
   "capacity" : "研究コース・開発コース：若干名",
   "examDates" : "2025-11-30",
-  "subjects" : "【教科型】国語, 数学, 英語, 面接（日本語） / 【英語型】英語, エッセイ, 面接（英語）",
+  "subjects" : "教科型：国語, 算数, 面接（日本語） / 英語型：英語エッセイ, 面接（英語）",
   "alternateSubjects" : "オンライン入試あり（日本への帰国が難しい場合のみ）",
   "interview" : "あり",
-  "englishQualificationBenefit" : "あり。【教科型】で英語資格優遇あり（CEFR B1以上で英語試験90%保証、CEFR A2で80%保証）。【英語型】はCEFR A2以上が必要",
-  "notes" : "海外帰国生入試。英語型は事前課題（日本語エッセイ）あり。四谷大塚Aライン80偏差値は未確認",
-  "infoLink" : "https://chiyoda.ed.jp/"
+  "englishQualificationBenefit" : "オンライン入試はCEFR A1以上の英語資格取得が条件",
+  "notes" : "海外帰国生入試は『教科型』『英語型』『オンライン入試』に分かれる。",
+  "infoLink" : "https://chiyoda.ed.jp/wordpress/wp-content/uploads/2025/09/20250907-68bd04b7159b3.pdf"
 }, {
   "schoolName" : "千代田中学校",
   "category" : "英語受験",
-  "capacity" : "一般入試の各回定員内",
+  "capacity" : "一般教科型入試の各回定員内",
   "examDates" : "2026-02-01, 2026-02-02, 2026-02-04, 2026-02-05",
-  "subjects" : "英語型あり（詳細は学校要項参照）",
-  "alternateSubjects" : "第1回, 第3回, 第4回, 第5回, 第6回の一般入試日程あり",
-  "interview" : "",
-  "englishQualificationBenefit" : "あり。出願期間内に資格取得証明書（コピー）を提出した場合、優遇措置あり。CEFR A2以上で英語試験90%保証、CEFR A1で75%保証",
-  "notes" : "2026年度一般入試要項で教科型入試の英語資格優遇を確認。四谷大塚Aライン80偏差値は未確認",
-  "infoLink" : "https://chiyoda.ed.jp/"
+  "subjects" : "一般教科型入試（2科/4科/得意選択）＋英語資格優遇",
+  "alternateSubjects" : "教科型入試の中で英語資格優遇制度を利用",
+  "interview" : "なし",
+  "englishQualificationBenefit" : "出願期間内に資格取得証明書提出で、CEFR A2で英語試験90%保証、A1で75%保証",
+  "notes" : "独立した『英語入試』ではなく、一般入試での英語資格優遇制度として整理。",
+  "infoLink" : "https://chiyoda.ed.jp/wordpress/wp-content/uploads/2025/09/20250907-68bd04b7159b3.pdf"
 }, {
   "schoolName" : "同志社国際中学校",
   "category" : "帰国入試",
   "capacity" : "約55名（編入生を含む）",
-  "examDates" : "2025-12-09, 2026-01-20, 2026-02-09",
-  "subjects" : "A選考〈専願〉：英語資格, 書類審査, 面接 / A選考〈併願〉：作文（日本語以外）, 書類審査, 面接 / B選考：国語, 算数, 理科・社会・英語のいずれか",
-  "alternateSubjects" : "12月A選考〈専願/併願〉, 1月B選考, 2月A選考〈併願〉",
+  "examDates" : null,
+  "subjects" : "A選考：英語資格, 書類審査, 面接, 作文（日本語以外） / B選考・G選考：教科試験（3教科）",
+  "alternateSubjects" : "12月A選考・1月B選考・1月G選考・2月A選考",
   "interview" : "あり",
-  "englishQualificationBenefit" : "あり。A選考〈専願〉は英語資格型",
-  "notes" : "海外の学校に在籍している場合は入学時期を4月または夏から選択可能。四谷大塚Aライン80偏差値は確認できたが、該当数値の特定は保留",
+  "englishQualificationBenefit" : "あり。A選考ではTOEFL iBT 68点以上、英検準1級以上、TOEIC L&R 730点以上、Cambridge B2 First 160点以上などが条件",
+  "notes" : "2026年度募集要項を確認。帰国生徒認定手続が必要で、A選考は専願・併願の区分がある。",
   "infoLink" : "https://www.intnl.doshisha.ac.jp/admission/downloads.html"
 }, {
   "schoolName" : "品川女子学院",
@@ -169,43 +169,43 @@
   "capacity" : "若干名",
   "examDates" : "2025-11-30",
   "subjects" : "国語（読解・作文）, 算数（計算・特殊算など）",
-  "alternateSubjects" : "",
+  "alternateSubjects" : "なし",
   "interview" : "あり（本人のみ・日本語）",
-  "englishQualificationBenefit" : "",
-  "notes" : "通知表PDF/JPEGのアップロードが必要。四谷大塚Aライン80偏差値は一般4科回の該当数値特定を保留",
-  "infoLink" : "https://www.shinagawajoshigakuin.jp/examination/%E4%B8%AD%E7%AD%89%E9%83%A8%E5%85%A5%E8%A9%A6%EF%BD%A5%E5%B8%B0%E5%9B%BD%E7%94%9F/2026kikoku/"
+  "englishQualificationBenefit" : "公式上、英検等による免除・得点換算の明示確認なし",
+  "notes" : "面接は入退室を含め1人10分程度。",
+  "infoLink" : "https://www.shinagawajoshigakuin.jp/examination/outline/"
 }, {
   "schoolName" : "國學院大學久我山中学校",
   "category" : "帰国入試",
   "capacity" : "男子（一般クラス）・女子（CCクラス）若干名",
   "examDates" : "2026-01-11",
-  "subjects" : "算数・国語 または 算数・英語, 面接",
-  "alternateSubjects" : "男子一般クラス / 女子CCクラス",
-  "interview" : "あり",
-  "englishQualificationBenefit" : "",
-  "notes" : "海外在留期間1年以上、2023年4月以降に帰国または帰国予定が要件。四谷大塚Aライン80偏差値: 50（2/1・男子・一般）",
+  "subjects" : "算数, 国語 または 算数, 英語, 面接（本人・保護者別）",
+  "alternateSubjects" : "国語型または英語型",
+  "interview" : "あり（本人・保護者別）",
+  "englishQualificationBenefit" : "公式上、英検等による免除・得点換算の明示なし",
+  "notes" : "一般クラス男子、CCクラス女子の募集。",
   "infoLink" : "https://www.kugayama-h.ed.jp/nyushi/jhs_nyushi/juken/"
 }, {
   "schoolName" : "埼玉栄中学校",
   "category" : "帰国入試",
-  "capacity" : "進学クラス 若干名",
+  "capacity" : "若干名（進学クラス）",
   "examDates" : "2026-01-13",
   "subjects" : "作文, 算数, 面接",
-  "alternateSubjects" : "",
+  "alternateSubjects" : "なし",
   "interview" : "あり",
-  "englishQualificationBenefit" : "",
-  "notes" : "出願資格は2026年3月小学校卒業見込みで海外在留経験がある者（原則1年以上・帰国後1年以内）。出願前に本校国際教育担当者へ相談要。出願開始は2025-12-01 10:00、締切は2026-01-12 24:00、合格発表は2026-01-13 18:00、本校会場。四谷大塚Aライン80偏差値: 42（1/11・共通・3回進学）",
+  "englishQualificationBenefit" : null,
+  "notes" : "2026年度帰国生募集要項を確認。海外在留1年以上・帰国後1年以内が原則で、出願前に国際教育担当者への相談が必要。",
   "infoLink" : "https://www.saitamasakae-h.ed.jp/junior/j-examee/j-requirements/"
 }, {
   "schoolName" : "大妻中学校",
   "category" : "帰国入試",
   "capacity" : "若干名",
   "examDates" : "2025-12-09",
-  "subjects" : "国語・算数・英語から2教科選択, 面接",
-  "alternateSubjects" : "",
+  "subjects" : "国語, 算数, 英語から2教科選択, 面接",
+  "alternateSubjects" : "3教科から2教科選択",
   "interview" : "あり（受験生および保護者1名同伴）",
-  "englishQualificationBenefit" : "",
-  "notes" : "帰国要件は保護者の海外在留に伴う1年以上の在留かつ帰国後3年以内。四谷大塚Aライン80偏差値: 52（2/1・女子）",
+  "englishQualificationBenefit" : "公式上、英検等による免除・得点換算の明示なし",
+  "notes" : "海外帰国生試験。帰国後3年以内が要件。",
   "infoLink" : "https://www.otsuma.ed.jp/ad-returnee"
 }, {
   "schoolName" : "大妻中野中学校",
@@ -216,7 +216,7 @@
   "alternateSubjects" : "①②から選択",
   "interview" : "あり（保護者1名同伴）",
   "englishQualificationBenefit" : "あり。英語受験は外部英語能力検定試験利用制度あり",
-  "notes" : "英語受験の場合はグローバルリーダーズコース希望。四谷大塚Aライン80偏差値: 50（2/1・女子・2回アドバンスト）",
+  "notes" : "英語受験の場合はグローバルリーダーズコース希望。",
   "infoLink" : "https://www.otsumanakano.ac.jp/admission/guidelines/"
 }, {
   "schoolName" : "大妻中野中学校",
@@ -224,10 +224,10 @@
   "capacity" : "グローバル入試3回合計で約36名",
   "examDates" : "2026-02-01, 2026-02-03, 2026-02-04",
   "subjects" : "国語, 算数, 英語スピーキングテスト",
-  "alternateSubjects" : "",
+  "alternateSubjects" : null,
   "interview" : "あり（外部資格申請時は面接試験）",
   "englishQualificationBenefit" : "あり。英検等の英語能力試験スコア（英検準2級程度以上）申請で、当日は国・算・英の代わりに面接試験",
-  "notes" : "制度名は『グローバル入試』。グローバルリーダーズコース志望者向け。四谷大塚Aライン80偏差値: 50（2/1・女子・2回アドバンスト）",
+  "notes" : "制度名は『グローバル入試』。グローバルリーダーズコース志望者向け。",
   "infoLink" : "https://www.otsumanakano.ac.jp/admission/guidelines/"
 }, {
   "schoolName" : "大宮国際中等教育学校",
@@ -238,7 +238,7 @@
   "alternateSubjects" : "特別選抜",
   "interview" : "あり（集団面接）",
   "englishQualificationBenefit" : "公式上、英検等による免除・得点換算の明示確認なし",
-  "notes" : "制度名は帰国生向け『特別選抜』として整理。学校公式PDFと帰国受験情報サイト双方で日程・定員・検査区分を確認。四谷大塚Aライン80偏差値: 55（1/11・共通）",
+  "notes" : "制度名は帰国生向け『特別選抜』として整理。学校公式PDFと帰国受験情報サイト双方で日程・定員・検査区分を確認。",
   "infoLink" : "https://www.city.saitama.lg.jp/006/015/035/002/p125223_d/fil/ohmiya_R8youkou.pdf"
 }, {
   "schoolName" : "学習院中等科",
@@ -249,7 +249,7 @@
   "alternateSubjects" : "面接A（英語能力評価の割合が高い） / 面接B（海外生活体験を問う）",
   "interview" : "あり（グループ面接）",
   "englishQualificationBenefit" : "資格優遇ではなく、面接Aで英語力を評価",
-  "notes" : "男子校。出願時に面接Aまたは面接Bを選択。四谷大塚Aライン80偏差値: 53（2/2・男子・一般）",
+  "notes" : "男子校。出願時に面接Aまたは面接Bを選択。",
   "infoLink" : "https://www.gakushuin.ac.jp/bjh/admission/outline/index.html"
 }, {
   "schoolName" : "宝仙学園中学校 理数インター",
@@ -271,7 +271,7 @@
   "alternateSubjects" : "来校型 第1回・第2回",
   "interview" : "あり",
   "englishQualificationBenefit" : "公式上、英検等による免除・得点換算の明示確認なし",
-  "notes" : "面接は『自己PRシート』に基づいて実施。四谷大塚Aライン80偏差値: 50（2/1・女子・2回）",
+  "notes" : "面接は『自己PRシート』に基づいて実施。",
   "infoLink" : "https://hs.jissen.ac.jp/admission/application/index.html"
 }, {
   "schoolName" : "富士見丘中学校",
@@ -282,7 +282,7 @@
   "alternateSubjects" : "海外生特別入試・転編入試験あり（11月にシンガポール・ニューヨーク・ロンドン・オンライン）",
   "interview" : "未確認",
   "englishQualificationBenefit" : "未確認",
-  "notes" : "学校公式で中学校の2026年度帰国生募集要項ページを確認。海外生特別入試も別途あり。四谷大塚Aライン80偏差値は今回未確認。",
+  "notes" : "学校公式で中学校の2026年度帰国生募集要項ページを確認。海外生特別入試も別途あり。",
   "infoLink" : "https://www.fujimigaoka.ac.jp/exam/returnees/returnees-application/"
 }, {
   "schoolName" : "山手学院中学校",
@@ -293,7 +293,7 @@
   "alternateSubjects" : "なし",
   "interview" : "なし（要項本文抜粋では面接記載なし）",
   "englishQualificationBenefit" : "未確認",
-  "notes" : "保護者の海外在住に伴う在籍歴・1年以上の海外在留・2020年4月以降の帰国が条件。四谷大塚Aライン80偏差値: 52（2/3・女子/男子・B）",
+  "notes" : "保護者の海外在住に伴う在籍歴・1年以上の海外在留・2020年4月以降の帰国が条件。",
   "infoLink" : "https://www.yamate-gakuin.ac.jp/shared/pdf/bosyuu_k.pdf"
 }, {
   "schoolName" : "山脇学園中学校",
@@ -315,7 +315,7 @@
   "alternateSubjects" : "海外入試あり",
   "interview" : "未確認",
   "englishQualificationBenefit" : "未確認",
-  "notes" : "学校公式で『帰国生入試』『海外入試』『一般入試・国際生入試』を確認。帰国生募集要項PDFは公開されているが、本文詳細の追加確認継続。四谷大塚Aライン80偏差値: 40（2/1・共通・1回B）",
+  "notes" : "学校公式で『帰国生入試』『海外入試』『一般入試・国際生入試』を確認。帰国生募集要項PDFは公開されているが、本文詳細の追加確認継続。",
   "infoLink" : "https://www.js.kogakuin.ac.jp/news/2025/090201.html"
 }, {
   "schoolName" : "市川中学校",
@@ -1208,6 +1208,50 @@
   "englishQualificationBenefit" : "一般入試では帰国生優遇ありとの受験ガイド記載を確認",
   "notes" : "学校公式で確認できたのは『帰国生転編入試験』。中1新入生向けの独立した帰国入試要項は今回確認できていません。",
   "infoLink" : "https://www.hs.reitaku.jp/junior/application.html"
+}, {
+  "schoolName" : "佼成学園中学校",
+  "category" : "帰国入試",
+  "capacity" : null,
+  "examDates" : null,
+  "subjects" : null,
+  "alternateSubjects" : "帰国生入試ページあり",
+  "interview" : null,
+  "englishQualificationBenefit" : null,
+  "notes" : "帰国生入試ページと中学募集要項ページを確認。2027年度入試の詳しい募集要項は9月頃決定予定。",
+  "infoLink" : "https://www.kosei.ac.jp/boys/j-outline/"
+}, {
+  "schoolName" : "宝仙学園中学校 理数インター",
+  "category" : null,
+  "capacity" : null,
+  "examDates" : null,
+  "subjects" : null,
+  "alternateSubjects" : null,
+  "interview" : null,
+  "englishQualificationBenefit" : null,
+  "notes" : "未確認。今後、公式募集要項・入試要項で確認のうえ更新してください。",
+  "infoLink" : null
+}, {
+  "schoolName" : "山脇学園中学校",
+  "category" : null,
+  "capacity" : null,
+  "examDates" : null,
+  "subjects" : null,
+  "alternateSubjects" : null,
+  "interview" : null,
+  "englishQualificationBenefit" : null,
+  "notes" : "未確認。今後、公式募集要項・入試要項で確認のうえ更新してください。",
+  "infoLink" : null
+}, {
+  "schoolName" : null,
+  "category" : null,
+  "capacity" : null,
+  "examDates" : null,
+  "subjects" : null,
+  "alternateSubjects" : null,
+  "interview" : null,
+  "englishQualificationBenefit" : null,
+  "notes" : null,
+  "infoLink" : null
 }, {
   "schoolName" : null,
   "category" : null,
