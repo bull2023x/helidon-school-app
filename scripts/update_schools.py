@@ -7,7 +7,8 @@ import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
-
+import requests
+from bs4 import BeautifulSoup
 
 REQUIRED_FIELDS = [
     "schoolName",
@@ -123,6 +124,32 @@ def normalize_record(record: dict[str, Any]) -> dict[str, Any]:
         out.setdefault(key, None)
     return out
 
+def check_school_url(record: dict[str, Any]) -> None:
+    school_name = record.get("schoolName")
+    url = record.get("infoLink")
+
+    if not url:
+        print(f"[SKIP] {school_name}: no URL")
+        return
+
+    try:
+        response = requests.get(
+            url,
+            timeout=15,
+            headers={
+                "User-Agent": "Mozilla/5.0"
+            }
+        )
+
+        print(f"[OK] {school_name}: {response.status_code}")
+
+        if "text/html" in response.headers.get("Content-Type", ""):
+            soup = BeautifulSoup(response.text, "html.parser")
+            title = soup.title.string.strip() if soup.title else "No title"
+            print(f"      Title: {title}")
+
+    except Exception as e:
+        print(f"[ERROR] {school_name}: {e}")
 
 def main() -> int:
     cfg = parse_args()
@@ -131,6 +158,8 @@ def main() -> int:
 
     # Update only the requested slice; for now we simply normalize and preserve data.
     target_records = select_target_range(records, cfg.start_no, cfg.end_no)
+    for record in target_records[:20]:
+    check_school_url(record)
     normalized_target = [normalize_record(r) for r in target_records]
 
     if cfg.start_no is None and cfg.end_no is None:
