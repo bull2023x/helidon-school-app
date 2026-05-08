@@ -159,7 +159,7 @@ def main() -> int:
     # Update only the requested slice; for now we simply normalize and preserve data.
     target_records = select_target_range(records, cfg.start_no, cfg.end_no)
     for record in target_records[:20]:
-    check_school_url(record)
+        check_school_url(record)
     normalized_target = [normalize_record(r) for r in target_records]
 
     if cfg.start_no is None and cfg.end_no is None:
