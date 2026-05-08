@@ -24,9 +24,9 @@ jobs:
       - name: Run updater
         run: |
           python scripts/update_schools.py \
-  --input data/schools-v2.json \
-  --output data/schools-v2.json \
-  --pretty
+            --input data/schools-v2.json \
+            --output data/schools-v2.json \
+            --pretty
 
       - name: Commit and push if changed
         run: |
