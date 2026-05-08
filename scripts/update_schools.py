@@ -183,7 +183,7 @@ def main() -> int:
     target_records = select_target_range(records, cfg.start_no, cfg.end_no)
 
     report: list[dict[str, Any]] = []
-    for record in target_records[:20]:
+    for record in target_records:
         report.append(check_school_url(record))
 
     failed = [r for r in report if not r["ok"]]
