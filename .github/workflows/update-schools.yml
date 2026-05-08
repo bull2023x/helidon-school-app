@@ -24,9 +24,9 @@ jobs:
       - name: Run updater
         run: |
           python scripts/update_schools.py \
-            --input schools.json \
-            --output schools.json \
-            --pretty
+  --input data/schools-v2_2026-05-07_no1-20_updated.json \
+  --output data/schools-v2_2026-05-07_no1-20_updated.json \
+  --pretty
 
       - name: Commit and push if changed
         run: |
@@ -37,6 +37,6 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add schools.json
+          git add data/schools-v2_2026-05-07_no1-20_updated.json
           git commit -m "Update schools JSON"
           git push
