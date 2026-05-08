@@ -124,67 +124,78 @@ def normalize_record(record: dict[str, Any]) -> dict[str, Any]:
         out.setdefault(key, None)
     return out
 
-def check_school_url(record: dict[str, Any]) -> None:
-    school_name = record.get("schoolName")
+def check_school_url(record: dict[str, Any]) -> dict[str, Any]:
+    school_name = record.get("schoolName", "(unknown)")
     url = record.get("infoLink")
 
+    result: dict[str, Any] = {
+        "schoolName": school_name,
+        "url": url,
+        "ok": False,
+        "statusCode": None,
+        "title": None,
+        "errorType": None,
+        "errorMessage": None,
+    }
+
     if not url:
+        result["errorType"] = "MISSING_URL"
+        result["errorMessage"] = "infoLink is null or empty"
         print(f"[SKIP] {school_name}: no URL")
-        return
+        return result
 
     try:
         response = requests.get(
             url,
             timeout=15,
-            headers={
-                "User-Agent": "Mozilla/5.0"
-            }
+            headers={"User-Agent": "Mozilla/5.0"},
         )
+
+        result["statusCode"] = response.status_code
+        result["ok"] = response.status_code == 200
 
         print(f"[OK] {school_name}: {response.status_code}")
 
-        if "text/html" in response.headers.get("Content-Type", ""):
+        content_type = response.headers.get("Content-Type", "")
+        if "text/html" in content_type:
             soup = BeautifulSoup(response.text, "html.parser")
-            title = soup.title.string.strip() if soup.title else "No title"
+            title = soup.title.string.strip() if soup.title and soup.title.string else "No title"
+            result["title"] = title
             print(f"      Title: {title}")
 
-    except Exception as e:
+    except requests.exceptions.SSLError as e:
+        result["errorType"] = "SSL_ERROR"
+        result["errorMessage"] = str(e)
+        print(f"[SSL ERROR] {school_name}: {e}")
+
+    except requests.exceptions.RequestException as e:
+        result["errorType"] = "REQUEST_ERROR"
+        result["errorMessage"] = str(e)
         print(f"[ERROR] {school_name}: {e}")
+
+    return result
 
 def main() -> int:
     cfg = parse_args()
     records = load_json(cfg.input_path)
     validate_schema(records)
 
-    # Update only the requested slice; for now we simply normalize and preserve data.
     target_records = select_target_range(records, cfg.start_no, cfg.end_no)
+
+    report: list[dict[str, Any]] = []
     for record in target_records[:20]:
-        check_school_url(record)
-    normalized_target = [normalize_record(r) for r in target_records]
+        report.append(check_school_url(record))
 
-    if cfg.start_no is None and cfg.end_no is None:
-        updated = [normalize_record(r) for r in records]
-    else:
-        updated = list(records)
-        start_idx = 0 if cfg.start_no is None else cfg.start_no - 1
-        end_idx = len(records) if cfg.end_no is None else cfg.end_no
-        updated[start_idx:end_idx] = normalized_target
+    failed = [r for r in report if not r["ok"]]
+    print(f"\nSummary: {len(report) - len(failed)} ok, {len(failed)} failed")
 
-    output_text = json.dumps(
-        updated,
-        ensure_ascii=False,
-        indent=2 if cfg.pretty else None,
+    report_path = cfg.output_path.parent / "check-report.json"
+    report_path.write_text(
+        json.dumps(report, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
     )
+    print(f"Wrote {report_path}")
 
-    cfg.output_path.parent.mkdir(parents=True, exist_ok=True)
-    existing = cfg.output_path.read_text(encoding="utf-8") if cfg.output_path.exists() else None
-
-    if existing == output_text:
-        print("No changes.")
-        return 0
-
-    cfg.output_path.write_text(output_text + "\n", encoding="utf-8")
-    print(f"Wrote {cfg.output_path}")
     return 0
 
 
