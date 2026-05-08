@@ -16,11 +16,27 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      - name: Test
+      - name: Run updater
         run: |
-          echo "GitHub Actions works!"
+          python scripts/update_schools.py \
+            --input schools.json \
+            --output schools.json \
+            --pretty
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add schools.json
+          git commit -m "Update schools JSON"
+          git push
