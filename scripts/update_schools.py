@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+from datetime import datetime
+import shutil
 import argparse
 import json
 import sys
@@ -150,13 +152,17 @@ def check_school_url(record: dict[str, Any]) -> dict[str, Any]:
             timeout=15,
             headers={"User-Agent": "Mozilla/5.0"},
         )
+        content_type = response.headers.get("Content-Type", "")
+
+        if "text/html" in content_type:
+            if response.encoding is None or response.encoding.lower() == "iso-8859-1":
+                response.encoding = response.apparent_encoding
 
         result["statusCode"] = response.status_code
         result["ok"] = response.status_code == 200
 
         print(f"[OK] {school_name}: {response.status_code}")
 
-        content_type = response.headers.get("Content-Type", "")
         if "text/html" in content_type:
             soup = BeautifulSoup(response.text, "html.parser")
             title = soup.title.string.strip() if soup.title and soup.title.string else "No title"
@@ -173,9 +179,15 @@ def check_school_url(record: dict[str, Any]) -> dict[str, Any]:
         result["errorMessage"] = str(e)
         print(f"[ERROR] {school_name}: {e}")
 
+    except Exception as e:
+        result["errorType"] = "UNKNOWN_ERROR"
+        result["errorMessage"] = f"{type(e).__name__}: {e}"
+        print(f"[UNKNOWN ERROR] {school_name}: {e}")
+
     return result
 
 def main() -> int:
+    backup_json()
     cfg = parse_args()
     records = load_json(cfg.input_path)
     validate_schema(records)
@@ -198,6 +210,21 @@ def main() -> int:
 
     return 0
 
+def backup_json():
+    repo_root = Path(__file__).resolve().parents[1]
+
+    source = repo_root / "data" / "schools-v2.json"
+
+    archive_dir = repo_root / "archive"
+    archive_dir.mkdir(exist_ok=True)
+
+    today = datetime.now().strftime("%Y-%m-%d")
+
+    backup = archive_dir / f"schools-v2-{today}.json"
+
+    shutil.copy2(source, backup)
+
+    print(f"[BACKUP] {backup}")
 
 if __name__ == "__main__":
     raise SystemExit(main())
