@@ -20,8 +20,8 @@ public class DbInit {
 
     // 開発中はここを使う
     private static final Path EXTERNAL_JSON_PATH =
-            Paths.get("/Users/USER/Downloads/myproject/data/schools-v2.json");
-
+            Paths.get("data/schools-v2.json");
+    
     // フォールバック用（src/main/resources/data/schools-v2.json）
     private static final String CLASSPATH_JSON = "data/schools-v2.json";
 
