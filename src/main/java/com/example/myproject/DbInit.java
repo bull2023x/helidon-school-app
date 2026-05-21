@@ -20,8 +20,8 @@ public class DbInit {
 
     // 開発中はここを使う
     private static final Path EXTERNAL_JSON_PATH =
-            Paths.get("data/schools-v2.json");
-    
+            Paths.get(System.getProperty("user.dir"), "data", "schools-v2.json");
+
     // フォールバック用（src/main/resources/data/schools-v2.json）
     private static final String CLASSPATH_JSON = "data/schools-v2.json";
 
@@ -79,6 +79,10 @@ public class DbInit {
     private static void loadSchoolV2FromJson(Statement stmt) throws Exception {
         ObjectMapper mapper = new ObjectMapper();
         List<Map<String, Object>> schools;
+
+        System.out.println("user.dir = " + System.getProperty("user.dir"));
+        System.out.println("external path = " + EXTERNAL_JSON_PATH.toAbsolutePath());
+        System.out.println("external exists = " + Files.exists(EXTERNAL_JSON_PATH));
 
         if (Files.exists(EXTERNAL_JSON_PATH)) {
             schools = mapper.readValue(
