@@ -34,6 +34,8 @@ WORKDIR /helidon
 COPY --from=build /helidon/target/myproject.jar ./
 COPY --from=build /helidon/target/libs ./libs
 
+COPY data ./data
+
 CMD ["java", "-jar", "myproject.jar"]
 
 EXPOSE 8080
