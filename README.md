@@ -1,185 +1,477 @@
-# myproject
+# helidon-school-app
 
-Sample Helidon SE project that includes multiple REST operations.
+中学受験「英語入試・帰国生入試」情報アプリ
+Helidon + Render + GitHub Actions による半自動更新システム。
 
-## Build and run
+---
 
+# 概要
 
-With JDK21
+本システムは：
+
+* 帰国生入試
+* 英語入試
+* 国際系中学校
+
+を対象とした、
+
+```text
+学校情報検索
++
+学校一覧表示
++
+自動巡回監視
++
+半自動更新
+```
+
+システムです。
+
+現在：
+
+* 約110校
+* 毎週自動巡回
+* 自動バックアップ
+* Render自動デプロイ
+* Androidアプリ連携
+
+まで対応しています。
+
+---
+
+# システム構成
+
+```text
+GitHub Actions
+        ↓
+Python巡回
+(requests + BeautifulSoup)
+        ↓
+schools-v2.json 更新
+        ↓
+archive バックアップ
+        ↓
+GitHub commit
+        ↓
+Render Auto Deploy
+        ↓
+Helidon API
+        ↓
+Android App / Web
+```
+
+---
+
+# リポジトリ構成
+
+```text
+.
+├── .github/workflows/
+├── archive/
+├── data/
+├── scripts/
+├── src/
+├── Dockerfile
+├── pom.xml
+└── README.md
+```
+
+---
+
+# JSON管理
+
+## 正本JSON
+
+現在の唯一の正本：
+
+```text
+data/schools-v2.json
+```
+
+---
+
+# 自動バックアップ
+
+毎週：
+
+```text
+archive/schools-v2-YYYY-MM-DD.json
+```
+
+へ自動保存。
+
+例：
+
+```text
+archive/schools-v2-2026-05-21.json
+```
+
+---
+
+# GitHub Actions
+
+## workflow
+
+```text
+.github/workflows/update-schools.yml
+```
+
+---
+
+# 実行タイミング
+
+毎週：
+
+```text
+月曜 AM3:00 JST
+```
+
+実行。
+
+---
+
+# 実行内容
+
+GitHub Actions は：
+
+* 学校URL巡回
+* HTML取得
+* requests
+* BeautifulSoup
+* タイトル抽出
+* check-report.json生成
+* archiveバックアップ
+* GitHub commit
+
+を実行。
+
+---
+
+# Python
+
+## スクリプト
+
+```text
+scripts/update_schools.py
+```
+
+---
+
+# requirements.txt
+
+```text
+requests
+beautifulsoup4
+```
+
+---
+
+# 文字化け対策
+
+以下を実装済。
+
+```python
+response.encoding = response.apparent_encoding
+```
+
+---
+
+# check-report.json
+
+生成場所：
+
+```text
+data/check-report.json
+```
+
+---
+
+# 主なエラー分類
+
+## SSL_ERROR
+
+学校側SSL証明書問題。
+
+放置OK。
+
+---
+
+## MISSING_URL
+
+infoLink未設定。
+
+必要時のみ手修正。
+
+---
+
+## UNKNOWN_ERROR
+
+要確認。
+
+---
+
+# 半自動運用
+
+## 毎週やること（5分）
+
+### ① GitHub Actions確認
+
+```text
+GitHub
+↓
+Actions
+↓
+Update schools JSON
+```
+
+---
+
+### ② Success確認
+
+緑ならOK。
+
+---
+
+### ③ Run updater確認
+
+以下を見る：
+
+* SSL_ERROR
+* MISSING_URL
+* UNKNOWN_ERROR
+
+---
+
+### ④ 必要校だけ修正
+
+GitHub GUIで：
+
+```text
+data/schools-v2.json
+```
+
+を直接編集。
+
+---
+
+### ⑤ Commit
+
+GitHub GUI上で：
+
+```text
+Commit changes
+```
+
+---
+
+# Render
+
+## 自動デプロイ
+
+Render は：
+
+```text
+Auto Deploy = On Commit
+```
+
+設定。
+
+GitHub push 後、自動デプロイ。
+
+---
+
+# Renderで重要な構成
+
+## Dockerfile
+
+現在：
+
+```dockerfile
+COPY data ./data
+```
+
+を実装済。
+
+---
+
+# なぜ必要？
+
+Render で：
+
+```text
+/helidon/data/schools-v2.json
+```
+
+を external file として読むため。
+
+---
+
+# DbInit.java
+
+## external JSON優先
+
+```java
+private static final Path EXTERNAL_JSON_PATH =
+        Paths.get(System.getProperty("user.dir"), "data", "schools-v2.json");
+```
+
+---
+
+# 読み込み順
+
+```text
+external file
+↓
+classpath fallback
+```
+
+---
+
+# Renderログ確認
+
+成功時：
+
+```text
+external exists = true
+Loaded schools-v2 from external file
+```
+
+---
+
+# Android App
+
+別リポジトリ：
+
+```text
+SchoolViewer
+```
+
+---
+
+# Android構成
+
+* Kotlin
+* Jetpack Compose
+* Retrofit
+* Material3
+
+---
+
+# Google Play
+
+## クローズドテスト対応済
+
+現在：
+
+* upload key reset済
+* App Bundle対応済
+* 署名鍵対応済
+
+---
+
+# 署名鍵
+
+## 保存場所
+
+```text
+SchoolViewer/app/release-keystore.jks
+```
+
+---
+
+# .gitignore
+
+必須：
+
+```gitignore
+*.jks
+*.keystore
+*.pem
+```
+
+---
+
+# App Bundle生成
+
 ```bash
-mvn package
-java -jar target/myproject.jar
+./gradlew bundleRelease
 ```
 
-## Exercise the application
+---
 
-Basic:
-```
-curl -X GET http://localhost:8080/simple-greet
-Hello World!
-```
+# AAB生成場所
 
-
-JSON:
-```
-curl -X GET http://localhost:8080/greet
-{"message":"Hello World!"}
-
-curl -X GET http://localhost:8080/greet/Joe
-{"message":"Hello Joe!"}
-
-curl -X PUT -H "Content-Type: application/json" -d '{"greeting" : "Hola"}' http://localhost:8080/greet/greeting
-
-curl -X GET http://localhost:8080/greet/Jose
-{"message":"Hola Jose!"}
+```text
+app/build/outputs/bundle/release/app-release.aab
 ```
 
+---
 
+# Render再デプロイ
 
-## Try metrics
+必要時：
 
-```
-# Prometheus Format
-curl -s -X GET http://localhost:8080/observe/metrics
-# TYPE base:gc_g1_young_generation_count gauge
-. . .
-
-# JSON Format
-curl -H 'Accept: application/json' -X GET http://localhost:8080/observe/metrics
-{"base":...
-. . .
+```text
+Manual Deploy
+↓
+Clear build cache & deploy latest commit
 ```
 
+---
 
-## Try health
+# 実運用思想
 
-This example shows the basics of using Helidon SE Health. It uses the
-set of built-in health checks that Helidon provides plus defines a
-custom health check.
+本システムは：
 
-Note the port number reported by the application.
-
-Probe the health endpoints:
-
-```bash
-curl -X GET http://localhost:8080/observe/health
-curl -X GET http://localhost:8080/observe/health/ready
+```text
+完全自動更新
 ```
 
+ではなく、
 
-
-## Building a Native Image
-
-The generation of native binaries requires an installation of GraalVM 22.1.0+.
-
-You can build a native binary using Maven as follows:
-
-```
-mvn -Pnative-image install -DskipTests
+```text
+半自動監視＋人確認
 ```
 
-The generation of the executable binary may take a few minutes to complete depending on
-your hardware and operating system. When completed, the executable file will be available
-under the `target` directory and be named after the artifact ID you have chosen during the
-project generation phase.
+を採用。
 
-Make sure you have GraalVM locally installed:
+---
 
-```
-$GRAALVM_HOME/bin/native-image --version
-```
+# 理由
 
-Build the native image using the native image profile:
+学校サイトは：
 
-```
-mvn package -Pnative-image
-```
+* HTML変更
+* PDF変更
+* Cloudflare
+* URL変更
+* SSL問題
 
-This uses the helidon-maven-plugin to perform the native compilation using your installed copy of GraalVM. It might take a while to complete.
-Once it completes start the application using the native executable (no JVM!):
+が頻発するため。
 
-```
-./target/myproject
-```
+---
 
-Yep, it starts fast. You can exercise the application’s endpoints as before.
+# 現在の完成状態
 
+✅ GitHub Actions
+✅ BeautifulSoup巡回
+✅ archiveバックアップ
+✅ Git履歴保存
+✅ Render自動デプロイ
+✅ external JSON読込
+✅ Android App連携
+✅ Google Play対応
+✅ 半自動更新運用
 
-## Building the Docker Image
+---
 
-```
-docker build -t myproject .
-```
+# 今後の候補
 
-## Running the Docker Image
+* 差分通知
+* Slack通知
+* PR生成
+* PDF解析強化
+* AI要約
 
-```
-docker run --rm -p 8080:8080 myproject:latest
-```
+---
 
-Exercise the application as described above.
-                                
-
-## Run the application in Kubernetes
-
-If you don’t have access to a Kubernetes cluster, you can [install one](https://helidon.io/docs/latest/about/kubernetes) on your desktop.
-
-### Verify connectivity to cluster
-
-```
-kubectl cluster-info                        # Verify which cluster
-kubectl get pods                            # Verify connectivity to cluster
-```
-
-### Deploy the application to Kubernetes
-
-```
-kubectl create -f app.yaml                              # Deploy application
-kubectl get pods                                        # Wait for quickstart pod to be RUNNING
-kubectl get service  myproject                     # Get service info
-kubectl port-forward service/myproject 8081:8080   # Forward service port to 8081
-```
-
-You can now exercise the application as you did before but use the port number 8081.
-
-After you’re done, cleanup.
-
-```
-kubectl delete -f app.yaml
-```
-
-
-## Building a Custom Runtime Image
-
-Build the custom runtime image using the jlink image profile:
-
-```
-mvn package -Pjlink-image
-```
-
-This uses the helidon-maven-plugin to perform the custom image generation.
-After the build completes it will report some statistics about the build including the reduction in image size.
-
-The target/myproject-jri directory is a self contained custom image of your application. It contains your application,
-its runtime dependencies and the JDK modules it depends on. You can start your application using the provide start script:
-
-```
-./target/myproject-jri/bin/start
-```
-
-Class Data Sharing (CDS) Archive
-Also included in the custom image is a Class Data Sharing (CDS) archive that improves your application’s startup
-performance and in-memory footprint. You can learn more about Class Data Sharing in the JDK documentation.
-
-The CDS archive increases your image size to get these performance optimizations. It can be of significant size (tens of MB).
-The size of the CDS archive is reported at the end of the build output.
-
-If you’d rather have a smaller image size (with a slightly increased startup time) you can skip the creation of the CDS
-archive by executing your build like this:
-
-```
-mvn package -Pjlink-image -Djlink.image.addClassDataSharingArchive=false
-```
-
-For more information on available configuration options see the helidon-maven-plugin documentation.
-                                
