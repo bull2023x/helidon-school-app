@@ -187,8 +187,10 @@ def check_school_url(record: dict[str, Any]) -> dict[str, Any]:
     return result
 
 def main() -> int:
-    backup_json()
     cfg = parse_args()
+
+    backup_json()
+
     records = load_json(cfg.input_path)
     validate_schema(records)
 
@@ -205,8 +207,20 @@ def main() -> int:
     report_path.write_text(
         json.dumps(report, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
-    )
+        )
     print(f"Wrote {report_path}")
+
+    success_by_id: dict[int, dict] = {}
+    now = datetime.now().isoformat(timespec="seconds")
+
+    for record, result in zip(target_records, report):
+        if result["ok"]:
+            updated = dict(record)
+            updated["lastCheckedAt"] = now
+            success_by_id[record["id"]] = updated
+
+    merged_records = merge_successful_updates(records, success_by_id)
+    write_latest_json(cfg.output_path, merged_records)
 
     return 0
 
@@ -225,6 +239,50 @@ def backup_json():
     shutil.copy2(source, backup)
 
     print(f"[BACKUP] {backup}")
+
+def merge_successful_updates(
+        old_records: list[dict],
+        success_by_id: dict[int, dict],
+) -> list[dict]:
+    merged: list[dict] = []
+
+    for old in old_records:
+        school_id = old.get("id")
+        updated = success_by_id.get(school_id)
+
+        if updated is not None:
+            merged.append(updated)
+        else:
+            merged.append(old)
+
+    return merged
+
+def archive_previous_json(output_path: Path) -> Path | None:
+    if not output_path.exists():
+        return None
+
+    archive_dir = Path("archive")
+    archive_dir.mkdir(parents=True, exist_ok=True)
+
+    stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+    archive_path = archive_dir / f"{output_path.stem}-{stamp}{output_path.suffix}"
+    shutil.copy2(output_path, archive_path)
+    print(f"[ARCHIVE] {output_path} -> {archive_path}")
+    return archive_path
+
+
+def write_latest_json(output_path: Path, records: list[dict]) -> None:
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    new_text = json.dumps(records, ensure_ascii=False, indent=2) + "\n"
+    old_text = output_path.read_text(encoding="utf-8") if output_path.exists() else ""
+
+    if old_text != new_text:
+        archive_previous_json(output_path)
+        output_path.write_text(new_text, encoding="utf-8")
+        print(f"[WRITE] {output_path}")
+    else:
+        print("[SKIP] JSON unchanged")
 
 if __name__ == "__main__":
     raise SystemExit(main())
