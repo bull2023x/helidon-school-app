@@ -1,27 +1,33 @@
-# helidon-school-app
+# README.md
+
+## helidon-school-app
 
 中学受験「英語入試・帰国生入試」情報アプリ
 Helidon + Render + GitHub Actions による半自動更新システム。
+
+＜半自動更新とは＞
+本アプリの学校データは、GitHub Actions によって毎週自動で巡回・更新されます。
+更新可能な学校は自動で反映され、更新に失敗した学校はそのまま前回の内容を保持します。
+失敗した学校については、GitHub Actions の Run updater ログで SSL_ERROR、MISSING_URL、UNKNOWN_ERROR などのエラー内容を確認し、必要に応じて手動で修正してください。
+つまり、本システムは「完全自動更新」ではなく、自動で更新できる学校は自動更新し、更新できなかった学校だけ人手で確認して修正する 半自動運用です。
+この方式により、学校サイトのSSL不備、URL変更、ページ構成変更などが起きても、更新できる学校は止めずに反映しつつ、問題のある学校だけを個別に見直せます。
 
 ---
 
 # 概要
 
-本システムは：
+本システムは、
 
 * 帰国生入試
 * 英語入試
 * 国際系中学校
 
-を対象とした、
+を対象にした、
 
 ```text
-学校情報検索
-+
+学校検索
 学校一覧表示
-+
-自動巡回監視
-+
+学校情報監視
 半自動更新
 ```
 
@@ -30,10 +36,10 @@ Helidon + Render + GitHub Actions による半自動更新システム。
 現在：
 
 * 約110校
-* 毎週自動巡回
-* 自動バックアップ
-* Render自動デプロイ
-* Androidアプリ連携
+* GitHub Actions 自動巡回
+* archive 自動バックアップ
+* Render 自動デプロイ
+* Android App 連携
 
 まで対応しています。
 
@@ -82,7 +88,7 @@ Android App / Web
 
 ## 正本JSON
 
-現在の唯一の正本：
+唯一の正本：
 
 ```text
 data/schools-v2.json
@@ -95,7 +101,7 @@ data/schools-v2.json
 毎週：
 
 ```text
-archive/schools-v2-YYYY-MM-DD.json
+archive/schools-v2-YYYYMMDD-HHMMSS.json
 ```
 
 へ自動保存。
@@ -103,7 +109,7 @@ archive/schools-v2-YYYY-MM-DD.json
 例：
 
 ```text
-archive/schools-v2-2026-05-21.json
+archive/schools-v2-20260526-120049.json
 ```
 
 ---
@@ -130,20 +136,17 @@ archive/schools-v2-2026-05-21.json
 
 ---
 
-# 実行内容
-
-GitHub Actions は：
+# GitHub Actions がやること
 
 * 学校URL巡回
-* HTML取得
 * requests
 * BeautifulSoup
-* タイトル抽出
+* HTML取得
+* タイトル解析
 * check-report.json生成
 * archiveバックアップ
+* data/schools-v2.json 更新
 * GitHub commit
-
-を実行。
 
 ---
 
@@ -168,11 +171,11 @@ beautifulsoup4
 
 # 文字化け対策
 
-以下を実装済。
-
 ```python
 response.encoding = response.apparent_encoding
 ```
+
+を実装済。
 
 ---
 
@@ -186,13 +189,13 @@ data/check-report.json
 
 ---
 
-# 主なエラー分類
+# エラー分類
 
 ## SSL_ERROR
 
-学校側SSL証明書問題。
+学校側SSL問題。
 
-放置OK。
+通常は放置OK。
 
 ---
 
@@ -200,7 +203,7 @@ data/check-report.json
 
 infoLink未設定。
 
-必要時のみ手修正。
+必要時のみ修正。
 
 ---
 
@@ -210,11 +213,43 @@ infoLink未設定。
 
 ---
 
-# 半自動運用
+# 半自動更新
 
-## 毎週やること（5分）
+## 基本思想
 
-### ① GitHub Actions確認
+本システムは：
+
+```text
+完全自動更新
+```
+
+ではなく、
+
+```text
+半自動監視＋人確認
+```
+
+を採用。
+
+---
+
+# 理由
+
+学校サイトは：
+
+* HTML変更
+* PDF変更
+* Cloudflare
+* SSL不整合
+* URL変更
+
+が頻発するため。
+
+---
+
+# 毎週やること（5分）
+
+## ① Actions確認
 
 ```text
 GitHub
@@ -226,13 +261,13 @@ Update schools JSON
 
 ---
 
-### ② Success確認
+## ② Success確認
 
 緑ならOK。
 
 ---
 
-### ③ Run updater確認
+## ③ Run updater確認
 
 以下を見る：
 
@@ -242,7 +277,7 @@ Update schools JSON
 
 ---
 
-### ④ 必要校だけ修正
+## ④ 必要校だけ修正
 
 GitHub GUIで：
 
@@ -254,9 +289,9 @@ data/schools-v2.json
 
 ---
 
-### ⑤ Commit
+## ⑤ Commit
 
-GitHub GUI上で：
+GitHub GUI：
 
 ```text
 Commit changes
@@ -266,9 +301,7 @@ Commit changes
 
 # Render
 
-## 自動デプロイ
-
-Render は：
+## Auto Deploy
 
 ```text
 Auto Deploy = On Commit
@@ -280,11 +313,9 @@ GitHub push 後、自動デプロイ。
 
 ---
 
-# Renderで重要な構成
+# Render構成（重要）
 
 ## Dockerfile
-
-現在：
 
 ```dockerfile
 COPY data ./data
@@ -296,7 +327,7 @@ COPY data ./data
 
 # なぜ必要？
 
-Render で：
+Render が：
 
 ```text
 /helidon/data/schools-v2.json
@@ -317,7 +348,7 @@ private static final Path EXTERNAL_JSON_PATH =
 
 ---
 
-# 読み込み順
+# JSON読込順
 
 ```text
 external file
@@ -387,6 +418,7 @@ SchoolViewer/app/release-keystore.jks
 *.jks
 *.keystore
 *.pem
+app/build/
 ```
 
 ---
@@ -419,38 +451,6 @@ Clear build cache & deploy latest commit
 
 ---
 
-# 実運用思想
-
-本システムは：
-
-```text
-完全自動更新
-```
-
-ではなく、
-
-```text
-半自動監視＋人確認
-```
-
-を採用。
-
----
-
-# 理由
-
-学校サイトは：
-
-* HTML変更
-* PDF変更
-* Cloudflare
-* URL変更
-* SSL問題
-
-が頻発するため。
-
----
-
 # 現在の完成状態
 
 ✅ GitHub Actions
@@ -461,7 +461,7 @@ Clear build cache & deploy latest commit
 ✅ external JSON読込
 ✅ Android App連携
 ✅ Google Play対応
-✅ 半自動更新運用
+✅ 半自動更新
 
 ---
 
