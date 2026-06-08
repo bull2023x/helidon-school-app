@@ -78,7 +78,7 @@
     "statusCode": null,
     "title": null,
     "errorType": "SSL_ERROR",
-    "errorMessage": "HTTPSConnectionPool(host='www.miwada.ac.jp', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')))"
+    "errorMessage": "HTTPSConnectionPool(host='www.miwada.ac.jp', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
   },
   {
     "schoolName": "佼成学園女子中学校",
@@ -546,7 +546,7 @@
     "statusCode": null,
     "title": null,
     "errorType": "SSL_ERROR",
-    "errorMessage": "HTTPSConnectionPool(host='www.toko.ed.jp', port=443): Max retries exceeded with url: /high/exam/2026youkou_j.pdf (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1006)')))"
+    "errorMessage": "HTTPSConnectionPool(host='www.toko.ed.jp', port=443): Max retries exceeded with url: /high/exam/2026youkou_j.pdf (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1010)')))"
   },
   {
     "schoolName": "桐蔭学園中等教育学校",
