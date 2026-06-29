@@ -92,11 +92,11 @@
   {
     "schoolName": "公文国際学園中等部",
     "url": "https://kumon.ac.jp/k-gakuen/kokusai/nyuuShiShuTsuGan.html",
-    "ok": true,
-    "statusCode": 200,
-    "title": "入試出願について | 公文国際学園",
-    "errorType": null,
-    "errorMessage": null
+    "ok": false,
+    "statusCode": null,
+    "title": null,
+    "errorType": "SSL_ERROR",
+    "errorMessage": "HTTPSConnectionPool(host='kumon.ac.jp', port=443): Max retries exceeded with url: /k-gakuen/kokusai/nyuuShiShuTsuGan.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)')))"
   },
   {
     "schoolName": "共立女子中学校",
