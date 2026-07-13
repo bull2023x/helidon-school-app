@@ -38,9 +38,9 @@
   {
     "schoolName": "サレジアン国際学園中学校",
     "url": "https://www.salesian.international.seibi.ac.jp/",
-    "ok": false,
-    "statusCode": 415,
-    "title": "415 Unsupported Media Type",
+    "ok": true,
+    "statusCode": 200,
+    "title": "サレジアン国際学園中学校高等学校（東京都北区）",
     "errorType": null,
     "errorMessage": null
   },
@@ -146,9 +146,9 @@
   {
     "schoolName": "國學院大學久我山中学校",
     "url": "https://www.kugayama-h.ed.jp/nyushi/jhs_nyushi/juken/",
-    "ok": false,
-    "statusCode": 415,
-    "title": "415 Unsupported Media Type",
+    "ok": true,
+    "statusCode": 200,
+    "title": "中学校入試要項 | 國學院大學久我山中学高等学校",
     "errorType": null,
     "errorMessage": null
   },
@@ -191,11 +191,11 @@
   {
     "schoolName": "大宮国際中等教育学校",
     "url": "https://www.city.saitama.lg.jp/006/015/035/002/p125223_d/fil/ohmiya_R8youkou.pdf",
-    "ok": false,
-    "statusCode": null,
+    "ok": true,
+    "statusCode": 200,
     "title": null,
-    "errorType": "REQUEST_ERROR",
-    "errorMessage": "HTTPSConnectionPool(host='www.city.saitama.lg.jp', port=443): Read timed out. (read timeout=15)"
+    "errorType": null,
+    "errorMessage": null
   },
   {
     "schoolName": "学習院中等科",
@@ -209,9 +209,9 @@
   {
     "schoolName": "宝仙学園中学校 理数インター",
     "url": "https://www.hosen.ed.jp/risu-inter/returnee/",
-    "ok": false,
-    "statusCode": 415,
-    "title": "415 Unsupported Media Type",
+    "ok": true,
+    "statusCode": 200,
+    "title": "帰国生情報（中高） | 宝仙学園中学校・高等学校",
     "errorType": null,
     "errorMessage": null
   },
@@ -416,9 +416,9 @@
   {
     "schoolName": "昭和学院秀英中学校",
     "url": "https://www.showa-shuei.ed.jp/cms/wp-content/themes/showa-shuei/assets/pdf/2026yokojr.pdf",
-    "ok": false,
-    "statusCode": 415,
-    "title": "415 Unsupported Media Type",
+    "ok": true,
+    "statusCode": 200,
+    "title": null,
     "errorType": null,
     "errorMessage": null
   },
@@ -929,18 +929,18 @@
   {
     "schoolName": "順天中学校",
     "url": "https://www.junten.ed.jp/admission/yoko/",
-    "ok": false,
-    "statusCode": 415,
-    "title": "415 Unsupported Media Type",
+    "ok": true,
+    "statusCode": 200,
+    "title": "生徒募集要項 | 北里大学附属順天中学校・高等学校",
     "errorType": null,
     "errorMessage": null
   },
   {
     "schoolName": "順天中学校",
     "url": "https://www.junten.ed.jp/news/41902/",
-    "ok": false,
-    "statusCode": 415,
-    "title": "415 Unsupported Media Type",
+    "ok": true,
+    "statusCode": 200,
+    "title": "帰国生入試事前相談のご案内【2027年度入試、2026－7年度編入試験】 | 北里大学附属順天中学校・高等学校",
     "errorType": null,
     "errorMessage": null
   },
