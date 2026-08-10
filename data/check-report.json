@@ -40,7 +40,7 @@
     "url": "https://www.salesian.international.seibi.ac.jp/",
     "ok": true,
     "statusCode": 200,
-    "title": "サレジアン国際学園中学校高等学校（東京都北区）",
+    "title": "One moment, please...",
     "errorType": null,
     "errorMessage": null
   },
@@ -110,27 +110,27 @@
   {
     "schoolName": "千代田中学校",
     "url": "https://chiyoda.ed.jp/",
-    "ok": true,
-    "statusCode": 200,
-    "title": "千代田中学校・高等学校",
-    "errorType": null,
-    "errorMessage": null
+    "ok": false,
+    "statusCode": null,
+    "title": null,
+    "errorType": "REQUEST_ERROR",
+    "errorMessage": "HTTPSConnectionPool(host='chiyoda.ed.jp', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chiyoda.ed.jp', port=443) at 0x7f7e902c7350>, 'Connection to chiyoda.ed.jp timed out. (connect timeout=15)'))"
   },
   {
     "schoolName": "千代田中学校",
     "url": "https://chiyoda.ed.jp/",
-    "ok": true,
-    "statusCode": 200,
-    "title": "千代田中学校・高等学校",
-    "errorType": null,
-    "errorMessage": null
+    "ok": false,
+    "statusCode": null,
+    "title": null,
+    "errorType": "REQUEST_ERROR",
+    "errorMessage": "HTTPSConnectionPool(host='chiyoda.ed.jp', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='chiyoda.ed.jp', port=443) at 0x7f7e90254080>, 'Connection to chiyoda.ed.jp timed out. (connect timeout=15)'))"
   },
   {
     "schoolName": "同志社国際中学校",
     "url": "https://www.intnl.doshisha.ac.jp/admission/downloads.html",
     "ok": true,
     "statusCode": 200,
-    "title": "入学願書・海外在住証明書・募集要項ダウンロード | 入試案内 | 同志社国際中学校・高等学校",
+    "title": "出願関係書類・海外在住証明書・募集要項ダウンロード | 入試案内 | 同志社国際中学校・高等学校",
     "errorType": null,
     "errorMessage": null
   },
@@ -148,18 +148,18 @@
     "url": "https://www.kugayama-h.ed.jp/nyushi/jhs_nyushi/juken/",
     "ok": true,
     "statusCode": 200,
-    "title": "中学校入試要項 | 國學院大學久我山中学高等学校",
+    "title": "One moment, please...",
     "errorType": null,
     "errorMessage": null
   },
   {
     "schoolName": "埼玉栄中学校",
     "url": "https://www.saitamasakae-h.ed.jp/junior/j-examee/j-requirements/",
-    "ok": true,
-    "statusCode": 200,
-    "title": "募集要項 - 埼玉栄中学・高等学校",
-    "errorType": null,
-    "errorMessage": null
+    "ok": false,
+    "statusCode": null,
+    "title": null,
+    "errorType": "REQUEST_ERROR",
+    "errorMessage": "HTTPSConnectionPool(host='www.saitamasakae-h.ed.jp', port=443): Max retries exceeded with url: /junior/j-examee/j-requirements/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.saitamasakae-h.ed.jp', port=443) at 0x7f7e8fc575c0>, 'Connection to www.saitamasakae-h.ed.jp timed out. (connect timeout=15)'))"
   },
   {
     "schoolName": "大妻中学校",
@@ -211,7 +211,7 @@
     "url": "https://www.hosen.ed.jp/risu-inter/returnee/",
     "ok": true,
     "statusCode": 200,
-    "title": "帰国生情報（中高） | 宝仙学園中学校・高等学校",
+    "title": "One moment, please...",
     "errorType": null,
     "errorMessage": null
   },
@@ -299,20 +299,20 @@
   {
     "schoolName": "広尾学園小石川中学校",
     "url": "https://hiroo-koishikawa.ed.jp/exam/junior-nyushi",
-    "ok": true,
-    "statusCode": 200,
-    "title": "中学校募集要項 | 広尾学園小石川 中学校・高等学校",
-    "errorType": null,
-    "errorMessage": null
+    "ok": false,
+    "statusCode": null,
+    "title": null,
+    "errorType": "REQUEST_ERROR",
+    "errorMessage": "HTTPSConnectionPool(host='hiroo-koishikawa.ed.jp', port=443): Max retries exceeded with url: /exam/junior-nyushi (Caused by ConnectTimeoutError(<HTTPSConnection(host='hiroo-koishikawa.ed.jp', port=443) at 0x7f7e8f6ffa70>, 'Connection to hiroo-koishikawa.ed.jp timed out. (connect timeout=15)'))"
   },
   {
     "schoolName": "広尾学園小石川中学校",
     "url": "https://hiroo-koishikawa.ed.jp/exam/junior-nyushi",
-    "ok": true,
-    "statusCode": 200,
-    "title": "中学校募集要項 | 広尾学園小石川 中学校・高等学校",
-    "errorType": null,
-    "errorMessage": null
+    "ok": false,
+    "statusCode": null,
+    "title": null,
+    "errorType": "REQUEST_ERROR",
+    "errorMessage": "HTTPSConnectionPool(host='hiroo-koishikawa.ed.jp', port=443): Max retries exceeded with url: /exam/junior-nyushi (Caused by ConnectTimeoutError(<HTTPSConnection(host='hiroo-koishikawa.ed.jp', port=443) at 0x7f7e8f69e630>, 'Connection to hiroo-koishikawa.ed.jp timed out. (connect timeout=15)'))"
   },
   {
     "schoolName": "慶應義塾湘南藤沢中等部",
@@ -418,7 +418,7 @@
     "url": "https://www.showa-shuei.ed.jp/cms/wp-content/themes/showa-shuei/assets/pdf/2026yokojr.pdf",
     "ok": true,
     "statusCode": 200,
-    "title": null,
+    "title": "One moment, please...",
     "errorType": null,
     "errorMessage": null
   },
@@ -545,8 +545,8 @@
     "ok": false,
     "statusCode": null,
     "title": null,
-    "errorType": "SSL_ERROR",
-    "errorMessage": "HTTPSConnectionPool(host='www.toko.ed.jp', port=443): Max retries exceeded with url: /high/exam/2026youkou_j.pdf (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1010)')))"
+    "errorType": "REQUEST_ERROR",
+    "errorMessage": "HTTPSConnectionPool(host='www.toko.ed.jp', port=443): Max retries exceeded with url: /high/exam/2026youkou_j.pdf (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.toko.ed.jp', port=443) at 0x7f7e8f543710>, 'Connection to www.toko.ed.jp timed out. (connect timeout=15)'))"
   },
   {
     "schoolName": "桐蔭学園中等教育学校",
@@ -632,11 +632,11 @@
   {
     "schoolName": "湘南白百合学園中学校",
     "url": "https://chukou.shonan-shirayuri.ac.jp/exam",
-    "ok": true,
-    "statusCode": 200,
-    "title": "募集要項 | 湘南白百合学園中学・高等学校",
-    "errorType": null,
-    "errorMessage": null
+    "ok": false,
+    "statusCode": null,
+    "title": null,
+    "errorType": "REQUEST_ERROR",
+    "errorMessage": "HTTPSConnectionPool(host='chukou.shonan-shirayuri.ac.jp', port=443): Max retries exceeded with url: /exam (Caused by ConnectTimeoutError(<HTTPSConnection(host='chukou.shonan-shirayuri.ac.jp', port=443) at 0x7f7e9000ec60>, 'Connection to chukou.shonan-shirayuri.ac.jp timed out. (connect timeout=15)'))"
   },
   {
     "schoolName": "玉川学園中学部",
@@ -659,11 +659,11 @@
   {
     "schoolName": "田園調布学園中等部",
     "url": "https://www.chofu.ed.jp/returnee/guide/",
-    "ok": true,
-    "statusCode": 200,
-    "title": "帰国生入試関連情報・Q&A | 帰国生入試をお考えの方へ | 田園調布学園中等部・高等部",
-    "errorType": null,
-    "errorMessage": null
+    "ok": false,
+    "statusCode": null,
+    "title": null,
+    "errorType": "REQUEST_ERROR",
+    "errorMessage": "HTTPSConnectionPool(host='www.chofu.ed.jp', port=443): Max retries exceeded with url: /returnee/guide/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.chofu.ed.jp', port=443) at 0x7f7e8fd2cf50>, 'Connection to www.chofu.ed.jp timed out. (connect timeout=15)'))"
   },
   {
     "schoolName": "白百合学園中学校",
@@ -740,20 +740,20 @@
   {
     "schoolName": "芝浦工業大学附属中学高等学校",
     "url": "https://www.fzk.shibaura-it.ac.jp/admission/returnee/junior-tokyo/",
-    "ok": true,
-    "statusCode": 200,
-    "title": "中学帰国生入試生徒募集概要（本校会場） | 帰国生入試TOP・帰国生入試サンプル問題 | 入試情報 | 芝浦工業大学附属中学高等学校",
-    "errorType": null,
-    "errorMessage": null
+    "ok": false,
+    "statusCode": null,
+    "title": null,
+    "errorType": "REQUEST_ERROR",
+    "errorMessage": "HTTPSConnectionPool(host='www.fzk.shibaura-it.ac.jp', port=443): Max retries exceeded with url: /admission/returnee/junior-tokyo/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fzk.shibaura-it.ac.jp', port=443) at 0x7f7e8f9a7ef0>, 'Connection to www.fzk.shibaura-it.ac.jp timed out. (connect timeout=15)'))"
   },
   {
     "schoolName": "芝浦工業大学附属中学高等学校",
     "url": "https://www.fzk.shibaura-it.ac.jp/admission/junior/outline/",
-    "ok": true,
-    "statusCode": 200,
-    "title": "2027年度中学入試生徒募集概要 | 中学入試TOP・Web説明会・新入試サンプルページ | 入試情報 | 芝浦工業大学附属中学高等学校",
-    "errorType": null,
-    "errorMessage": null
+    "ok": false,
+    "statusCode": null,
+    "title": null,
+    "errorType": "REQUEST_ERROR",
+    "errorMessage": "HTTPSConnectionPool(host='www.fzk.shibaura-it.ac.jp', port=443): Max retries exceeded with url: /admission/junior/outline/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.fzk.shibaura-it.ac.jp', port=443) at 0x7f7e9000cc80>, 'Connection to www.fzk.shibaura-it.ac.jp timed out. (connect timeout=15)'))"
   },
   {
     "schoolName": "茗溪学園中学校",
@@ -830,20 +830,20 @@
   {
     "schoolName": "鎌倉女学院中学校",
     "url": "https://www.kamajo.ac.jp/ent-req/",
-    "ok": true,
-    "statusCode": 200,
-    "title": "生徒募集要項 - 鎌倉女学院",
-    "errorType": null,
-    "errorMessage": null
+    "ok": false,
+    "statusCode": null,
+    "title": null,
+    "errorType": "REQUEST_ERROR",
+    "errorMessage": "HTTPSConnectionPool(host='www.kamajo.ac.jp', port=443): Max retries exceeded with url: /ent-req/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.kamajo.ac.jp', port=443) at 0x7f7e8f543200>, 'Connection to www.kamajo.ac.jp timed out. (connect timeout=15)'))"
   },
   {
     "schoolName": "鎌倉女学院中学校",
     "url": "https://www.kamajo.ac.jp/ent-req/",
-    "ok": true,
-    "statusCode": 200,
-    "title": "生徒募集要項 - 鎌倉女学院",
-    "errorType": null,
-    "errorMessage": null
+    "ok": false,
+    "statusCode": null,
+    "title": null,
+    "errorType": "REQUEST_ERROR",
+    "errorMessage": "HTTPSConnectionPool(host='www.kamajo.ac.jp', port=443): Max retries exceeded with url: /ent-req/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.kamajo.ac.jp', port=443) at 0x7f7e8f6d3590>, 'Connection to www.kamajo.ac.jp timed out. (connect timeout=15)'))"
   },
   {
     "schoolName": "開智中学校",
@@ -931,7 +931,7 @@
     "url": "https://www.junten.ed.jp/admission/yoko/",
     "ok": true,
     "statusCode": 200,
-    "title": "生徒募集要項 | 北里大学附属順天中学校・高等学校",
+    "title": "One moment, please...",
     "errorType": null,
     "errorMessage": null
   },
@@ -940,7 +940,7 @@
     "url": "https://www.junten.ed.jp/news/41902/",
     "ok": true,
     "statusCode": 200,
-    "title": "帰国生入試事前相談のご案内【2027年度入試、2026－7年度編入試験】 | 北里大学附属順天中学校・高等学校",
+    "title": "One moment, please...",
     "errorType": null,
     "errorMessage": null
   },
@@ -965,20 +965,20 @@
   {
     "schoolName": "駒込中学校",
     "url": "https://www.komagome.ed.jp/exam/junior/",
-    "ok": true,
-    "statusCode": 200,
-    "title": "駒込学園 駒込中学・高等学校 ‐私立・共学‐",
-    "errorType": null,
-    "errorMessage": null
+    "ok": false,
+    "statusCode": null,
+    "title": null,
+    "errorType": "REQUEST_ERROR",
+    "errorMessage": "HTTPSConnectionPool(host='www.komagome.ed.jp', port=443): Max retries exceeded with url: /exam/junior/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.komagome.ed.jp', port=443) at 0x7f7e8f85b6b0>, 'Connection to www.komagome.ed.jp timed out. (connect timeout=15)'))"
   },
   {
     "schoolName": "駒込中学校",
     "url": "https://www.komagome.ed.jp/exam/junior/",
-    "ok": true,
-    "statusCode": 200,
-    "title": "駒込学園 駒込中学・高等学校 ‐私立・共学‐",
-    "errorType": null,
-    "errorMessage": null
+    "ok": false,
+    "statusCode": null,
+    "title": null,
+    "errorType": "REQUEST_ERROR",
+    "errorMessage": "HTTPSConnectionPool(host='www.komagome.ed.jp', port=443): Max retries exceeded with url: /exam/junior/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.komagome.ed.jp', port=443) at 0x7f7e8f886b40>, 'Connection to www.komagome.ed.jp timed out. (connect timeout=15)'))"
   },
   {
     "schoolName": "麗澤中学校",
