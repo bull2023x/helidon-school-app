@@ -443,20 +443,20 @@
   {
     "schoolName": "東京女学館中学校",
     "url": "https://tjk.jp/mh/examinee/returnee/",
-    "ok": false,
-    "statusCode": null,
-    "title": null,
-    "errorType": "SSL_ERROR",
-    "errorMessage": "HTTPSConnectionPool(host='tjk.jp', port=443): Max retries exceeded with url: /mh/examinee/returnee/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+    "ok": true,
+    "statusCode": 200,
+    "title": "東京女学館中学校・高等学校",
+    "errorType": null,
+    "errorMessage": null
   },
   {
     "schoolName": "東京女学館中学校",
     "url": "https://tjk.jp/mh/examinee/returnee/",
-    "ok": false,
-    "statusCode": null,
-    "title": null,
-    "errorType": "SSL_ERROR",
-    "errorMessage": "HTTPSConnectionPool(host='tjk.jp', port=443): Max retries exceeded with url: /mh/examinee/returnee/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+    "ok": true,
+    "statusCode": 200,
+    "title": "東京女学館中学校・高等学校",
+    "errorType": null,
+    "errorMessage": null
   },
   {
     "schoolName": "東京学芸大学附属国際中等教育学校",
