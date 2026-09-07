@@ -191,11 +191,11 @@
   {
     "schoolName": "大宮国際中等教育学校",
     "url": "https://www.city.saitama.lg.jp/006/015/035/002/p125223_d/fil/ohmiya_R8youkou.pdf",
-    "ok": false,
-    "statusCode": null,
+    "ok": true,
+    "statusCode": 200,
     "title": null,
-    "errorType": "REQUEST_ERROR",
-    "errorMessage": "HTTPSConnectionPool(host='www.city.saitama.lg.jp', port=443): Read timed out. (read timeout=15)"
+    "errorType": null,
+    "errorMessage": null
   },
   {
     "schoolName": "学習院中等科",
