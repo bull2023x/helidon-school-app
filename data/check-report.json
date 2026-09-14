@@ -191,11 +191,11 @@
   {
     "schoolName": "大宮国際中等教育学校",
     "url": "https://www.city.saitama.lg.jp/006/015/035/002/p125223_d/fil/ohmiya_R8youkou.pdf",
-    "ok": true,
-    "statusCode": 200,
+    "ok": false,
+    "statusCode": null,
     "title": null,
-    "errorType": null,
-    "errorMessage": null
+    "errorType": "REQUEST_ERROR",
+    "errorMessage": "HTTPSConnectionPool(host='www.city.saitama.lg.jp', port=443): Read timed out. (read timeout=15)"
   },
   {
     "schoolName": "学習院中等科",
@@ -560,9 +560,9 @@
   {
     "schoolName": "横浜雙葉中学校",
     "url": "https://www.yokohamafutaba.ed.jp/highsch/prospectives/2025/12820/",
-    "ok": true,
-    "statusCode": 200,
-    "title": "帰国生入試　出願の受付を開始",
+    "ok": false,
+    "statusCode": 404,
+    "title": "404 NOT FOUND | 横浜雙葉中学高等学校",
     "errorType": null,
     "errorMessage": null
   },
