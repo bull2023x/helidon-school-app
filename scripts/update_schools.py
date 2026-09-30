@@ -1,288 +1,149 @@
 #!/usr/bin/env python3
+"""Extract high-confidence admissions facts from official HTML and linked PDFs.
+
+Only candidates with a source URL, excerpt, and sufficient confidence are
+applied.  All candidates are retained in data/update-candidates.json.
+"""
 from __future__ import annotations
 
-from datetime import datetime
-import shutil
 import argparse
 import json
-import sys
+import re
+import shutil
 from dataclasses import dataclass
+from datetime import datetime, timezone
+from io import BytesIO
 from pathlib import Path
 from typing import Any
+from urllib.parse import urljoin, urlparse
+
 import requests
 from bs4 import BeautifulSoup
+from pypdf import PdfReader
 
-REQUIRED_FIELDS = [
-    "schoolName",
-    "category",
-    "capacity",
-    "examDates",
-    "subjects",
-    "alternateSubjects",
-    "interview",
-    "englishQualificationBenefit",
-    "notes",
-    "infoLink",
-]
+REQUIRED = ("schoolName", "category", "capacity", "examDates", "subjects", "alternateSubjects", "interview", "englishQualificationBenefit", "notes", "infoLink")
+UPDATE_FIELDS = {"capacity", "examDates", "subjects", "interview", "englishQualificationBenefit"}
+KEYWORDS = ("入試", "募集", "出願", "帰国", "国際", "英語", "要項")
+HEADERS = {"User-Agent": "SchoolDataEditor/1.0 (+https://github.com/bull2023x/helidon-school-app)"}
+PDF_LIMIT = 12 * 1024 * 1024
 
 
 @dataclass(frozen=True)
 class Config:
-    input_path: Path
-    output_path: Path
-    start_no: int | None
-    end_no: int | None
-    pretty: bool
+    input: Path; output: Path; start: int | None; end: int | None
+    pretty: bool; apply: bool; minimum: float; max_pdfs: int
 
 
-def parse_args() -> Config:
-    parser = argparse.ArgumentParser(
-        description="Update school JSON (scaffold for weekly automation)."
-    )
-    parser.add_argument(
-        "--input",
-        required=True,
-        help="Path to the source JSON file.",
-    )
-    parser.add_argument(
-        "--output",
-        required=True,
-        help="Path to write the updated JSON file.",
-    )
-    parser.add_argument(
-        "--start-no",
-        type=int,
-        default=None,
-        help="1-based inclusive start index for targeted records.",
-    )
-    parser.add_argument(
-        "--end-no",
-        type=int,
-        default=None,
-        help="1-based inclusive end index for targeted records.",
-    )
-    parser.add_argument(
-        "--pretty",
-        action="store_true",
-        help="Write formatted JSON with indentation.",
-    )
-    args = parser.parse_args()
-
-    if args.start_no is not None and args.start_no < 1:
-        raise SystemExit("--start-no must be >= 1")
-    if args.end_no is not None and args.end_no < 1:
-        raise SystemExit("--end-no must be >= 1")
-    if args.start_no is not None and args.end_no is not None and args.start_no > args.end_no:
-        raise SystemExit("--start-no must be <= --end-no")
-
-    return Config(
-        input_path=Path(args.input),
-        output_path=Path(args.output),
-        start_no=args.start_no,
-        end_no=args.end_no,
-        pretty=args.pretty,
-    )
+def args() -> Config:
+    p = argparse.ArgumentParser(description="Extract admissions updates from official HTML/PDF sources.")
+    p.add_argument("--input", required=True); p.add_argument("--output", required=True)
+    p.add_argument("--start-no", type=int); p.add_argument("--end-no", type=int)
+    p.add_argument("--pretty", action="store_true")
+    p.add_argument("--apply", action="store_true", help="Apply only high-confidence candidates.")
+    p.add_argument("--min-confidence", type=float, default=.85)
+    p.add_argument("--max-pdfs", type=int, default=3)
+    a = p.parse_args()
+    if (a.start_no and a.start_no < 1) or (a.end_no and a.end_no < 1) or (a.start_no and a.end_no and a.start_no > a.end_no): p.error("invalid record range")
+    if not 0 <= a.min_confidence <= 1 or a.max_pdfs < 0: p.error("invalid confidence or PDF limit")
+    return Config(Path(a.input), Path(a.output), a.start_no, a.end_no, a.pretty, a.apply, a.min_confidence, a.max_pdfs)
 
 
-def load_json(path: Path) -> list[dict[str, Any]]:
+def compact(s: str) -> str: return re.sub(r"\s+", " ", s).strip()
+
+def get(url: str) -> requests.Response:
+    r = requests.get(url, headers=HEADERS, timeout=(10, 30), allow_redirects=True); r.raise_for_status(); return r
+
+def pdf_text(data: bytes) -> str:
+    return compact("\n".join(page.extract_text() or "" for page in PdfReader(BytesIO(data)).pages[:30]))
+
+def sources(url: str, max_pdfs: int) -> tuple[list[tuple[str, str, str]], dict[str, Any]]:
+    report: dict[str, Any] = {"url": url, "ok": False, "sources": [], "error": None}
     try:
-        data = json.loads(path.read_text(encoding="utf-8"))
-    except FileNotFoundError:
-        raise SystemExit(f"Input file not found: {path}")
-    except json.JSONDecodeError as exc:
-        raise SystemExit(f"Invalid JSON: {path} ({exc})")
+        r = get(url); ct = r.headers.get("content-type", "").lower(); report.update(ok=True, statusCode=r.status_code, url=r.url)
+        if "pdf" in ct or urlparse(r.url).path.lower().endswith(".pdf"):
+            text = pdf_text(r.content[:PDF_LIMIT]); report["sources"].append({"url":r.url,"kind":"pdf","characters":len(text)}); return [(r.url,"pdf",text)], report
+        if "html" not in ct: report["error"] = f"Unsupported content type: {ct}"; return [], report
+        r.encoding = r.apparent_encoding or r.encoding; soup = BeautifulSoup(r.text, "html.parser")
+        text = compact(soup.get_text(" ", strip=True)); found = [(r.url,"html",text)]; report["sources"].append({"url":r.url,"kind":"html","characters":len(text)})
+        links: list[tuple[int,str]] = []
+        for a in soup.find_all("a", href=True):
+            href, label = urljoin(r.url, a["href"]), compact(a.get_text(" ", strip=True))
+            score = sum(word in label + " " + href for word in KEYWORDS)
+            if score and urlparse(href).path.lower().endswith(".pdf"): links.append((score, href))
+        seen: set[str] = set()
+        for _, href in sorted(links, reverse=True):
+            if href in seen or len(found) - 1 >= max_pdfs: continue
+            seen.add(href)
+            try:
+                p = get(href)
+                if len(p.content) > PDF_LIMIT: raise ValueError("PDF exceeds size limit")
+                ptext = pdf_text(p.content); found.append((p.url,"pdf",ptext)); report["sources"].append({"url":p.url,"kind":"pdf","characters":len(ptext)})
+            except Exception as e: report["sources"].append({"url":href,"kind":"pdf","error":str(e)})
+        return found, report
+    except Exception as e:
+        report["error"] = f"{type(e).__name__}: {e}"; return [], report
 
-    if not isinstance(data, list):
-        raise SystemExit("Top-level JSON must be a list of school objects.")
-
-    normalized: list[dict[str, Any]] = []
-    for i, item in enumerate(data, start=1):
-        if not isinstance(item, dict):
-            raise SystemExit(f"Record #{i} is not an object.")
-        normalized.append(item)
-    return normalized
-
-
-def validate_schema(records: list[dict[str, Any]]) -> None:
-    for i, record in enumerate(records, start=1):
-        missing = [key for key in REQUIRED_FIELDS if key not in record]
-        if missing:
-            raise SystemExit(f"Record #{i} is missing fields: {', '.join(missing)}")
-
-
-def select_target_range(records: list[dict[str, Any]], start_no: int | None, end_no: int | None) -> list[dict[str, Any]]:
-    if start_no is None and end_no is None:
-        return records
-
-    start_idx = 0 if start_no is None else start_no - 1
-    end_idx = len(records) if end_no is None else end_no
-    return records[start_idx:end_idx]
-
-
-def normalize_record(record: dict[str, Any]) -> dict[str, Any]:
-    # Keep structure stable; fill missing optional keys with null.
-    out = dict(record)
-    for key in REQUIRED_FIELDS:
-        out.setdefault(key, None)
+def extract(source_url: str, kind: str, text: str, category: str) -> list[dict[str, Any]]:
+    # Do not use a page if it has no sign of the record category; this avoids
+    # replacing a 帰国 row with a nearby general-admissions value.
+    hint = category.replace("受験", "").replace("入試", "")
+    scoped = text if not hint or hint in text else ""
+    out: list[dict[str, Any]] = []
+    patterns = {
+      "examDates": r"(?:試験日|入試日|選考日|実施日)\s*[：:]?\s*([^。\n]{3,160})",
+      "capacity": r"(?:募集人員|募集定員|定員)\s*[：:]?\s*([^。\n]{1,100})",
+      "subjects": r"(?:試験科目|選考方法|試験内容)\s*[：:]?\s*([^。\n]{3,220})",
+    }
+    for field, pat in patterns.items():
+        m = re.search(pat, scoped)
+        if not m: continue
+        value = compact(m.group(1).strip(" ：:"))
+        if field == "examDates" and not re.search(r"20\d{2}|\d{1,2}月", value): continue
+        out.append(candidate(field, value, .90 if kind == "pdf" else .86, source_url, kind, scoped, m))
+    for field, pat in {
+      "interview": r"(?:面接[^。\n]{0,100}(?:あり|実施|行う|含む)|(?:あり|実施)[^。\n]{0,60}面接)",
+      "englishQualificationBenefit": r"(?:英検|TOEFL|IELTS|CEFR|英語資格)[^。\n]{0,180}(?:免除|加点|優遇|換算|保証)[^。\n]{0,100}",
+    }.items():
+        m = re.search(pat, scoped)
+        if m: out.append(candidate(field, m.group(0), (.88 if kind == "pdf" else .82), source_url, kind, scoped, m))
     return out
 
-def check_school_url(record: dict[str, Any]) -> dict[str, Any]:
-    school_name = record.get("schoolName", "(unknown)")
-    url = record.get("infoLink")
+def candidate(field: str, value: str, confidence: float, url: str, kind: str, text: str, m: re.Match[str]) -> dict[str, Any]:
+    return {"field":field, "value":compact(value), "confidence":confidence, "sourceUrl":url, "sourceType":kind, "excerpt":compact(text[max(0,m.start()-120):m.end()+120])[:500]}
 
-    result: dict[str, Any] = {
-        "schoolName": school_name,
-        "url": url,
-        "ok": False,
-        "statusCode": None,
-        "title": None,
-        "errorType": None,
-        "errorMessage": None,
-    }
+def write(path: Path, obj: Any, pretty: bool=True) -> bool:
+    data = json.dumps(obj, ensure_ascii=False, indent=2 if pretty else None) + "\n"; old = path.read_text(encoding="utf-8") if path.exists() else ""
+    if data == old: return False
+    path.parent.mkdir(parents=True, exist_ok=True); path.write_text(data, encoding="utf-8"); return True
 
-    if not url:
-        result["errorType"] = "MISSING_URL"
-        result["errorMessage"] = "infoLink is null or empty"
-        print(f"[SKIP] {school_name}: no URL")
-        return result
-
-    try:
-        response = requests.get(
-            url,
-            timeout=15,
-            headers={"User-Agent": "Mozilla/5.0"},
-        )
-        content_type = response.headers.get("Content-Type", "")
-
-        if "text/html" in content_type:
-            if response.encoding is None or response.encoding.lower() == "iso-8859-1":
-                response.encoding = response.apparent_encoding
-
-        result["statusCode"] = response.status_code
-        result["ok"] = response.status_code == 200
-
-        print(f"[OK] {school_name}: {response.status_code}")
-
-        if "text/html" in content_type:
-            soup = BeautifulSoup(response.text, "html.parser")
-            title = soup.title.string.strip() if soup.title and soup.title.string else "No title"
-            result["title"] = title
-            print(f"      Title: {title}")
-
-    except requests.exceptions.SSLError as e:
-        result["errorType"] = "SSL_ERROR"
-        result["errorMessage"] = str(e)
-        print(f"[SSL ERROR] {school_name}: {e}")
-
-    except requests.exceptions.RequestException as e:
-        result["errorType"] = "REQUEST_ERROR"
-        result["errorMessage"] = str(e)
-        print(f"[ERROR] {school_name}: {e}")
-
-    except Exception as e:
-        result["errorType"] = "UNKNOWN_ERROR"
-        result["errorMessage"] = f"{type(e).__name__}: {e}"
-        print(f"[UNKNOWN ERROR] {school_name}: {e}")
-
-    return result
+def backup(path: Path) -> None:
+    if not path.exists(): return
+    archive = path.parent.parent / "archive"; archive.mkdir(exist_ok=True)
+    shutil.copy2(path, archive / f"{path.stem}-{datetime.now():%Y%m%d-%H%M%S}{path.suffix}")
 
 def main() -> int:
-    cfg = parse_args()
+    cfg = args(); records = json.loads(cfg.input.read_text(encoding="utf-8"))
+    if not isinstance(records, list) or any(not isinstance(r,dict) or any(k not in r for k in REQUIRED) for r in records): raise SystemExit("Invalid school JSON schema")
+    targets = records[(cfg.start-1 if cfg.start else 0):(cfg.end if cfg.end else len(records))]; now = datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"); reports=[]; changes=0
+    for record in targets:
+        url = record.get("infoLink"); item={"id":record.get("id"),"schoolName":record["schoolName"],"category":record["category"],"checkedAt":now}
+        found, fetch = sources(url, cfg.max_pdfs) if url else ([], {"ok":False,"error":"MISSING_URL"})
+        candidates = [c for source in found for c in extract(*source, record["category"])]
+        selected: dict[str,dict[str,Any]] = {}
+        for c in candidates:
+            if c["field"] not in selected or c["confidence"] > selected[c["field"]]["confidence"]: selected[c["field"]]=c
+        applied=[]
+        if fetch["ok"]: record["lastCheckedAt"] = now
+        if cfg.apply:
+            for field,c in selected.items():
+                if field in UPDATE_FIELDS and c["confidence"] >= cfg.minimum and record.get(field) != c["value"]:
+                    applied.append({"field":field,"from":record.get(field),"to":c["value"],"confidence":c["confidence"]}); record[field]=c["value"]; changes += 1
+        item.update(fetch=fetch,candidates=candidates,selected=selected,applied=applied); reports.append(item)
+        print(f"[{'OK' if fetch['ok'] else 'ERROR'}] {record['schoolName']}: {len(selected)} candidates, {len(applied)} applied")
+    report_path=cfg.output.parent / "update-candidates.json"; write(report_path,{"generatedAt":now,"apply":cfg.apply,"minConfidence":cfg.minimum,"records":reports})
+    if cfg.apply:
+        backup(cfg.output); print(f"[{'WRITE' if write(cfg.output,records,cfg.pretty) else 'SKIP'}] {cfg.output} ({changes} field changes)")
+    else: print("[DRY RUN] No data changed. Review data/update-candidates.json or rerun with --apply.")
+    print(f"[REPORT] {report_path}"); return 0
 
-    backup_json()
-
-    records = load_json(cfg.input_path)
-    validate_schema(records)
-
-    target_records = select_target_range(records, cfg.start_no, cfg.end_no)
-
-    report: list[dict[str, Any]] = []
-    for record in target_records:
-        report.append(check_school_url(record))
-
-    failed = [r for r in report if not r["ok"]]
-    print(f"\nSummary: {len(report) - len(failed)} ok, {len(failed)} failed")
-
-    report_path = cfg.output_path.parent / "check-report.json"
-    report_path.write_text(
-        json.dumps(report, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-        )
-    print(f"Wrote {report_path}")
-
-    success_by_id: dict[int, dict] = {}
-    now = datetime.now().isoformat(timespec="seconds")
-
-    for record, result in zip(target_records, report):
-        if result["ok"]:
-            updated = dict(record)
-            updated["lastCheckedAt"] = now
-            success_by_id[record["id"]] = updated
-
-    merged_records = merge_successful_updates(records, success_by_id)
-    write_latest_json(cfg.output_path, merged_records)
-
-    return 0
-
-def backup_json():
-    repo_root = Path(__file__).resolve().parents[1]
-
-    source = repo_root / "data" / "schools-v2.json"
-
-    archive_dir = repo_root / "archive"
-    archive_dir.mkdir(exist_ok=True)
-
-    today = datetime.now().strftime("%Y-%m-%d")
-
-    backup = archive_dir / f"schools-v2-{today}.json"
-
-    shutil.copy2(source, backup)
-
-    print(f"[BACKUP] {backup}")
-
-def merge_successful_updates(
-        old_records: list[dict],
-        success_by_id: dict[int, dict],
-) -> list[dict]:
-    merged: list[dict] = []
-
-    for old in old_records:
-        school_id = old.get("id")
-        updated = success_by_id.get(school_id)
-
-        if updated is not None:
-            merged.append(updated)
-        else:
-            merged.append(old)
-
-    return merged
-
-def archive_previous_json(output_path: Path) -> Path | None:
-    if not output_path.exists():
-        return None
-
-    archive_dir = Path("archive")
-    archive_dir.mkdir(parents=True, exist_ok=True)
-
-    stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
-    archive_path = archive_dir / f"{output_path.stem}-{stamp}{output_path.suffix}"
-    shutil.copy2(output_path, archive_path)
-    print(f"[ARCHIVE] {output_path} -> {archive_path}")
-    return archive_path
-
-
-def write_latest_json(output_path: Path, records: list[dict]) -> None:
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-
-    new_text = json.dumps(records, ensure_ascii=False, indent=2) + "\n"
-    old_text = output_path.read_text(encoding="utf-8") if output_path.exists() else ""
-
-    if old_text != new_text:
-        archive_previous_json(output_path)
-        output_path.write_text(new_text, encoding="utf-8")
-        print(f"[WRITE] {output_path}")
-    else:
-        print("[SKIP] JSON unchanged")
-
-if __name__ == "__main__":
-    raise SystemExit(main())
+if __name__ == "__main__": raise SystemExit(main())
