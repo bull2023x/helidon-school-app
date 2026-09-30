@@ -31,8 +31,6 @@ jobs:
           python scripts/update_schools.py \
             --input data/schools-v2.json \
             --output data/schools-v2.json \
-            --apply \
-            --min-confidence 0.85 \
             --pretty
 
       - name: Commit and push if changed
