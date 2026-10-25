@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T19:57:15+00:00",
+  "generatedAt": "2026-10-25T20:16:23+00:00",
   "apply": false,
   "minConfidence": 0.85,
   "records": [
@@ -7,7 +7,7 @@
       "id": 1,
       "schoolName": "かえつ有明中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.ariake.kaetsu.ac.jp/",
         "ok": true,
@@ -15,7 +15,7 @@
           {
             "url": "https://www.ariake.kaetsu.ac.jp/",
             "kind": "html",
-            "characters": 1840
+            "characters": 1832
           }
         ],
         "error": null,
@@ -29,7 +29,7 @@
       "id": 2,
       "schoolName": "かえつ有明中学校",
       "category": "英語受験",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.ariake.kaetsu.ac.jp/",
         "ok": true,
@@ -37,7 +37,7 @@
           {
             "url": "https://www.ariake.kaetsu.ac.jp/",
             "kind": "html",
-            "characters": 1840
+            "characters": 1832
           }
         ],
         "error": null,
@@ -51,7 +51,7 @@
       "id": 3,
       "schoolName": "カリタス女子中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.caritas.ed.jp/",
         "ok": true,
@@ -59,7 +59,7 @@
           {
             "url": "https://www.caritas.ed.jp/",
             "kind": "html",
-            "characters": 3889
+            "characters": 3934
           },
           {
             "url": "https://caritas.ed.jp/doc/2026/2027%E5%B9%B4%E5%BA%A6%E5%85%A5%E8%A9%A6%E8%A6%81%E9%A0%85.pdf",
@@ -128,7 +128,7 @@
       "id": 4,
       "schoolName": "サレジアン国際学園世田谷中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://salesian-setagaya.ed.jp/recruitments/",
         "ok": true,
@@ -237,7 +237,7 @@
       "id": 5,
       "schoolName": "サレジアン国際学園中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.salesian.international.seibi.ac.jp/",
         "ok": true,
@@ -245,7 +245,7 @@
           {
             "url": "https://www.salesian.international.seibi.ac.jp/",
             "kind": "html",
-            "characters": 4151
+            "characters": 4189
           }
         ],
         "error": null,
@@ -259,29 +259,12 @@
       "id": 6,
       "schoolName": "ドルトン東京学園中等部",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.daltontokyo.ed.jp/",
-        "ok": true,
-        "sources": [
-          {
-            "url": "https://www.daltontokyo.ed.jp/",
-            "kind": "html",
-            "characters": 1148
-          },
-          {
-            "url": "https://www.daltontokyo.ed.jp/wp/wp-content/themes/dalton/assets/PDF/dalton_transfer2026-NY2.pdf",
-            "kind": "pdf",
-            "characters": 921
-          },
-          {
-            "url": "https://www.daltontokyo.ed.jp/wp/wp-content/themes/dalton/assets/PDF/dalton_transfer2026-4.pdf",
-            "kind": "pdf",
-            "characters": 1152
-          }
-        ],
-        "error": null,
-        "statusCode": 200
+        "ok": false,
+        "sources": [],
+        "error": "ConnectTimeout: HTTPSConnectionPool(host='www.daltontokyo.ed.jp', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.daltontokyo.ed.jp', port=443) at 0x7f65d8d3b6e0>, 'Connection to www.daltontokyo.ed.jp timed out. (connect timeout=10)'))"
       },
       "candidates": [],
       "selected": {},
@@ -291,7 +274,7 @@
       "id": 7,
       "schoolName": "三田国際科学学園中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.mita-is.ed.jp/",
         "ok": true,
@@ -299,7 +282,7 @@
           {
             "url": "https://www.mita-is.ed.jp/",
             "kind": "html",
-            "characters": 3889
+            "characters": 3925
           }
         ],
         "error": null,
@@ -313,7 +296,7 @@
       "id": 8,
       "schoolName": "三田国際科学学園中学校",
       "category": "英語受験",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.mita-is.ed.jp/",
         "ok": true,
@@ -321,7 +304,7 @@
           {
             "url": "https://www.mita-is.ed.jp/",
             "kind": "html",
-            "characters": 3889
+            "characters": 3925
           }
         ],
         "error": null,
@@ -335,12 +318,19 @@
       "id": 9,
       "schoolName": "三輪田学園中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.miwada.ac.jp/",
-        "ok": false,
-        "sources": [],
-        "error": "ConnectTimeout: HTTPSConnectionPool(host='www.miwada.ac.jp', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.miwada.ac.jp', port=443) at 0x7f925fb4dd60>, 'Connection to www.miwada.ac.jp timed out. (connect timeout=10)'))"
+        "ok": true,
+        "sources": [
+          {
+            "url": "https://www.miwada.ac.jp/",
+            "kind": "html",
+            "characters": 4462
+          }
+        ],
+        "error": null,
+        "statusCode": 200
       },
       "candidates": [],
       "selected": {},
@@ -350,7 +340,7 @@
       "id": 10,
       "schoolName": "佼成学園女子中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.girls.kosei.ac.jp/junireturneesoutline",
         "ok": true,
@@ -520,7 +510,7 @@
       "id": 11,
       "schoolName": "公文国際学園中等部",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://kumon.ac.jp/k-gakuen/kokusai/nyuuShiShuTsuGan.html",
         "ok": true,
@@ -542,7 +532,7 @@
       "id": 12,
       "schoolName": "共立女子中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.kyoritsu-wu.ac.jp/chukou/admission/application/returnee/",
         "ok": true,
@@ -598,19 +588,12 @@
       "id": 13,
       "schoolName": "千代田中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://chiyoda.ed.jp/",
-        "ok": true,
-        "sources": [
-          {
-            "url": "https://chiyoda.ed.jp/",
-            "kind": "html",
-            "characters": 4292
-          }
-        ],
-        "error": null,
-        "statusCode": 200
+        "ok": false,
+        "sources": [],
+        "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://chiyoda.ed.jp/"
       },
       "candidates": [],
       "selected": {},
@@ -620,19 +603,12 @@
       "id": 14,
       "schoolName": "千代田中学校",
       "category": "英語受験",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://chiyoda.ed.jp/",
-        "ok": true,
-        "sources": [
-          {
-            "url": "https://chiyoda.ed.jp/",
-            "kind": "html",
-            "characters": 4292
-          }
-        ],
-        "error": null,
-        "statusCode": 200
+        "ok": false,
+        "sources": [],
+        "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://chiyoda.ed.jp/"
       },
       "candidates": [],
       "selected": {},
@@ -642,19 +618,12 @@
       "id": 15,
       "schoolName": "同志社国際中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.intnl.doshisha.ac.jp/admission/downloads.html",
-        "ok": true,
-        "sources": [
-          {
-            "url": "https://www.intnl.doshisha.ac.jp/admission/downloads.html",
-            "kind": "html",
-            "characters": 2156
-          }
-        ],
-        "error": null,
-        "statusCode": 200
+        "ok": false,
+        "sources": [],
+        "error": "HTTPError: 404 Client Error: Not Found for url: https://www.intnl.doshisha.ac.jp/admission/downloads.html"
       },
       "candidates": [],
       "selected": {},
@@ -664,63 +633,22 @@
       "id": 16,
       "schoolName": "品川女子学院",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.shinagawajoshigakuin.jp/examination/%E4%B8%AD%E7%AD%89%E9%83%A8%E5%85%A5%E8%A9%A6%EF%BD%A5%E5%B8%B0%E5%9B%BD%E7%94%9F/2026kikoku/",
-        "ok": true,
-        "sources": [
-          {
-            "url": "https://www.shinagawajoshigakuin.jp/examination/%E4%B8%AD%E7%AD%89%E9%83%A8%E5%85%A5%E8%A9%A6%EF%BD%A5%E5%B8%B0%E5%9B%BD%E7%94%9F/2026kikoku/",
-            "kind": "html",
-            "characters": 5469
-          }
-        ],
-        "error": null,
-        "statusCode": 200
+        "ok": false,
+        "sources": [],
+        "error": "HTTPError: 503 Server Error: Service Unavailable for url: https://www.shinagawajoshigakuin.jp/examination/%E4%B8%AD%E7%AD%89%E9%83%A8%E5%85%A5%E8%A9%A6%EF%BD%A5%E5%B8%B0%E5%9B%BD%E7%94%9F/2026kikoku/"
       },
-      "candidates": [
-        {
-          "field": "examDates",
-          "value": "2026年11月22日（日） 募集人数 とくに定めず 出願資格 次のすべての条件を満たす者 ①2027年３月に小学校を卒業見込みの女子 ［現地校から出願の場合、日本の学齢で同等の資格を有すること］ ②保護者の海外勤務に伴い、継続して1年以上、現地校・日本人学校を問わず海外の小学校に在学した者 ③小学３年生（2023年）",
-          "confidence": 0.86,
-          "sourceUrl": "https://www.shinagawajoshigakuin.jp/examination/%E4%B8%AD%E7%AD%89%E9%83%A8%E5%85%A5%E8%A9%A6%EF%BD%A5%E5%B8%B0%E5%9B%BD%E7%94%9F/2026kikoku/",
-          "sourceType": "html",
-          "excerpt": "Q&A・お問い合わせ ENTRANCE EXAMINATION 帰国生入試 中等部入試 帰国生入試 帰国生入試 合格発表 募集要項・出願手順をご確認の上、ページ下部のボタンから出願ページへ進んでください 2027年度 帰国生入試 募集要項 試験日 2026年11月22日（日） 募集人数 とくに定めず 出願資格 次のすべての条件を満たす者 ①2027年３月に小学校を卒業見込みの女子 ［現地校から出願の場合、日本の学齢で同等の資格を有すること］ ②保護者の海外勤務に伴い、継続して1年以上、現地校・日本人学校を問わず海外の小学校に在学した者 ③小学３年生（2023年）11月23日以降に帰国した者 （日付に関しての相談不可） ［2027年３月末までに帰国予定を含む］ ※Q&A「帰国生入試について」をご確認ください。 出願方法 WEB出願 出願期間 2026年11月9日（月）～2026年11月19日（木）1"
-        },
-        {
-          "field": "subjects",
-          "value": "国語（読解・作文）・算数(計算・特殊算など) 試験当日の予定 7:50 開門 8:20 集合・注意事項など 8:40 国語（50分） 9:50 算数（40分） 10:40 ※チェンジエージェントシート記入（20分） 11:05 面接［本人のみ",
-          "confidence": 0.86,
-          "sourceUrl": "https://www.shinagawajoshigakuin.jp/examination/%E4%B8%AD%E7%AD%89%E9%83%A8%E5%85%A5%E8%A9%A6%EF%BD%A5%E5%B8%B0%E5%9B%BD%E7%94%9F/2026kikoku/",
-          "sourceType": "html",
-          "excerpt": "ける最終学校・最終学年の通知表の画像データ（PDFまたはJPEG画像。氏名・学校名が記載された面も必ず入れてください。リモート授業などの関係で５段階の成績などの記載がない場合も、そのままアップロードしてください）。 受験料 25,000円 試験科目 国語（読解・作文）・算数(計算・特殊算など) 試験当日の予定 7:50 開門 8:20 集合・注意事項など 8:40 国語（50分） 9:50 算数（40分） 10:40 ※チェンジエージェントシート記入（20分） 11:05 面接［本人のみ。日本語。入退室含め１人8分程度］ 【解散場所】 保護者控室（カフェテリア） 【服装】 特に指定はありません。 面接 受験生のみ（日本語） 合格発表 11月22日（日） 16:00(予定) ミライコンパスにて 入学金 250,000円 手続"
-        }
-      ],
-      "selected": {
-        "examDates": {
-          "field": "examDates",
-          "value": "2026年11月22日（日） 募集人数 とくに定めず 出願資格 次のすべての条件を満たす者 ①2027年３月に小学校を卒業見込みの女子 ［現地校から出願の場合、日本の学齢で同等の資格を有すること］ ②保護者の海外勤務に伴い、継続して1年以上、現地校・日本人学校を問わず海外の小学校に在学した者 ③小学３年生（2023年）",
-          "confidence": 0.86,
-          "sourceUrl": "https://www.shinagawajoshigakuin.jp/examination/%E4%B8%AD%E7%AD%89%E9%83%A8%E5%85%A5%E8%A9%A6%EF%BD%A5%E5%B8%B0%E5%9B%BD%E7%94%9F/2026kikoku/",
-          "sourceType": "html",
-          "excerpt": "Q&A・お問い合わせ ENTRANCE EXAMINATION 帰国生入試 中等部入試 帰国生入試 帰国生入試 合格発表 募集要項・出願手順をご確認の上、ページ下部のボタンから出願ページへ進んでください 2027年度 帰国生入試 募集要項 試験日 2026年11月22日（日） 募集人数 とくに定めず 出願資格 次のすべての条件を満たす者 ①2027年３月に小学校を卒業見込みの女子 ［現地校から出願の場合、日本の学齢で同等の資格を有すること］ ②保護者の海外勤務に伴い、継続して1年以上、現地校・日本人学校を問わず海外の小学校に在学した者 ③小学３年生（2023年）11月23日以降に帰国した者 （日付に関しての相談不可） ［2027年３月末までに帰国予定を含む］ ※Q&A「帰国生入試について」をご確認ください。 出願方法 WEB出願 出願期間 2026年11月9日（月）～2026年11月19日（木）1"
-        },
-        "subjects": {
-          "field": "subjects",
-          "value": "国語（読解・作文）・算数(計算・特殊算など) 試験当日の予定 7:50 開門 8:20 集合・注意事項など 8:40 国語（50分） 9:50 算数（40分） 10:40 ※チェンジエージェントシート記入（20分） 11:05 面接［本人のみ",
-          "confidence": 0.86,
-          "sourceUrl": "https://www.shinagawajoshigakuin.jp/examination/%E4%B8%AD%E7%AD%89%E9%83%A8%E5%85%A5%E8%A9%A6%EF%BD%A5%E5%B8%B0%E5%9B%BD%E7%94%9F/2026kikoku/",
-          "sourceType": "html",
-          "excerpt": "ける最終学校・最終学年の通知表の画像データ（PDFまたはJPEG画像。氏名・学校名が記載された面も必ず入れてください。リモート授業などの関係で５段階の成績などの記載がない場合も、そのままアップロードしてください）。 受験料 25,000円 試験科目 国語（読解・作文）・算数(計算・特殊算など) 試験当日の予定 7:50 開門 8:20 集合・注意事項など 8:40 国語（50分） 9:50 算数（40分） 10:40 ※チェンジエージェントシート記入（20分） 11:05 面接［本人のみ。日本語。入退室含め１人8分程度］ 【解散場所】 保護者控室（カフェテリア） 【服装】 特に指定はありません。 面接 受験生のみ（日本語） 合格発表 11月22日（日） 16:00(予定) ミライコンパスにて 入学金 250,000円 手続"
-        }
-      },
+      "candidates": [],
+      "selected": {},
       "applied": []
     },
     {
       "id": 17,
       "schoolName": "國學院大學久我山中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.kugayama-h.ed.jp/nyushi/jhs_nyushi/juken/",
         "ok": true,
@@ -760,7 +688,7 @@
       "id": 18,
       "schoolName": "埼玉栄中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.saitamasakae-h.ed.jp/junior/j-examee/j-requirements/",
         "ok": true,
@@ -847,7 +775,7 @@
       "id": 19,
       "schoolName": "大妻中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.otsuma.ed.jp/ad-returnee",
         "ok": true,
@@ -855,7 +783,7 @@
           {
             "url": "https://www.otsuma.ed.jp/ad-returnee",
             "kind": "html",
-            "characters": 7411
+            "characters": 7417
           },
           {
             "url": "https://www.otsuma.ed.jp/wp/wp-content/uploads/2025/05/fuutou-sea-2026.pdf",
@@ -924,7 +852,7 @@
       "id": 20,
       "schoolName": "大妻中野中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.otsumanakano.ac.jp/admission/guidelines/",
         "ok": true,
@@ -1012,7 +940,7 @@
       "id": 21,
       "schoolName": "大妻中野中学校",
       "category": "英語受験",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.otsumanakano.ac.jp/admission/guidelines/",
         "ok": true,
@@ -1100,7 +1028,7 @@
       "id": 22,
       "schoolName": "大宮国際中等教育学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.city.saitama.lg.jp/006/015/035/002/p125223_d/fil/ohmiya_R8youkou.pdf",
         "ok": false,
@@ -1115,7 +1043,7 @@
       "id": 23,
       "schoolName": "学習院中等科",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.gakushuin.ac.jp/bjh/admission/outline/index.html",
         "ok": true,
@@ -1186,7 +1114,7 @@
       "id": 24,
       "schoolName": "宝仙学園中学校 理数インター",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.hosen.ed.jp/risu-inter/returnee/",
         "ok": true,
@@ -1247,7 +1175,7 @@
       "id": 25,
       "schoolName": "実践女子学園中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://hs.jissen.ac.jp/admission/application/index.html",
         "ok": true,
@@ -1255,7 +1183,7 @@
           {
             "url": "https://hs.jissen.ac.jp/admission/application/index.html",
             "kind": "html",
-            "characters": 2672
+            "characters": 2666
           },
           {
             "url": "https://hs.jissen.ac.jp/admission/application/iq4b6n0000000naw-att/2027_ippan_bosyuu.pdf",
@@ -1329,7 +1257,7 @@
       "id": 26,
       "schoolName": "富士見丘中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.fujimigaoka.ac.jp/exam/returnees/returnees-application/",
         "ok": true,
@@ -1451,7 +1379,7 @@
       "id": 27,
       "schoolName": "山手学院中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.yamate-gakuin.ac.jp/shared/pdf/bosyuu_k.pdf",
         "ok": true,
@@ -1523,7 +1451,7 @@
       "id": 28,
       "schoolName": "山脇学園中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.yamawaki.ed.jp/exam/guideline/",
         "ok": true,
@@ -1602,7 +1530,7 @@
       "id": 29,
       "schoolName": "工学院大学附属中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.js.kogakuin.ac.jp/news/2025/090201.html",
         "ok": true,
@@ -1624,7 +1552,7 @@
       "id": 30,
       "schoolName": "市川中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.ichigaku.ac.jp/wp-content/uploads/2025/09/2026%E4%B8%AD%E5%AD%A6%E5%8B%9F%E9%9B%86%E8%A6%81%E9%A0%85.pdf",
         "ok": true,
@@ -1696,7 +1624,7 @@
       "id": 31,
       "schoolName": "帝京中学校",
       "category": null,
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "ok": false,
         "error": "MISSING_URL"
@@ -1709,7 +1637,7 @@
       "id": 32,
       "schoolName": "広尾学園中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.hiroogakuen.ed.jp/junior/jik_boshuyoko.html",
         "ok": true,
@@ -1736,7 +1664,7 @@
       "id": 33,
       "schoolName": "広尾学園中学校",
       "category": "英語受験",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.hiroogakuen.ed.jp/junior/j_boshuyoko.html",
         "ok": true,
@@ -1763,7 +1691,7 @@
       "id": 34,
       "schoolName": "広尾学園小石川中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://hiroo-koishikawa.ed.jp/exam/junior-nyushi",
         "ok": true,
@@ -1861,7 +1789,7 @@
       "id": 35,
       "schoolName": "広尾学園小石川中学校",
       "category": "英語受験",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://hiroo-koishikawa.ed.jp/exam/junior-nyushi",
         "ok": true,
@@ -1959,7 +1887,7 @@
       "id": 36,
       "schoolName": "慶應義塾湘南藤沢中等部",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.sfc-js.keio.ac.jp/exam/ir/exinfo.html",
         "ok": true,
@@ -2035,7 +1963,7 @@
       "id": 37,
       "schoolName": "成蹊中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.seikei.ac.jp/jsh/entranceguide/application.html",
         "ok": true,
@@ -2090,7 +2018,7 @@
       "id": 38,
       "schoolName": "攻玉社中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://kogyokusha.ed.jp/wp-content/themes/kougyokusya2024/images/introduction/download/kogyokusha_kokusai26.pdf",
         "ok": true,
@@ -2112,7 +2040,7 @@
       "id": 39,
       "schoolName": "文化学園大学杉並中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://bunsugi.jp/admission/kikokusei/",
         "ok": true,
@@ -2231,7 +2159,7 @@
       "id": 40,
       "schoolName": "文化学園大学杉並中学校",
       "category": "英語受験",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://bunsugi.jp/admission/exam-junior/",
         "ok": true,
@@ -2350,7 +2278,7 @@
       "id": 41,
       "schoolName": "日本大学中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.yokohama.hs.nihon-u.ac.jp/junior/admission/",
         "ok": true,
@@ -2461,7 +2389,7 @@
       "id": 42,
       "schoolName": "早稲田佐賀中学校",
       "category": null,
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "ok": false,
         "error": "MISSING_URL"
@@ -2474,7 +2402,7 @@
       "id": 43,
       "schoolName": "明星 Institution 中等教育部",
       "category": null,
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "ok": false,
         "error": "MISSING_URL"
@@ -2487,7 +2415,7 @@
       "id": 44,
       "schoolName": "昭和女子大学附属中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://jhs.swu.ac.jp/admission/summary/",
         "ok": true,
@@ -2559,7 +2487,7 @@
       "id": 45,
       "schoolName": "昭和女子大学附属中学校",
       "category": "英語受験",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://jhs.swu.ac.jp/admission/summary/",
         "ok": true,
@@ -2631,7 +2559,7 @@
       "id": 46,
       "schoolName": "昭和学院中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://showa-gkn.ed.jp/js/senior/admission/exam-infomation/",
         "ok": true,
@@ -2740,7 +2668,7 @@
       "id": 47,
       "schoolName": "昭和学院秀英中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.showa-shuei.ed.jp/cms/wp-content/themes/showa-shuei/assets/pdf/2026yokojr.pdf",
         "ok": true,
@@ -2812,7 +2740,7 @@
       "id": 48,
       "schoolName": "暁星中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.gyosei-h.ed.jp/admission/",
         "ok": true,
@@ -2839,7 +2767,7 @@
       "id": 49,
       "schoolName": "東京大学教育学部附属中等教育学校",
       "category": null,
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "ok": false,
         "error": "MISSING_URL"
@@ -2852,7 +2780,7 @@
       "id": 50,
       "schoolName": "東京女学館中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://mhs.tjk.ed.jp/",
         "ok": true,
@@ -2860,7 +2788,7 @@
           {
             "url": "https://mhs.tjk.ed.jp/",
             "kind": "html",
-            "characters": 4298
+            "characters": 4342
           }
         ],
         "error": null,
@@ -2874,7 +2802,7 @@
       "id": 51,
       "schoolName": "東京女学館中学校",
       "category": "英語受験",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://mhs.tjk.ed.jp/",
         "ok": true,
@@ -2882,7 +2810,7 @@
           {
             "url": "https://mhs.tjk.ed.jp/",
             "kind": "html",
-            "characters": 4298
+            "characters": 4342
           }
         ],
         "error": null,
@@ -2896,7 +2824,7 @@
       "id": 52,
       "schoolName": "東京学芸大学附属国際中等教育学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.iss.oizumi.u-gakugei.ac.jp/2026%E5%B9%B4%E5%BA%A64%E6%9C%88%E5%85%A5%E5%AD%A6%E3%83%BB%E7%B7%A8%E5%85%A5%E5%AD%A6%E5%8B%9F%E9%9B%86%E8%A6%81%E9%A0%85/",
         "ok": true,
@@ -2904,7 +2832,7 @@
           {
             "url": "https://www.iss.oizumi.u-gakugei.ac.jp/2026%E5%B9%B4%E5%BA%A64%E6%9C%88%E5%85%A5%E5%AD%A6%E3%83%BB%E7%B7%A8%E5%85%A5%E5%AD%A6%E5%8B%9F%E9%9B%86%E8%A6%81%E9%A0%85/",
             "kind": "html",
-            "characters": 2335
+            "characters": 2364
           },
           {
             "url": "https://www.iss.oizumi.u-gakugei.ac.jp/wp-content/uploads/2025/09/2026%E5%B9%B4%E5%BA%A64%E6%9C%88%E5%85%A5%E5%AD%A6%E3%83%BB%E7%B7%A8%E5%85%A5%E5%AD%A6%E5%8B%9F%E9%9B%86%E8%A6%81%E9%A0%85.pdf",
@@ -2957,7 +2885,7 @@
       "id": 53,
       "schoolName": "東京都市大学付属中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.tcu-jsh.ed.jp/application/youkou2026.pdf",
         "ok": false,
@@ -2972,7 +2900,7 @@
       "id": 54,
       "schoolName": "東京都市大学付属中学校",
       "category": "英語受験",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.tcu-jsh.ed.jp/application/youkou2026.pdf",
         "ok": false,
@@ -2987,7 +2915,7 @@
       "id": 55,
       "schoolName": "東京都市大学等々力中学校",
       "category": null,
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "ok": false,
         "error": "MISSING_URL"
@@ -3000,7 +2928,7 @@
       "id": 56,
       "schoolName": "東京都立白鷗高等学校附属中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.metro.ed.jp/hakuo-h/news/news-03/index.html",
         "ok": true,
@@ -3008,7 +2936,7 @@
           {
             "url": "https://www.metro.ed.jp/hakuo-h/news/news-03/index.html",
             "kind": "html",
-            "characters": 3102
+            "characters": 3133
           }
         ],
         "error": null,
@@ -3021,7 +2949,7 @@
           "confidence": 0.86,
           "sourceUrl": "https://www.metro.ed.jp/hakuo-h/news/news-03/index.html",
           "sourceType": "html",
-          "excerpt": "受検生の方 ニュース一覧 受検生の方 ニュース一覧 受検生の方 2026/10/19 10/31(土) 令和８年度 第２回学校説明会のご案内（適性検査についての説明あり、申込み締切まであと3日） 受検生の方 2026/10/08 令和9年度募集人員 受検生の方 2026/09/01 令和９年度 募集要項について 受検生の方 2026/07/31 海外帰国・在京外国人枠生徒募集 出願資格確認のための事前相談について 受検生の方 2026/06/22 令和９年度東京都立中学校入学者決定に関する実施要綱・同細目について 受検生の方 2026/03/26 令和８年度 学校紹介行事予定 受検生の方 2026/02/19 令和８年度入学者決定に関する本人得点の開示について 受検生の方 2026"
+          "excerpt": "2026/10/22 10/31(土) 令和８年度 第２回学校説明会のご案内（お申込みありがとうございました。） 受検生の方 2026/10/21 令和９年度入学者決定 出願方法説明会のご案内 受検生の方 2026/10/08 令和9年度募集人員 受検生の方 2026/09/01 令和９年度 募集要項について 受検生の方 2026/07/31 海外帰国・在京外国人枠生徒募集 出願資格確認のための事前相談について 受検生の方 2026/06/22 令和９年度東京都立中学校入学者決定に関する実施要綱・同細目について 受検生の方 2026/03/26 令和８年度 学校紹介行事予定 受検生の方 2026/02/19 令和８年度入学者決定に関する本人得点の開示について 受検生の方 2026"
         }
       ],
       "selected": {
@@ -3031,7 +2959,7 @@
           "confidence": 0.86,
           "sourceUrl": "https://www.metro.ed.jp/hakuo-h/news/news-03/index.html",
           "sourceType": "html",
-          "excerpt": "受検生の方 ニュース一覧 受検生の方 ニュース一覧 受検生の方 2026/10/19 10/31(土) 令和８年度 第２回学校説明会のご案内（適性検査についての説明あり、申込み締切まであと3日） 受検生の方 2026/10/08 令和9年度募集人員 受検生の方 2026/09/01 令和９年度 募集要項について 受検生の方 2026/07/31 海外帰国・在京外国人枠生徒募集 出願資格確認のための事前相談について 受検生の方 2026/06/22 令和９年度東京都立中学校入学者決定に関する実施要綱・同細目について 受検生の方 2026/03/26 令和８年度 学校紹介行事予定 受検生の方 2026/02/19 令和８年度入学者決定に関する本人得点の開示について 受検生の方 2026"
+          "excerpt": "2026/10/22 10/31(土) 令和８年度 第２回学校説明会のご案内（お申込みありがとうございました。） 受検生の方 2026/10/21 令和９年度入学者決定 出願方法説明会のご案内 受検生の方 2026/10/08 令和9年度募集人員 受検生の方 2026/09/01 令和９年度 募集要項について 受検生の方 2026/07/31 海外帰国・在京外国人枠生徒募集 出願資格確認のための事前相談について 受検生の方 2026/06/22 令和９年度東京都立中学校入学者決定に関する実施要綱・同細目について 受検生の方 2026/03/26 令和８年度 学校紹介行事予定 受検生の方 2026/02/19 令和８年度入学者決定に関する本人得点の開示について 受検生の方 2026"
         }
       },
       "applied": []
@@ -3040,7 +2968,7 @@
       "id": 57,
       "schoolName": "東京都立立川国際中等教育学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.metro.ed.jp/tachikawa-s/guide/guidance_foreigner.html",
         "ok": true,
@@ -3106,7 +3034,7 @@
       "id": 58,
       "schoolName": "東邦大学付属東邦中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.tohojh.toho-u.ac.jp/exam/020502.html",
         "ok": true,
@@ -3188,7 +3116,7 @@
       "id": 59,
       "schoolName": "栄東中学校",
       "category": null,
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "ok": false,
         "error": "MISSING_URL"
@@ -3201,7 +3129,7 @@
       "id": 60,
       "schoolName": "桐光学園中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.jolnet.com/entrance/13102/",
         "ok": true,
@@ -3241,7 +3169,7 @@
       "id": 61,
       "schoolName": "桐光学園中学校",
       "category": "英語受験",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.toko.ed.jp/high/exam/2026youkou_j.pdf",
         "ok": false,
@@ -3256,7 +3184,7 @@
       "id": 62,
       "schoolName": "桐蔭学園中等教育学校",
       "category": "英語受験",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://toin.ac.jp/timeline/gakuen/39115/",
         "ok": true,
@@ -3278,11 +3206,11 @@
       "candidates": [
         {
           "field": "examDates",
-          "value": "程（予定）はこちら ###Posted at 2025-03-22 16:00:01. Edited at 2025-09-19 13:36:33.### Web-PR02 入試情報 学園 中等教育 お知らせ 前の記事 次の記事 中等教育サイトへ あわせて読みたい 学校説明会情報 【中等】10月～11月「秋の説明会シリ",
+          "value": "程（予定）はこちら ###Posted at 2025-03-22 16:00:01. Edited at 2025-09-19 13:36:33.### Web-PR02 入試情報 学園 中等教育 お知らせ 前の記事 次の記事 中等教育サイトへ あわせて読みたい 入試体験会・入試説明会 【中等】12/12(土)に6年",
           "confidence": 0.86,
           "sourceUrl": "https://toin.ac.jp/timeline/gakuen/39115/",
           "sourceType": "html",
-          "excerpt": "対象:実用英語技能検定のほか、ケンブリッジ英語検定・GTEC・IELTS・TEAP・TOEFL・TOEIC） 今後とも桐蔭学園の教育活動への相変わらぬご理解とご協力を、何とぞよろしくお願い申し上げます。 2026年度桐蔭学園中等教育学校一般入試日程（予定）はこちら ###Posted at 2025-03-22 16:00:01. Edited at 2025-09-19 13:36:33.### Web-PR02 入試情報 学園 中等教育 お知らせ 前の記事 次の記事 中等教育サイトへ あわせて読みたい 学校説明会情報 【中等】10月～11月「秋の説明会シリーズ」のお知らせ 2026.09.21 (月) 小６対象 学校見学会のご案内 【中等】10/24(土)に「小６限定 学校見学会」を開催！ 2026.09.18 (金) オンライン学校説明会 【中等】2026年10月20日(火)12:10～「"
+          "excerpt": "対象:実用英語技能検定のほか、ケンブリッジ英語検定・GTEC・IELTS・TEAP・TOEFL・TOEIC） 今後とも桐蔭学園の教育活動への相変わらぬご理解とご協力を、何とぞよろしくお願い申し上げます。 2026年度桐蔭学園中等教育学校一般入試日程（予定）はこちら ###Posted at 2025-03-22 16:00:01. Edited at 2025-09-19 13:36:33.### Web-PR02 入試情報 学園 中等教育 お知らせ 前の記事 次の記事 中等教育サイトへ あわせて読みたい 入試体験会・入試説明会 【中等】12/12(土)に6年生対象「入試体験会・入試説明会」（完全予約制）を行います 2026.10.20 (火) 学校説明会情報 【中等】10月～11月「秋の説明会シリーズ」のお知らせ 2026.09.21 (月) 小６対象 学校見学会のご案内 【中等】10/24("
         },
         {
           "field": "englishQualificationBenefit",
@@ -3349,7 +3277,7 @@
       "id": 63,
       "schoolName": "横浜雙葉中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.yokohamafutaba.ed.jp/highsch/prospectives/2025/12820/",
         "ok": false,
@@ -3364,7 +3292,7 @@
       "id": 64,
       "schoolName": "江戸川女子中学校",
       "category": null,
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "ok": false,
         "error": "MISSING_URL"
@@ -3377,7 +3305,7 @@
       "id": 65,
       "schoolName": "洗足学園中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.senzoku-gakuen.ed.jp/admission/information_3.html",
         "ok": true,
@@ -3399,7 +3327,7 @@
       "id": 66,
       "schoolName": "浦和実業学園中学校",
       "category": null,
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "ok": false,
         "error": "MISSING_URL"
@@ -3412,7 +3340,7 @@
       "id": 67,
       "schoolName": "海城中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.kaijo.ed.jp/admission/from-abroad",
         "ok": true,
@@ -3529,7 +3457,7 @@
       "id": 68,
       "schoolName": "清泉女学院中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.seisen-h.ed.jp/article/topics/exam/15150/",
         "ok": true,
@@ -3616,7 +3544,7 @@
       "id": 69,
       "schoolName": "渋谷教育学園幕張中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.shibumaku.jp/admissions/youkou-2-2/junior/",
         "ok": true,
@@ -3698,7 +3626,7 @@
       "id": 70,
       "schoolName": "渋谷教育学園渋谷中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.shibushibu.jp/admission/detail/returnee_exam.html",
         "ok": true,
@@ -3754,7 +3682,7 @@
       "id": 71,
       "schoolName": "湘南白百合学園中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://chukou.shonan-shirayuri.ac.jp/exam",
         "ok": true,
@@ -3841,7 +3769,7 @@
       "id": 72,
       "schoolName": "玉川学園中学部",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.tamagawa.jp/academy/lower_upper_d/pdf/2026/web_lower-pdf-05.pdf",
         "ok": true,
@@ -3929,7 +3857,7 @@
       "id": 73,
       "schoolName": "玉川学園中学部",
       "category": "英語受験",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.tamagawa.jp/academy/ib/ib_admission/kikokusei.html",
         "ok": true,
@@ -4011,7 +3939,7 @@
       "id": 74,
       "schoolName": "田園調布学園中等部",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.chofu.ed.jp/returnee/guide/",
         "ok": true,
@@ -4101,7 +4029,7 @@
       "id": 75,
       "schoolName": "白百合学園中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://shirayuri.ed.jp/material/pdf/%E5%85%A5%E8%A9%A6%E5%A4%89%E6%9B%B4%E3%80%80HP%E5%91%8A%E7%9F%A5%E5%86%85%E5%AE%B9.pdf",
         "ok": true,
@@ -4157,7 +4085,7 @@
       "id": 76,
       "schoolName": "目白研心中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://mk.mejiro.ac.jp/exam/returnee/",
         "ok": true,
@@ -4260,7 +4188,7 @@
       "id": 77,
       "schoolName": "神奈川大学附属中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.fhs.kanagawa-u.ac.jp/guide/returnee.html",
         "ok": true,
@@ -4282,7 +4210,7 @@
       "id": 78,
       "schoolName": "立命館宇治中学校",
       "category": null,
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "ok": false,
         "error": "MISSING_URL"
@@ -4295,7 +4223,7 @@
       "id": 79,
       "schoolName": "立教池袋中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://ikebukuro.rikkyo.ac.jp/admissions/junior.html",
         "ok": true,
@@ -4382,7 +4310,7 @@
       "id": 80,
       "schoolName": "聖光学院中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://sites.google.com/seiko.ac.jp/briefing",
         "ok": true,
@@ -4404,7 +4332,7 @@
       "id": 81,
       "schoolName": "芝国際中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.shiba-kokusai.ed.jp/dl_pamphlet/pdf/info_jhs2026.pdf",
         "ok": true,
@@ -4426,7 +4354,7 @@
       "id": 82,
       "schoolName": "芝国際中学校",
       "category": "英語受験",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.shiba-kokusai.ed.jp/dl_pamphlet/pdf/info_jhs2026.pdf",
         "ok": true,
@@ -4448,7 +4376,7 @@
       "id": 83,
       "schoolName": "芝浦工業大学附属中学高等学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.fzk.shibaura-it.ac.jp/admission/returnee/junior-tokyo/",
         "ok": true,
@@ -4546,7 +4474,7 @@
       "id": 84,
       "schoolName": "芝浦工業大学附属中学高等学校",
       "category": "英語受験",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.fzk.shibaura-it.ac.jp/admission/junior/outline/",
         "ok": true,
@@ -4554,7 +4482,7 @@
           {
             "url": "https://www.fzk.shibaura-it.ac.jp/admission/junior/outline/",
             "kind": "html",
-            "characters": 3489
+            "characters": 3537
           },
           {
             "url": "https://www.fzk.shibaura-it.ac.jp/wordpress/wp-content/uploads/2026/01/20260107-695dcadb52a01.pdf",
@@ -4625,7 +4553,7 @@
       "id": 85,
       "schoolName": "茗溪学園中学校",
       "category": null,
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "ok": false,
         "error": "MISSING_URL"
@@ -4638,7 +4566,7 @@
       "id": 86,
       "schoolName": "西大和学園中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.nishiyamato.ed.jp/admission/entrance_examination.html",
         "ok": true,
@@ -4709,7 +4637,7 @@
       "id": 87,
       "schoolName": "西武学園文理中学校",
       "category": "英語受験",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.bunri-s.ed.jp/senior/entrance/admission/",
         "ok": true,
@@ -4725,9 +4653,9 @@
             "characters": 10004
           },
           {
-            "url": "https://www.bunri-s.ed.jp/wp-content/uploads/2026/09/activity_report_junior2027.pdf",
+            "url": "https://www.bunri-s.ed.jp/wp-content/uploads/2026/10/declaration_Overseas_residence2027_senior.pdf",
             "kind": "pdf",
-            "characters": 716
+            "characters": 631
           }
         ],
         "error": null,
@@ -4791,7 +4719,7 @@
       "id": 88,
       "schoolName": "逗子開成中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.zushi-kaisei.ac.jp/exam/%E5%B8%B0%E5%9B%BD%E7%94%9F%E3%81%AE%E6%96%B9%E3%81%B8/",
         "ok": true,
@@ -4813,7 +4741,7 @@
       "id": 89,
       "schoolName": "郁文館中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.ikubunkan.ed.jp/exam/juniorhigh",
         "ok": false,
@@ -4828,7 +4756,7 @@
       "id": 90,
       "schoolName": "郁文館中学校",
       "category": "英語受験",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.ikubunkan.ed.jp/exam/juniorhigh",
         "ok": false,
@@ -4843,7 +4771,7 @@
       "id": 91,
       "schoolName": "都立立川国際中等教育学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.metro.ed.jp/tachikawa-s/guide/guidance_foreigner.html",
         "ok": true,
@@ -4909,7 +4837,7 @@
       "id": 92,
       "schoolName": "金沢大学附属中学校",
       "category": null,
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "ok": false,
         "error": "MISSING_URL"
@@ -4922,7 +4850,7 @@
       "id": 93,
       "schoolName": "鎌倉女学院中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.kamajo.ac.jp/ent-req/",
         "ok": true,
@@ -5057,7 +4985,7 @@
       "id": 94,
       "schoolName": "鎌倉女学院中学校",
       "category": "英語受験",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.kamajo.ac.jp/ent-req/",
         "ok": true,
@@ -5192,7 +5120,7 @@
       "id": 95,
       "schoolName": "開智中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://ikkanbu.kaichigakuen.ed.jp/admission/",
         "ok": true,
@@ -5295,7 +5223,7 @@
       "id": 96,
       "schoolName": "開智所沢中等教育学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://secondary.kts.ed.jp/topics/2026%E5%B9%B4%E5%BA%A6%E5%8B%9F%E9%9B%86%E8%A6%81%E9%A0%85/",
         "ok": true,
@@ -5398,7 +5326,7 @@
       "id": 97,
       "schoolName": "開智日本橋学園中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://kng.ed.jp/admission/returnee-entrance-examination/",
         "ok": true,
@@ -5528,7 +5456,7 @@
       "id": 98,
       "schoolName": "開智日本橋学園中学校",
       "category": "英語受験",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://kng.ed.jp/admission/entrance-examination/",
         "ok": true,
@@ -5536,7 +5464,12 @@
           {
             "url": "https://kng.ed.jp/admission/entrance-examination/",
             "kind": "html",
-            "characters": 1650
+            "characters": 1631
+          },
+          {
+            "url": "https://kng.ed.jp/wp-content/uploads/2026/10/20261023.pdf",
+            "kind": "pdf",
+            "characters": 7341
           }
         ],
         "error": null,
@@ -5545,21 +5478,77 @@
       "candidates": [
         {
           "field": "examDates",
-          "value": "程、および入試要項 2027年度入試要項（準備中） ※今しばらくお待ちください 出願リンク(ミライコンパス) 2026年入試は2月4日をもって無事に終了いたしました",
+          "value": "程、および入試要項 2027年度入試要項 出願リンク(ミライコンパス) 2026年入試は2月4日をもって無事に終了いたしました",
           "confidence": 0.86,
           "sourceUrl": "https://kng.ed.jp/admission/entrance-examination/",
           "sourceType": "html",
-          "excerpt": "（5・6年生） キャリア教育 視野を広げるワークショップ 合格実績 DP実績 / DP Results よくある質問 中学入試について 学費について 学校生活について 開智日本橋学園中学・高等学校 > 入試情報 > 一般入試 一般入試 一般入試日程、および入試要項 2027年度入試要項（準備中） ※今しばらくお待ちください 出願リンク(ミライコンパス) 2026年入試は2月4日をもって無事に終了いたしました。 来年度入試情報は確定次第随時掲載いたします。 現在出願は受けつけていません。 〒103-0002 東京都中央区日本橋馬喰町2-7-6 TEL：03-3662-2507 FAX：03-3662-2506 本校について 本校について 校長挨"
+          "excerpt": "（5・6年生） キャリア教育 視野を広げるワークショップ 合格実績 DP実績 / DP Results よくある質問 中学入試について 学費について 学校生活について 開智日本橋学園中学・高等学校 > 入試情報 > 一般入試 一般入試 一般入試日程、および入試要項 2027年度入試要項 出願リンク(ミライコンパス) 2026年入試は2月4日をもって無事に終了いたしました。 来年度入試情報は確定次第随時掲載いたします。 現在出願は受けつけていません。 〒103-0002 東京都中央区日本橋馬喰町2-7-6 TEL：03-3662-2507 FAX：03-3662-2506 本校について 本校について 校長挨"
+        },
+        {
+          "field": "examDates",
+          "value": "・集合時間 募集人数･ コース 試験科目・時間 第１回入試 ２科・４科選択 ２月１日（月） 8：30 40 Ｌ Ｃ ＤＬＣ ２科（国算） ４科（国算社理） 8：40～10：35 8：40～11：50 GLC 入試 ＧＬＣ GLC３科（国算英Ｇ） ＋口頭試問・面接 8：40～11：40 筆記試験終了後実施 特待生入試 ４",
+          "confidence": 0.9,
+          "sourceUrl": "https://kng.ed.jp/wp-content/uploads/2026/10/20261023.pdf",
+          "sourceType": "pdf",
+          "excerpt": "考えている場合には、必ず事前にご相談ください。 【募集定員】 男女１３０名 リベラルアーツコース（LC）７０名 デュアルランゲージリベラルアーツコース（DLC）３０名 男女１３０名 グローバルリベラルアーツコース（GLC）３０名 入試名称 試験日・集合時間 募集人数･ コース 試験科目・時間 第１回入試 ２科・４科選択 ２月１日（月） 8：30 40 Ｌ Ｃ ＤＬＣ ２科（国算） ４科（国算社理） 8：40～10：35 8：40～11：50 GLC 入試 ＧＬＣ GLC３科（国算英Ｇ） ＋口頭試問・面接 8：40～11：40 筆記試験終了後実施 特待生入試 ４科選択 ２月１日（月） 14：30 20 Ｌ Ｃ ＤＬＣ （ＧＬＣ） 4 科（国算社理） 14：40～17：50 算数単科選 択 15：35 算数単科 15：45～17：15 第２回入試 ２科・４科選択 ２月２日（火） 14：30 30 Ｌ"
+        },
+        {
+          "field": "capacity",
+          "value": "】 男女１３０名 リベラルアーツコース（LC）７０名 デュアルランゲージリベラルアーツコース（DLC）３０名 男女１３０名 グローバルリベラルアーツコース（GLC）３０名 入試名称 試験日・集合時間",
+          "confidence": 0.9,
+          "sourceUrl": "https://kng.ed.jp/wp-content/uploads/2026/10/20261023.pdf",
+          "sourceType": "pdf",
+          "excerpt": "者。国際バカロレアの教育理念を理解し、意欲的に学ぶ志を持つ者。 ※障がい等があって、受験上の配慮や入学後の修学上の配慮等を必要とする場合、本校では希 望する対応が難しいこともあるため、出願を考えている場合には、必ず事前にご相談ください。 【募集定員】 男女１３０名 リベラルアーツコース（LC）７０名 デュアルランゲージリベラルアーツコース（DLC）３０名 男女１３０名 グローバルリベラルアーツコース（GLC）３０名 入試名称 試験日・集合時間 募集人数･ コース 試験科目・時間 第１回入試 ２科・４科選択 ２月１日（月） 8：30 40 Ｌ Ｃ ＤＬＣ ２科（国算） ４科（国算社理） 8：40～10：35 8：40～11：50 GLC 入試 ＧＬＣ GLC３科（国算英Ｇ） ＋口頭"
+        },
+        {
+          "field": "subjects",
+          "value": "・時間 第１回入試 ２科・４科選択 ２月１日（月） 8：30 40 Ｌ Ｃ ＤＬＣ ２科（国算） ４科（国算社理） 8：40～10：35 8：40～11：50 GLC 入試 ＧＬＣ GLC３科（国算英Ｇ） ＋口頭試問・面接 8：40～11：40 筆記試験終了後実施 特待生入試 ４科選択 ２月１日（月） 14：30 20 Ｌ Ｃ ＤＬＣ （ＧＬＣ） 4 科（国算社理） 14：40～17：50 算数単科選 択 15：35 算数単科 15：4",
+          "confidence": 0.9,
+          "sourceUrl": "https://kng.ed.jp/wp-content/uploads/2026/10/20261023.pdf",
+          "sourceType": "pdf",
+          "excerpt": "ださい。 【募集定員】 男女１３０名 リベラルアーツコース（LC）７０名 デュアルランゲージリベラルアーツコース（DLC）３０名 男女１３０名 グローバルリベラルアーツコース（GLC）３０名 入試名称 試験日・集合時間 募集人数･ コース 試験科目・時間 第１回入試 ２科・４科選択 ２月１日（月） 8：30 40 Ｌ Ｃ ＤＬＣ ２科（国算） ４科（国算社理） 8：40～10：35 8：40～11：50 GLC 入試 ＧＬＣ GLC３科（国算英Ｇ） ＋口頭試問・面接 8：40～11：40 筆記試験終了後実施 特待生入試 ４科選択 ２月１日（月） 14：30 20 Ｌ Ｃ ＤＬＣ （ＧＬＣ） 4 科（国算社理） 14：40～17：50 算数単科選 択 15：35 算数単科 15：45～17：15 第２回入試 ２科・４科選択 ２月２日（火） 14：30 30 Ｌ Ｃ ＤＬＣ ２科（国算） ４科（国算社理） 14：40～16：35 14：40～17：50 第３回入試 ２科・４科選択 ２月３日（水） 14：30 20 Ｌ"
+        },
+        {
+          "field": "interview",
+          "value": "面接 8：40～11：40 筆記試験終了後実施",
+          "confidence": 0.88,
+          "sourceUrl": "https://kng.ed.jp/wp-content/uploads/2026/10/20261023.pdf",
+          "sourceType": "pdf",
+          "excerpt": "数･ コース 試験科目・時間 第１回入試 ２科・４科選択 ２月１日（月） 8：30 40 Ｌ Ｃ ＤＬＣ ２科（国算） ４科（国算社理） 8：40～10：35 8：40～11：50 GLC 入試 ＧＬＣ GLC３科（国算英Ｇ） ＋口頭試問・面接 8：40～11：40 筆記試験終了後実施 特待生入試 ４科選択 ２月１日（月） 14：30 20 Ｌ Ｃ ＤＬＣ （ＧＬＣ） 4 科（国算社理） 14：40～17：50 算数単科選 択 15：35 算数単科 15：45～17：15 第２回入試 ２科・４科選択 ２月２日（火） 14"
         }
       ],
       "selected": {
         "examDates": {
           "field": "examDates",
-          "value": "程、および入試要項 2027年度入試要項（準備中） ※今しばらくお待ちください 出願リンク(ミライコンパス) 2026年入試は2月4日をもって無事に終了いたしました",
-          "confidence": 0.86,
-          "sourceUrl": "https://kng.ed.jp/admission/entrance-examination/",
-          "sourceType": "html",
-          "excerpt": "（5・6年生） キャリア教育 視野を広げるワークショップ 合格実績 DP実績 / DP Results よくある質問 中学入試について 学費について 学校生活について 開智日本橋学園中学・高等学校 > 入試情報 > 一般入試 一般入試 一般入試日程、および入試要項 2027年度入試要項（準備中） ※今しばらくお待ちください 出願リンク(ミライコンパス) 2026年入試は2月4日をもって無事に終了いたしました。 来年度入試情報は確定次第随時掲載いたします。 現在出願は受けつけていません。 〒103-0002 東京都中央区日本橋馬喰町2-7-6 TEL：03-3662-2507 FAX：03-3662-2506 本校について 本校について 校長挨"
+          "value": "・集合時間 募集人数･ コース 試験科目・時間 第１回入試 ２科・４科選択 ２月１日（月） 8：30 40 Ｌ Ｃ ＤＬＣ ２科（国算） ４科（国算社理） 8：40～10：35 8：40～11：50 GLC 入試 ＧＬＣ GLC３科（国算英Ｇ） ＋口頭試問・面接 8：40～11：40 筆記試験終了後実施 特待生入試 ４",
+          "confidence": 0.9,
+          "sourceUrl": "https://kng.ed.jp/wp-content/uploads/2026/10/20261023.pdf",
+          "sourceType": "pdf",
+          "excerpt": "考えている場合には、必ず事前にご相談ください。 【募集定員】 男女１３０名 リベラルアーツコース（LC）７０名 デュアルランゲージリベラルアーツコース（DLC）３０名 男女１３０名 グローバルリベラルアーツコース（GLC）３０名 入試名称 試験日・集合時間 募集人数･ コース 試験科目・時間 第１回入試 ２科・４科選択 ２月１日（月） 8：30 40 Ｌ Ｃ ＤＬＣ ２科（国算） ４科（国算社理） 8：40～10：35 8：40～11：50 GLC 入試 ＧＬＣ GLC３科（国算英Ｇ） ＋口頭試問・面接 8：40～11：40 筆記試験終了後実施 特待生入試 ４科選択 ２月１日（月） 14：30 20 Ｌ Ｃ ＤＬＣ （ＧＬＣ） 4 科（国算社理） 14：40～17：50 算数単科選 択 15：35 算数単科 15：45～17：15 第２回入試 ２科・４科選択 ２月２日（火） 14：30 30 Ｌ"
+        },
+        "capacity": {
+          "field": "capacity",
+          "value": "】 男女１３０名 リベラルアーツコース（LC）７０名 デュアルランゲージリベラルアーツコース（DLC）３０名 男女１３０名 グローバルリベラルアーツコース（GLC）３０名 入試名称 試験日・集合時間",
+          "confidence": 0.9,
+          "sourceUrl": "https://kng.ed.jp/wp-content/uploads/2026/10/20261023.pdf",
+          "sourceType": "pdf",
+          "excerpt": "者。国際バカロレアの教育理念を理解し、意欲的に学ぶ志を持つ者。 ※障がい等があって、受験上の配慮や入学後の修学上の配慮等を必要とする場合、本校では希 望する対応が難しいこともあるため、出願を考えている場合には、必ず事前にご相談ください。 【募集定員】 男女１３０名 リベラルアーツコース（LC）７０名 デュアルランゲージリベラルアーツコース（DLC）３０名 男女１３０名 グローバルリベラルアーツコース（GLC）３０名 入試名称 試験日・集合時間 募集人数･ コース 試験科目・時間 第１回入試 ２科・４科選択 ２月１日（月） 8：30 40 Ｌ Ｃ ＤＬＣ ２科（国算） ４科（国算社理） 8：40～10：35 8：40～11：50 GLC 入試 ＧＬＣ GLC３科（国算英Ｇ） ＋口頭"
+        },
+        "subjects": {
+          "field": "subjects",
+          "value": "・時間 第１回入試 ２科・４科選択 ２月１日（月） 8：30 40 Ｌ Ｃ ＤＬＣ ２科（国算） ４科（国算社理） 8：40～10：35 8：40～11：50 GLC 入試 ＧＬＣ GLC３科（国算英Ｇ） ＋口頭試問・面接 8：40～11：40 筆記試験終了後実施 特待生入試 ４科選択 ２月１日（月） 14：30 20 Ｌ Ｃ ＤＬＣ （ＧＬＣ） 4 科（国算社理） 14：40～17：50 算数単科選 択 15：35 算数単科 15：4",
+          "confidence": 0.9,
+          "sourceUrl": "https://kng.ed.jp/wp-content/uploads/2026/10/20261023.pdf",
+          "sourceType": "pdf",
+          "excerpt": "ださい。 【募集定員】 男女１３０名 リベラルアーツコース（LC）７０名 デュアルランゲージリベラルアーツコース（DLC）３０名 男女１３０名 グローバルリベラルアーツコース（GLC）３０名 入試名称 試験日・集合時間 募集人数･ コース 試験科目・時間 第１回入試 ２科・４科選択 ２月１日（月） 8：30 40 Ｌ Ｃ ＤＬＣ ２科（国算） ４科（国算社理） 8：40～10：35 8：40～11：50 GLC 入試 ＧＬＣ GLC３科（国算英Ｇ） ＋口頭試問・面接 8：40～11：40 筆記試験終了後実施 特待生入試 ４科選択 ２月１日（月） 14：30 20 Ｌ Ｃ ＤＬＣ （ＧＬＣ） 4 科（国算社理） 14：40～17：50 算数単科選 択 15：35 算数単科 15：45～17：15 第２回入試 ２科・４科選択 ２月２日（火） 14：30 30 Ｌ Ｃ ＤＬＣ ２科（国算） ４科（国算社理） 14：40～16：35 14：40～17：50 第３回入試 ２科・４科選択 ２月３日（水） 14：30 20 Ｌ"
+        },
+        "interview": {
+          "field": "interview",
+          "value": "面接 8：40～11：40 筆記試験終了後実施",
+          "confidence": 0.88,
+          "sourceUrl": "https://kng.ed.jp/wp-content/uploads/2026/10/20261023.pdf",
+          "sourceType": "pdf",
+          "excerpt": "数･ コース 試験科目・時間 第１回入試 ２科・４科選択 ２月１日（月） 8：30 40 Ｌ Ｃ ＤＬＣ ２科（国算） ４科（国算社理） 8：40～10：35 8：40～11：50 GLC 入試 ＧＬＣ GLC３科（国算英Ｇ） ＋口頭試問・面接 8：40～11：40 筆記試験終了後実施 特待生入試 ４科選択 ２月１日（月） 14：30 20 Ｌ Ｃ ＤＬＣ （ＧＬＣ） 4 科（国算社理） 14：40～17：50 算数単科選 択 15：35 算数単科 15：45～17：15 第２回入試 ２科・４科選択 ２月２日（火） 14"
         }
       },
       "applied": []
@@ -5568,7 +5557,7 @@
       "id": 99,
       "schoolName": "開智望中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://nozomi.kaichigakuen.ed.jp/secondary/admission/secondary-exam/",
         "ok": true,
@@ -5576,7 +5565,7 @@
           {
             "url": "https://nozomi.kaichigakuen.ed.jp/secondary/admission/secondary-exam/",
             "kind": "html",
-            "characters": 6055
+            "characters": 5860
           },
           {
             "url": "https://nozomi.kaichigakuen.ed.jp/secondary/wp-content/uploads/2025/09/2026%E9%96%8B%E6%99%BA%E6%9C%9B_%E5%9B%BD%E9%9A%9B%E7%94%9F%E5%85%A5%E8%A9%A6_%E5%8B%9F%E9%9B%86%E8%A6%81%E9%A0%85.pdf",
@@ -5589,9 +5578,9 @@
             "characters": 100
           },
           {
-            "url": "https://nozomi.kaichigakuen.ed.jp/secondary/wp-content/uploads/2026/09/2027_nozomi_global_yoko.pdf",
+            "url": "https://nozomi.kaichigakuen.ed.jp/secondary/wp-content/uploads/2026/10/nyushi_yoko1023_kokusai.pdf",
             "kind": "pdf",
-            "characters": 12148
+            "characters": 11995
           }
         ],
         "error": null,
@@ -5602,23 +5591,23 @@
           "field": "capacity",
           "value": "男女合わせて 60 名 ［開智望専願・適性検査型（併願）入試※1と開智中・日本橋併願入試※2を含む］ 募集定員 国際生入試で合格した場合、英語コースになります",
           "confidence": 0.9,
-          "sourceUrl": "https://nozomi.kaichigakuen.ed.jp/secondary/wp-content/uploads/2026/09/2027_nozomi_global_yoko.pdf",
+          "sourceUrl": "https://nozomi.kaichigakuen.ed.jp/secondary/wp-content/uploads/2026/10/nyushi_yoko1023_kokusai.pdf",
           "sourceType": "pdf",
           "excerpt": "納入金 (4) 寄付金 4． その他 P.9 (1) 試験当日の注意事項 (2) 試験当日の持ち物 (3) 合否照会 (4) 新入生登校日 / 制服採寸日 (5) 入学手続き後の辞退について - 1 - 1. 国際生入試 (1) 入試概要 募集定員 男女合わせて 60 名 ［開智望専願・適性検査型（併願）入試※1と開智中・日本橋併願入試※2を含む］ 募集定員 国際生入試で合格した場合、英語コースになります。 ※1 開智望専願・適性検査型（併願）入試の詳細は、「生徒募集要項 開智望専願・適性検査型（併願）入試」をご覧ください。 ※2 開智中・日本橋併願入試の詳細は、「生徒募集要項 併願型入試」をご覧ください。 応募資格 以下の 3 つの要件を"
         },
         {
           "field": "subjects",
-          "value": "同時判定※4 開智望 開智中 開智 横浜国際 開智所沢 開智 日本橋 シンガポール現地入試 E 方式または J 方式※5 【E 方式】国語/算数/英語※6 【J 方式】国語/算数 〇 〇※7 〇 〇※7,10 オンライン国際生入試 一次選考：書類選考 二次選考：口頭試問・面接（日本語・英語） 開智所沢の GSC 判定希望者は英語面接必須 〇 〇※8 〇 第 1 回 国際生入試 ・帰国生…E 方式または J 方式※5 ・インター生・外国籍",
+          "value": "同時判定※4 開智望 開智中 開智所沢 開智 日本橋 シンガポール現地入試 E 方式または J 方式※5 【E 方式】国語/算数/英語※6 【J 方式】国語/算数 〇 〇※7 〇 〇※7,9 オンライン国際生入試 一次選考：書類選考 二次選考：口頭試問・面接（日本語・英語） 開智所沢の GSC 判定希望者は英語面接必須 〇 〇※8 〇 第 1 回 国際生入試 ・帰国生…E 方式または J 方式※5 ・インター生・外国籍の者…E 方式 【",
           "confidence": 0.9,
-          "sourceUrl": "https://nozomi.kaichigakuen.ed.jp/secondary/wp-content/uploads/2026/09/2027_nozomi_global_yoko.pdf",
+          "sourceUrl": "https://nozomi.kaichigakuen.ed.jp/secondary/wp-content/uploads/2026/10/nyushi_yoko1023_kokusai.pdf",
           "sourceType": "pdf",
-          "excerpt": "1/23(月・祝) 午前 開智望/開智所沢 開智横浜国際/開智日本橋 当日 19:00 第 3 回 国際生入試 11/5(木)～12/12(土) 12/16(水) 午前 開智望/開智所沢 開智横浜国際/開智日本橋 当日 19:00 試験名 試験科目 同時判定※4 開智望 開智中 開智 横浜国際 開智所沢 開智 日本橋 シンガポール現地入試 E 方式または J 方式※5 【E 方式】国語/算数/英語※6 【J 方式】国語/算数 〇 〇※7 〇 〇※7,10 オンライン国際生入試 一次選考：書類選考 二次選考：口頭試問・面接（日本語・英語） 開智所沢の GSC 判定希望者は英語面接必須 〇 〇※8 〇 第 1 回 国際生入試 ・帰国生…E 方式または J 方式※5 ・インター生・外国籍の者…E 方式 【E 方式】国語/算数/英語※6 【J 方式】国語/算数 〇 〇※7 〇 第 2・3 回 国際生入試 国語/算数/エッセイライティング(英語)/ 口頭試問・面接(英語・日本語) 〇 〇 〇※9 〇 〇※10 ※3 開智日本橋"
+          "excerpt": ")～11/20(金) 11/23(月・祝) 午前 開智望/開智所沢 /開智日本橋 当日 19:00 第 3 回 国際生入試 11/5(木)～12/12(土) 12/16(水) 午前 開智望/開智所沢 /開智日本橋 当日 19:00 試験名 試験科目 同時判定※4 開智望 開智中 開智所沢 開智 日本橋 シンガポール現地入試 E 方式または J 方式※5 【E 方式】国語/算数/英語※6 【J 方式】国語/算数 〇 〇※7 〇 〇※7,9 オンライン国際生入試 一次選考：書類選考 二次選考：口頭試問・面接（日本語・英語） 開智所沢の GSC 判定希望者は英語面接必須 〇 〇※8 〇 第 1 回 国際生入試 ・帰国生…E 方式または J 方式※5 ・インター生・外国籍の者…E 方式 【E 方式】国語/算数/英語※6 【J 方式】国語/算数 〇 〇※7 〇 第 2・3 回 国際生入試 国語/算数/エッセイライティング(英語)/ 口頭試問・面接(英語・日本語) 〇 〇 〇 〇※９ ※3 開智日本橋の合否発表は 11/21(土"
         },
         {
           "field": "interview",
           "value": "あり(P.6(6)) エッセイライティング(英語)・国語・算数［各 50 分/100 点］ 口頭試問・面接",
           "confidence": 0.88,
-          "sourceUrl": "https://nozomi.kaichigakuen.ed.jp/secondary/wp-content/uploads/2026/09/2027_nozomi_global_yoko.pdf",
+          "sourceUrl": "https://nozomi.kaichigakuen.ed.jp/secondary/wp-content/uploads/2026/10/nyushi_yoko1023_kokusai.pdf",
           "sourceType": "pdf",
           "excerpt": "判定希望校、第一志望校を選択※2 入学手続きを行う際は第一志望校を優先すること※2 試験内容  J 方式は日本人学校の者、英語を母国語 としない国の現地校の者のみ選択可  E 方式と J 方式の合格判定は別基準  Ｅ方式は英語得点保証あり(P.6(6)) エッセイライティング(英語)・国語・算数［各 50 分/100 点］ 口頭試問・面接（英語･日本語）［10 分程度/40 点］ 【E 方式】 国語・算数・英語［各 50 分/100 点］ 【J 方式】 国語・算数［各 50 分/100 点］ 時 程 E 方式 集合 8:45 国語 9:00～9:50 算数 10:10～11"
         },
@@ -5626,7 +5615,7 @@
           "field": "englishQualificationBenefit",
           "value": "CEFR B１以上の保有者は、英語の得点を保証します",
           "confidence": 0.88,
-          "sourceUrl": "https://nozomi.kaichigakuen.ed.jp/secondary/wp-content/uploads/2026/09/2027_nozomi_global_yoko.pdf",
+          "sourceUrl": "https://nozomi.kaichigakuen.ed.jp/secondary/wp-content/uploads/2026/10/nyushi_yoko1023_kokusai.pdf",
           "sourceType": "pdf",
           "excerpt": "_氏名 在留カード、パスポート、出生証明書等 PDF 国籍確認資料_氏名 各種英語検定の合格証、スコア等 PDF 英語得点保証_氏名 (6) 英語得点保証 開智所沢・開智望のみ適用 ⚫ 第１回国際生入試Ｅ方式、シンガポール現地入試において、CEFR B１以上の保有者は、英語の得点を保証します。 保証する得点と、当日の試験の得点を比較し、高い方の得点を合否判定で使用します。 開智日本橋の判定時には、英語得点保証はありません。 国際生入試 英語得点保証 CEFR 実用英語技能検定 TOEFL iBT ケンブリッジ 英語検定 IEL"
         }
@@ -5636,23 +5625,23 @@
           "field": "capacity",
           "value": "男女合わせて 60 名 ［開智望専願・適性検査型（併願）入試※1と開智中・日本橋併願入試※2を含む］ 募集定員 国際生入試で合格した場合、英語コースになります",
           "confidence": 0.9,
-          "sourceUrl": "https://nozomi.kaichigakuen.ed.jp/secondary/wp-content/uploads/2026/09/2027_nozomi_global_yoko.pdf",
+          "sourceUrl": "https://nozomi.kaichigakuen.ed.jp/secondary/wp-content/uploads/2026/10/nyushi_yoko1023_kokusai.pdf",
           "sourceType": "pdf",
           "excerpt": "納入金 (4) 寄付金 4． その他 P.9 (1) 試験当日の注意事項 (2) 試験当日の持ち物 (3) 合否照会 (4) 新入生登校日 / 制服採寸日 (5) 入学手続き後の辞退について - 1 - 1. 国際生入試 (1) 入試概要 募集定員 男女合わせて 60 名 ［開智望専願・適性検査型（併願）入試※1と開智中・日本橋併願入試※2を含む］ 募集定員 国際生入試で合格した場合、英語コースになります。 ※1 開智望専願・適性検査型（併願）入試の詳細は、「生徒募集要項 開智望専願・適性検査型（併願）入試」をご覧ください。 ※2 開智中・日本橋併願入試の詳細は、「生徒募集要項 併願型入試」をご覧ください。 応募資格 以下の 3 つの要件を"
         },
         "subjects": {
           "field": "subjects",
-          "value": "同時判定※4 開智望 開智中 開智 横浜国際 開智所沢 開智 日本橋 シンガポール現地入試 E 方式または J 方式※5 【E 方式】国語/算数/英語※6 【J 方式】国語/算数 〇 〇※7 〇 〇※7,10 オンライン国際生入試 一次選考：書類選考 二次選考：口頭試問・面接（日本語・英語） 開智所沢の GSC 判定希望者は英語面接必須 〇 〇※8 〇 第 1 回 国際生入試 ・帰国生…E 方式または J 方式※5 ・インター生・外国籍",
+          "value": "同時判定※4 開智望 開智中 開智所沢 開智 日本橋 シンガポール現地入試 E 方式または J 方式※5 【E 方式】国語/算数/英語※6 【J 方式】国語/算数 〇 〇※7 〇 〇※7,9 オンライン国際生入試 一次選考：書類選考 二次選考：口頭試問・面接（日本語・英語） 開智所沢の GSC 判定希望者は英語面接必須 〇 〇※8 〇 第 1 回 国際生入試 ・帰国生…E 方式または J 方式※5 ・インター生・外国籍の者…E 方式 【",
           "confidence": 0.9,
-          "sourceUrl": "https://nozomi.kaichigakuen.ed.jp/secondary/wp-content/uploads/2026/09/2027_nozomi_global_yoko.pdf",
+          "sourceUrl": "https://nozomi.kaichigakuen.ed.jp/secondary/wp-content/uploads/2026/10/nyushi_yoko1023_kokusai.pdf",
           "sourceType": "pdf",
-          "excerpt": "1/23(月・祝) 午前 開智望/開智所沢 開智横浜国際/開智日本橋 当日 19:00 第 3 回 国際生入試 11/5(木)～12/12(土) 12/16(水) 午前 開智望/開智所沢 開智横浜国際/開智日本橋 当日 19:00 試験名 試験科目 同時判定※4 開智望 開智中 開智 横浜国際 開智所沢 開智 日本橋 シンガポール現地入試 E 方式または J 方式※5 【E 方式】国語/算数/英語※6 【J 方式】国語/算数 〇 〇※7 〇 〇※7,10 オンライン国際生入試 一次選考：書類選考 二次選考：口頭試問・面接（日本語・英語） 開智所沢の GSC 判定希望者は英語面接必須 〇 〇※8 〇 第 1 回 国際生入試 ・帰国生…E 方式または J 方式※5 ・インター生・外国籍の者…E 方式 【E 方式】国語/算数/英語※6 【J 方式】国語/算数 〇 〇※7 〇 第 2・3 回 国際生入試 国語/算数/エッセイライティング(英語)/ 口頭試問・面接(英語・日本語) 〇 〇 〇※9 〇 〇※10 ※3 開智日本橋"
+          "excerpt": ")～11/20(金) 11/23(月・祝) 午前 開智望/開智所沢 /開智日本橋 当日 19:00 第 3 回 国際生入試 11/5(木)～12/12(土) 12/16(水) 午前 開智望/開智所沢 /開智日本橋 当日 19:00 試験名 試験科目 同時判定※4 開智望 開智中 開智所沢 開智 日本橋 シンガポール現地入試 E 方式または J 方式※5 【E 方式】国語/算数/英語※6 【J 方式】国語/算数 〇 〇※7 〇 〇※7,9 オンライン国際生入試 一次選考：書類選考 二次選考：口頭試問・面接（日本語・英語） 開智所沢の GSC 判定希望者は英語面接必須 〇 〇※8 〇 第 1 回 国際生入試 ・帰国生…E 方式または J 方式※5 ・インター生・外国籍の者…E 方式 【E 方式】国語/算数/英語※6 【J 方式】国語/算数 〇 〇※7 〇 第 2・3 回 国際生入試 国語/算数/エッセイライティング(英語)/ 口頭試問・面接(英語・日本語) 〇 〇 〇 〇※９ ※3 開智日本橋の合否発表は 11/21(土"
         },
         "interview": {
           "field": "interview",
           "value": "あり(P.6(6)) エッセイライティング(英語)・国語・算数［各 50 分/100 点］ 口頭試問・面接",
           "confidence": 0.88,
-          "sourceUrl": "https://nozomi.kaichigakuen.ed.jp/secondary/wp-content/uploads/2026/09/2027_nozomi_global_yoko.pdf",
+          "sourceUrl": "https://nozomi.kaichigakuen.ed.jp/secondary/wp-content/uploads/2026/10/nyushi_yoko1023_kokusai.pdf",
           "sourceType": "pdf",
           "excerpt": "判定希望校、第一志望校を選択※2 入学手続きを行う際は第一志望校を優先すること※2 試験内容  J 方式は日本人学校の者、英語を母国語 としない国の現地校の者のみ選択可  E 方式と J 方式の合格判定は別基準  Ｅ方式は英語得点保証あり(P.6(6)) エッセイライティング(英語)・国語・算数［各 50 分/100 点］ 口頭試問・面接（英語･日本語）［10 分程度/40 点］ 【E 方式】 国語・算数・英語［各 50 分/100 点］ 【J 方式】 国語・算数［各 50 分/100 点］ 時 程 E 方式 集合 8:45 国語 9:00～9:50 算数 10:10～11"
         },
@@ -5660,7 +5649,7 @@
           "field": "englishQualificationBenefit",
           "value": "CEFR B１以上の保有者は、英語の得点を保証します",
           "confidence": 0.88,
-          "sourceUrl": "https://nozomi.kaichigakuen.ed.jp/secondary/wp-content/uploads/2026/09/2027_nozomi_global_yoko.pdf",
+          "sourceUrl": "https://nozomi.kaichigakuen.ed.jp/secondary/wp-content/uploads/2026/10/nyushi_yoko1023_kokusai.pdf",
           "sourceType": "pdf",
           "excerpt": "_氏名 在留カード、パスポート、出生証明書等 PDF 国籍確認資料_氏名 各種英語検定の合格証、スコア等 PDF 英語得点保証_氏名 (6) 英語得点保証 開智所沢・開智望のみ適用 ⚫ 第１回国際生入試Ｅ方式、シンガポール現地入試において、CEFR B１以上の保有者は、英語の得点を保証します。 保証する得点と、当日の試験の得点を比較し、高い方の得点を合否判定で使用します。 開智日本橋の判定時には、英語得点保証はありません。 国際生入試 英語得点保証 CEFR 実用英語技能検定 TOEFL iBT ケンブリッジ 英語検定 IEL"
         }
@@ -5671,7 +5660,7 @@
       "id": 100,
       "schoolName": "関東学院中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://kantogakuin.ed.jp/wp/wp-content/uploads/2025/10/2026kikoku.pdf",
         "ok": true,
@@ -5727,7 +5716,7 @@
       "id": 101,
       "schoolName": "関西学院千里国際中等部",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://sis.kwansei.ac.jp/admissions/returnees-overseas/",
         "ok": true,
@@ -5830,7 +5819,7 @@
       "id": 102,
       "schoolName": "青山学院横浜英和中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.yokohama-eiwa.ac.jp/chukou/assets/pdf/examination/boshu.pdf",
         "ok": true,
@@ -5902,7 +5891,7 @@
       "id": 103,
       "schoolName": "青稜中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.seiryo-js.ed.jp/requirements",
         "ok": true,
@@ -5924,7 +5913,7 @@
       "id": 104,
       "schoolName": "順天中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.junten.ed.jp/admission/yoko/",
         "ok": true,
@@ -5961,7 +5950,7 @@
       "id": 105,
       "schoolName": "順天中学校",
       "category": "英語受験",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.junten.ed.jp/news/nyushi/41902/",
         "ok": true,
@@ -5993,7 +5982,7 @@
       "id": 106,
       "schoolName": "頌栄女子学院中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.shoei.ed.jp/examination/returnees.html",
         "ok": true,
@@ -6070,7 +6059,7 @@
       "id": 107,
       "schoolName": "頌栄女子学院中学校",
       "category": "英語受験",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.shoei.ed.jp/examination/general.html",
         "ok": true,
@@ -6158,7 +6147,7 @@
       "id": 108,
       "schoolName": "駒込中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.komagome.ed.jp/",
         "ok": true,
@@ -6166,7 +6155,7 @@
           {
             "url": "https://www.komagome.ed.jp/",
             "kind": "html",
-            "characters": 5154
+            "characters": 5149
           }
         ],
         "error": null,
@@ -6180,7 +6169,7 @@
       "id": 109,
       "schoolName": "駒込中学校",
       "category": "英語受験",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.komagome.ed.jp/",
         "ok": true,
@@ -6188,7 +6177,7 @@
           {
             "url": "https://www.komagome.ed.jp/",
             "kind": "html",
-            "characters": 5154
+            "characters": 5149
           }
         ],
         "error": null,
@@ -6202,7 +6191,7 @@
       "id": 110,
       "schoolName": "麗澤中学校",
       "category": "帰国入試",
-      "checkedAt": "2026-10-18T19:57:15+00:00",
+      "checkedAt": "2026-10-25T20:16:23+00:00",
       "fetch": {
         "url": "https://www.hs.reitaku.jp/junior/application.html",
         "ok": true,
