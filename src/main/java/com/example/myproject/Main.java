@@ -584,8 +584,11 @@ private static String loginPageHtml(String message) {
                                   border-collapse: collapse;
                                   width: 100%;
                                 }
+                                #schoolTable th:nth-child(2), #schoolTable td:nth-child(2) {
+                                  min-width: 200px;
+                                }
                                 #schoolTable th:nth-child(4), #schoolTable td:nth-child(4) {
-                                  min-width: 320px;
+                                  min-width: 180px;
                                 }
                                 #schoolTable th:nth-child(7), #schoolTable td:nth-child(7) {
                                   min-width: 360px;
