@@ -25,6 +25,16 @@ def normalize(records, year):
     if len(ids) != len(set(ids)): raise ValueError('Duplicate school IDs')
     for row in result:
         if not row.get('schoolName'): raise ValueError('School name is required')
+        reference = row.get('deviationReference')
+        if reference and reference.get('admissionYear') != year:
+            row.pop('deviationReference', None)
+        elif reference:
+            for entry in reference.get('entries', []):
+                if type(entry.get('value')) is not int or not 1 <= entry['value'] <= 100:
+                    raise ValueError(f"Invalid A80 reference: {row['schoolName']}")
+                source = urlparse(entry.get('sourceUrl', ''))
+                if source.scheme != 'https' or source.hostname != 'www.yotsuyaotsuka.com':
+                    raise ValueError(f"A80 requires an official Yotsuya source: {row['schoolName']}")
         for field in FIELDS:
             if not verified(row,field,year): row[field] = f'{year}年度の公式情報を未確認'
         row['targetAdmissionYear'] = year

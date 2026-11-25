@@ -49,6 +49,9 @@ public final class AdmissionsPolicy {
         if (incoming.admissionYear == null) incoming.admissionYear = existing.admissionYear;
         if (incoming.verifiedAt == null) incoming.verifiedAt = existing.verifiedAt;
         if (incoming.admissionsSources == null || incoming.admissionsSources.isEmpty()) incoming.admissionsSources = existing.admissionsSources;
+        if (incoming.deviationReference == null && java.util.Objects.equals(incoming.schoolName, existing.schoolName)) {
+            incoming.deviationReference = existing.deviationReference;
+        }
     }
 
     public static SchoolV2 forYear(SchoolV2 source, int year) {
@@ -59,6 +62,9 @@ public final class AdmissionsPolicy {
             else ((com.fasterxml.jackson.databind.node.ObjectNode) row).put(field, year + "年度の公式情報を未確認");
         }
         SchoolV2 result = JSON.convertValue(row, SchoolV2.class);
+        if (result.deviationReference != null && result.deviationReference.path("admissionYear").asInt() != year) {
+            result.deviationReference = null;
+        }
         result.targetAdmissionYear = year;
         result.verificationStatusLabel = verified(source,"examDates",year) && verified(source,"capacity",year)
                 ? "日程・人数を確認済み" : count > 0 ? "一部確認済み" : "未確認";

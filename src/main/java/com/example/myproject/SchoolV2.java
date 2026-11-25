@@ -26,6 +26,7 @@ public class SchoolV2 {
     public String verificationNote;
     public Map<String, JsonNode> fieldVerification = Map.of();
     public List<JsonNode> admissionsSources = List.of();
+    public JsonNode deviationReference;
 
     public SchoolV2() {
         // Jackson 用

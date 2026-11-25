@@ -45,4 +45,15 @@ class AdmissionsPolicyTest {
         AdmissionsPolicy.inheritUnchangedProofs(copied,original);
         assertFalse(AdmissionsPolicy.verified(copied,"capacity",2027));
     }
+    @Test void deviationReferenceSurvivesUnverifiedNotesButExpiresWithTheCohort() throws Exception {
+        SchoolV2 original=checkedSchool();
+        original.deviationReference=json.readTree("{\"admissionYear\":2027,\"entries\":[{\"value\":54}]}");
+        SchoolV2 current=AdmissionsPolicy.forYear(original,2027);
+        assertTrue(current.notes.contains("未確認"));
+        assertEquals(54,current.deviationReference.path("entries").get(0).path("value").asInt());
+        assertNull(AdmissionsPolicy.forYear(original,2028).deviationReference);
+        SchoolV2 edited=new SchoolV2();edited.schoolName=original.schoolName;
+        AdmissionsPolicy.inheritUnchangedProofs(edited,original);
+        assertEquals(original.deviationReference,edited.deviationReference);
+    }
 }

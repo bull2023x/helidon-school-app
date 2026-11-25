@@ -6,7 +6,7 @@
     "capacity": "帰国生全体30名（ニューヨーク現地入試を含む）",
     "examDates": "2026-11-15（ニューヨーク現地時間）, 2026-11-20（国内）, 2026-12-06（国内）",
     "subjects": "Honors/Advanced：英語作文・英語筆記・日本語作文・英語ペアワーク。Regular：国語・算数。NY：英語筆記・英語作文・日本語作文。",
-    "alternateSubjects": "2027年度の公式情報を未確認",
+    "alternateSubjects": "国内Honors/Advanced選考：英語作文・英語筆記・日本語作文・英語ペアワーク。Regular選考：国語・算数。ニューヨーク現地入試は英語筆記・英語作文・日本語作文で、英語ペアワークは国内のHonors/Advanced選考に記載。",
     "interview": "2027年度の公式情報を未確認",
     "englishQualificationBenefit": "2027年度の公式情報を未確認",
     "notes": "2027年度入学向け。国内Honors/Advancedは11月20日午前・12月6日午前、Regularは11月20日午後。",
@@ -38,6 +38,12 @@
         "sourceUrl": "https://www.ariake.kaetsu.ac.jp/contents/wp-content/uploads/2026/06/d9f34a88ffedbe6a459fca4d2709ce84.pdf",
         "verifiedAt": "2026-11-25T11:07:10+09:00",
         "pages": "4–5"
+      },
+      "alternateSubjects": {
+        "admissionYear": 2027,
+        "sourceUrl": "https://www.ariake.kaetsu.ac.jp/contents/wp-content/uploads/2026/06/d9f34a88ffedbe6a459fca4d2709ce84.pdf",
+        "verifiedAt": "2026-11-25T14:45:57+09:00",
+        "pages": "4–5"
       }
     },
     "admissionsSources": [
@@ -55,7 +61,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E3%81%8B%E3%81%88%E3%81%A4%E6%9C%89%E6%98%8E&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 54,
+          "schoolId": 112,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "１日午後特待",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=9",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 7,
+          "subjectSourceCode": "3231",
+          "subjectSourceExam": "かえつ有明(1日午後特待)",
+          "subjectSourceDate": "2/1午後",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 2,
@@ -120,7 +154,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E3%81%8B%E3%81%88%E3%81%A4%E6%9C%89%E6%98%8E&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 54,
+          "schoolId": 112,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "１日午後特待",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=9",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 7,
+          "subjectSourceCode": "3231",
+          "subjectSourceExam": "かえつ有明(1日午後特待)",
+          "subjectSourceDate": "2/1午後",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 3,
@@ -185,7 +247,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E3%82%AB%E3%83%AA%E3%82%BF%E3%82%B9%E5%A5%B3%E5%AD%90&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 48,
+          "schoolId": 136,
+          "date": "2/3",
+          "sex": "女子",
+          "examLabel": "４回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=18",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 20,
+          "subjectSourceCode": "4979",
+          "subjectSourceExam": "カリタス女子(4回)",
+          "subjectSourceDate": "2/3",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 4,
@@ -243,7 +333,35 @@
       }
     ],
     "verificationStatusLabel": "一部確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E3%82%B5%E3%83%AC%E3%82%B8%E3%82%A2%E3%83%B3%E5%9B%BD%E9%9A%9B%E4%B8%96%E7%94%B0%E8%B0%B7&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 45,
+          "schoolId": 710,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "１回本科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=21",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 9,
+          "subjectSourceCode": "7531",
+          "subjectSourceExam": "サレジアン国際世田谷(1回EDGE)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 5,
@@ -263,7 +381,35 @@
     "fieldVerification": {},
     "admissionsSources": [],
     "verificationStatusLabel": "未確認",
-    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。"
+    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E3%82%B5%E3%83%AC%E3%82%B8%E3%82%A2%E3%83%B3%E5%9B%BD%E9%9A%9B%E5%AD%A6%E5%9C%92&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 42,
+          "schoolId": 389,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "１回本科２科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=26",
+          "examSubjects": "2・4",
+          "judgmentSubjects": "2",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 9,
+          "subjectSourceCode": "7627",
+          "subjectSourceExam": "※サレジアン国際学園(1回本科)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "2・4科選択／2科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 6,
@@ -328,7 +474,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E3%83%89%E3%83%AB%E3%83%88%E3%83%B3%E6%9D%B1%E4%BA%AC%E5%AD%A6%E5%9C%92&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 49,
+          "schoolId": 1001,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "１日ＡＭ",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=16",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 11,
+          "subjectSourceCode": "2026",
+          "subjectSourceExam": "ドルトン東京学園(1日AM)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 7,
@@ -400,7 +574,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E4%B8%89%E7%94%B0%E5%9B%BD%E9%9A%9B%E7%A7%91%E5%AD%A6%E5%AD%A6%E5%9C%92&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 62,
+          "schoolId": 469,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "２回ＩＳＣ",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=3",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 12,
+          "subjectSourceCode": "6194",
+          "subjectSourceExam": "三田国際科学学園(2回ISC)",
+          "subjectSourceDate": "2/1午後",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 8,
@@ -472,7 +674,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E4%B8%89%E7%94%B0%E5%9B%BD%E9%9A%9B%E7%A7%91%E5%AD%A6%E5%AD%A6%E5%9C%92&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 62,
+          "schoolId": 469,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "２回ＩＳＣ",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=3",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 12,
+          "subjectSourceCode": "6194",
+          "subjectSourceExam": "三田国際科学学園(2回ISC)",
+          "subjectSourceDate": "2/1午後",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 9,
@@ -530,7 +760,35 @@
       }
     ],
     "verificationStatusLabel": "一部確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E4%B8%89%E8%BC%AA%E7%94%B0%E5%AD%A6%E5%9C%92&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 48,
+          "schoolId": 689,
+          "date": "2/1",
+          "sex": "女子",
+          "examLabel": "１回午前４科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=17",
+          "examSubjects": "2・4",
+          "judgmentSubjects": "2",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 25,
+          "subjectSourceCode": "8176",
+          "subjectSourceExam": "三輪田学園(1回午前)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "2・4科選択／2科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 10,
@@ -602,7 +860,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E4%BD%BC%E6%88%90%E5%AD%A6%E5%9C%92%E5%A5%B3%E5%AD%90&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 36,
+          "schoolId": 219,
+          "date": "2/1",
+          "sex": "女子",
+          "examLabel": "１日午前４科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=39",
+          "examSubjects": "2・4",
+          "judgmentSubjects": "2",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 21,
+          "subjectSourceCode": "8389",
+          "subjectSourceExam": "※佼成学園女子(1日午前)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "2・4科選択／2科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 11,
@@ -667,7 +953,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%85%AC%E6%96%87%E5%9B%BD%E9%9A%9B%E5%AD%A6%E5%9C%92&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 52,
+          "schoolId": 186,
+          "date": "2/3",
+          "sex": "共通",
+          "examLabel": "Ｂ",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=12",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 8,
+          "subjectSourceCode": "1821",
+          "subjectSourceExam": "公文国際学園(B)",
+          "subjectSourceDate": "2/3",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 12,
@@ -732,7 +1046,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%85%B1%E7%AB%8B%E5%A5%B3%E5%AD%90&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 50,
+          "schoolId": 169,
+          "date": "2/1",
+          "sex": "女子",
+          "examLabel": "１日",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=14",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 20,
+          "subjectSourceCode": "6606",
+          "subjectSourceExam": "共立女子(1日)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 13,
@@ -790,7 +1132,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%8D%83%E4%BB%A3%E7%94%B0&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 46,
+          "schoolId": 1022,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "研究特待",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=20",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 10,
+          "subjectSourceCode": "0713",
+          "subjectSourceExam": "※千代田(研究特待)",
+          "subjectSourceDate": "2/1午後",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 14,
@@ -810,7 +1180,35 @@
     "fieldVerification": {},
     "admissionsSources": [],
     "verificationStatusLabel": "未確認",
-    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。"
+    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%8D%83%E4%BB%A3%E7%94%B0&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 46,
+          "schoolId": 1022,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "研究特待",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=20",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 10,
+          "subjectSourceCode": "0713",
+          "subjectSourceExam": "※千代田(研究特待)",
+          "subjectSourceDate": "2/1午後",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 15,
@@ -868,7 +1266,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%90%8C%E5%BF%97%E7%A4%BE%E5%9B%BD%E9%9A%9B&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 51,
+          "schoolId": 502,
+          "date": "1/20",
+          "sex": "共通",
+          "examLabel": "一般Ｇ",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=12",
+          "examSubjects": "3",
+          "judgmentSubjects": "3",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 16,
+          "subjectSourceCode": "1546",
+          "subjectSourceExam": "※同志社国際",
+          "subjectSourceDate": "1/19",
+          "fourSubjectEligible": false,
+          "subjectLabel": "3科目／3科判定（４科目受験ではありません）"
+        }
+      ],
+      "note": "４科目一般入試の参考値は確認できないため、別方式の参考値を区別して掲載しています。一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 16,
@@ -888,7 +1314,35 @@
     "fieldVerification": {},
     "admissionsSources": [],
     "verificationStatusLabel": "未確認",
-    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。"
+    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%93%81%E5%B7%9D%E5%A5%B3%E5%AD%90%E5%AD%A6%E9%99%A2&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 52,
+          "schoolId": 288,
+          "date": "2/2",
+          "sex": "女子",
+          "examLabel": "２回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=12",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 22,
+          "subjectSourceCode": "9750",
+          "subjectSourceExam": "品川女子学院(2回)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 17,
@@ -908,7 +1362,52 @@
     "fieldVerification": {},
     "admissionsSources": [],
     "verificationStatusLabel": "未確認",
-    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。"
+    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%9B%BD%E5%AD%A6%E9%99%A2%E4%B9%85%E6%88%91%E5%B1%B1&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 52,
+          "schoolId": 236,
+          "date": "2/2",
+          "sex": "男子",
+          "examLabel": "２回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=11",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 8,
+          "subjectSourceCode": "4391",
+          "subjectSourceExam": "国学院久我山(2回)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        },
+        {
+          "value": 49,
+          "schoolId": 236,
+          "date": "2/1",
+          "sex": "女子",
+          "examLabel": "一般入試",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=16",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 21,
+          "subjectSourceCode": "6039",
+          "subjectSourceExam": "国学院久我山",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 18,
@@ -959,7 +1458,35 @@
       }
     ],
     "verificationStatusLabel": "一部確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%9F%BC%E7%8E%89%E6%A0%84&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 46,
+          "schoolId": 246,
+          "date": "1/10",
+          "sex": "共通",
+          "examLabel": "１回難関大",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=19",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 8,
+          "subjectSourceCode": "0741",
+          "subjectSourceExam": "埼玉栄(1回難関大)",
+          "subjectSourceDate": "1/10",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 19,
@@ -1024,7 +1551,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%A4%A7%E5%A6%BB&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 51,
+          "schoolId": 86,
+          "date": "2/2",
+          "sex": "女子",
+          "examLabel": "２回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=13",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 19,
+          "subjectSourceCode": "8028",
+          "subjectSourceExam": "大妻(2回)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 20,
@@ -1082,7 +1637,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%A4%A7%E5%A6%BB%E4%B8%AD%E9%87%8E&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 45,
+          "schoolId": 88,
+          "date": "2/3",
+          "sex": "女子",
+          "examLabel": "４回アドバンスト選抜",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=22",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 19,
+          "subjectSourceCode": "6504",
+          "subjectSourceExam": "大妻中野(4回アドバンスト)",
+          "subjectSourceDate": "2/3",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 21,
@@ -1140,7 +1723,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%A4%A7%E5%A6%BB%E4%B8%AD%E9%87%8E&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 45,
+          "schoolId": 88,
+          "date": "2/3",
+          "sex": "女子",
+          "examLabel": "４回アドバンスト選抜",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=22",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 19,
+          "subjectSourceCode": "6504",
+          "subjectSourceExam": "大妻中野(4回アドバンスト)",
+          "subjectSourceDate": "2/3",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 22,
@@ -1191,7 +1802,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E3%81%95%E3%81%84%E3%81%9F%E3%81%BE%E5%B8%82%E7%AB%8B%E5%A4%A7%E5%AE%AE%E5%9B%BD%E9%9A%9B&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 55,
+          "schoolId": 997,
+          "date": "1/11",
+          "sex": "共通",
+          "examLabel": "１次",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=7",
+          "examSubjects": "-",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 8,
+          "subjectSourceCode": "0088",
+          "subjectSourceExam": "さいたま市立大宮国際",
+          "subjectSourceDate": "1/17",
+          "fourSubjectEligible": false,
+          "subjectLabel": "適性検査等／模試は4科判定（４科目受験ではありません）"
+        }
+      ],
+      "note": "４科目一般入試の参考値は確認できないため、別方式の参考値を区別して掲載しています。一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 23,
@@ -1242,7 +1881,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%AD%A6%E7%BF%92%E9%99%A2&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 55,
+          "schoolId": 119,
+          "date": "2/3",
+          "sex": "男子",
+          "examLabel": "一般２回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=8",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 8,
+          "subjectSourceCode": "2771",
+          "subjectSourceExam": "学習院(一般2回)",
+          "subjectSourceDate": "2/3",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 24,
@@ -1293,7 +1960,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E9%A0%86%E5%A4%A9%E5%A0%82%E5%A4%A7%E5%AD%A6%E7%B3%BB%E5%B1%9E%E7%90%86%E6%95%B0%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 43,
+          "schoolId": 839,
+          "date": "2/2",
+          "sex": "共通",
+          "examLabel": "新４科特別総合",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=25",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 9,
+          "subjectSourceCode": "1011",
+          "subjectSourceExam": "順天堂大学系属理数インター(新4科)",
+          "subjectSourceDate": "2/2午後",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 25,
@@ -1344,7 +2039,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%AE%9F%E8%B7%B5%E5%A5%B3%E5%AD%90%E5%AD%A6%E5%9C%92&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 45,
+          "schoolId": 285,
+          "date": "2/2",
+          "sex": "女子",
+          "examLabel": "３回４科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=22",
+          "examSubjects": "2・4",
+          "judgmentSubjects": "2",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 22,
+          "subjectSourceCode": "1106",
+          "subjectSourceExam": "実践女子学園(3回)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "2・4科選択／2科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 26,
@@ -1395,7 +2118,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%AF%8C%E5%A3%AB%E8%A6%8B%E4%B8%98&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 33,
+          "schoolId": 647,
+          "date": "2/1",
+          "sex": "女子",
+          "examLabel": "ＷＩＬＬ",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=44",
+          "examSubjects": "2",
+          "judgmentSubjects": "2",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 25,
+          "subjectSourceCode": "6882",
+          "subjectSourceExam": "※富士見丘(WILL)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": false,
+          "subjectLabel": "2科目／2科判定（４科目受験ではありません）"
+        }
+      ],
+      "note": "４科目一般入試の参考値は確認できないため、別方式の参考値を区別して掲載しています。一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 27,
@@ -1453,7 +2204,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%B1%B1%E6%89%8B%E5%AD%A6%E9%99%A2&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 52,
+          "schoolId": 723,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "Ａ２科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=11",
+          "examSubjects": "2・4",
+          "judgmentSubjects": "2",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 13,
+          "subjectSourceCode": "5622",
+          "subjectSourceExam": "山手学院(A)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "2・4科選択／2科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 28,
@@ -1504,7 +2283,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%B1%B1%E8%84%87%E5%AD%A6%E5%9C%92&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 56,
+          "schoolId": 727,
+          "date": "2/1",
+          "sex": "女子",
+          "examLabel": "Ａ",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=7",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 26,
+          "subjectSourceCode": "8184",
+          "subjectSourceExam": "山脇学園(A)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 29,
@@ -1569,7 +2376,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%B7%A5%E5%AD%A6%E9%99%A2%E5%A4%A7%E9%99%84&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 40,
+          "schoolId": 209,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "１回Ａ特待２科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=31",
+          "examSubjects": "2・4",
+          "judgmentSubjects": "2",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 8,
+          "subjectSourceCode": "3397",
+          "subjectSourceExam": "※工学院大附(1回A特待)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "2・4科選択／2科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 30,
@@ -1589,7 +2424,35 @@
     "fieldVerification": {},
     "admissionsSources": [],
     "verificationStatusLabel": "未確認",
-    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。"
+    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%B8%82%E5%B7%9D&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 65,
+          "schoolId": 30,
+          "date": "2/4",
+          "sex": "共通",
+          "examLabel": "２回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=1",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 7,
+          "subjectSourceCode": "1212",
+          "subjectSourceExam": "市川(2回)",
+          "subjectSourceDate": "2/4",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 31,
@@ -1654,7 +2517,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%B8%9D%E4%BA%AC&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 32,
+          "schoolId": 458,
+          "date": "2/4",
+          "sex": "共通",
+          "examLabel": "３回２科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=45",
+          "examSubjects": "2・4",
+          "judgmentSubjects": "2",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 10,
+          "subjectSourceCode": "1449",
+          "subjectSourceExam": "※帝京(3回)",
+          "subjectSourceDate": "2/4",
+          "fourSubjectEligible": true,
+          "subjectLabel": "2・4科選択／2科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 32,
@@ -1705,7 +2596,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%BA%83%E5%B0%BE%E5%AD%A6%E5%9C%92&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 67,
+          "schoolId": 313,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "２回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=0",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 12,
+          "subjectSourceCode": "4114",
+          "subjectSourceExam": "広尾学園(2回)",
+          "subjectSourceDate": "2/1午後",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 33,
@@ -1763,7 +2682,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%BA%83%E5%B0%BE%E5%AD%A6%E5%9C%92&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 67,
+          "schoolId": 313,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "２回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=0",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 12,
+          "subjectSourceCode": "4114",
+          "subjectSourceExam": "広尾学園(2回)",
+          "subjectSourceDate": "2/1午後",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 34,
@@ -1808,7 +2755,35 @@
       }
     ],
     "verificationStatusLabel": "一部確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%BA%83%E5%B0%BE%E5%AD%A6%E5%9C%92%E5%B0%8F%E7%9F%B3%E5%B7%9D&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 63,
+          "schoolId": 1014,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "ＩＳＧ１回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=2",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 12,
+          "subjectSourceCode": "4460",
+          "subjectSourceExam": "広尾学園小石川(ISG1回)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 35,
@@ -1867,7 +2842,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%BA%83%E5%B0%BE%E5%AD%A6%E5%9C%92%E5%B0%8F%E7%9F%B3%E5%B7%9D&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 63,
+          "schoolId": 1014,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "ＩＳＧ１回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=2",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 12,
+          "subjectSourceCode": "4460",
+          "subjectSourceExam": "広尾学園小石川(ISG1回)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 36,
@@ -1925,7 +2928,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%85%B6%E6%87%89%E6%B9%98%E5%8D%97%E8%97%A4%E6%B2%A2&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 65,
+          "schoolId": 192,
+          "date": "2/2",
+          "sex": "共通",
+          "examLabel": "一般１次",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=1",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 8,
+          "subjectSourceCode": "3425",
+          "subjectSourceExam": "慶應湘南藤沢(一般)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 37,
@@ -2006,7 +3037,52 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%88%90%E8%B9%8A&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 54,
+          "schoolId": 369,
+          "date": "2/1",
+          "sex": "女子",
+          "examLabel": "一般入試",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=9",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 22,
+          "subjectSourceCode": "3056",
+          "subjectSourceExam": "成蹊",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        },
+        {
+          "value": 52,
+          "schoolId": 369,
+          "date": "2/4",
+          "sex": "男子",
+          "examLabel": "２回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=12",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 10,
+          "subjectSourceCode": "2102",
+          "subjectSourceExam": "成蹊(2回)",
+          "subjectSourceDate": "2/4",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 38,
@@ -2064,7 +3140,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%94%BB%E7%8E%89%E7%A4%BE&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 63,
+          "schoolId": 215,
+          "date": "2/2",
+          "sex": "男子",
+          "examLabel": "２回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=2",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 8,
+          "subjectSourceCode": "3999",
+          "subjectSourceExam": "攻玉社(2回)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 39,
@@ -2136,7 +3240,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%96%87%E5%8C%96%E5%AD%A6%E5%9C%92%E5%A4%A7%E6%9D%89%E4%B8%A6&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 41,
+          "schoolId": 654,
+          "date": "2/2",
+          "sex": "共通",
+          "examLabel": "３回２科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=28",
+          "examSubjects": "2・4",
+          "judgmentSubjects": "2",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 12,
+          "subjectSourceCode": "6297",
+          "subjectSourceExam": "文化学園大杉並(3回)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "2・4科選択／2科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 40,
@@ -2194,7 +3326,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%96%87%E5%8C%96%E5%AD%A6%E5%9C%92%E5%A4%A7%E6%9D%89%E4%B8%A6&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 41,
+          "schoolId": 654,
+          "date": "2/2",
+          "sex": "共通",
+          "examLabel": "３回２科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=28",
+          "examSubjects": "2・4",
+          "judgmentSubjects": "2",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 12,
+          "subjectSourceCode": "6297",
+          "subjectSourceExam": "文化学園大杉並(3回)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "2・4科選択／2科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 41,
@@ -2259,7 +3419,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%97%A5%E6%9C%AC%E5%A4%A7%E5%AD%A6&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 51,
+          "schoolId": 575,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "Ａ１・ＡＦ",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=13",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 11,
+          "subjectSourceCode": "2798",
+          "subjectSourceExam": "日本大学(A1・AF)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 42,
@@ -2324,7 +3512,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%97%A9%E7%A8%B2%E7%94%B0%E4%BD%90%E8%B3%80&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 52,
+          "schoolId": 924,
+          "date": "1/12",
+          "sex": "共通",
+          "examLabel": "一般１月",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=10",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 18,
+          "subjectSourceCode": "2409",
+          "subjectSourceExam": "早稲田佐賀(一般1月)",
+          "subjectSourceDate": "1/11",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 43,
@@ -2344,7 +3560,28 @@
     "fieldVerification": {},
     "admissionsSources": [],
     "verificationStatusLabel": "未確認",
-    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。"
+    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%98%8E%E6%98%9F%EF%BC%A9%EF%BD%8E%EF%BD%93%EF%BD%94%EF%BD%89%EF%BD%94%EF%BD%95%EF%BD%94%EF%BD%89%EF%BD%8F%EF%BD%8E&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 50,
+          "schoolId": 1042,
+          "date": "2/3",
+          "sex": "共通",
+          "examLabel": "２回特待",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=15",
+          "fourSubjectEligible": false,
+          "subjectLabel": "教科数の対応は未確認（４科目の参考値としては未確定）"
+        }
+      ],
+      "note": "４科目一般入試の参考値は確認できないため、別方式の参考値を区別して掲載しています。一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 44,
@@ -2364,7 +3601,35 @@
     "fieldVerification": {},
     "admissionsSources": [],
     "verificationStatusLabel": "未確認",
-    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。"
+    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%98%AD%E5%92%8C%E5%A5%B3%E5%AD%90%E5%A4%A7%E9%99%84%E5%B1%9E%E6%98%AD%E5%92%8C&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 46,
+          "schoolId": 340,
+          "date": "2/1",
+          "sex": "女子",
+          "examLabel": "ＡＡ４科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=20",
+          "examSubjects": "2・4",
+          "judgmentSubjects": "2",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 22,
+          "subjectSourceCode": "2075",
+          "subjectSourceExam": "昭和女子大附属昭和(AA)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "2・4科選択／2科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 45,
@@ -2384,7 +3649,35 @@
     "fieldVerification": {},
     "admissionsSources": [],
     "verificationStatusLabel": "未確認",
-    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。"
+    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%98%AD%E5%92%8C%E5%A5%B3%E5%AD%90%E5%A4%A7%E9%99%84%E5%B1%9E%E6%98%AD%E5%92%8C&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 46,
+          "schoolId": 340,
+          "date": "2/1",
+          "sex": "女子",
+          "examLabel": "ＡＡ４科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=20",
+          "examSubjects": "2・4",
+          "judgmentSubjects": "2",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 22,
+          "subjectSourceCode": "2075",
+          "subjectSourceExam": "昭和女子大附属昭和(AA)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "2・4科選択／2科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 46,
@@ -2404,7 +3697,35 @@
     "fieldVerification": {},
     "admissionsSources": [],
     "verificationStatusLabel": "未確認",
-    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。"
+    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%98%AD%E5%92%8C%E5%AD%A6%E9%99%A2&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 56,
+          "schoolId": 338,
+          "date": "1/24",
+          "sex": "共通",
+          "examLabel": "アドバンストチャレンジ２科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=7",
+          "examSubjects": "2・4",
+          "judgmentSubjects": "2",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 9,
+          "subjectSourceCode": "6937",
+          "subjectSourceExam": "昭和学院(アドバンストチャレンジ)",
+          "subjectSourceDate": "1/24",
+          "fourSubjectEligible": true,
+          "subjectLabel": "2・4科選択／2科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 47,
@@ -2424,7 +3745,35 @@
     "fieldVerification": {},
     "admissionsSources": [],
     "verificationStatusLabel": "未確認",
-    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。"
+    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%98%AD%E5%92%8C%E5%AD%A6%E9%99%A2%E7%A7%80%E8%8B%B1&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 61,
+          "schoolId": 339,
+          "date": "1/22",
+          "sex": "共通",
+          "examLabel": "１回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=3",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 9,
+          "subjectSourceCode": "0957",
+          "subjectSourceExam": "昭和学院秀英(1回)",
+          "subjectSourceDate": "1/22",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 48,
@@ -2489,7 +3838,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%9A%81%E6%98%9F&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 53,
+          "schoolId": 158,
+          "date": "2/2",
+          "sex": "男子",
+          "examLabel": "１回一般",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=10",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 8,
+          "subjectSourceCode": "2437",
+          "subjectSourceExam": "暁星",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 49,
@@ -2509,7 +3886,35 @@
     "fieldVerification": {},
     "admissionsSources": [],
     "verificationStatusLabel": "未確認",
-    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。"
+    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%9D%B1%E4%BA%AC%E5%A4%A7%E9%99%84%E5%B1%9E&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 50,
+          "schoolId": 494,
+          "date": "2/3",
+          "sex": "共通",
+          "examLabel": "一般入試",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=15",
+          "examSubjects": "-",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 11,
+          "subjectSourceCode": "0086",
+          "subjectSourceExam": "※東京大附属",
+          "subjectSourceDate": "2/3",
+          "fourSubjectEligible": false,
+          "subjectLabel": "適性検査等／模試は4科判定（４科目受験ではありません）"
+        }
+      ],
+      "note": "４科目一般入試の参考値は確認できないため、別方式の参考値を区別して掲載しています。一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 50,
@@ -2560,7 +3965,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%9D%B1%E4%BA%AC%E5%A5%B3%E5%AD%A6%E9%A4%A8&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 51,
+          "schoolId": 490,
+          "date": "2/3",
+          "sex": "女子",
+          "examLabel": "４回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=13",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 24,
+          "subjectSourceCode": "5422",
+          "subjectSourceExam": "東京女学館(4回)",
+          "subjectSourceDate": "2/3",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 51,
@@ -2611,7 +4044,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%9D%B1%E4%BA%AC%E5%A5%B3%E5%AD%A6%E9%A4%A8&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 51,
+          "schoolId": 490,
+          "date": "2/3",
+          "sex": "女子",
+          "examLabel": "４回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=13",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 24,
+          "subjectSourceCode": "5422",
+          "subjectSourceExam": "東京女学館(4回)",
+          "subjectSourceDate": "2/3",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 52,
@@ -2662,7 +4123,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%9D%B1%E4%BA%AC%E5%AD%A6%E8%8A%B8%E5%A4%A7%E9%99%84%E5%B1%9E%E5%9B%BD%E9%9A%9B&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 57,
+          "schoolId": 482,
+          "date": "2/3",
+          "sex": "共通",
+          "examLabel": "Ｂ",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=6",
+          "examSubjects": "-",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 11,
+          "subjectSourceCode": "0027",
+          "subjectSourceExam": "※東京学芸大附属国際(B)",
+          "subjectSourceDate": "2/3",
+          "fourSubjectEligible": false,
+          "subjectLabel": "適性検査等／模試は4科判定（４科目受験ではありません）"
+        }
+      ],
+      "note": "４科目一般入試の参考値は確認できないため、別方式の参考値を区別して掲載しています。一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 53,
@@ -2720,7 +4209,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%B8%82%E5%A4%A7%E4%BB%98%E5%B1%9E&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 58,
+          "schoolId": 692,
+          "date": "2/1",
+          "sex": "男子",
+          "examLabel": "１回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=5",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 11,
+          "subjectSourceCode": "4894",
+          "subjectSourceExam": "東京都市大付属(1回)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 54,
@@ -2778,7 +4295,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%B8%82%E5%A4%A7%E4%BB%98%E5%B1%9E&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 58,
+          "schoolId": 692,
+          "date": "2/1",
+          "sex": "男子",
+          "examLabel": "１回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=5",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 11,
+          "subjectSourceCode": "4894",
+          "subjectSourceExam": "東京都市大付属(1回)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 55,
@@ -2837,7 +4382,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%B8%82%E5%A4%A7%E5%AD%A6%E7%AD%89%E3%80%85%E5%8A%9B&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 55,
+          "schoolId": 513,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "１回特選",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=8",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 11,
+          "subjectSourceCode": "8819",
+          "subjectSourceExam": "東京都市大学等々力(特選)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 56,
@@ -2881,7 +4454,35 @@
       }
     ],
     "verificationStatusLabel": "一部確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%AB%8B%E7%99%BD%E9%B4%8E%E9%AB%98%E9%99%84%E5%B1%9E&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 58,
+          "schoolId": 776,
+          "date": "2/3",
+          "sex": "共通",
+          "examLabel": "一般",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=5",
+          "examSubjects": "-",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 11,
+          "subjectSourceCode": "1042",
+          "subjectSourceExam": "東京都立白鴎高附属(一般)",
+          "subjectSourceDate": "2/3",
+          "fourSubjectEligible": false,
+          "subjectLabel": "適性検査等／模試は4科判定（４科目受験ではありません）"
+        }
+      ],
+      "note": "４科目一般入試の参考値は確認できないため、別方式の参考値を区別して掲載しています。一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 57,
@@ -2925,7 +4526,35 @@
       }
     ],
     "verificationStatusLabel": "一部確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%AB%8B%E7%AB%8B%E5%B7%9D%E5%9B%BD%E9%9A%9B&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 57,
+          "schoolId": 840,
+          "date": "2/3",
+          "sex": "共通",
+          "examLabel": "一般",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=6",
+          "examSubjects": "-",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 11,
+          "subjectSourceCode": "1056",
+          "subjectSourceExam": "東京都立立川国際(一般)",
+          "subjectSourceDate": "2/3",
+          "fourSubjectEligible": false,
+          "subjectLabel": "適性検査等／模試は4科判定（４科目受験ではありません）"
+        }
+      ],
+      "note": "４科目一般入試の参考値は確認できないため、別方式の参考値を区別して掲載しています。一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 58,
@@ -2983,7 +4612,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%9D%B1%E9%82%A6%E5%A4%A7%E4%BB%98%E5%B1%9E%E6%9D%B1%E9%82%A6&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 63,
+          "schoolId": 509,
+          "date": "1/21",
+          "sex": "共通",
+          "examLabel": "前期",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=2",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 11,
+          "subjectSourceCode": "1350",
+          "subjectSourceExam": "東邦大付属東邦(前期)",
+          "subjectSourceDate": "1/21",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 59,
@@ -3034,7 +4691,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%A0%84%E6%9D%B1&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 63,
+          "schoolId": 250,
+          "date": "1/10",
+          "sex": "共通",
+          "examLabel": "Ⅰ東大難関大",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=2",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 8,
+          "subjectSourceCode": "3557",
+          "subjectSourceExam": "栄東(I東大難関大)",
+          "subjectSourceDate": "1/10",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 60,
@@ -3054,7 +4739,52 @@
     "fieldVerification": {},
     "admissionsSources": [],
     "verificationStatusLabel": "未確認",
-    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。"
+    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%A1%90%E5%85%89%E5%AD%A6%E5%9C%92&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 47,
+          "schoolId": 499,
+          "date": "2/1",
+          "sex": "男子",
+          "examLabel": "男子部１回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=18",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 11,
+          "subjectSourceCode": "3193",
+          "subjectSourceExam": "桐光学園男子部",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        },
+        {
+          "value": 42,
+          "schoolId": 498,
+          "date": "2/1",
+          "sex": "女子",
+          "examLabel": "女子部１回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=26",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 24,
+          "subjectSourceCode": "9417",
+          "subjectSourceExam": "桐光学園女子部",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 61,
@@ -3074,7 +4804,52 @@
     "fieldVerification": {},
     "admissionsSources": [],
     "verificationStatusLabel": "未確認",
-    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。"
+    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%A1%90%E5%85%89%E5%AD%A6%E5%9C%92&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 47,
+          "schoolId": 499,
+          "date": "2/1",
+          "sex": "男子",
+          "examLabel": "男子部１回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=18",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 11,
+          "subjectSourceCode": "3193",
+          "subjectSourceExam": "桐光学園男子部",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        },
+        {
+          "value": 42,
+          "schoolId": 498,
+          "date": "2/1",
+          "sex": "女子",
+          "examLabel": "女子部１回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=26",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 24,
+          "subjectSourceCode": "9417",
+          "subjectSourceExam": "桐光学園女子部",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 62,
@@ -3094,7 +4869,35 @@
     "fieldVerification": {},
     "admissionsSources": [],
     "verificationStatusLabel": "未確認",
-    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。"
+    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%A1%90%E8%94%AD%E5%AD%A6%E5%9C%92%E4%B8%AD%E7%AD%89%E6%95%99%E8%82%B2%E5%AD%A6%E6%A0%A1&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 50,
+          "schoolId": 473,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "１回午前",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=15",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 11,
+          "subjectSourceCode": "1157",
+          "subjectSourceExam": "桐蔭学園中等教育学校(1回午前)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 63,
@@ -3152,7 +4955,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%A8%AA%E6%B5%9C%E9%9B%99%E8%91%89&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 54,
+          "schoolId": 741,
+          "date": "2/2",
+          "sex": "女子",
+          "examLabel": "２期",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=9",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 26,
+          "subjectSourceCode": "7047",
+          "subjectSourceExam": "横浜雙葉(2期)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 64,
@@ -3210,7 +5041,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%B1%9F%E6%88%B8%E5%B7%9D%E5%A5%B3%E5%AD%90&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 38,
+          "schoolId": 60,
+          "date": "2/2",
+          "sex": "女子",
+          "examLabel": "２回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=34",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 19,
+          "subjectSourceCode": "6556",
+          "subjectSourceExam": "江戸川女子(2回)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 65,
@@ -3268,7 +5127,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%B4%97%E8%B6%B3%E5%AD%A6%E5%9C%92&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 64,
+          "schoolId": 413,
+          "date": "2/2",
+          "sex": "女子",
+          "examLabel": "２回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=1",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 23,
+          "subjectSourceCode": "8516",
+          "subjectSourceExam": "洗足学園(2回)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 66,
@@ -3288,7 +5175,35 @@
     "fieldVerification": {},
     "admissionsSources": [],
     "verificationStatusLabel": "未確認",
-    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。"
+    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%B5%A6%E5%92%8C%E5%AE%9F%E6%A5%AD%E5%AD%A6%E5%9C%92&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 41,
+          "schoolId": 769,
+          "date": "1/10",
+          "sex": "共通",
+          "examLabel": "１０日午前４科型",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=27",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 7,
+          "subjectSourceCode": "9001",
+          "subjectSourceExam": "浦和実業学園(10日午前4科)",
+          "subjectSourceDate": "1/10",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 67,
@@ -3353,7 +5268,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%B5%B7%E5%9F%8E&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 68,
+          "schoolId": 104,
+          "date": "2/3",
+          "sex": "男子",
+          "examLabel": "２回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=0",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 7,
+          "subjectSourceCode": "3930",
+          "subjectSourceExam": "海城(2回)",
+          "subjectSourceDate": "2/3",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 68,
@@ -3411,7 +5354,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%B8%85%E6%B3%89%E5%A5%B3%E5%AD%A6%E9%99%A2&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 44,
+          "schoolId": 381,
+          "date": "2/1",
+          "sex": "女子",
+          "examLabel": "１期",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=23",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 23,
+          "subjectSourceCode": "6157",
+          "subjectSourceExam": "清泉女学院",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 69,
@@ -3469,7 +5440,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%B8%8B%E8%B0%B7%E6%95%99%E8%82%B2%E5%AD%A6%E5%9C%92%E5%B9%95%E5%BC%B5&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 69,
+          "schoolId": 293,
+          "date": "2/2",
+          "sex": "共通",
+          "examLabel": "２次",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=0",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 9,
+          "subjectSourceCode": "1465",
+          "subjectSourceExam": "渋谷教育学園幕張(2次)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 70,
@@ -3527,7 +5526,52 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%B8%8B%E8%B0%B7%E6%95%99%E8%82%B2%E5%AD%A6%E5%9C%92%E6%B8%8B%E8%B0%B7&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 69,
+          "schoolId": 292,
+          "date": "2/1",
+          "sex": "女子",
+          "examLabel": "一般入試",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=0",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 22,
+          "subjectSourceCode": "2831",
+          "subjectSourceExam": "渋谷教育学園渋谷",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        },
+        {
+          "value": 68,
+          "schoolId": 292,
+          "date": "2/2",
+          "sex": "男子",
+          "examLabel": "２回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=0",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 9,
+          "subjectSourceCode": "3303",
+          "subjectSourceExam": "渋谷教育学園渋谷(2回)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 71,
@@ -3585,7 +5629,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%B9%98%E5%8D%97%E7%99%BD%E7%99%BE%E5%90%88%E5%AD%A6%E5%9C%92&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 48,
+          "schoolId": 334,
+          "date": "2/2",
+          "sex": "女子",
+          "examLabel": "４教科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=17",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 22,
+          "subjectSourceCode": "6165",
+          "subjectSourceExam": "湘南白百合学園(4教科)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 72,
@@ -3643,7 +5715,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E7%8E%89%E5%B7%9D%E5%AD%A6%E5%9C%92&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 37,
+          "schoolId": 438,
+          "date": "2/2",
+          "sex": "共通",
+          "examLabel": "３回２科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=38",
+          "examSubjects": "2・4",
+          "judgmentSubjects": "2",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 10,
+          "subjectSourceCode": "3443",
+          "subjectSourceExam": "※玉川学園(3回)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "2・4科選択／2科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 73,
@@ -3663,7 +5763,35 @@
     "fieldVerification": {},
     "admissionsSources": [],
     "verificationStatusLabel": "未確認",
-    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。"
+    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E7%8E%89%E5%B7%9D%E5%AD%A6%E5%9C%92&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 37,
+          "schoolId": 438,
+          "date": "2/2",
+          "sex": "共通",
+          "examLabel": "３回２科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=38",
+          "examSubjects": "2・4",
+          "judgmentSubjects": "2",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 10,
+          "subjectSourceCode": "3443",
+          "subjectSourceExam": "※玉川学園(3回)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "2・4科選択／2科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 74,
@@ -3721,7 +5849,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E7%94%B0%E5%9C%92%E8%AA%BF%E5%B8%83%E5%AD%A6%E5%9C%92&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 52,
+          "schoolId": 450,
+          "date": "2/2",
+          "sex": "女子",
+          "examLabel": "２回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=12",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 23,
+          "subjectSourceCode": "6408",
+          "subjectSourceExam": "田園調布学園(2回)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 75,
@@ -3779,7 +5935,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E7%99%BD%E7%99%BE%E5%90%88%E5%AD%A6%E5%9C%92&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 61,
+          "schoolId": 347,
+          "date": "2/2",
+          "sex": "女子",
+          "examLabel": "一般",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=3",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 22,
+          "subjectSourceCode": "6025",
+          "subjectSourceExam": "白百合学園(一般)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 76,
@@ -3830,7 +6014,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E7%9B%AE%E7%99%BD%E7%A0%94%E5%BF%83&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 36,
+          "schoolId": 711,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "２回２科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=39",
+          "examSubjects": "2・4",
+          "judgmentSubjects": "2",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 12,
+          "subjectSourceCode": "3025",
+          "subjectSourceExam": "※目白研心(2回)",
+          "subjectSourceDate": "2/1午後",
+          "fourSubjectEligible": true,
+          "subjectLabel": "2・4科選択／2科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 77,
@@ -3881,7 +6093,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E7%A5%9E%E5%A5%88%E5%B7%9D%E5%A4%A7%E9%99%84%E5%B1%9E&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 56,
+          "schoolId": 131,
+          "date": "2/2",
+          "sex": "共通",
+          "examLabel": "２回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=7",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 8,
+          "subjectSourceCode": "1368",
+          "subjectSourceExam": "神奈川大附属(2回)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 78,
@@ -3939,7 +6179,28 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E7%AB%8B%E5%91%BD%E9%A4%A8%E5%AE%87%E6%B2%BB&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 44,
+          "schoolId": 755,
+          "date": "1/17",
+          "sex": "共通",
+          "examLabel": "Ａ一般３科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=23",
+          "fourSubjectEligible": false,
+          "subjectLabel": "３科目判定（４科目受験ではありません）"
+        }
+      ],
+      "note": "４科目一般入試の参考値は確認できないため、別方式の参考値を区別して掲載しています。一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 79,
@@ -3997,7 +6258,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E7%AB%8B%E6%95%99%E6%B1%A0%E8%A2%8B&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 58,
+          "schoolId": 749,
+          "date": "2/2",
+          "sex": "男子",
+          "examLabel": "一般１回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=5",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 13,
+          "subjectSourceCode": "4081",
+          "subjectSourceExam": "立教池袋(一般)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 80,
@@ -4056,7 +6345,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E8%81%96%E5%85%89%E5%AD%A6%E9%99%A2&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 70,
+          "schoolId": 370,
+          "date": "2/4",
+          "sex": "男子",
+          "examLabel": "２回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=0",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 10,
+          "subjectSourceCode": "4383",
+          "subjectSourceExam": "聖光学院(2回)",
+          "subjectSourceDate": "2/4",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 81,
@@ -4114,7 +6431,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E8%8A%9D%E5%9B%BD%E9%9A%9B&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 51,
+          "schoolId": 492,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "１日午前",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=13",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 9,
+          "subjectSourceCode": "7832",
+          "subjectSourceExam": "芝国際",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 82,
@@ -4172,7 +6517,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E8%8A%9D%E5%9B%BD%E9%9A%9B&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 51,
+          "schoolId": 492,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "１日午前",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=13",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 9,
+          "subjectSourceCode": "7832",
+          "subjectSourceExam": "芝国際",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 83,
@@ -4223,7 +6596,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E8%8A%9D%E6%B5%A6%E5%B7%A5%E6%A5%AD%E5%A4%A7%E9%99%84%E5%B1%9E&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 57,
+          "schoolId": 290,
+          "date": "2/2",
+          "sex": "共通",
+          "examLabel": "２回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=6",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 9,
+          "subjectSourceCode": "4251",
+          "subjectSourceExam": "芝浦工業大附属(2回)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 84,
@@ -4281,7 +6682,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E8%8A%9D%E6%B5%A6%E5%B7%A5%E6%A5%AD%E5%A4%A7%E9%99%84%E5%B1%9E&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 57,
+          "schoolId": 290,
+          "date": "2/2",
+          "sex": "共通",
+          "examLabel": "２回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=6",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 9,
+          "subjectSourceCode": "4251",
+          "subjectSourceExam": "芝浦工業大附属(2回)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 85,
@@ -4332,7 +6761,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E8%8C%97%E6%BA%AA%E5%AD%A6%E5%9C%92&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 49,
+          "schoolId": 696,
+          "date": "1/11",
+          "sex": "共通",
+          "examLabel": "一般４科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=15",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 12,
+          "subjectSourceCode": "1121",
+          "subjectSourceExam": "茗溪学園(一般4科)",
+          "subjectSourceDate": "1/11",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 86,
@@ -4383,7 +6840,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E8%A5%BF%E5%A4%A7%E5%92%8C%E5%AD%A6%E5%9C%92&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 68,
+          "schoolId": 567,
+          "date": "1/6",
+          "sex": "共通",
+          "examLabel": "県外・東京",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=0",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 11,
+          "subjectSourceCode": "5918",
+          "subjectSourceExam": "西大和学園(県外・東京)",
+          "subjectSourceDate": "1/6",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 87,
@@ -4403,7 +6888,35 @@
     "fieldVerification": {},
     "admissionsSources": [],
     "verificationStatusLabel": "未確認",
-    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。"
+    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E8%A5%BF%E6%AD%A6%E5%AD%A6%E5%9C%92%E6%96%87%E7%90%86&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 49,
+          "schoolId": 392,
+          "date": "1/12",
+          "sex": "共通",
+          "examLabel": "２回特待２科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=15",
+          "examSubjects": "2・4",
+          "judgmentSubjects": "2",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 10,
+          "subjectSourceCode": "3613",
+          "subjectSourceExam": "※西武学園文理(2回特待)",
+          "subjectSourceDate": "1/12午後",
+          "fourSubjectEligible": true,
+          "subjectLabel": "2・4科選択／2科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 88,
@@ -4461,7 +6974,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E9%80%97%E5%AD%90%E9%96%8B%E6%88%90&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 59,
+          "schoolId": 356,
+          "date": "2/3",
+          "sex": "男子",
+          "examLabel": "２次",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=4",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 10,
+          "subjectSourceCode": "3883",
+          "subjectSourceExam": "逗子開成(2次)",
+          "subjectSourceDate": "2/3",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 89,
@@ -4481,7 +7022,35 @@
     "fieldVerification": {},
     "admissionsSources": [],
     "verificationStatusLabel": "未確認",
-    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。"
+    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E9%83%81%E6%96%87%E9%A4%A8&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 40,
+          "schoolId": 26,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "１回２科選抜",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=31",
+          "examSubjects": "2・4",
+          "judgmentSubjects": "2",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 7,
+          "subjectSourceCode": "5724",
+          "subjectSourceExam": "郁文館(1回2科4科選抜)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "2・4科選択／2科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 90,
@@ -4501,7 +7070,35 @@
     "fieldVerification": {},
     "admissionsSources": [],
     "verificationStatusLabel": "未確認",
-    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。"
+    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E9%83%81%E6%96%87%E9%A4%A8&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 40,
+          "schoolId": 26,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "１回２科選抜",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=31",
+          "examSubjects": "2・4",
+          "judgmentSubjects": "2",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 7,
+          "subjectSourceCode": "5724",
+          "subjectSourceExam": "郁文館(1回2科4科選抜)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "2・4科選択／2科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 91,
@@ -4545,7 +7142,35 @@
       }
     ],
     "verificationStatusLabel": "一部確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%AB%8B%E7%AB%8B%E5%B7%9D%E5%9B%BD%E9%9A%9B&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 57,
+          "schoolId": 840,
+          "date": "2/3",
+          "sex": "共通",
+          "examLabel": "一般",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=6",
+          "examSubjects": "-",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 11,
+          "subjectSourceCode": "1056",
+          "subjectSourceExam": "東京都立立川国際(一般)",
+          "subjectSourceDate": "2/3",
+          "fourSubjectEligible": false,
+          "subjectLabel": "適性検査等／模試は4科判定（４科目受験ではありません）"
+        }
+      ],
+      "note": "４科目一般入試の参考値は確認できないため、別方式の参考値を区別して掲載しています。一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 92,
@@ -4565,7 +7190,17 @@
     "fieldVerification": {},
     "admissionsSources": [],
     "verificationStatusLabel": "未確認",
-    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。"
+    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "not_listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E9%87%91%E6%B2%A2%E5%A4%A7%E5%AD%A6%E9%99%84%E5%B1%9E&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [],
+      "note": "確認した公式Aライン80一覧では当該校の掲載を確認できませんでした。類似名の金沢学院大学附属中学校とは別の学校です。"
+    }
   },
   {
     "id": 93,
@@ -4624,7 +7259,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E9%8E%8C%E5%80%89%E5%A5%B3%E5%AD%A6%E9%99%A2&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 43,
+          "schoolId": 134,
+          "date": "2/2",
+          "sex": "女子",
+          "examLabel": "２次４科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=25",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 20,
+          "subjectSourceCode": "7927",
+          "subjectSourceExam": "鎌倉女学院(2次)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 94,
@@ -4682,7 +7345,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E9%8E%8C%E5%80%89%E5%A5%B3%E5%AD%A6%E9%99%A2&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 43,
+          "schoolId": 134,
+          "date": "2/2",
+          "sex": "女子",
+          "examLabel": "２次４科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=25",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 20,
+          "subjectSourceCode": "7927",
+          "subjectSourceExam": "鎌倉女学院(2次)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 95,
@@ -4726,7 +7417,35 @@
       }
     ],
     "verificationStatusLabel": "一部確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E9%96%8B%E6%99%BA&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 50,
+          "schoolId": 109,
+          "date": "1/10",
+          "sex": "共通",
+          "examLabel": "１回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=13",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 7,
+          "subjectSourceCode": "6769",
+          "subjectSourceExam": "開智(1回)",
+          "subjectSourceDate": "1/10",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 96,
@@ -4770,7 +7489,35 @@
       }
     ],
     "verificationStatusLabel": "一部確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E9%96%8B%E6%99%BA%E6%89%80%E6%B2%A2&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 56,
+          "schoolId": 1030,
+          "date": "1/12",
+          "sex": "共通",
+          "examLabel": "２回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=6",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 7,
+          "subjectSourceCode": "2226",
+          "subjectSourceExam": "開智所沢(2回)",
+          "subjectSourceDate": "1/12",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 97,
@@ -4835,7 +7582,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E9%96%8B%E6%99%BA%E6%97%A5%E6%9C%AC%E6%A9%8B%E5%AD%A6%E5%9C%92&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 62,
+          "schoolId": 581,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "特待４科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=2",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 7,
+          "subjectSourceCode": "1016",
+          "subjectSourceExam": "開智日本橋学園(特待4科)",
+          "subjectSourceDate": "2/1午後",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 98,
@@ -4900,7 +7675,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E9%96%8B%E6%99%BA%E6%97%A5%E6%9C%AC%E6%A9%8B%E5%AD%A6%E5%9C%92&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 62,
+          "schoolId": 581,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "特待４科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=2",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 7,
+          "subjectSourceCode": "1016",
+          "subjectSourceExam": "開智日本橋学園(特待4科)",
+          "subjectSourceDate": "2/1午後",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 99,
@@ -4951,7 +7754,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E9%96%8B%E6%99%BA%E6%9C%9B&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 50,
+          "schoolId": 1013,
+          "date": "1/10",
+          "sex": "共通",
+          "examLabel": "開智併願型１回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=13",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 7,
+          "subjectSourceCode": "6197",
+          "subjectSourceExam": "※開智望(開智併願型1回)",
+          "subjectSourceDate": "1/10",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 100,
@@ -5016,7 +7847,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E9%96%A2%E6%9D%B1%E5%AD%A6%E9%99%A2&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 48,
+          "schoolId": 143,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "１期Ａ",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=17",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 8,
+          "subjectSourceCode": "1023",
+          "subjectSourceExam": "関東学院(1期A)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 101,
@@ -5060,7 +7919,35 @@
       }
     ],
     "verificationStatusLabel": "一部確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E9%96%A2%E8%A5%BF%E5%AD%A6%E9%99%A2%E5%8D%83%E9%87%8C%E5%9B%BD%E9%9A%9B&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 43,
+          "schoolId": 416,
+          "date": "1/18",
+          "sex": "共通",
+          "examLabel": "一般入試",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=24",
+          "examSubjects": "2",
+          "judgmentSubjects": "2",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 15,
+          "subjectSourceCode": "0900",
+          "subjectSourceExam": "※関西学院千里国際",
+          "subjectSourceDate": "1/16",
+          "fourSubjectEligible": false,
+          "subjectLabel": "2科目／2科判定（４科目受験ではありません）"
+        }
+      ],
+      "note": "４科目一般入試の参考値は確認できないため、別方式の参考値を区別して掲載しています。一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 102,
@@ -5111,7 +7998,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E9%9D%92%E5%B1%B1%E5%AD%A6%E9%99%A2%E6%A8%AA%E6%B5%9C%E8%8B%B1%E5%92%8C&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 56,
+          "schoolId": 732,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "Ａ",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=7",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 7,
+          "subjectSourceCode": "6320",
+          "subjectSourceExam": "青山学院横浜英和(A)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 103,
@@ -5131,7 +8046,35 @@
     "fieldVerification": {},
     "admissionsSources": [],
     "verificationStatusLabel": "未確認",
-    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。"
+    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E9%9D%92%E7%A8%9C&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 57,
+          "schoolId": 403,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "１回Ｂ２科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=6",
+          "examSubjects": "2・4",
+          "judgmentSubjects": "2",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 10,
+          "subjectSourceCode": "8381",
+          "subjectSourceExam": "青稜(1回B)",
+          "subjectSourceDate": "2/1午後",
+          "fourSubjectEligible": true,
+          "subjectLabel": "2・4科選択／2科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 104,
@@ -5182,7 +8125,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%8C%97%E9%87%8C%E5%A4%A7%E5%AD%A6%E9%99%84%E5%B1%9E%E9%A0%86%E5%A4%A9&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 50,
+          "schoolId": 314,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "１回Ａ",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=14",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 8,
+          "subjectSourceCode": "8010",
+          "subjectSourceExam": "北里大学附属順天(1回A)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 105,
@@ -5240,7 +8211,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E5%8C%97%E9%87%8C%E5%A4%A7%E5%AD%A6%E9%99%84%E5%B1%9E%E9%A0%86%E5%A4%A9&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 50,
+          "schoolId": 314,
+          "date": "2/1",
+          "sex": "共通",
+          "examLabel": "１回Ａ",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=14",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 8,
+          "subjectSourceCode": "8010",
+          "subjectSourceExam": "北里大学附属順天(1回A)",
+          "subjectSourceDate": "2/1",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 106,
@@ -5305,7 +8304,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E9%A0%8C%E6%A0%84%E5%A5%B3%E5%AD%90%E5%AD%A6%E9%99%A2&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 61,
+          "schoolId": 320,
+          "date": "2/5",
+          "sex": "女子",
+          "examLabel": "２回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=3",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 22,
+          "subjectSourceCode": "7978",
+          "subjectSourceExam": "頌栄女子学院(2回)",
+          "subjectSourceDate": "2/5",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 107,
@@ -5370,7 +8397,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E9%A0%8C%E6%A0%84%E5%A5%B3%E5%AD%90%E5%AD%A6%E9%99%A2&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 61,
+          "schoolId": 320,
+          "date": "2/5",
+          "sex": "女子",
+          "examLabel": "２回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=3",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 22,
+          "subjectSourceCode": "7978",
+          "subjectSourceExam": "頌栄女子学院(2回)",
+          "subjectSourceDate": "2/5",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 108,
@@ -5428,7 +8483,35 @@
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    "verificationNote": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E9%A7%92%E8%BE%BC&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 47,
+          "schoolId": 240,
+          "date": "2/2",
+          "sex": "共通",
+          "examLabel": "３回２科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=18",
+          "examSubjects": "2・4",
+          "judgmentSubjects": "2",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 8,
+          "subjectSourceCode": "4721",
+          "subjectSourceExam": "駒込(3回)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "2・4科選択／2科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 109,
@@ -5448,7 +8531,35 @@
     "fieldVerification": {},
     "admissionsSources": [],
     "verificationStatusLabel": "未確認",
-    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。"
+    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E9%A7%92%E8%BE%BC&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 47,
+          "schoolId": 240,
+          "date": "2/2",
+          "sex": "共通",
+          "examLabel": "３回２科",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=18",
+          "examSubjects": "2・4",
+          "judgmentSubjects": "2",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 8,
+          "subjectSourceCode": "4721",
+          "subjectSourceExam": "駒込(3回)",
+          "subjectSourceDate": "2/2",
+          "fourSubjectEligible": true,
+          "subjectLabel": "2・4科選択／2科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   },
   {
     "id": 110,
@@ -5468,6 +8579,34 @@
     "fieldVerification": {},
     "admissionsSources": [],
     "verificationStatusLabel": "未確認",
-    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。"
+    "verificationNote": "2027年度の該当入試区分を公式資料で確定できていません。未確認は未公表を意味しません。",
+    "deviationReference": {
+      "admissionYear": 2027,
+      "metric": "四谷大塚 Aライン80偏差値",
+      "publication": "2027年度用 第4回 合不合判定テスト",
+      "checkedDate": "2026-11-25",
+      "status": "listed",
+      "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?school_name=%E9%BA%97%E6%BE%A4&dev_type=dev_80&search=%E6%A4%9C%E7%B4%A2",
+      "entries": [
+        {
+          "value": 46,
+          "schoolId": 758,
+          "date": "1/25",
+          "sex": "共通",
+          "examLabel": "２回",
+          "sourceUrl": "https://www.yotsuyaotsuka.com/njc/deviation_top.php?dev_type=dev_80&order=DESC&current=20",
+          "examSubjects": "4",
+          "judgmentSubjects": "4",
+          "subjectSourceUrl": "https://www.yotsuyaotsuka.com/exam/uploadFiles/school_code_list-20261106123532-202611goufugou-code.pdf",
+          "subjectSourcePage": 13,
+          "subjectSourceCode": "5705",
+          "subjectSourceExam": "麗澤(2回)",
+          "subjectSourceDate": "1/25",
+          "fourSubjectEligible": true,
+          "subjectLabel": "４科目／４科判定"
+        }
+      ],
+      "note": "一般入試の代表例です。帰国・英語入試そのものの偏差値ではありません。"
+    }
   }
 ]

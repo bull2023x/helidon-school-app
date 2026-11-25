@@ -118,7 +118,7 @@ public class AdminSchoolV2Service {
 
                     // Preserve the annual source metadata without changing the legacy field aliases.
                     Map<String, Object> metadata = new java.util.LinkedHashMap<>();
-                    for (String key : List.of("admissionYear", "verifiedAt", "lastRetrievedAt", "verificationNote", "fieldVerification", "admissionsSources")) {
+                    for (String key : List.of("admissionYear", "verifiedAt", "lastRetrievedAt", "verificationNote", "fieldVerification", "admissionsSources", "deviationReference")) {
                         if (row.containsKey(key)) metadata.put(key, row.get(key));
                     }
                     mapper.readerForUpdating(s).readValue(mapper.writeValueAsBytes(metadata));

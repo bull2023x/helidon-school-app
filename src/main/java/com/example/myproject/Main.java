@@ -103,6 +103,30 @@ public class Main {
         return links.toString();
     }
 
+    static String schoolNotes(SchoolV2 school) {
+        StringBuilder html = new StringBuilder(escapeHtml(school.notes));
+        var reference = school.deviationReference;
+        if (reference == null || reference.path("admissionYear").asInt() != AdmissionsPolicy.targetYear()) return html.toString();
+        html.append("<section class=\"deviation-reference\"><strong>四谷大塚 Aライン80偏差値（合格可能性80％）</strong>")
+                .append("<div>").append(escapeHtml(reference.path("publication").asText())).append("</div>");
+        if (reference.path("entries").isArray() && !reference.path("entries").isEmpty()) {
+            for (var entry : reference.path("entries")) {
+                int value = entry.path("value").asInt(-1);
+                if (value < 1 || value > 100) continue;
+                html.append("<p><b>").append(escapeHtml(entry.path("sex").asText())).append(" ").append(value)
+                        .append("</b>（").append(escapeHtml(entry.path("examLabel").asText()))
+                        .append("／一覧掲載日程：").append(escapeHtml(entry.path("date").asText()))
+                        .append("／").append(escapeHtml(entry.path("subjectLabel").asText())).append("）</p>");
+            }
+        } else html.append("<p>公式Aライン80一覧に掲載を確認できませんでした。数値の推定はしていません。</p>");
+        html.append("<p>").append(escapeHtml(reference.path("note").asText())).append("</p>");
+        String source = reference.path("sourceUrl").asText("");
+        if (websiteUrl(source)) html.append("<a href=\"").append(escapeHtml(source))
+                .append("\" target=\"_blank\" rel=\"noopener noreferrer\">四谷大塚の出典</a>");
+        html.append("<div>確認日：").append(escapeHtml(reference.path("checkedDate").asText())).append("</div></section>");
+        return html.toString();
+    }
+
 private static String extractGeminiText(String json) {
     if (json == null || json.isBlank()) {
         return "Gemini response was empty.";
@@ -570,6 +594,8 @@ private static String loginPageHtml(String message) {
                                 .cohort-info { background: #eef6fa; border-left: 4px solid #176b68; padding: 12px 16px; margin-bottom: 18px; }
                                 .cohort-info p { margin: 8px 0 0; }
                                 .review-note { font-size: 12px; color: #526875; min-width: 180px; max-width: 300px; }
+                                .deviation-reference { border-top: 1px solid #ccd8df; margin-top: 12px; padding-top: 10px; font-size: 14px; line-height: 1.6; }
+                                .deviation-reference p { margin: 6px 0; }
                                 .toolbar {
                                   margin-bottom: 16px;
                                 }
@@ -679,7 +705,7 @@ private static String loginPageHtml(String message) {
                                 .append("<td>").append(escapeHtml(s.alternateSubjects)).append("</td>")
                                 .append("<td>").append(escapeHtml(s.interview)).append("</td>")
                                 .append("<td>").append(escapeHtml(s.englishQualificationBenefit)).append("</td>")
-                                .append("<td>").append(escapeHtml(s.notes)).append("</td>")
+                                .append("<td>").append(schoolNotes(s)).append("</td>")
                                 .append("<td>")
                                 .append(schoolLinks(s))
                                 .append("</td>")
