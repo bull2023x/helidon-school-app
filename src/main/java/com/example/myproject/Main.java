@@ -587,6 +587,9 @@ private static String loginPageHtml(String message) {
                                 #schoolTable th:nth-child(2), #schoolTable td:nth-child(2) {
                                   min-width: 200px;
                                 }
+                                #schoolTable th:nth-child(3), #schoolTable td:nth-child(3) {
+                                  min-width: 180px;
+                                }
                                 #schoolTable th:nth-child(4), #schoolTable td:nth-child(4) {
                                   min-width: 180px;
                                 }
@@ -647,7 +650,7 @@ private static String loginPageHtml(String message) {
                                   <tr>
                                     <th onclick="sortTable(0, true)">ID</th>
                                     <th onclick="sortTable(1, false)">学校名</th>
-                                    <th onclick="sortTable(2, false)">入試分類</th>
+                                    <th onclick="sortTable(2, false)">入試分類（帰国入試or 英語入試）</th>
                                     <th onclick="sortTable(3, false)">募集人数</th>
                                     <th onclick="sortTable(4, false)">試験日</th>
                                     <th onclick="sortTable(5, false)">試験科目</th>
@@ -668,7 +671,8 @@ private static String loginPageHtml(String message) {
                         html.append("<tr>")
                                 .append("<td>").append(s.id).append("</td>")
                                 .append("<td>").append(escapeHtml(s.schoolName)).append("</td>")
-                                .append("<td>").append(escapeHtml(s.category)).append("</td>")
+                                .append("<td>").append(escapeHtml(s.category != null && s.category.contains("帰国")
+                                        ? "帰国" : s.category != null && s.category.contains("英語") ? "英語" : s.category)).append("</td>")
                                 .append("<td>").append(escapeHtml(s.capacity)).append("</td>")
                                 .append("<td>").append(escapeHtml(formatDateForDisplay(s.examDates))).append("</td>")
                                 .append("<td>").append(escapeHtml(s.subjects)).append("</td>")
