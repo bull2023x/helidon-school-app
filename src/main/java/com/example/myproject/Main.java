@@ -582,81 +582,52 @@ private static String loginPageHtml(String message) {
                             <html>
                             <head>
                               <meta charset="UTF-8">
+                              <meta name="viewport" content="width=device-width, initial-scale=1">
                               <title>__ADMISSION_HEADING__</title>
                               <style>
+                                * { box-sizing: border-box; }
                                 body {
                                   font-family: Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-                                  margin: 20px;
+                                  margin: 10px;
+                                  font-size: 12px;
+                                  line-height: 1.45;
                                 }
-                                h2 {
-                                  margin-bottom: 12px;
-                                }
-                                .cohort-info { background: #eef6fa; border-left: 4px solid #176b68; padding: 12px 16px; margin-bottom: 18px; }
-                                .cohort-info p { margin: 8px 0 0; }
-                                .review-note { font-size: 12px; color: #526875; min-width: 180px; max-width: 300px; }
-                                .deviation-reference { border-top: 1px solid #ccd8df; margin-top: 12px; padding-top: 10px; font-size: 14px; line-height: 1.6; }
-                                .deviation-reference p { margin: 6px 0; }
-                                .toolbar {
-                                  margin-bottom: 16px;
-                                }
-                                #searchBox {
-                                  width: 380px;
-                                  max-width: 100%;
-                                  padding: 8px 10px;
-                                  font-size: 14px;
-                                  box-sizing: border-box;
-                                }
-                                table {
-                                  border-collapse: collapse;
-                                  width: 100%;
-                                }
-                                #schoolTable th:nth-child(2), #schoolTable td:nth-child(2) {
-                                  min-width: 200px;
-                                }
-                                #schoolTable th:nth-child(3), #schoolTable td:nth-child(3) {
-                                  min-width: 180px;
-                                }
-                                #schoolTable th:nth-child(4), #schoolTable td:nth-child(4) {
-                                  min-width: 180px;
-                                }
-                                #schoolTable th:nth-child(7), #schoolTable td:nth-child(7) {
-                                  min-width: 360px;
-                                }
-                                #schoolTable th:nth-child(10), #schoolTable td:nth-child(10) {
-                                  min-width: 560px;
-                                }
-                                th, td {
-                                  border: 1px solid #999;
-                                  padding: 8px;
+                                h2 { font-size: 18px; margin: 0 0 8px; }
+                                .cohort-info { background: #eef6fa; border-left: 3px solid #176b68; padding: 6px 9px; margin-bottom: 8px; }
+                                .cohort-info p { margin: 4px 0 0; }
+                                .review-note { font-size: 10px; color: #526875; margin-top: 4px; }
+                                .deviation-reference { border-top: 1px solid #ccd8df; margin-top: 6px; padding-top: 5px; font-size: 10px; line-height: 1.4; }
+                                .deviation-reference p { margin: 3px 0; }
+                                .toolbar { margin-bottom: 8px; }
+                                #searchBox { width: 340px; max-width: 100%; padding: 5px 7px; font-size: 12px; }
+                                #schoolTable { border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 11px; }
+                                #schoolTable th, #schoolTable td {
+                                  border: 1px solid #b6bfc4;
+                                  padding: 4px 3px;
                                   text-align: left;
                                   vertical-align: top;
+                                  overflow-wrap: anywhere;
                                 }
-                                th {
-                                  background-color: #f0f0f0;
-                                  cursor: pointer;
-                                  user-select: none;
-                                  position: sticky;
-                                  top: 0;
-                                }
-                                tr:nth-child(even) {
-                                  background-color: #fafafa;
-                                }
-                                th.sort-asc::after {
-                                  content: " ▲";
-                                  font-size: 12px;
-                                }
-                                th.sort-desc::after {
-                                  content: " ▼";
-                                  font-size: 12px;
-                                }
-                                a {
-                                  color: #0645ad;
-                                  text-decoration: none;
-                                }
-                                a:hover {
-                                  text-decoration: underline;
-                                }
-
+                                #schoolTable th:nth-child(1) { width: 2.5%; }
+                                #schoolTable th:nth-child(2) { width: 9%; }
+                                #schoolTable th:nth-child(3) { width: 5.5%; }
+                                #schoolTable th:nth-child(4) { width: 7%; }
+                                #schoolTable th:nth-child(5) { width: 8%; }
+                                #schoolTable th:nth-child(6) { width: 10%; }
+                                #schoolTable th:nth-child(7) { width: 12%; }
+                                #schoolTable th:nth-child(8) { width: 7%; }
+                                #schoolTable th:nth-child(9) { width: 8%; }
+                                #schoolTable th:nth-child(10) { width: 15%; }
+                                #schoolTable th:nth-child(11) { width: 6%; }
+                                #schoolTable th:nth-child(12) { width: 6%; }
+                                #schoolTable th:nth-child(13) { width: 4%; }
+                                #schoolTable td:nth-child(13) { font-size: 10px; }
+                                th { background-color: #edf1f3; cursor: pointer; user-select: none; position: sticky; top: 0; }
+                                tr:nth-child(even) { background-color: #fafafa; }
+                                th.sort-asc::after { content: " ▲"; font-size: 9px; }
+                                th.sort-desc::after { content: " ▼"; font-size: 9px; }
+                                a { color: #0645ad; text-decoration: none; }
+                                a:hover { text-decoration: underline; }
                               </style>
                             </head>
                             <body>
