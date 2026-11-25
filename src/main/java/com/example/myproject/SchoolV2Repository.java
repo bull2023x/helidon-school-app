@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SchoolV2Repository {
+    private static final com.fasterxml.jackson.databind.ObjectMapper JSON = new com.fasterxml.jackson.databind.ObjectMapper();
     private static final String URL = "jdbc:h2:mem:test;DB_CLOSE_DELAY=-1";
     private static final String USER = "sa";
     private static final String PASSWORD = "";
@@ -18,7 +19,7 @@ public class SchoolV2Repository {
         String sql = """
                 SELECT id, school_name, category, capacity, exam_dates,
                        subjects, alternate_subjects, interview,
-                       english_qualification_benefit, notes, info_link
+                       english_qualification_benefit, notes, info_link, source_json
                 FROM exam_school_v2
                 ORDER BY id
                 """;
@@ -43,7 +44,7 @@ public class SchoolV2Repository {
         String sql = """
                 SELECT id, school_name, category, capacity, exam_dates,
                        subjects, alternate_subjects, interview,
-                       english_qualification_benefit, notes, info_link
+                       english_qualification_benefit, notes, info_link, source_json
                 FROM exam_school_v2
                 WHERE school_name = ?
                 ORDER BY id
@@ -70,7 +71,7 @@ public class SchoolV2Repository {
         String sql = """
                 SELECT id, school_name, category, capacity, exam_dates,
                        subjects, alternate_subjects, interview,
-                       english_qualification_benefit, notes, info_link
+                       english_qualification_benefit, notes, info_link, source_json
                 FROM exam_school_v2
                 WHERE id = ?
                 """;
@@ -96,7 +97,11 @@ public class SchoolV2Repository {
     }
 
     private SchoolV2 mapRow(ResultSet rs) throws Exception {
-        return new SchoolV2(
+        String source = rs.getString("source_json");
+        if (source != null && !source.isBlank()) {
+            return AdmissionsPolicy.current(JSON.readValue(source, SchoolV2.class));
+        }
+        return AdmissionsPolicy.current(new SchoolV2(
                 rs.getLong("id"),
                 rs.getString("school_name"),
                 rs.getString("category"),
@@ -108,6 +113,6 @@ public class SchoolV2Repository {
                 rs.getString("english_qualification_benefit"),
                 rs.getString("notes"),
                 rs.getString("info_link")
-        );
+        ));
     }
 }

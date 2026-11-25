@@ -62,6 +62,47 @@ public class Main {
         return s.replaceAll("(\\d{4})-(\\d{2})-(\\d{2})", "$1/$2/$3");
     }
 
+    private static String admissionsSummary(List<SchoolV2> schools) {
+        int year = AdmissionsPolicy.targetYear();
+        long complete = schools.stream().filter(s -> "日程・人数を確認済み".equals(s.verificationStatusLabel)).count();
+        long partial = schools.stream().filter(s -> "一部確認済み".equals(s.verificationStatusLabel)).count();
+        return "<section class=\"cohort-info\"><strong>" + year + "年度入学向け（" + (year - 1)
+                + "年秋〜" + year + "年春の入試）</strong><p>全" + schools.size() + "件：日程・人数確認済み "
+                + complete + "件／一部確認済み " + partial + "件／未確認 " + (schools.size() - complete - partial)
+                + "件</p><p>対象年度の公式資料で確認できた項目を表示しています。未確認は未公表を意味しません。"
+                + "人数が他方式との共通枠の場合は、その範囲を記載しています。試験日には終了済みの回を含みます。</p></section>";
+    }
+
+    private static String admissionsHeading(List<SchoolV2> schools) {
+        String base = AdmissionsPolicy.targetYear() + "年度 中学受験 帰国入試＆英語入試情報";
+        var latest = schools.stream().map(s -> s.verifiedAt).filter(s -> s != null && !s.isBlank())
+                .map(java.time.OffsetDateTime::parse).max(java.util.Comparator.naturalOrder());
+        return latest.map(date -> base + " " + date.getYear() + "年" + date.getMonthValue() + "月更新")
+                .orElse(base + "（公式情報を確認中）");
+    }
+
+    private static boolean websiteUrl(String value) {
+        try {
+            var uri = java.net.URI.create(value == null ? "" : value);
+            return uri.getHost() != null && ("https".equals(uri.getScheme()) || "http".equals(uri.getScheme()));
+        } catch (IllegalArgumentException invalid) { return false; }
+    }
+
+    private static String schoolLinks(SchoolV2 school) {
+        StringBuilder links = new StringBuilder();
+        if (websiteUrl(school.infoLink)) links.append("<a href=\"").append(escapeHtml(school.infoLink))
+                .append("\" target=\"_blank\" rel=\"noopener noreferrer\">公式サイト</a>");
+        if (school.admissionsSources != null) for (var source : school.admissionsSources) {
+            String url = source.path("url").asText("");
+            if (!websiteUrl(url) || source.path("admissionYear").asInt() != AdmissionsPolicy.targetYear()) continue;
+            links.append("<br><a href=\"").append(escapeHtml(url)).append("\" target=\"_blank\" rel=\"noopener noreferrer\">確認した公式資料");
+            String pages = source.path("pages").asText("");
+            if (!pages.isBlank()) links.append("（PDF ").append(escapeHtml(pages)).append("ページ）");
+            links.append("</a>");
+        }
+        return links.toString();
+    }
+
 private static String extractGeminiText(String json) {
     if (json == null || json.isBlank()) {
         return "Gemini response was empty.";
@@ -75,6 +116,8 @@ private static String extractGeminiText(String json) {
 
     start += marker.length();
     StringBuilder sb = new StringBuilder();
+
+    sb.append("対象は").append(AdmissionsPolicy.targetYear()).append("年度入学です。未確認の項目を推測で補完したり、前年の日付を繰り上げたりしないでください。\n");
     boolean escaped = false;
 
     for (int i = start; i < json.length(); i++) {
@@ -189,6 +232,7 @@ private static String buildSchoolDataPrompt(List<SchoolV2> schools, String quest
     for (SchoolV2 s : schools) {
         sb.append("- 学校名: ").append(nullToEmpty(s.schoolName)).append("\n");
         sb.append("  入試分類: ").append(nullToEmpty(s.category)).append("\n");
+        sb.append("  公式資料の確認状況: ").append(nullToEmpty(s.verificationStatusLabel)).append("\n");
         sb.append("  募集人数: ").append(nullToEmpty(s.capacity)).append("\n");
         sb.append("  試験日: ").append(nullToEmpty(s.examDates)).append("\n");
         sb.append("  試験科目: ").append(nullToEmpty(s.subjects)).append("\n");
@@ -491,7 +535,7 @@ private static String loginPageHtml(String message) {
                             """);
 
                     res.header("Content-Type", "text/html; charset=UTF-8");
-                    res.send(html.toString());
+                    res.send(html.toString().getBytes(StandardCharsets.UTF_8));
                 })
 
                 .get("/api/schools", (req, res) -> {
@@ -514,7 +558,7 @@ private static String loginPageHtml(String message) {
                             <html>
                             <head>
                               <meta charset="UTF-8">
-                              <title>学校一覧 V2</title>
+                              <title>__ADMISSION_HEADING__</title>
                               <style>
                                 body {
                                   font-family: Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
@@ -523,6 +567,9 @@ private static String loginPageHtml(String message) {
                                 h2 {
                                   margin-bottom: 12px;
                                 }
+                                .cohort-info { background: #eef6fa; border-left: 4px solid #176b68; padding: 12px 16px; margin-bottom: 18px; }
+                                .cohort-info p { margin: 8px 0 0; }
+                                .review-note { font-size: 12px; color: #526875; min-width: 180px; max-width: 300px; }
                                 .toolbar {
                                   margin-bottom: 16px;
                                 }
@@ -572,7 +619,8 @@ private static String loginPageHtml(String message) {
                               </style>
                             </head>
                             <body>
-                              <h2>学校一覧 V2</h2>
+                              <h2>__ADMISSION_HEADING__</h2>
+                              __ADMISSION_SUMMARY__
                               <div style="margin-bottom: 12px;">
                                 <a href="/logout">ログアウト</a>
                               </div>
@@ -594,12 +642,15 @@ private static String loginPageHtml(String message) {
                                     <th onclick="sortTable(6, false)">試験科目特記</th>
                                     <th onclick="sortTable(7, false)">面接有無</th>
                                     <th onclick="sortTable(8, false)">英語資格優遇</th>
-                                    <th onclick="sortTable(9, false)">備考</th>
-                                    <th onclick="sortTable(10, false)">学校リンク</th>
+                                    <th onclick="sortTable(9, false)">備考（４科目受験の場合の四谷大塚偏差値を参考に併記）</th>
+                                    <th onclick="sortTable(10, false)">学校リンク・出典</th>
+                                    <th onclick="sortTable(11, false)">公式資料の確認状況</th>
+                                    <th onclick="sortTable(12, false)">資料確認日時</th>
                                   </tr>
                                 </thead>
                                 <tbody>
-                            """);
+                            """.replace("__ADMISSION_SUMMARY__", admissionsSummary(schools))
+                                    .replace("__ADMISSION_HEADING__", escapeHtml(admissionsHeading(schools))));
 
                     for (SchoolV2 s : schools) {
                         html.append("<tr>")
@@ -614,10 +665,11 @@ private static String loginPageHtml(String message) {
                                 .append("<td>").append(escapeHtml(s.englishQualificationBenefit)).append("</td>")
                                 .append("<td>").append(escapeHtml(s.notes)).append("</td>")
                                 .append("<td>")
-                                .append(s.infoLink == null || s.infoLink.isBlank()
-                                        ? ""
-                                        : "<a href=\"" + escapeHtml(s.infoLink) + "\" target=\"_blank\" rel=\"noopener noreferrer\">リンク</a>")
+                                .append(schoolLinks(s))
                                 .append("</td>")
+                                .append("<td>").append(escapeHtml(s.verificationStatusLabel))
+                                .append("<div class=\"review-note\">").append(escapeHtml(s.verificationNote)).append("</div></td>")
+                                .append("<td>").append(escapeHtml(s.verifiedAt)).append("</td>")
                                 .append("</tr>");
                     }
 
@@ -678,7 +730,7 @@ html.append("""
         """);
 
                     res.header("Content-Type", "text/html; charset=UTF-8");
-                    res.send(html.toString());
+                    res.send(html.toString().getBytes(StandardCharsets.UTF_8));
                 });
     }
 }

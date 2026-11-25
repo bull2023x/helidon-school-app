@@ -1,1 +1,6 @@
 target/*
+.cache/
+.git/
+archive/
+**/__pycache__/
+*.pyc

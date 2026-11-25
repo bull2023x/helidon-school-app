@@ -1,5 +1,11 @@
 package com.example.myproject;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.databind.JsonNode;
+import java.util.List;
+import java.util.Map;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class SchoolV2 {
     public long id;
     public String schoolName;
@@ -12,6 +18,14 @@ public class SchoolV2 {
     public String englishQualificationBenefit;
     public String notes;
     public String infoLink;
+    public Integer admissionYear;
+    public Integer targetAdmissionYear;
+    public String verifiedAt;
+    public String lastRetrievedAt;
+    public String verificationStatusLabel;
+    public String verificationNote;
+    public Map<String, JsonNode> fieldVerification = Map.of();
+    public List<JsonNode> admissionsSources = List.of();
 
     public SchoolV2() {
         // Jackson 用

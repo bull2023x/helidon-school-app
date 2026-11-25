@@ -44,13 +44,36 @@ JavaFX Desktop Editor 連携
 
 ---
 
+# 2027年度入試情報への更新（2026年11月）
+
+対象は2027年4月入学（2026年秋〜2027年春の入試）です。
+公式資料との照合結果は、110件中、日程・人数確認済み77件、一部確認10件、未確認23件です。
+未確認は未公表という意味ではありません。学校全体・コース全体・他方式と共通の定員は、その範囲を記載しています。
+学校リンク欄に確認した公式資料、表に資料確認日時・確認状況を表示します。
+
+- 正本：`data/schools-v2.json`
+- 出典と確認記録：`data/admissions-review-2027.json`
+- 同梱フォールバック：`src/main/resources/data/schools-v2.json`（正本と同期）
+- `lastRetrievedAt`は通信成功日時、`verifiedAt`と`fieldVerification`は公式資料の内容確認です。
+- 各項目の出典年度を確認し、4月には翌年4月入学向けへ切り替えます。対象年度の確認がなければ表示を未確認にします。
+- AI推薦にも、画面・APIと同じ年度確認済みデータを渡します。
+
+```sh
+python scripts/update_schools.py --input data/schools-v2.json --output data/schools-v2.json --pretty --refresh
+python scripts/validate_admissions.py --sync
+```
+
+`--refresh`は取得日時を保存するオプションです。要確認の抽出候補は`--apply`を付けても反映しません。
+手動確認後は、項目ごとに`fieldVerification`へ`admissionYear`・`sourceUrl`・`verifiedAt`を記録してください。
+既存エディターからのアップロードでは、変更されていない項目の出典を保持し、変更された値の古い確認情報は引き継ぎません。
+
 # 半自動更新とは
 
 本アプリの学校データは、GitHub Actions によって毎週自動で巡回・更新されます。
 
-更新可能な学校は自動で反映されます。
+対象の入学年度を明記した公式HTML・PDFから更新候補を抽出します。候補は入試区分・募集枠の照合が必要なため、抽出スコアだけでは自動上書きしません。
 
-一方で、学校サイト側の事情により更新できなかった学校は、前回の内容を保持します。
+取得失敗時は確認済み情報を保持します。ただし、対象年度の公式出典がない項目は、画面とAPIで「未確認」と表示します。前年の日付を一年繰り上げる推計はしません。
 
 更新に失敗した学校については、GitHub Actions の `Run updater` ログや `data/check-report.json` を確認し、必要に応じて手動で修正します。
 
@@ -390,7 +413,7 @@ GitHub / Render への反映補助
 通常は以下のフォルダにあります。
 
 ```text
-/Users/USER/Downloads/重要_shoolapp系統/school-data-editor
+$HOME/projects/school-data-editor
 ```
 
 ## JavaFX アプリ本体
@@ -404,7 +427,7 @@ src/main/java/com/example/editor/App.java
 jpackage で作成した macOS 用アプリは以下です。
 
 ```text
-/Users/USER/Downloads/重要_shoolapp系統/school-data-editor/dist/School Data Editor.app
+$HOME/projects/school-data-editor/dist/School Data Editor.app
 ```
 
 ---
@@ -497,7 +520,7 @@ Download Latest Cloud DB
 ## Maven で実行
 
 ```bash
-cd /Users/USER/Downloads/重要_shoolapp系統/school-data-editor
+cd $HOME/projects/school-data-editor
 
 mvn clean javafx:run
 ```
@@ -511,7 +534,7 @@ mvn clean package
 ## macOS アプリ作成
 
 ```bash
-cd /Users/USER/Downloads/重要_shoolapp系統/school-data-editor
+cd $HOME/projects/school-data-editor
 
 rm -rf dist
 
@@ -569,7 +592,7 @@ pull できない
 ## 手順
 
 ```bash
-cd /Users/USER/Downloads/重要_shoolapp系統
+cd $HOME/projects
 
 mv backup_myproject backup_myproject_dirty_YYYYMMDD
 
@@ -602,7 +625,7 @@ origin  https://github.com/bull2023x/helidon-school-app.git
 綺麗に clone し直した後は、以下で最新化できます。
 
 ```bash
-cd /Users/USER/Downloads/重要_shoolapp系統/backup_myproject
+cd $HOME/projects/backup_myproject
 
 git pull origin main
 ```
@@ -682,7 +705,7 @@ for k in all_keys:
 ## 実行
 
 ```bash
-cd /Users/USER/Downloads/重要_shoolapp系統/backup_myproject
+cd $HOME/projects/backup_myproject
 
 git fetch origin main
 
@@ -735,7 +758,7 @@ Material3
 ## APK debug build
 
 ```bash
-cd /Users/USER/Downloads/重要_shoolapp系統/SchoolViewer/app
+cd $HOME/projects/SchoolViewer/app
 
 ./gradlew assembleDebug
 ```
@@ -782,7 +805,7 @@ SchoolViewer/app/release-keystore.jks
 # App Bundle 生成
 
 ```bash
-cd /Users/USER/Downloads/重要_shoolapp系統/SchoolViewer
+cd $HOME/projects/SchoolViewer
 
 ./gradlew bundleRelease
 ```
@@ -868,7 +891,7 @@ JavaFX Editor の自動バックアップ強化
 上書き後、ローカルから push する手順はこれです。
 
 ```bash
-cd /Users/USER/Downloads/重要_shoolapp系統/backup_myproject
+cd $HOME/projects/backup_myproject
 
 git status
 

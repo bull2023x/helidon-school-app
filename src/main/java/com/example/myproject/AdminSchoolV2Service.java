@@ -43,6 +43,8 @@ public class AdminSchoolV2Service {
                 );
 
                 List<SchoolV2> schools = new ArrayList<>();
+                SchoolV2JsonStore jsonStore = new SchoolV2JsonStore(DbInit.getExternalJsonPath());
+                List<SchoolV2> existing = jsonStore.loadAll();
                 long id = 1L;
 
                 for (Map<String, Object> row : rawRows) {
@@ -114,10 +116,19 @@ public class AdminSchoolV2Service {
                     s.notes = notes;
                     s.infoLink = infoLink;
 
+                    // Preserve the annual source metadata without changing the legacy field aliases.
+                    Map<String, Object> metadata = new java.util.LinkedHashMap<>();
+                    for (String key : List.of("admissionYear", "verifiedAt", "lastRetrievedAt", "verificationNote", "fieldVerification", "admissionsSources")) {
+                        if (row.containsKey(key)) metadata.put(key, row.get(key));
+                    }
+                    mapper.readerForUpdating(s).readValue(mapper.writeValueAsBytes(metadata));
+                    SchoolV2 previous = existing.stream().filter(old -> java.util.Objects.equals(old.schoolName, s.schoolName)
+                            && java.util.Objects.equals(old.category, s.category)).findFirst().orElse(null);
+                    AdmissionsPolicy.inheritUnchangedProofs(s, previous);
+
                     schools.add(s);
                 }
 
-                SchoolV2JsonStore jsonStore = new SchoolV2JsonStore(DbInit.getExternalJsonPath());
                 jsonStore.replaceAll(schools);
                 DbInit.reloadFromJson();
 

@@ -59,14 +59,15 @@ public class DbInit {
                 id BIGINT AUTO_INCREMENT PRIMARY KEY,
                 school_name VARCHAR(300),
                 category VARCHAR(300),
-                capacity VARCHAR(100),
+                capacity CLOB,
                 exam_dates CLOB,
                 subjects CLOB,
                 alternate_subjects CLOB,
-                interview VARCHAR(100),
+                interview CLOB,
                 english_qualification_benefit CLOB,
                 notes CLOB,
-                info_link CLOB
+                info_link CLOB,
+                source_json CLOB
             )
         """);
     }
@@ -115,7 +116,8 @@ public class DbInit {
                     asString(school.get("interview")),
                     asString(school.get("englishQualificationBenefit")),
                     asString(school.get("notes")),
-                    asString(school.get("infoLink"))
+                    asString(school.get("infoLink")),
+                    mapper.writeValueAsString(school)
             );
         }
     }
@@ -134,11 +136,12 @@ public class DbInit {
                                  String interview,
                                  String englishQualificationBenefit,
                                  String notes,
-                                 String infoLink) throws Exception {
+                                 String infoLink,
+                                 String sourceJson) throws Exception {
         stmt.execute("INSERT INTO exam_school_v2 ("
                 + "school_name, category, capacity, exam_dates, "
                 + "subjects, alternate_subjects, interview, "
-                + "english_qualification_benefit, notes, info_link"
+                + "english_qualification_benefit, notes, info_link, source_json"
                 + ") VALUES ("
                 + q(schoolName) + ", "
                 + q(category) + ", "
@@ -149,7 +152,8 @@ public class DbInit {
                 + q(interview) + ", "
                 + q(englishQualificationBenefit) + ", "
                 + q(notes) + ", "
-                + q(infoLink)
+                + q(infoLink) + ", "
+                + q(sourceJson)
                 + ")");
     }
 

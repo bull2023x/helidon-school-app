@@ -23,6 +23,7 @@ abstract class AbstractMainTest {
 
     @SetUpRoute
     static void routing(HttpRouting.Builder builder) {
+        DbInit.init();
         Main.routing(builder);
     }
 
@@ -40,6 +41,16 @@ abstract class AbstractMainTest {
         ClientResponseTyped<String> response = client.get("/simple-greet").request(String.class);
         assertThat(response.status(), is(Status.OK_200));
         assertThat(response.entity(), is("Hello World!"));
+    }
+
+    @Test
+    void currentAdmissionsPageUsesRequestedHeadingAndSourceLabels() {
+        ClientResponseTyped<String> response=client.get("/schools-v2-table").request(String.class);
+        assertThat(response.status(),is(Status.OK_200));
+        assertThat(response.entity(),containsString("2027年度 中学受験 帰国入試＆英語入試情報 2026年11月更新"));
+        assertThat(response.entity(),containsString("公式資料の確認状況"));
+        assertThat(response.entity(),containsString("備考（４科目受験の場合の四谷大塚偏差値を参考に併記）"));
+        assertThat(response.entity(),containsString("確認した公式資料"));
     }
 
 

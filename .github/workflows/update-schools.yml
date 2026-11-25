@@ -11,6 +11,9 @@ permissions:
 
 jobs:
   update:
+    concurrency:
+      group: update-schools-data
+      cancel-in-progress: false
     runs-on: ubuntu-latest
 
     steps:
@@ -26,12 +29,18 @@ jobs:
         run: |
           pip install -r requirements.txt
 
+      - name: Test admissions year rules
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+
       - name: Run updater
         run: |
           python scripts/update_schools.py \
             --input data/schools-v2.json \
             --output data/schools-v2.json \
-            --pretty
+            --pretty --refresh
+
+      - name: Validate and synchronize bundled school data
+        run: python scripts/validate_admissions.py --sync
 
       - name: Commit and push if changed
         run: |
@@ -42,6 +51,6 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/schools-v2.json data/check-report.json data/update-candidates.json archive/
+          git add data/schools-v2.json data/check-report.json data/update-candidates.json src/main/resources/data/schools-v2.json archive/
           git commit -m "Update schools JSON"
           git push

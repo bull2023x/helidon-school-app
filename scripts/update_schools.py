@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""Extract high-confidence admissions facts from official HTML and linked PDFs.
+"""Collect current-year admissions candidates for source and exam-round review.
 
-Only candidates with a source URL, excerpt, and sufficient confidence are
-applied.  All candidates are retained in data/update-candidates.json.
+Rule-generated candidates always require review and cannot overwrite verified facts.
 """
 from __future__ import annotations
 
 import argparse
 import json
+import os
+import time
 import re
 import shutil
 from dataclasses import dataclass
@@ -20,6 +21,7 @@ from urllib.parse import urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
+from admission_rules import target_admission_year, source_admission_year
 
 REQUIRED = ("schoolName", "category", "capacity", "examDates", "subjects", "alternateSubjects", "interview", "englishQualificationBenefit", "notes", "infoLink")
 UPDATE_FIELDS = {"capacity", "examDates", "subjects", "interview", "englishQualificationBenefit"}
@@ -31,7 +33,7 @@ PDF_LIMIT = 12 * 1024 * 1024
 @dataclass(frozen=True)
 class Config:
     input: Path; output: Path; start: int | None; end: int | None
-    pretty: bool; apply: bool; minimum: float; max_pdfs: int
+    pretty: bool; apply: bool; minimum: float; max_pdfs: int; admission_year: int; refresh: bool
 
 
 def args() -> Config:
@@ -39,19 +41,24 @@ def args() -> Config:
     p.add_argument("--input", required=True); p.add_argument("--output", required=True)
     p.add_argument("--start-no", type=int); p.add_argument("--end-no", type=int)
     p.add_argument("--pretty", action="store_true")
-    p.add_argument("--apply", action="store_true", help="Apply only high-confidence candidates.")
+    p.add_argument("--refresh", action="store_true", help="Save retrieval timestamps without applying unreviewed candidates.")
+    p.add_argument("--apply", action="store_true", help="Apply only explicitly reviewed candidates; rule-generated candidates are never applied.")
     p.add_argument("--min-confidence", type=float, default=.85)
     p.add_argument("--max-pdfs", type=int, default=3)
+    p.add_argument("--admission-year", type=int, default=target_admission_year())
     a = p.parse_args()
     if (a.start_no and a.start_no < 1) or (a.end_no and a.end_no < 1) or (a.start_no and a.end_no and a.start_no > a.end_no): p.error("invalid record range")
     if not 0 <= a.min_confidence <= 1 or a.max_pdfs < 0: p.error("invalid confidence or PDF limit")
-    return Config(Path(a.input), Path(a.output), a.start_no, a.end_no, a.pretty, a.apply, a.min_confidence, a.max_pdfs)
+    return Config(Path(a.input), Path(a.output), a.start_no, a.end_no, a.pretty, a.apply, a.min_confidence, a.max_pdfs, a.admission_year, a.refresh)
 
 
 def compact(s: str) -> str: return re.sub(r"\s+", " ", s).strip()
 
 def get(url: str) -> requests.Response:
-    r = requests.get(url, headers=HEADERS, timeout=(10, 30), allow_redirects=True); r.raise_for_status(); return r
+    time.sleep(max(0, float(os.environ.get("REQUEST_DELAY_SECONDS", "1"))))
+    r = requests.get(url, headers=HEADERS, timeout=(10, 30), allow_redirects=True)
+    r.raise_for_status()
+    return r
 
 def pdf_text(data: bytes) -> str:
     return compact("\n".join(page.extract_text() or "" for page in PdfReader(BytesIO(data)).pages[:30]))
@@ -61,8 +68,9 @@ def sources(url: str, max_pdfs: int) -> tuple[list[tuple[str, str, str]], dict[s
     try:
         r = get(url); ct = r.headers.get("content-type", "").lower(); report.update(ok=True, statusCode=r.status_code, url=r.url)
         if "pdf" in ct or urlparse(r.url).path.lower().endswith(".pdf"):
-            text = pdf_text(r.content[:PDF_LIMIT]); report["sources"].append({"url":r.url,"kind":"pdf","characters":len(text)}); return [(r.url,"pdf",text)], report
-        if "html" not in ct: report["error"] = f"Unsupported content type: {ct}"; return [], report
+            if len(r.content) > PDF_LIMIT: raise ValueError("PDF exceeds size limit")
+            text = pdf_text(r.content); report["sources"].append({"url":r.url,"kind":"pdf","characters":len(text)}); return [(r.url,"pdf",text)], report
+        if "html" not in ct: report.update(ok=False, error=f"Unsupported content type: {ct}"); return [], report
         r.encoding = r.apparent_encoding or r.encoding; soup = BeautifulSoup(r.text, "html.parser")
         text = compact(soup.get_text(" ", strip=True)); found = [(r.url,"html",text)]; report["sources"].append({"url":r.url,"kind":"html","characters":len(text)})
         links: list[tuple[int,str]] = []
@@ -81,12 +89,15 @@ def sources(url: str, max_pdfs: int) -> tuple[list[tuple[str, str, str]], dict[s
             except Exception as e: report["sources"].append({"url":href,"kind":"pdf","error":str(e)})
         return found, report
     except Exception as e:
-        report["error"] = f"{type(e).__name__}: {e}"; return [], report
+        report.update(ok=False, error=f"{type(e).__name__}: {e}"); return [], report
 
-def extract(source_url: str, kind: str, text: str, category: str) -> list[dict[str, Any]]:
+def extract(source_url: str, kind: str, text: str, category: str, admission_year: int | None = None) -> list[dict[str, Any]]:
+    admission_year = admission_year or target_admission_year()
+    if source_admission_year(text) != admission_year:
+        return []
     # Do not use a page if it has no sign of the record category; this avoids
     # replacing a 帰国 row with a nearby general-admissions value.
-    hint = category.replace("受験", "").replace("入試", "")
+    hint = (category or "").replace("受験", "").replace("入試", "")
     scoped = text if not hint or hint in text else ""
     out: list[dict[str, Any]] = []
     patterns = {
@@ -106,6 +117,8 @@ def extract(source_url: str, kind: str, text: str, category: str) -> list[dict[s
     }.items():
         m = re.search(pat, scoped)
         if m: out.append(candidate(field, m.group(0), (.88 if kind == "pdf" else .82), source_url, kind, scoped, m))
+    for item in out:
+        item.update(admissionYear=admission_year, requiresReview=True)
     return out
 
 def candidate(field: str, value: str, confidence: float, url: str, kind: str, text: str, m: re.Match[str]) -> dict[str, Any]:
@@ -128,22 +141,30 @@ def main() -> int:
     for record in targets:
         url = record.get("infoLink"); item={"id":record.get("id"),"schoolName":record["schoolName"],"category":record["category"],"checkedAt":now}
         found, fetch = sources(url, cfg.max_pdfs) if url else ([], {"ok":False,"error":"MISSING_URL"})
-        candidates = [c for source in found for c in extract(*source, record["category"])]
+        candidates = [c for source in found for c in extract(*source, record["category"], cfg.admission_year)]
         selected: dict[str,dict[str,Any]] = {}
         for c in candidates:
             if c["field"] not in selected or c["confidence"] > selected[c["field"]]["confidence"]: selected[c["field"]]=c
         applied=[]
-        if fetch["ok"]: record["lastCheckedAt"] = now
+        if fetch["ok"]: record["lastRetrievedAt"] = now
         if cfg.apply:
             for field,c in selected.items():
-                if field in UPDATE_FIELDS and c["confidence"] >= cfg.minimum and record.get(field) != c["value"]:
+                if not c.get("requiresReview", True) and field in UPDATE_FIELDS and c["confidence"] >= cfg.minimum and record.get(field) != c["value"]:
                     applied.append({"field":field,"from":record.get(field),"to":c["value"],"confidence":c["confidence"]}); record[field]=c["value"]; changes += 1
         item.update(fetch=fetch,candidates=candidates,selected=selected,applied=applied); reports.append(item)
         print(f"[{'OK' if fetch['ok'] else 'ERROR'}] {record['schoolName']}: {len(selected)} candidates, {len(applied)} applied")
-    report_path=cfg.output.parent / "update-candidates.json"; write(report_path,{"generatedAt":now,"apply":cfg.apply,"minConfidence":cfg.minimum,"records":reports})
-    if cfg.apply:
-        backup(cfg.output); print(f"[{'WRITE' if write(cfg.output,records,cfg.pretty) else 'SKIP'}] {cfg.output} ({changes} field changes)")
-    else: print("[DRY RUN] No data changed. Review data/update-candidates.json or rerun with --apply.")
+    report_path=cfg.output.parent / "update-candidates.json"; write(report_path,{"generatedAt":now,"targetAdmissionYear":cfg.admission_year,"apply":cfg.apply,"minConfidence":cfg.minimum,"reviewRequired":True,"records":reports})
+    write(cfg.output.parent / "check-report.json", {"finishedAt":now,"targetAdmissionYear":cfg.admission_year,
+        "checked":len(reports),"retrieved":sum(bool(r["fetch"]["ok"]) for r in reports),
+        "failed":sum(not bool(r["fetch"]["ok"]) for r in reports),"appliedFields":changes,
+        "note":"取得成功は内容確認を意味しません。更新候補は年度・入試区分の照合が必要です。"})
+    if cfg.apply or cfg.refresh:
+        data = json.dumps(records,ensure_ascii=False,indent=2 if cfg.pretty else None) + "\n"
+        if not cfg.output.exists() or cfg.output.read_text(encoding="utf-8") != data:
+            backup(cfg.output); write(cfg.output,records,cfg.pretty)
+            print(f"[WRITE] {cfg.output} ({changes} reviewed field changes)")
+        else: print(f"[SKIP] {cfg.output}")
+    else: print("[DRY RUN] No data changed. Review data/update-candidates.json against the current official admissions guide.")
     print(f"[REPORT] {report_path}"); return 0
 
 if __name__ == "__main__": raise SystemExit(main())

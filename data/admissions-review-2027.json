@@ -1,0 +1,2037 @@
+{
+  "targetAdmissionYear": 2027,
+  "reviewedAt": "2026-11-25T11:07:10+09:00",
+  "method": "学校公式の2027年度募集要項・公式ページを個別照合。日付を前年から繰り上げる推計はしない。",
+  "counts": {
+    "totalRecords": 110,
+    "datesAndCapacityReviewed": 77,
+    "partiallyReviewed": 10,
+    "unverified": 23
+  },
+  "records": [
+    {
+      "id": 1,
+      "schoolName": "かえつ有明中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.ariake.kaetsu.ac.jp/contents/wp-content/uploads/2026/06/d9f34a88ffedbe6a459fca4d2709ce84.pdf",
+          "pages": "4–5",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 2,
+      "schoolName": "かえつ有明中学校",
+      "category": "英語受験",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.ariake.kaetsu.ac.jp/contents/wp-content/uploads/2026/06/d9f34a88ffedbe6a459fca4d2709ce84.pdf",
+          "pages": "3",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "alternateSubjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 3,
+      "schoolName": "カリタス女子中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://caritas.ed.jp/doc/2026/2027%E5%B9%B4%E5%BA%A6%E5%85%A5%E8%A9%A6%E8%A6%81%E9%A0%85.pdf",
+          "pages": "4–7",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "englishQualificationBenefit",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 4,
+      "schoolName": "サレジアン国際学園世田谷中学校",
+      "category": "帰国入試",
+      "status": "一部確認済み",
+      "sources": [
+        {
+          "url": "https://salesian-setagaya.ed.jp/wp-content/uploads/salesiansetagayabosyu2027_web-1009koshin.pdf",
+          "pages": "2",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "subjects",
+            "interview",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 5,
+      "schoolName": "サレジアン国際学園中学校",
+      "category": "帰国入試",
+      "status": "未確認",
+      "sources": [],
+      "note": "2027年度の該当入試区分を公式資料で確定できていません。取得失敗・画像資料・案内ページ変更等を含み、未公表と断定するものではありません。前年の情報は非表示にしています。"
+    },
+    {
+      "id": 6,
+      "schoolName": "ドルトン東京学園中等部",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.daltontokyo.ed.jp/wp/wp-content/themes/dalton/assets/PDF/2027dalton_Radmission.pdf",
+          "pages": "1",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "englishQualificationBenefit",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 7,
+      "schoolName": "三田国際科学学園中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.mita-is.ed.jp/wp-content/uploads/2026/09/2027%E4%B8%AD%E5%AD%A6_%E5%8B%9F%E9%9B%86%E8%A6%81%E9%A0%85%E5%B8%B0%E5%9B%BD%E7%94%9F_0910%E7%A2%BA%E5%AE%9A.pdf",
+          "pages": "2,4–5",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "interview",
+            "englishQualificationBenefit",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 8,
+      "schoolName": "三田国際科学学園中学校",
+      "category": "英語受験",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.mita-is.ed.jp/wp-content/uploads/2026/09/2027%E4%B8%AD%E5%AD%A6_%E5%8B%9F%E9%9B%86%E8%A6%81%E9%A0%852%E6%9C%88_0904%E7%A2%BA%E5%AE%9A.pdf",
+          "pages": "2",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "interview",
+            "englishQualificationBenefit",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 9,
+      "schoolName": "三輪田学園中学校",
+      "category": "帰国入試",
+      "status": "一部確認済み",
+      "sources": [
+        {
+          "url": "https://www.miwada.ac.jp/miwada-info/wp-content/uploads/2026/10/2027_%E5%B8%B0%E5%9B%BD%E7%94%9F%E5%85%A5%E8%A9%A6%E8%AB%B8%E6%B3%A8%E6%84%8F%E3%80%90%E6%94%B9%E8%A8%82%E7%89%88%E3%80%91.pdf",
+          "pages": "1",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "subjects",
+            "interview",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 10,
+      "schoolName": "佼成学園女子中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.girls.kosei.ac.jp/wp-content/themes/koseigirls/images/junior/2027_juni_kikoku.pdf",
+          "pages": "1",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "interview",
+            "englishQualificationBenefit",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 11,
+      "schoolName": "公文国際学園中等部",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://kumon.ac.jp/k-gakuen/kokusai/bouShuuYoKou.html",
+          "pages": "",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "interview",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 12,
+      "schoolName": "共立女子中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.kyoritsu-wu.ac.jp/chukou/wp/wp-content/uploads/2026/07/2027_youkou.pdf",
+          "pages": "2,4（画像で確認）",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "englishQualificationBenefit",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 13,
+      "schoolName": "千代田中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://chiyoda.ed.jp/wordpress/wp-content/uploads/2025/09/20260824-6a8ccdcde1f09.pdf",
+          "pages": "6",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 14,
+      "schoolName": "千代田中学校",
+      "category": "英語受験",
+      "status": "未確認",
+      "sources": [],
+      "note": "2027年度の該当入試区分を公式資料で確定できていません。取得失敗・画像資料・案内ページ変更等を含み、未公表と断定するものではありません。前年の情報は非表示にしています。"
+    },
+    {
+      "id": 15,
+      "schoolName": "同志社国際中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.intnl.doshisha.ac.jp/doshisha-info/wp-content/uploads/2026/07/%e5%8b%9f%e9%9b%86%e8%a6%81%e9%a0%852027%ef%bc%8f%e4%b8%ad%e5%ad%a6.pdf",
+          "pages": "4–6",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 16,
+      "schoolName": "品川女子学院",
+      "category": "帰国入試",
+      "status": "未確認",
+      "sources": [],
+      "note": "2027年度の該当入試区分を公式資料で確定できていません。取得失敗・画像資料・案内ページ変更等を含み、未公表と断定するものではありません。前年の情報は非表示にしています。"
+    },
+    {
+      "id": 17,
+      "schoolName": "國學院大學久我山中学校",
+      "category": "帰国入試",
+      "status": "未確認",
+      "sources": [],
+      "note": "2027年度の該当入試区分を公式資料で確定できていません。取得失敗・画像資料・案内ページ変更等を含み、未公表と断定するものではありません。前年の情報は非表示にしています。"
+    },
+    {
+      "id": 18,
+      "schoolName": "埼玉栄中学校",
+      "category": "帰国入試",
+      "status": "一部確認済み",
+      "sources": [
+        {
+          "url": "https://www.saitamasakae-h.ed.jp/junior/j-examee/j-requirements/",
+          "pages": "",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 19,
+      "schoolName": "大妻中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.otsuma.ed.jp/admission/returnee",
+          "pages": "",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "interview",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 20,
+      "schoolName": "大妻中野中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.otsumanakano.ac.jp/admission/guidelines/",
+          "pages": "",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 21,
+      "schoolName": "大妻中野中学校",
+      "category": "英語受験",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.otsumanakano.ac.jp/admission/guidelines/",
+          "pages": "",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 22,
+      "schoolName": "大宮国際中等教育学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.city.saitama.lg.jp/006/015/035/002/p133649_d/fil/a.pdf",
+          "pages": "2,10–11（画像で確認）",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 23,
+      "schoolName": "学習院中等科",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.gakushuin.ac.jp/bjh/admission/outline/2027kikoku.pdf",
+          "pages": "1",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 24,
+      "schoolName": "宝仙学園中学校 理数インター",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.hosen.ed.jp/contents/wp-content/uploads/2026/09/cdf7047af141258261914d05317ff074.pdf",
+          "pages": "3",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 25,
+      "schoolName": "実践女子学園中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://hs.jissen.ac.jp/admission/application/iq4b6n0000000naw-att/2027_kikoku_bosyuu1.pdf",
+          "pages": "1",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 26,
+      "schoolName": "富士見丘中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.fujimigaoka.ac.jp/wordpress/wp-content/uploads/2026/06/20260622-6a389180c3dc7.pdf",
+          "pages": "1",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 27,
+      "schoolName": "山手学院中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.yamate-gakuin.ac.jp/shared/pdf/bosyuu_k.pdf",
+          "pages": "2",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 28,
+      "schoolName": "山脇学園中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.yamawaki.ed.jp/wordpress/wp-content/uploads/2026/09/2027yamawaki_youkou_kikoku.pdf",
+          "pages": "1",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 29,
+      "schoolName": "工学院大学附属中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.js.kogakuin.ac.jp/admissions/junior/vn7fb300000008su-att/exam2027_returnee_junior.pdf",
+          "pages": "2",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "interview",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 30,
+      "schoolName": "市川中学校",
+      "category": "帰国入試",
+      "status": "未確認",
+      "sources": [],
+      "note": "2027年度の該当入試区分を公式資料で確定できていません。取得失敗・画像資料・案内ページ変更等を含み、未公表と断定するものではありません。前年の情報は非表示にしています。"
+    },
+    {
+      "id": 31,
+      "schoolName": "帝京中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.teikyo.ed.jp/exam_j/outline_j/",
+          "pages": "",
+          "admissionYear": 2027,
+          "fields": [
+            "category",
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 32,
+      "schoolName": "広尾学園中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.hiroogakuen.ed.jp/junior/2027bosyuyoko_info.pdf",
+          "pages": "3（画像で確認）",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 33,
+      "schoolName": "広尾学園中学校",
+      "category": "英語受験",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.hiroogakuen.ed.jp/junior/2027bosyuyoko_info.pdf",
+          "pages": "4（画像で確認）",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 34,
+      "schoolName": "広尾学園小石川中学校",
+      "category": "帰国入試",
+      "status": "一部確認済み",
+      "sources": [
+        {
+          "url": "https://hiroo-koishikawa.ed.jp/hk/wp-content/themes/hk/assets/pdf/HGKEntranceExamGuidelines_2027.pdf",
+          "pages": "1–2",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "notes"
+          ],
+          "contextUrl": "https://hiroo-koishikawa.ed.jp/dp/2027/application-requirements/",
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 35,
+      "schoolName": "広尾学園小石川中学校",
+      "category": "英語受験",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://hiroo-koishikawa.ed.jp/hk/wp-content/themes/hk/assets/pdf/HGKEntranceExamGuidelines_2027.pdf",
+          "pages": "1,3",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "contextUrl": "https://hiroo-koishikawa.ed.jp/dp/2027/application-requirements/",
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 36,
+      "schoolName": "慶應義塾湘南藤沢中等部",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.sfc-js.keio.ac.jp/images/2027_sfcjh_returning_guideline.pdf",
+          "pages": "5",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 37,
+      "schoolName": "成蹊中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.seikei.ac.jp/jsh/upload/5_2027chugakukikoku-kokusai.pdf",
+          "pages": "2",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "interview",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        },
+        {
+          "url": "https://www.seikei.ac.jp/jsh/upload/9_2027chugakukikoku-ippan.pdf",
+          "pages": "2",
+          "admissionYear": 2027,
+          "fields": [
+            "capacity",
+            "alternateSubjects"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 38,
+      "schoolName": "攻玉社中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://kogyokusha.ed.jp/wp-content/themes/kougyokusya2026/images/admission/exam-info/kogyokusha_databook2027.pdf",
+          "pages": "2",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 39,
+      "schoolName": "文化学園大学杉並中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://bunsugi.jp/contents2017/wp-content/uploads/2026/09/34d67c320db566bc42ab78e33c89f136.pdf",
+          "pages": "2",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "interview",
+            "englishQualificationBenefit",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 40,
+      "schoolName": "文化学園大学杉並中学校",
+      "category": "英語受験",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://bunsugi.jp/contents2017/wp-content/uploads/2026/09/4ce22f7214ce5620c7f1222e7a095b76.pdf",
+          "pages": "2",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 41,
+      "schoolName": "日本大学中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.yokohama.hs.nihon-u.ac.jp/assets/pdf/admission/junior_examination_2027.pdf",
+          "pages": "5",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "englishQualificationBenefit",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 42,
+      "schoolName": "早稲田佐賀中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.wasedasaga.jp/cms/wp-content/uploads/2026/09/8a2e70b14c5833918cff6a6831fad78c.pdf",
+          "pages": "4–5",
+          "admissionYear": 2027,
+          "fields": [
+            "category",
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 43,
+      "schoolName": "明星 Institution 中等教育部",
+      "category": "入試区分未確認",
+      "status": "未確認",
+      "sources": [],
+      "note": "登録校名「明星 Institution 中等教育部」の正式な学校名と公式サイトを特定できていません。入試情報は表示しません。"
+    },
+    {
+      "id": 44,
+      "schoolName": "昭和女子大学附属中学校",
+      "category": "帰国入試",
+      "status": "未確認",
+      "sources": [],
+      "note": "2027年度の該当入試区分を公式資料で確定できていません。取得失敗・画像資料・案内ページ変更等を含み、未公表と断定するものではありません。前年の情報は非表示にしています。"
+    },
+    {
+      "id": 45,
+      "schoolName": "昭和女子大学附属中学校",
+      "category": "英語受験",
+      "status": "未確認",
+      "sources": [],
+      "note": "2027年度の該当入試区分を公式資料で確定できていません。取得失敗・画像資料・案内ページ変更等を含み、未公表と断定するものではありません。前年の情報は非表示にしています。"
+    },
+    {
+      "id": 46,
+      "schoolName": "昭和学院中学校",
+      "category": "帰国入試",
+      "status": "未確認",
+      "sources": [],
+      "note": "2027年度の該当入試区分を公式資料で確定できていません。取得失敗・画像資料・案内ページ変更等を含み、未公表と断定するものではありません。前年の情報は非表示にしています。"
+    },
+    {
+      "id": 47,
+      "schoolName": "昭和学院秀英中学校",
+      "category": "帰国入試",
+      "status": "未確認",
+      "sources": [],
+      "note": "2027年度の該当入試区分を公式資料で確定できていません。取得失敗・画像資料・案内ページ変更等を含み、未公表と断定するものではありません。前年の情報は非表示にしています。"
+    },
+    {
+      "id": 48,
+      "schoolName": "暁星中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.gyosei-h.ed.jp/images/uploads/returning_r9.pdf",
+          "pages": "1",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "interview",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 49,
+      "schoolName": "東京大学教育学部附属中等教育学校",
+      "category": "入試区分未確認",
+      "status": "未確認",
+      "sources": [],
+      "note": "2027年度の該当入試区分を公式資料で確定できていません。取得失敗・画像資料・案内ページ変更等を含み、未公表と断定するものではありません。前年の情報は非表示にしています。"
+    },
+    {
+      "id": 50,
+      "schoolName": "東京女学館中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://mhs.tjk.ed.jp/files/fb898fb0f391333d6bc09a00793d69c7cd3e3ee0.pdf",
+          "pages": "1",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 51,
+      "schoolName": "東京女学館中学校",
+      "category": "英語受験",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://mhs.tjk.ed.jp/files/144d755537a73dd89d6220c691cb26f8bc796497.pdf",
+          "pages": "1",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 52,
+      "schoolName": "東京学芸大学附属国際中等教育学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.iss.oizumi.u-gakugei.ac.jp/wp-content/uploads/2026/10/2027%E5%B9%B4%E5%BA%A6%EF%BC%94%E6%9C%88%E5%85%A5%E5%AD%A6%E3%83%BB%E7%B7%A8%E5%85%A5%E5%AD%A6%E9%81%B8%E6%8A%9C%E6%A4%9C%E6%9F%BB%E5%8B%9F%E9%9B%86%E8%A6%81%E9%A0%85%EF%BC%88261026%E8%A8%82%E6%AD%A3%E7%89%88%EF%BC%89.pdf",
+          "pages": "3–8",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 53,
+      "schoolName": "東京都市大学付属中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.tcu-jsh.ed.jp/assets/library/2026/06/910eecf1-5680-4c6c-bc0a-8377f5a1c0ef.pdf",
+          "pages": "1",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 54,
+      "schoolName": "東京都市大学付属中学校",
+      "category": "英語受験",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.tcu-jsh.ed.jp/assets/library/2026/06/8b9a9222-9a1f-4636-bd62-cf6c96f37da8.pdf",
+          "pages": "1",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 55,
+      "schoolName": "東京都市大学等々力中学校",
+      "category": "入試区分未確認",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.tcu-todoroki.ed.jp/exam/webapply/pdf/junior2027.pdf",
+          "pages": "2（画像で確認）",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "contextUrl": "https://www.tcu-todoroki.ed.jp/exam/webapply/",
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 56,
+      "schoolName": "東京都立白鷗高等学校附属中学校",
+      "category": "帰国入試",
+      "status": "一部確認済み",
+      "sources": [
+        {
+          "url": "https://www.metro.ed.jp/hakuo-h/assets/1008_%E4%BB%A4%E5%92%8C9%E5%B9%B4%E5%BA%A6%E5%8B%9F%E9%9B%86%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E5%90%84%E5%8B%9F%E9%9B%86%E6%9E%A0%E3%81%AE%E4%BA%BA%E5%93%A1.pdf",
+          "pages": "1",
+          "admissionYear": 2027,
+          "fields": [
+            "capacity",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 57,
+      "schoolName": "東京都立立川国際中等教育学校",
+      "category": "帰国入試",
+      "status": "一部確認済み",
+      "sources": [
+        {
+          "url": "https://www.metro.ed.jp/tachikawa-s/assets/%E4%BB%A4%E5%92%8C%EF%BC%99%E5%B9%B4%E5%BA%A6%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%AB%8B%E7%AB%8B%E5%B7%9D%E5%9B%BD%E9%9A%9B%E4%B8%AD%E7%AD%89%E6%95%99%E8%82%B2%E5%AD%A6%E6%A0%A1_%E5%8B%9F%E9%9B%86%E8%A6%81%E9%A0%85.pdf",
+          "pages": "9",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 58,
+      "schoolName": "東邦大学付属東邦中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.tohojh.toho-u.ac.jp/exam/ovohlk0000002xo1-att/vt5vv5000000051z.pdf",
+          "pages": "1",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 59,
+      "schoolName": "栄東中学校",
+      "category": "入試区分未確認",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.sakaehigashi.ed.jp/exam/img/R9chuY.pdf",
+          "pages": "2",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 60,
+      "schoolName": "桐光学園中学校",
+      "category": "帰国入試",
+      "status": "未確認",
+      "sources": [],
+      "note": "2027年度の該当入試区分を公式資料で確定できていません。取得失敗・画像資料・案内ページ変更等を含み、未公表と断定するものではありません。前年の情報は非表示にしています。"
+    },
+    {
+      "id": 61,
+      "schoolName": "桐光学園中学校",
+      "category": "英語受験",
+      "status": "未確認",
+      "sources": [],
+      "note": "2027年度の該当入試区分を公式資料で確定できていません。取得失敗・画像資料・案内ページ変更等を含み、未公表と断定するものではありません。前年の情報は非表示にしています。"
+    },
+    {
+      "id": 62,
+      "schoolName": "桐蔭学園中等教育学校",
+      "category": "英語受験",
+      "status": "未確認",
+      "sources": [],
+      "note": "2027年度の該当入試区分を公式資料で確定できていません。取得失敗・画像資料・案内ページ変更等を含み、未公表と断定するものではありません。前年の情報は非表示にしています。"
+    },
+    {
+      "id": 63,
+      "schoolName": "横浜雙葉中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.yokohamafutaba.ed.jp/highsch/wp-content/uploads/2026/09/boshuyoukou_kikokusei.pdf",
+          "pages": "1",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 64,
+      "schoolName": "江戸川女子中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.edojo.jp/wp-content/uploads/2026/08/edochuyoukou2027.pdf",
+          "pages": "3–4",
+          "admissionYear": 2027,
+          "fields": [
+            "category",
+            "examDates",
+            "capacity",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 65,
+      "schoolName": "洗足学園中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.senzoku-gakuen.ed.jp/pdf/youkou_kikoku_detail.pdf?1793596465",
+          "pages": "2",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 66,
+      "schoolName": "浦和実業学園中学校",
+      "category": "入試区分未確認",
+      "status": "未確認",
+      "sources": [],
+      "note": "2027年度の該当入試区分を公式資料で確定できていません。取得失敗・画像資料・案内ページ変更等を含み、未公表と断定するものではありません。前年の情報は非表示にしています。"
+    },
+    {
+      "id": 67,
+      "schoolName": "海城中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.kaijo.ed.jp/wp-content/uploads/2026/10/6a7c62f9c1e946370e75849efc283da7.pdf",
+          "pages": "2–3",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "interview",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 68,
+      "schoolName": "清泉女学院中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.seisen-h.ed.jp/files/exam/requirements/requirements-kikoku.pdf?202609",
+          "pages": "2",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 69,
+      "schoolName": "渋谷教育学園幕張中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.shibumaku.jp/wp-content/uploads/2026/07/2027jryoukou.pdf",
+          "pages": "7–8",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 70,
+      "schoolName": "渋谷教育学園渋谷中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.shibushibu.jp/admission/detail/returnee_exam.html",
+          "pages": "",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 71,
+      "schoolName": "湘南白百合学園中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://chukou.shonan-shirayuri.ac.jp/files/exam/youkou_kikoku.pdf?1784084410",
+          "pages": "1（画像で確認）",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 72,
+      "schoolName": "玉川学園中学部",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.tamagawa.jp/academy/ib/ib_admission/kikokusei.html",
+          "pages": "",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 73,
+      "schoolName": "玉川学園中学部",
+      "category": "英語受験",
+      "status": "未確認",
+      "sources": [],
+      "note": "2027年度の該当入試区分を公式資料で確定できていません。取得失敗・画像資料・案内ページ変更等を含み、未公表と断定するものではありません。前年の情報は非表示にしています。"
+    },
+    {
+      "id": 74,
+      "schoolName": "田園調布学園中等部",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.chofu.ed.jp/returnee/guide/",
+          "pages": "",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 75,
+      "schoolName": "白百合学園中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.shirayuri.ed.jp/examinee/2027_shirayuri_guide/pageindices/index42.html",
+          "pages": "冊子41",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 76,
+      "schoolName": "目白研心中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://mk.mejiro.ac.jp/pdf/k_youkou_2026b.pdf",
+          "pages": "1–2",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 77,
+      "schoolName": "神奈川大学附属中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.fhs.kanagawa-u.ac.jp/guide/img/pdf/boshu_2027.pdf",
+          "pages": "2",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 78,
+      "schoolName": "立命館宇治中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.ritsumei.ac.jp/file.jsp?id=697446",
+          "pages": "3",
+          "admissionYear": 2027,
+          "fields": [
+            "category",
+            "examDates",
+            "capacity",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 79,
+      "schoolName": "立教池袋中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://ikebukuro.rikkyo.ac.jp/admissions/tp456l0000000dyx-att/hdpdcs00000080mr.pdf",
+          "pages": "2",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 80,
+      "schoolName": "聖光学院中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://drive.usercontent.google.com/download?id=1WNdTWMPyhk6VVkAWUCrVTVglb_6sesRl&export=download",
+          "pages": "1",
+          "admissionYear": 2027,
+          "fields": [
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        },
+        {
+          "url": "https://drive.usercontent.google.com/download?id=1WNdTWMPyhk6VVkAWUCrVTVglb_6sesRl&export=download",
+          "pages": "1",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 81,
+      "schoolName": "芝国際中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.shiba-kokusai.ed.jp/dl_pamphlet/pdf/info_jhs2027.pdf",
+          "pages": "3",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 82,
+      "schoolName": "芝国際中学校",
+      "category": "英語受験",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.shiba-kokusai.ed.jp/dl_pamphlet/pdf/info_jhs2027.pdf",
+          "pages": "4",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 83,
+      "schoolName": "芝浦工業大学附属中学高等学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.fzk.shibaura-it.ac.jp/wordpress/wp-content/uploads/2026/10/20261031-6ae54b5cd9b48.pdf",
+          "pages": "2",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 84,
+      "schoolName": "芝浦工業大学附属中学高等学校",
+      "category": "英語受験",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.fzk.shibaura-it.ac.jp/admission/junior/outline/",
+          "pages": "",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 85,
+      "schoolName": "茗溪学園中学校",
+      "category": "入試区分未確認",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://meikei.ac.jp/uploads/2026/09/158dbb6d12f1f02a5a3924ae25ec4812.pdf",
+          "pages": "2–5",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 86,
+      "schoolName": "西大和学園中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.nishiyamato.ed.jp/assets/pdf/admission/ee2026/jh_honkou.pdf?ver=2026",
+          "pages": "1",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 87,
+      "schoolName": "西武学園文理中学校",
+      "category": "英語受験",
+      "status": "未確認",
+      "sources": [],
+      "note": "2027年度の該当入試区分を公式資料で確定できていません。取得失敗・画像資料・案内ページ変更等を含み、未公表と断定するものではありません。前年の情報は非表示にしています。"
+    },
+    {
+      "id": 88,
+      "schoolName": "逗子開成中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.zushi-kaisei.ac.jp/wp/wp-content/uploads/2026/08/d1e6af7223850ae3e5f8a37f3db1d024.pdf",
+          "pages": "2",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 89,
+      "schoolName": "郁文館中学校",
+      "category": "帰国入試",
+      "status": "未確認",
+      "sources": [],
+      "note": "2027年度の該当入試区分を公式資料で確定できていません。取得失敗・画像資料・案内ページ変更等を含み、未公表と断定するものではありません。前年の情報は非表示にしています。"
+    },
+    {
+      "id": 90,
+      "schoolName": "郁文館中学校",
+      "category": "英語受験",
+      "status": "未確認",
+      "sources": [],
+      "note": "2027年度の該当入試区分を公式資料で確定できていません。取得失敗・画像資料・案内ページ変更等を含み、未公表と断定するものではありません。前年の情報は非表示にしています。"
+    },
+    {
+      "id": 91,
+      "schoolName": "都立立川国際中等教育学校",
+      "category": "帰国入試",
+      "status": "一部確認済み",
+      "sources": [
+        {
+          "url": "https://www.metro.ed.jp/tachikawa-s/assets/%E4%BB%A4%E5%92%8C%EF%BC%99%E5%B9%B4%E5%BA%A6%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%AB%8B%E7%AB%8B%E5%B7%9D%E5%9B%BD%E9%9A%9B%E4%B8%AD%E7%AD%89%E6%95%99%E8%82%B2%E5%AD%A6%E6%A0%A1_%E5%8B%9F%E9%9B%86%E8%A6%81%E9%A0%85.pdf",
+          "pages": "9",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 92,
+      "schoolName": "金沢大学附属中学校",
+      "category": "入試区分未確認",
+      "status": "未確認",
+      "sources": [],
+      "note": "金沢大学附属中学校の2027年度の該当入試区分を確認できていません。名称が似た金沢学院大学附属中学校の資料とは区別しています。"
+    },
+    {
+      "id": 93,
+      "schoolName": "鎌倉女学院中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.kamajo.ac.jp/cms/wp-content/uploads/2026/07/R9.exam_.youkou.11.pdf",
+          "pages": "1",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "contextUrl": "https://www.kamajo.ac.jp/ent-req/",
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 94,
+      "schoolName": "鎌倉女学院中学校",
+      "category": "英語受験",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.kamajo.ac.jp/cms/wp-content/uploads/2026/04/R9.admission-requirements.Eng_.pdf",
+          "pages": "1",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 95,
+      "schoolName": "開智中学校",
+      "category": "帰国入試",
+      "status": "一部確認済み",
+      "sources": [
+        {
+          "url": "https://nozomi.kaichigakuen.ed.jp/secondary/wp-content/uploads/2026/10/nyushi_yoko1023_kokusai-1.pdf",
+          "pages": "2–5",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 96,
+      "schoolName": "開智所沢中等教育学校",
+      "category": "帰国入試",
+      "status": "一部確認済み",
+      "sources": [
+        {
+          "url": "https://nozomi.kaichigakuen.ed.jp/secondary/wp-content/uploads/2026/10/nyushi_yoko1023_kokusai-1.pdf",
+          "pages": "2–5",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 97,
+      "schoolName": "開智日本橋学園中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://kng.ed.jp/wp-content/uploads/2026/10/2026101601.pdf",
+          "pages": "4",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "interview",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 98,
+      "schoolName": "開智日本橋学園中学校",
+      "category": "英語受験",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://kng.ed.jp/wp-content/uploads/2026/10/20261023.pdf",
+          "pages": "4",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "interview",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 99,
+      "schoolName": "開智望中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://nozomi.kaichigakuen.ed.jp/secondary/wp-content/uploads/2026/10/nyushi_yoko1023_kokusai-1.pdf",
+          "pages": "2–5",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 100,
+      "schoolName": "関東学院中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://kantogakuin.ed.jp/wp/wp-content/uploads/2026/09/32599c4f822c22d99324ebb192307cb2.pdf",
+          "pages": "1",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "englishQualificationBenefit",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 101,
+      "schoolName": "関西学院千里国際中等部",
+      "category": "帰国入試",
+      "status": "一部確認済み",
+      "sources": [
+        {
+          "url": "https://sis.kwansei.ac.jp/assets/2026-2027_returnee_overseas_admissions.pdf",
+          "pages": "5",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 102,
+      "schoolName": "青山学院横浜英和中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.yokohama-eiwa.ac.jp/chukou/assets/pdf/examination/boshu.pdf",
+          "pages": "2",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 103,
+      "schoolName": "青稜中学校",
+      "category": "帰国入試",
+      "status": "未確認",
+      "sources": [],
+      "note": "2027年度の該当入試区分を公式資料で確定できていません。取得失敗・画像資料・案内ページ変更等を含み、未公表と断定するものではありません。前年の情報は非表示にしています。"
+    },
+    {
+      "id": 104,
+      "schoolName": "順天中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.junten.ed.jp/contents/wp-content/uploads/2026/09/d6f0b0b559a9101fdc4c20e5307f784a.pdf",
+          "pages": "3（画像で確認）",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 105,
+      "schoolName": "順天中学校",
+      "category": "英語受験",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.junten.ed.jp/contents/wp-content/uploads/2026/09/d6f0b0b559a9101fdc4c20e5307f784a.pdf",
+          "pages": "3（画像で確認）",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 106,
+      "schoolName": "頌栄女子学院中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.shoei.ed.jp/examination/returnees.html",
+          "pages": "",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "interview",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 107,
+      "schoolName": "頌栄女子学院中学校",
+      "category": "英語受験",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.shoei.ed.jp/examination/general.html",
+          "pages": "",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "englishQualificationBenefit",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 108,
+      "schoolName": "駒込中学校",
+      "category": "帰国入試",
+      "status": "日程・人数を確認済み",
+      "sources": [
+        {
+          "url": "https://www.komagome.ed.jp/kgwp/wp-content/uploads/2026/07/2027%E5%B9%B4%E5%BA%A6%E5%B8%B0%E5%9B%BD%E7%94%9F%E5%85%A5%E8%A9%A6%E5%8B%9F%E9%9B%86%E8%A6%81%E9%A0%85_%E4%B8%AD%E5%AD%A6.pdf",
+          "pages": "1",
+          "admissionYear": 2027,
+          "fields": [
+            "examDates",
+            "capacity",
+            "subjects",
+            "notes"
+          ],
+          "verifiedAt": "2026-11-25T11:07:10+09:00"
+        }
+      ],
+      "note": "2027年度の出典を確認。未確認と表示する項目は今回の資料で確定できていません。試験日には終了済みの回も含みます。"
+    },
+    {
+      "id": 109,
+      "schoolName": "駒込中学校",
+      "category": "英語受験",
+      "status": "未確認",
+      "sources": [],
+      "note": "2027年度の該当入試区分を公式資料で確定できていません。取得失敗・画像資料・案内ページ変更等を含み、未公表と断定するものではありません。前年の情報は非表示にしています。"
+    },
+    {
+      "id": 110,
+      "schoolName": "麗澤中学校",
+      "category": "帰国入試",
+      "status": "未確認",
+      "sources": [],
+      "note": "2027年度の該当入試区分を公式資料で確定できていません。取得失敗・画像資料・案内ページ変更等を含み、未公表と断定するものではありません。前年の情報は非表示にしています。"
+    }
+  ]
+}
