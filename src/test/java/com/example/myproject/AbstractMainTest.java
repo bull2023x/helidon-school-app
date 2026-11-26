@@ -51,6 +51,9 @@ abstract class AbstractMainTest {
         assertThat(response.entity(),containsString("公式資料の確認状況"));
         assertThat(response.entity(),containsString("備考（４科目受験の場合の四谷大塚偏差値を参考に併記）"));
         assertThat(response.entity(),containsString("確認した公式資料"));
+        assertThat(response.entity(),containsString("2026年度受験（現中１娘）の受験最終レポート２本を公開中（有料）"));
+        assertThat(response.entity(),containsString("https://note.com/naiveprince0507/n/n3ff1eed03e00?app_launch=false"));
+        assertThat(response.entity(),containsString("https://note.com/naiveprince0507/n/nff78aea25f7f?app_launch=false"));
     }
 
 

@@ -389,6 +389,8 @@ private static String loginPageHtml(String message) {
     static void routing(HttpRouting.Builder routing) {
         SchoolRepository repository = new SchoolRepository();
         SchoolV2Repository repositoryV2 = new SchoolV2Repository();
+        PageViewStore pageViews = PageViewStore.fromEnvironment();
+        AdminAnalyticsService.register(routing, pageViews, System.getenv("ANALYTICS_ADMIN_TOKEN"));
 
         AdminSchoolV2Service.register(routing);
         routing
@@ -669,9 +671,17 @@ private static String loginPageHtml(String message) {
                             </head>
                             <body>
                               <h2>__ADMISSION_HEADING__</h2>
+                              <section class="report-links" aria-label="受験最終レポート" style="background:#fff8e8;border:1px solid #e7d7ad;border-radius:6px;padding:10px;margin:8px 0;">
+                                <strong>2026年度受験（現中１娘）の受験最終レポート２本を公開中（有料）</strong>
+                                <ul style="margin:6px 0 0;padding-left:20px;">
+                                  <li><a href="https://note.com/naiveprince0507/n/n3ff1eed03e00?app_launch=false" target="_blank" rel="noopener noreferrer">「中受英語受験とは何なのか？」</a></li>
+                                  <li><a href="https://note.com/naiveprince0507/n/nff78aea25f7f?app_launch=false" target="_blank" rel="noopener noreferrer">「英検＆TOEFLの全成績及び、出願7校の選び方を全部書く」</a></li>
+                                </ul>
+                              </section>
                               __ADMISSION_SUMMARY__
                               <div style="margin-bottom: 12px;">
                                 <a href="/logout">ログアウト</a>
+                                <span aria-hidden="true"> ／ </span><a href="/admin/analytics">管理者用：閲覧統計</a>
                               </div>
 
 
@@ -921,6 +931,7 @@ html.append("""
         """);
 
                     res.header("Content-Type", "text/html; charset=UTF-8");
+                    if (AdminAnalyticsService.countable(req)) pageViews.recordView();
                     res.send(html.toString().getBytes(StandardCharsets.UTF_8));
                 });
     }
