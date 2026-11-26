@@ -40,4 +40,12 @@ src/main/.idea/
 __pycache__/
 *.pyc
 
+# Local service credentials and Neon CLI context
+.env
+.env.*
+!.env.example
+.neon
+.neon/
+node_modules/
+
 src/main/.idea/

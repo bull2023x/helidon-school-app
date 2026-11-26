@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@neon/config": "^1.14.8",
+    "@neon/env": "^2.1.11"
+  },
+  "name": "helidon-school-app",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  }
+}

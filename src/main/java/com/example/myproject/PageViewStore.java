@@ -25,13 +25,14 @@ final class PageViewStore {
 
     static PageViewStore fromEnvironment() {
         String value = System.getenv("ANALYTICS_DATABASE_URL");
+        if (value == null || value.isBlank()) value = System.getenv("DATABASE_URL");
         if (value == null || value.isBlank()) return new PageViewStore(null, Clock.systemUTC());
         try {
             ConnectionSettings settings = parsePostgres(value);
             return new PageViewStore(() -> DriverManager.getConnection(settings.url(), settings.properties()), Clock.systemUTC());
         } catch (RuntimeException invalid) {
             // Never log the URL: it contains database credentials.
-            LOG.warning("ANALYTICS_DATABASE_URL is invalid; page-view tracking is disabled.");
+            LOG.warning("Analytics PostgreSQL URL is invalid; page-view tracking is disabled.");
             return new PageViewStore(null, Clock.systemUTC());
         }
     }

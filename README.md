@@ -326,6 +326,10 @@ RenderのEnvironmentに次の２つを設定します。
 | `ANALYTICS_DATABASE_URL` | 永続PostgreSQLの接続URL（`postgresql://ユーザー:パスワード@ホスト/DB名`形式） |
 | `ANALYTICS_ADMIN_TOKEN` | 推測困難な24文字以上の専用キー。例：手元で `openssl rand -hex 24` で生成 |
 
+`DATABASE_URL`（Neon CLIが出力する標準名）も使用できます。両方指定した場合は `ANALYTICS_DATABASE_URL` を優先します。接続には既存のPostgreSQL JDBCドライバーを使用し、外部DBには証明書を検証したTLSで接続します。
+
+Neon CLIで設定する場合は `neon deploy` で取得した `.env.local` の `DATABASE_URL` を、Renderの秘密の環境変数に登録します。環境ファイルはGit管理対象外です。Node.js 22以上とMavenがある環境では `npm run build` でJavaの `mvn verify` を実行できます（macOSではインストール済みJDK 21を自動検出）。
+
 追加費用を避ける場合は、Neonの**Freeプラン**のPostgreSQLを使えます。
 公式料金：<https://neon.com/pricing>（2026-11-26確認時点、月額$0、期限なし、カード不要、無料枠に上限あり）。
 有料プランへの変更やカードの登録は、この機能には必要ありません。
