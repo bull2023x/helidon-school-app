@@ -70,15 +70,27 @@ public class Main {
                 + "年秋〜" + year + "年春の入試）</strong><p>全" + schools.size() + "件：日程・人数確認済み "
                 + complete + "件／一部確認済み " + partial + "件／未確認 " + (schools.size() - complete - partial)
                 + "件</p><p>対象年度の公式資料で確認できた項目を表示しています。未確認は未公表を意味しません。"
-                + "人数が他方式との共通枠の場合は、その範囲を記載しています。試験日には終了済みの回を含みます。</p></section>";
+                + "人数が他方式との共通枠の場合は、その範囲を記載しています。試験日には終了済みの回を含みます。</p>"
+                + "<p>見出しの日付は最終取得・確認日です。入試内容の確認日は各行の資料確認日時をご覧ください。</p></section>";
     }
 
-    private static String admissionsHeading(List<SchoolV2> schools) {
+    static String admissionsHeading(List<SchoolV2> schools) {
         String base = AdmissionsPolicy.targetYear() + "年度 中学受験 帰国入試＆英語入試情報";
-        var latest = schools.stream().map(s -> s.verifiedAt).filter(s -> s != null && !s.isBlank())
-                .map(java.time.OffsetDateTime::parse).max(java.util.Comparator.naturalOrder());
-        return latest.map(date -> base + " " + date.getYear() + "年" + date.getMonthValue() + "月更新")
-                .orElse(base + "（公式情報を確認中）");
+        java.time.OffsetDateTime latest = null;
+        for (SchoolV2 school : schools) {
+            for (String timestamp : new String[] {school.verifiedAt, school.lastRetrievedAt}) {
+                if (timestamp == null || timestamp.isBlank()) continue;
+                try {
+                    var date = java.time.OffsetDateTime.parse(timestamp);
+                    if (latest == null || date.isAfter(latest)) latest = date;
+                } catch (java.time.format.DateTimeParseException invalid) {
+                    // Ignore invalid metadata without claiming a fresh update.
+                }
+            }
+        }
+        if (latest == null) return base + "（更新日未確認）";
+        var day = latest.atZoneSameInstant(ZoneId.of("Asia/Tokyo")).toLocalDate();
+        return base + " <" + day.format(DateTimeFormatter.ofPattern("uuuu年M月d日")) + "更新>";
     }
 
     private static boolean websiteUrl(String value) {

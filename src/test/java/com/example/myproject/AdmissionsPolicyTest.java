@@ -56,4 +56,18 @@ class AdmissionsPolicyTest {
         AdmissionsPolicy.inheritUnchangedProofs(edited,original);
         assertEquals(original.deviationReference,edited.deviationReference);
     }
+    @Test void headingTracksWeeklyRetrievalInJapanTimeWithoutChangingContentVerification() {
+        SchoolV2 school = new SchoolV2();
+        school.verifiedAt = "2026-11-25T15:02:21+09:00";
+        school.lastRetrievedAt = "2026-11-23T03:00:00+09:00";
+        assertTrue(Main.admissionsHeading(java.util.List.of(school)).endsWith("<2026年11月25日更新>"));
+        school.lastRetrievedAt = "2026-11-29T18:05:00Z";
+        assertTrue(Main.admissionsHeading(java.util.List.of(school)).endsWith("<2026年11月30日更新>"));
+        school.lastRetrievedAt = "2026-12-06T18:05:00Z";
+        assertTrue(Main.admissionsHeading(java.util.List.of(school)).endsWith("<2026年12月7日更新>"));
+        assertEquals("2026-11-25T15:02:21+09:00", school.verifiedAt);
+        school.lastRetrievedAt = "invalid";
+        assertTrue(Main.admissionsHeading(java.util.List.of(school)).endsWith("<2026年11月25日更新>"));
+    }
+
 }
