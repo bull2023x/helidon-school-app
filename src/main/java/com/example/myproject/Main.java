@@ -620,6 +620,17 @@ private static String loginPageHtml(String message) {
                                   line-height: 1.45;
                                 }
                                 h2 { font-size: 18px; margin: 0 0 8px; }
+                                .page-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 8px; }
+                                .page-heading h2 { flex: 1; min-width: 0; }
+                                .public-views { flex: 0 0 290px; max-width: 100%; color: #193b37; }
+                                .views-caption { font-size: 11px; font-weight: bold; margin-bottom: 4px; }
+                                .public-views dl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin: 0; }
+                                .public-views dl > div { background: #f3f7f6; border: 1px solid #dbe5e1; border-radius: 7px; padding: 6px 9px; }
+                                .public-views dt { font-size: 11px; }
+                                .public-views dd { font-size: 21px; font-weight: bold; margin: 2px 0 0; overflow-wrap: anywhere; }
+                                .public-views small, .views-note { font-size: 9px; font-weight: normal; color: #5d786f; }
+                                .views-note { margin: 4px 0 0; }
+                                @media(max-width: 680px) { .page-heading { flex-wrap: wrap; gap: 4px; } .page-heading h2 { flex-basis: 100%; } .public-views { margin-left: auto; } }
                                 .cohort-info { background: #eef6fa; border-left: 3px solid #176b68; padding: 6px 9px; margin-bottom: 8px; }
                                 .cohort-info p { margin: 4px 0 0; }
                                 .review-note { font-size: 10px; color: #526875; margin-top: 4px; }
@@ -670,7 +681,7 @@ private static String loginPageHtml(String message) {
                               </style>
                             </head>
                             <body>
-                              <h2>__ADMISSION_HEADING__</h2>
+                              <header class="page-heading"><h2>__ADMISSION_HEADING__</h2>__PUBLIC_ANALYTICS__</header>
                               <section class="report-links" aria-label="受験最終レポート" style="background:#fff8e8;border:1px solid #e7d7ad;border-radius:6px;padding:10px;margin:8px 0;">
                                 <strong>2026年度受験（現中１娘）の受験最終レポート２本を公開中（有料）</strong>
                                 <ul style="margin:6px 0 0;padding-left:20px;">
@@ -932,7 +943,8 @@ html.append("""
 
                     res.header("Content-Type", "text/html; charset=UTF-8");
                     if (AdminAnalyticsService.countable(req)) pageViews.recordView();
-                    res.send(html.toString().getBytes(StandardCharsets.UTF_8));
+                    res.header("Cache-Control", "no-store");
+                    res.send(html.toString().replace("__PUBLIC_ANALYTICS__", PublicAnalyticsView.render(pageViews)).getBytes(StandardCharsets.UTF_8));
                 });
     }
 }
