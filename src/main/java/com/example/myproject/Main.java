@@ -626,6 +626,16 @@ private static String loginPageHtml(String message) {
                                 tr:nth-child(even) { background-color: #fafafa; }
                                 th.sort-asc::after { content: " ▲"; font-size: 9px; }
                                 th.sort-desc::after { content: " ▼"; font-size: 9px; }
+                                #schoolTable th.category-header { z-index: 2; cursor: default; }
+                                .category-menu summary { cursor: pointer; list-style: none; }
+                                .category-menu summary::-webkit-details-marker { display: none; }
+                                .category-menu summary::after { content: " ▾"; }
+                                .category-menu summary:focus-visible { outline: 2px solid #176b68; }
+                                .category-panel { position: absolute; top: 100%; left: 0; width: 200px; padding: 10px; background: white; border: 1px solid #9baeb9; box-shadow: 0 3px 8px #0002; font-size: 12px; font-weight: normal; }
+                                .category-panel label { display: block; margin-bottom: 8px; }
+                                .category-panel label:last-child { margin-bottom: 0; }
+                                .category-panel select { display: block; width: 100%; margin-top: 4px; padding: 4px; font: inherit; }
+                                #visibleCount { margin-left: 8px; font-size: 11px; color: #526875; }
                                 a { color: #0645ad; text-decoration: none; }
                                 a:hover { text-decoration: underline; }
                               </style>
@@ -640,6 +650,7 @@ private static String loginPageHtml(String message) {
 
                               <div class="toolbar">
                                 <input type="text" id="searchBox" placeholder="学校名・入試分類・試験日・備考などで検索">
+                                <span id="visibleCount" role="status" aria-live="polite"></span>
                               </div>
 
                               <table id="schoolTable">
@@ -647,7 +658,29 @@ private static String loginPageHtml(String message) {
                                   <tr>
                                     <th onclick="sortTable(0, true)">ID</th>
                                     <th onclick="sortTable(1, false)">学校名</th>
-                                    <th onclick="sortTable(2, false)">入試分類（帰国入試or 英語入試）</th>
+                                    <th class="category-header" aria-sort="none">
+                                      <details class="category-menu" id="categoryMenu">
+                                        <summary>入試分類（帰国入試or 英語入試）</summary>
+                                        <div class="category-panel">
+                                          <label>並べ替え
+                                            <select id="categorySort" aria-label="入試分類の並べ替え">
+                                              <option value="">並べ替えを選択</option>
+                                              <option value="returnee">帰国を先に表示</option>
+                                              <option value="english">英語を先に表示</option>
+                                              <option value="original">元の順に戻す</option>
+                                            </select>
+                                          </label>
+                                          <label>表示する分類
+                                            <select id="categoryFilter" aria-label="入試分類の絞り込み">
+                                              <option value="all">すべて</option>
+                                              <option value="帰国">帰国のみ</option>
+                                              <option value="英語">英語のみ</option>
+                                              <option value="unconfirmed">未確認のみ</option>
+                                            </select>
+                                          </label>
+                                        </div>
+                                      </details>
+                                    </th>
                                     <th onclick="sortTable(3, false)">募集人数</th>
                                     <th onclick="sortTable(4, false)">試験日</th>
                                     <th onclick="sortTable(5, false)">試験科目</th>
@@ -696,18 +729,61 @@ html.append("""
             const table = document.getElementById('schoolTable');
             const tbody = table.querySelector('tbody');
             let sortDirections = {};
+            const originalRows = Array.from(tbody.querySelectorAll('tr'));
+            const categorySort = document.getElementById('categorySort');
+            const categoryFilter = document.getElementById('categoryFilter');
+            const categoryMenu = document.getElementById('categoryMenu');
+            const categoryHeader = categoryMenu.closest('th');
 
-            searchBox.addEventListener('keyup', function() {
-              const keyword = this.value.toLowerCase();
-              const rows = tbody.querySelectorAll('tr');
-
-              rows.forEach(row => {
-                const text = row.innerText.toLowerCase();
-                row.style.display = text.includes(keyword) ? '' : 'none';
+            function applyFilters() {
+              const keyword = searchBox.value.trim().toLowerCase();
+              const filter = categoryFilter.value;
+              let visible = 0;
+              originalRows.forEach(row => {
+                const category = row.children[2].textContent.trim();
+                const matchesCategory = filter === 'all' || (filter === 'unconfirmed'
+                  ? !['帰国', '英語'].includes(category) : category === filter);
+                const show = matchesCategory && row.textContent.toLowerCase().includes(keyword);
+                row.style.display = show ? '' : 'none';
+                if (show) visible++;
               });
+              document.getElementById('visibleCount').textContent = visible + ' / ' + originalRows.length + ' 件';
+            }
+
+            searchBox.addEventListener('input', applyFilters);
+            categoryFilter.addEventListener('change', applyFilters);
+            categorySort.addEventListener('change', () => {
+              const order = categorySort.value;
+              if (!order) return;
+              const rows = [...originalRows];
+              const first = order === 'english' ? '英語' : '帰国';
+              const second = first === '英語' ? '帰国' : '英語';
+              const rank = row => {
+                const category = row.children[2].textContent.trim();
+                return category === first ? 0 : category === second ? 1 : 2;
+              };
+              if (order !== 'original') rows.sort((a, b) => rank(a) - rank(b));
+              table.querySelectorAll('th').forEach(th => {
+                th.classList.remove('sort-asc', 'sort-desc');
+                th.setAttribute('aria-sort', 'none');
+              });
+              categoryHeader.setAttribute('aria-sort', order === 'original' ? 'none' : 'other');
+              sortDirections = {};
+              rows.forEach(row => tbody.appendChild(row));
             });
+            document.addEventListener('click', event => {
+              if (!categoryMenu.contains(event.target)) categoryMenu.open = false;
+            });
+            categoryMenu.addEventListener('keydown', event => {
+              if (event.key === 'Escape') {
+                categoryMenu.open = false;
+                categoryMenu.querySelector('summary').focus();
+              }
+            });
+            applyFilters();
 
             function sortTable(colIndex, numeric) {
+              categorySort.value = '';
               const rows = Array.from(tbody.querySelectorAll('tr'));
               const headers = table.querySelectorAll('th');
               const asc = !sortDirections[colIndex];
@@ -716,8 +792,10 @@ html.append("""
 
               headers.forEach(th => {
                 th.classList.remove('sort-asc', 'sort-desc');
+                th.setAttribute('aria-sort', 'none');
               });
               headers[colIndex].classList.add(asc ? 'sort-asc' : 'sort-desc');
+              headers[colIndex].setAttribute('aria-sort', asc ? 'ascending' : 'descending');
 
               rows.sort((a, b) => {
                 const aText = a.children[colIndex].innerText.trim();
