@@ -26,4 +26,15 @@ class AdmissionsDataTest {
         assertEquals(AdmissionsPolicy.targetYear(),school.targetAdmissionYear);
         if(AdmissionsPolicy.targetYear()==2027)assertEquals("2026-11-23, 2026-12-16",school.examDates);
     }
+    @Test void deviationControlsUseOnlyValidCurrentCohortValues() throws Exception {
+        var school = new SchoolV2();
+        school.deviationReference = new ObjectMapper().readTree("{\"admissionYear\":" + AdmissionsPolicy.targetYear()
+                + ",\"entries\":[{\"value\":42},{\"value\":47},{\"value\":0},{\"value\":101},{\"value\":\"54\"},{\"value\":54.5}]}");
+        assertEquals("42,47", Main.schoolDeviationValues(school));
+        ((com.fasterxml.jackson.databind.node.ObjectNode)school.deviationReference).put("admissionYear", AdmissionsPolicy.targetYear() - 1);
+        assertEquals("", Main.schoolDeviationValues(school));
+        school.deviationReference = null;
+        assertEquals("", Main.schoolDeviationValues(school));
+    }
+
 }

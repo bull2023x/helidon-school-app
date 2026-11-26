@@ -115,6 +115,19 @@ public class Main {
         return links.toString();
     }
 
+    static String schoolDeviationValues(SchoolV2 school) {
+        var reference = school.deviationReference;
+        if (reference == null || reference.path("admissionYear").asInt() != AdmissionsPolicy.targetYear()) return "";
+        var values = new java.util.StringJoiner(",");
+        for (var entry : reference.path("entries")) {
+            var value = entry.path("value");
+            if (value.isIntegralNumber() && value.canConvertToInt() && value.asInt() >= 1 && value.asInt() <= 100) {
+                values.add(Integer.toString(value.asInt()));
+            }
+        }
+        return values.toString();
+    }
+
     static String schoolNotes(SchoolV2 school) {
         StringBuilder html = new StringBuilder(escapeHtml(school.notes));
         var reference = school.deviationReference;
@@ -647,6 +660,8 @@ private static String loginPageHtml(String message) {
                                 .category-panel label { display: block; margin-bottom: 8px; }
                                 .category-panel label:last-child { margin-bottom: 0; }
                                 .category-panel select { display: block; width: 100%; margin-top: 4px; padding: 4px; font: inherit; }
+                                .deviation-panel { left: auto; right: 0; width: min(260px, calc(100vw - 24px)); }
+                                .filter-help { margin: 8px 0 0; font-size: 10px; line-height: 1.5; color: #526875; }
                                 #visibleCount { margin-left: 8px; font-size: 11px; color: #526875; }
                                 a { color: #0645ad; text-decoration: none; }
                                 a:hover { text-decoration: underline; }
@@ -699,7 +714,32 @@ private static String loginPageHtml(String message) {
                                     <th onclick="sortTable(6, false)">試験科目特記</th>
                                     <th onclick="sortTable(7, false)">面接有無</th>
                                     <th onclick="sortTable(8, false)">英語資格優遇</th>
-                                    <th onclick="sortTable(9, false)">備考（４科目受験の場合の四谷大塚偏差値を参考に併記）</th>
+                                    <th class="category-header" aria-sort="none">
+                                      <details class="category-menu" id="deviationMenu">
+                                        <summary>備考（４科目受験の場合の四谷大塚偏差値を参考に併記）</summary>
+                                        <div class="category-panel deviation-panel">
+                                          <label>四谷偏差値の範囲
+                                            <select id="deviationFilter" aria-label="四谷偏差値の範囲">
+                                              <option value="all">すべて</option>
+                                              <option value="under45">45未満</option>
+                                              <option value="45to55">45以上55未満</option>
+                                              <option value="55to65">55以上65未満</option>
+                                              <option value="65plus">65以上</option>
+                                              <option value="missing">未掲載・未確認のみ</option>
+                                            </select>
+                                          </label>
+                                          <label>四谷偏差値の並べ替え
+                                            <select id="deviationSort" aria-label="四谷偏差値の並べ替え">
+                                              <option value="">並べ替えを選択</option>
+                                              <option value="asc">偏差値の低い順</option>
+                                              <option value="desc">偏差値の高い順</option>
+                                              <option value="original">元の順に戻す</option>
+                                            </select>
+                                          </label>
+                                          <p class="filter-help">複数の掲載値がある場合、範囲はどれか１つが該当すれば表示します。並べ替えは掲載値の最大値を使います。一般入試の参考値です。</p>
+                                        </div>
+                                      </details>
+                                    </th>
                                     <th onclick="sortTable(10, false)">学校リンク・出典</th>
                                     <th onclick="sortTable(11, false)">公式資料の確認状況</th>
                                     <th onclick="sortTable(12, false)">資料確認日時</th>
@@ -710,7 +750,7 @@ private static String loginPageHtml(String message) {
                                     .replace("__ADMISSION_HEADING__", escapeHtml(admissionsHeading(schools))));
 
                     for (SchoolV2 s : schools) {
-                        html.append("<tr>")
+                        html.append("<tr data-deviation-values=\"").append(schoolDeviationValues(s)).append("\">")
                                 .append("<td>").append(s.id).append("</td>")
                                 .append("<td>").append(escapeHtml(s.schoolName)).append("</td>")
                                 .append("<td>").append(escapeHtml(s.category != null && s.category.contains("帰国")
@@ -746,6 +786,25 @@ html.append("""
             const categoryFilter = document.getElementById('categoryFilter');
             const categoryMenu = document.getElementById('categoryMenu');
             const categoryHeader = categoryMenu.closest('th');
+            const deviationMenu = document.getElementById('deviationMenu');
+            const deviationHeader = deviationMenu.closest('th');
+            const deviationFilter = document.getElementById('deviationFilter');
+            const deviationSort = document.getElementById('deviationSort');
+            const deviationValues = new Map(originalRows.map(row => [row,
+              (row.dataset.deviationValues || '').split(',').filter(Boolean).map(Number)
+                .filter(value => Number.isInteger(value) && value >= 1 && value <= 100)]));
+
+            function matchesDeviation(row) {
+              const range = deviationFilter.value;
+              const values = deviationValues.get(row);
+              if (range === 'all') return true;
+              if (range === 'missing') return values.length === 0;
+              return values.some(value => range === 'under45' ? value < 45
+                : range === '45to55' ? value >= 45 && value < 55
+                : range === '55to65' ? value >= 55 && value < 65
+                : range === '65plus' && value >= 65);
+            }
+
 
             function applyFilters() {
               const keyword = searchBox.value.trim().toLowerCase();
@@ -755,7 +814,7 @@ html.append("""
                 const category = row.children[2].textContent.trim();
                 const matchesCategory = filter === 'all' || (filter === 'unconfirmed'
                   ? !['帰国', '英語'].includes(category) : category === filter);
-                const show = matchesCategory && row.textContent.toLowerCase().includes(keyword);
+                const show = matchesCategory && matchesDeviation(row) && row.textContent.toLowerCase().includes(keyword);
                 row.style.display = show ? '' : 'none';
                 if (show) visible++;
               });
@@ -764,9 +823,11 @@ html.append("""
 
             searchBox.addEventListener('input', applyFilters);
             categoryFilter.addEventListener('change', applyFilters);
+            deviationFilter.addEventListener('change', applyFilters);
             categorySort.addEventListener('change', () => {
               const order = categorySort.value;
               if (!order) return;
+              deviationSort.value = '';
               const rows = [...originalRows];
               const first = order === 'english' ? '英語' : '帰国';
               const second = first === '英語' ? '帰国' : '英語';
@@ -783,19 +844,46 @@ html.append("""
               sortDirections = {};
               rows.forEach(row => tbody.appendChild(row));
             });
-            document.addEventListener('click', event => {
-              if (!categoryMenu.contains(event.target)) categoryMenu.open = false;
+            deviationSort.addEventListener('change', () => {
+              const order = deviationSort.value;
+              if (!order) return;
+              categorySort.value = '';
+              const rows = [...originalRows];
+              const key = row => deviationValues.get(row).length ? Math.max(...deviationValues.get(row)) : null;
+              if (order !== 'original') rows.sort((a, b) => {
+                const av = key(a), bv = key(b);
+                if (av === null) return bv === null ? 0 : 1;
+                if (bv === null) return -1;
+                return order === 'asc' ? av - bv : bv - av;
+              });
+              table.querySelectorAll('th').forEach(th => {
+                th.classList.remove('sort-asc', 'sort-desc');
+                th.setAttribute('aria-sort', 'none');
+              });
+              deviationHeader.setAttribute('aria-sort', order === 'original' ? 'none' : order === 'asc' ? 'ascending' : 'descending');
+              sortDirections = {};
+              rows.forEach(row => tbody.appendChild(row));
             });
-            categoryMenu.addEventListener('keydown', event => {
-              if (event.key === 'Escape') {
-                categoryMenu.open = false;
-                categoryMenu.querySelector('summary').focus();
-              }
+            const filterMenus = [categoryMenu, deviationMenu];
+            document.addEventListener('click', event => {
+              filterMenus.forEach(menu => { if (!menu.contains(event.target)) menu.open = false; });
+            });
+            filterMenus.forEach(menu => {
+              menu.addEventListener('toggle', () => {
+                if (menu.open) filterMenus.forEach(other => { if (other !== menu) other.open = false; });
+              });
+              menu.addEventListener('keydown', event => {
+                if (event.key === 'Escape') {
+                  menu.open = false;
+                  menu.querySelector('summary').focus();
+                }
+              });
             });
             applyFilters();
 
             function sortTable(colIndex, numeric) {
               categorySort.value = '';
+              deviationSort.value = '';
               const rows = Array.from(tbody.querySelectorAll('tr'));
               const headers = table.querySelectorAll('th');
               const asc = !sortDirections[colIndex];
