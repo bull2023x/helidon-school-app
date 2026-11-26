@@ -69,9 +69,14 @@ class PageViewStoreTest {
         String schema = "test_views_" + java.util.UUID.randomUUID().toString().replace("-","");
         try (var connection = DriverManager.getConnection(settings.url(),settings.properties()); var sql=connection.createStatement()) {
             sql.execute("CREATE SCHEMA " + schema);
-            var props=settings.properties();props.setProperty("currentSchema",schema);
+            var props=settings.properties();
             try {
-                PageViewStore.Connections connections=() -> DriverManager.getConnection(settings.url(),props);
+                PageViewStore.Connections connections=() -> {
+                    var isolated = DriverManager.getConnection(settings.url(),props);
+                    isolated.setSchema(schema);
+                    assertEquals(schema, isolated.getSchema());
+                    return isolated;
+                };
                 var first=new PageViewStore(connections,Clock.systemUTC());
                 concurrentIncrements(first);
                 var reopened=new PageViewStore(connections,Clock.systemUTC());
