@@ -47,7 +47,7 @@ abstract class AbstractMainTest {
     void currentAdmissionsPageUsesRequestedHeadingAndSourceLabels() {
         ClientResponseTyped<String> response=client.get("/schools-v2-table").request(String.class);
         assertThat(response.status(),is(Status.OK_200));
-        assertThat(response.entity(),containsString("2027年度 中学受験 帰国入試＆英語入試情報 &lt;2026年11月25日更新&gt;"));
+        assertThat(response.entity(),containsString(AdmissionsPolicy.targetYear()+"年度 中学受験 帰国入試＆英語入試情報 &lt;"));
         assertThat(response.entity(),containsString("公式資料の確認状況"));
         assertThat(response.entity(),containsString("備考（４科目受験の場合の四谷大塚偏差値を参考に併記）"));
         assertThat(response.entity(),containsString("確認した公式資料"));

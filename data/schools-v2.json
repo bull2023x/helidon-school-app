@@ -7,13 +7,13 @@
     "examDates": "2026-11-15（ニューヨーク現地時間）, 2026-11-20（国内）, 2026-12-06（国内）",
     "subjects": "Honors/Advanced：英語作文・英語筆記・日本語作文・英語ペアワーク。Regular：国語・算数。NY：英語筆記・英語作文・日本語作文。",
     "alternateSubjects": "国内Honors/Advanced選考：英語作文50分・英語筆記50分・日本語作文30分・英語ペアワーク。Regular選考：国語・算数各50分。ニューヨーク現地入試：英語作文50分・英語筆記50分・日本語作文30分。国内の英語ペアワークは筆記後に順次実施し、終了が13時頃になる場合あり。",
-    "interview": "2027年度の公式情報を未確認",
-    "englishQualificationBenefit": "2027年度の公式情報を未確認",
+    "interview": "面接の記載なし。国内Honors/Advancedは英語ペアワークあり。Regular・NYは筆記のみ（公式要項p.4–5）。",
+    "englishQualificationBenefit": "英検・TOEFL等による加点・試験免除の記載なし（2027年度募集要項p.4–5を確認）。",
     "notes": "2027年度入学向け。国内Honors/Advancedは11月20日午前・12月6日午前、Regularは11月20日午後。",
     "infoLink": "https://www.ariake.kaetsu.ac.jp/contents/wp-content/uploads/2026/06/d9f34a88ffedbe6a459fca4d2709ce84.pdf",
     "admissionYear": 2027,
     "targetAdmissionYear": 2027,
-    "verifiedAt": "2026-11-25T15:02:21+09:00",
+    "verifiedAt": "2026-11-27T09:38:53+09:00",
     "fieldVerification": {
       "examDates": {
         "admissionYear": 2027,
@@ -44,6 +44,22 @@
         "sourceUrl": "https://www.ariake.kaetsu.ac.jp/contents/wp-content/uploads/2026/06/d9f34a88ffedbe6a459fca4d2709ce84.pdf",
         "verifiedAt": "2026-11-25T15:02:21+09:00",
         "pages": "4–5"
+      },
+      "interview": {
+        "admissionYear": 2027,
+        "sourceUrl": "https://www.ariake.kaetsu.ac.jp/contents/wp-content/uploads/2026/06/d9f34a88ffedbe6a459fca4d2709ce84.pdf",
+        "verifiedAt": "2026-11-27T09:38:53+09:00",
+        "pages": "4–5",
+        "finding": "not_listed",
+        "note": "該当方式の時程・提出書類・出願資格を確認した記載状況。制度・実施の不存在を学校に照会して確認したものではない。"
+      },
+      "englishQualificationBenefit": {
+        "admissionYear": 2027,
+        "sourceUrl": "https://www.ariake.kaetsu.ac.jp/contents/wp-content/uploads/2026/06/d9f34a88ffedbe6a459fca4d2709ce84.pdf",
+        "verifiedAt": "2026-11-27T09:38:53+09:00",
+        "pages": "4–5",
+        "finding": "not_listed",
+        "note": "該当方式の時程・提出書類・出願資格を確認した記載状況。制度・実施の不存在を学校に照会して確認したものではない。"
       }
     },
     "admissionsSources": [
@@ -56,13 +72,15 @@
           "capacity",
           "subjects",
           "notes",
-          "alternateSubjects"
+          "alternateSubjects",
+          "interview",
+          "englishQualificationBenefit"
         ],
-        "verifiedAt": "2026-11-25T11:07:10+09:00"
+        "verifiedAt": "2026-11-27T09:38:53+09:00"
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の公式資料を項目ごとに照合。未確認と表示する項目は内容を確定できていません。日程には終了済みの回を含み、予定版はその旨を明記しています。",
+    "verificationNote": "2027年度公式募集要項p.4–5を再確認。面接・英語資格優遇は、要項の記載有無を確認した結果を表示しています。",
     "deviationReference": {
       "admissionYear": 2027,
       "metric": "四谷大塚 Aライン80偏差値",
@@ -100,13 +118,13 @@
     "examDates": "2027-02-02（午前・Honors/Advanced選考）",
     "subjects": "英語作文・英語筆記・日本語作文・英語ペアワーク",
     "alternateSubjects": "Honors/Advanced選考は英語作文50分・英語筆記50分・日本語作文30分・英語ペアワーク。英語ペアワークは筆記後に順次実施。別方式のテオリアは個人探究、ポリフォニーはグループ探究で、科目・募集枠が異なる。",
-    "interview": "2027年度の公式情報を未確認",
-    "englishQualificationBenefit": "2027年度の公式情報を未確認",
+    "interview": "面接の記載なし。英語ペアワークあり（2月2日Honors/Advanced、公式要項p.3）。",
+    "englishQualificationBenefit": "英検・TOEFL等による加点・試験免除の記載なし（2027年度募集要項p.3を確認）。",
     "notes": "2027年度入学向け。帰国生入試の出願資格にかかわらず出願可能。",
     "infoLink": "https://www.ariake.kaetsu.ac.jp/contents/wp-content/uploads/2026/06/d9f34a88ffedbe6a459fca4d2709ce84.pdf",
     "admissionYear": 2027,
     "targetAdmissionYear": 2027,
-    "verifiedAt": "2026-11-25T15:02:21+09:00",
+    "verifiedAt": "2026-11-27T09:38:53+09:00",
     "fieldVerification": {
       "examDates": {
         "admissionYear": 2027,
@@ -137,6 +155,22 @@
         "sourceUrl": "https://www.ariake.kaetsu.ac.jp/contents/wp-content/uploads/2026/06/d9f34a88ffedbe6a459fca4d2709ce84.pdf",
         "verifiedAt": "2026-11-25T11:07:10+09:00",
         "pages": "3"
+      },
+      "interview": {
+        "admissionYear": 2027,
+        "sourceUrl": "https://www.ariake.kaetsu.ac.jp/contents/wp-content/uploads/2026/06/d9f34a88ffedbe6a459fca4d2709ce84.pdf",
+        "verifiedAt": "2026-11-27T09:38:53+09:00",
+        "pages": "3",
+        "finding": "not_listed",
+        "note": "該当方式の時程・提出書類・出願資格を確認した記載状況。制度・実施の不存在を学校に照会して確認したものではない。"
+      },
+      "englishQualificationBenefit": {
+        "admissionYear": 2027,
+        "sourceUrl": "https://www.ariake.kaetsu.ac.jp/contents/wp-content/uploads/2026/06/d9f34a88ffedbe6a459fca4d2709ce84.pdf",
+        "verifiedAt": "2026-11-27T09:38:53+09:00",
+        "pages": "3",
+        "finding": "not_listed",
+        "note": "該当方式の時程・提出書類・出願資格を確認した記載状況。制度・実施の不存在を学校に照会して確認したものではない。"
       }
     },
     "admissionsSources": [
@@ -149,13 +183,15 @@
           "capacity",
           "subjects",
           "alternateSubjects",
-          "notes"
+          "notes",
+          "interview",
+          "englishQualificationBenefit"
         ],
-        "verifiedAt": "2026-11-25T11:07:10+09:00"
+        "verifiedAt": "2026-11-27T09:38:53+09:00"
       }
     ],
     "verificationStatusLabel": "日程・人数を確認済み",
-    "verificationNote": "2027年度の公式資料を項目ごとに照合。未確認と表示する項目は内容を確定できていません。日程には終了済みの回を含み、予定版はその旨を明記しています。",
+    "verificationNote": "2027年度公式募集要項p.3を再確認。面接・英語資格優遇は、要項の記載有無を確認した結果を表示しています。",
     "deviationReference": {
       "admissionYear": 2027,
       "metric": "四谷大塚 Aライン80偏差値",

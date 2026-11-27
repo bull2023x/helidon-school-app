@@ -679,8 +679,8 @@
     "examDates": 107,
     "subjects": 107,
     "alternateSubjects": 107,
-    "interview": 78,
-    "englishQualificationBenefit": 37,
+    "interview": 80,
+    "englishQualificationBenefit": 39,
     "notes": 107
   },
   "records": [
@@ -694,13 +694,12 @@
         "examDates",
         "subjects",
         "alternateSubjects",
-        "notes"
-      ],
-      "unverifiedFields": [
+        "notes",
         "interview",
         "englishQualificationBenefit"
       ],
-      "reviewNote": "2027年度の公式資料を項目ごとに照合。未確認と表示する項目は内容を確定できていません。日程には終了済みの回を含み、予定版はその旨を明記しています。",
+      "unverifiedFields": [],
+      "reviewNote": "2027年度公式募集要項p.4–5を再確認。面接・英語資格優遇は、要項の記載有無を確認した結果を表示しています。",
       "sources": [
         {
           "url": "https://www.ariake.kaetsu.ac.jp/contents/wp-content/uploads/2026/06/d9f34a88ffedbe6a459fca4d2709ce84.pdf",
@@ -711,11 +710,14 @@
             "capacity",
             "subjects",
             "notes",
-            "alternateSubjects"
+            "alternateSubjects",
+            "interview",
+            "englishQualificationBenefit"
           ],
-          "verifiedAt": "2026-11-25T11:07:10+09:00"
+          "verifiedAt": "2026-11-27T09:38:53+09:00"
         }
-      ]
+      ],
+      "checkedAt": "2026-11-27T09:38:53+09:00"
     },
     {
       "id": 2,
@@ -727,13 +729,12 @@
         "examDates",
         "subjects",
         "alternateSubjects",
-        "notes"
-      ],
-      "unverifiedFields": [
+        "notes",
         "interview",
         "englishQualificationBenefit"
       ],
-      "reviewNote": "2027年度の公式資料を項目ごとに照合。未確認と表示する項目は内容を確定できていません。日程には終了済みの回を含み、予定版はその旨を明記しています。",
+      "unverifiedFields": [],
+      "reviewNote": "2027年度公式募集要項p.3を再確認。面接・英語資格優遇は、要項の記載有無を確認した結果を表示しています。",
       "sources": [
         {
           "url": "https://www.ariake.kaetsu.ac.jp/contents/wp-content/uploads/2026/06/d9f34a88ffedbe6a459fca4d2709ce84.pdf",
@@ -744,11 +745,14 @@
             "capacity",
             "subjects",
             "alternateSubjects",
-            "notes"
+            "notes",
+            "interview",
+            "englishQualificationBenefit"
           ],
-          "verifiedAt": "2026-11-25T11:07:10+09:00"
+          "verifiedAt": "2026-11-27T09:38:53+09:00"
         }
-      ]
+      ],
+      "checkedAt": "2026-11-27T09:38:53+09:00"
     },
     {
       "id": 3,
@@ -4303,6 +4307,27 @@
           ]
         }
       ]
+    }
+  ],
+  "latestAmendedAt": "2026-11-27T09:38:53+09:00",
+  "amendments": [
+    {
+      "checkedAt": "2026-11-27T09:38:53+09:00",
+      "ids": [
+        1,
+        2
+      ],
+      "fields": [
+        "interview",
+        "englishQualificationBenefit"
+      ],
+      "sourceUrl": "https://www.ariake.kaetsu.ac.jp/contents/wp-content/uploads/2026/06/d9f34a88ffedbe6a459fca4d2709ce84.pdf",
+      "pagesById": {
+        "1": "4–5",
+        "2": "3"
+      },
+      "finding": "面接および資格による加点・試験免除の記載なし。国内Honors/Advancedの英語ペアワークは明記。",
+      "scope": "かえつ有明中学校の2行のみ再確認。ほかの学校の再確認日時は更新していない。"
     }
   ]
 }
